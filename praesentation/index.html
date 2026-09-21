@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15191b" />
+    <title>Vom Bit zur Shell · Python-Seminar</title>
+    <link rel="stylesheet" href="styles.css?v=9" />
+    <script src="slides.js?v=9" defer></script>
+    <script src="slides-python.js?v=9" defer></script>
+    <script src="slides-system.js?v=9" defer></script>
+    <script src="script.js?v=9" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#1"
+        ><span class="brand-mark">[·]</span> COMPUTER VERSTEHEN</a
+      ><span class="edition">01 / GRUNDLAGEN</span
+      ><button
+        id="overview-open"
+        aria-label="Folienübersicht öffnen"
+        title="Übersicht (O)"
+      >
+        Übersicht <span>↗</span>
+      </button>
+    </header>
+    <main id="deck" aria-label="Präsentation"></main>
+    <footer class="toolbar">
+      <div class="position">
+        <span id="counter">01 / 56</span><span id="chapter"></span>
+      </div>
+      <div class="tools">
+        <button
+          id="notes-open"
+          title="Sprechernotizen (N)"
+          aria-expanded="false"
+        >
+          Notizen <kbd>N</kbd></button
+        ><button id="fullscreen" title="Vollbild (F)">
+          Vollbild <kbd>F</kbd></button
+        ><button id="help-open" aria-label="Bedienung anzeigen">?</button>
+      </div>
+      <div class="navigation">
+        <span id="step-label"></span
+        ><button id="previous" aria-label="Vorheriger Schritt">←</button
+        ><button id="next" aria-label="Nächster Schritt">
+          Weiter <span>→</span>
+        </button>
+      </div>
+    </footer>
+    <div class="progress" aria-hidden="true">
+      <div id="progress-fill"></div>
+    </div>
+    <aside id="notes" hidden aria-label="Sprechernotizen">
+      <div class="panel-heading">
+        <h2>Sprechernotizen</h2>
+        <button id="notes-close" aria-label="Notizen schließen">×</button>
+      </div>
+      <p class="notes-warning">
+        Beim Teilen des ganzen Bildschirms sind diese Notizen sichtbar.
+      </p>
+      <div id="notes-body"></div>
+    </aside>
+    <dialog id="overview">
+      <div class="panel-heading">
+        <h2>Der Weg vom Bit zur Shell</h2>
+        <button data-close aria-label="Übersicht schließen">×</button>
+      </div>
+      <p>Eine Folie auswählen. Antworten werden zunächst ausgeblendet.</p>
+      <div id="overview-grid"></div>
+    </dialog>
+    <dialog id="help">
+      <div class="panel-heading">
+        <h2>In deinem Tempo</h2>
+        <button data-close aria-label="Hilfe schließen">×</button>
+      </div>
+      <dl class="key-help">
+        <dt>→ / Leertaste / Page Down</dt>
+        <dd>Nächste Einblendung, dann nächste Folie</dd>
+        <dt>← / Page Up</dt>
+        <dd>Einen Schritt zurück</dd>
+        <dt>Home / End</dt>
+        <dd>Erste / letzte Folie</dd>
+        <dt>N / O / F</dt>
+        <dd>Notizen / Übersicht / Vollbild</dd>
+        <dt>Esc</dt>
+        <dd>Dialog oder Notizen schließen</dd>
+        <dt>Wischen</dt>
+        <dd>Auf dem Smartphone vor und zurück</dd>
+      </dl>
+      <p>
+        Quiz: erst vermuten, dann auflösen. Interaktive Felder lassen sich auch
+        mit Tab und Leertaste bedienen.
+      </p>
+    </dialog>
+    <div id="announcement" class="sr-only" aria-live="polite"></div>
+    <noscript
+      >Bitte JavaScript aktivieren, um die lokale Präsentation zu
+      starten.</noscript
+    >
+  </body>
+</html>
