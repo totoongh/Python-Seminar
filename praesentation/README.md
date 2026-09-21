@@ -2,6 +2,8 @@
 
 111 lokale HTML-Folien für IT-Anfänger entlang des Storyboards in `../plan.md`. Der Hauptpfad umfasst 103 Folien von Bits und Python über Betriebssystem und Prozesse bis zu Terminal, PowerShell, PATH und Objektpipelines. Danach folgen sechs optionale Architekturfolien sowie zwei optionale Java-/Bytecodefolien. Schrittweise Einblendungen, interaktive Bits und Verständnisfragen verbinden die Themen. Wegen des Umfangs sind mehrere Lernblöcke mit Pausen sinnvoll; die Diskussion bestimmt das Tempo.
 
+Im benachbarten Ordner `../uebungen/` liegt ein eigenständiger HTML-Übungsbereich mit acht nummerierten Aufgaben: ein anklickbares 12-Bit-Programm, zwei Sortierketten, zwei Quizblöcke und drei Arbeitsaufträge für echte PowerShell. Er speichert keinen Lernfortschritt. Die PowerShell-Aufgaben werden bewusst nicht automatisch bewertet, weil Pfade, installierte Programme und Prozesslisten vom verwendeten Windows-Rechner abhängen.
+
 ## Start
 
 `index.html` im Browser öffnen. Keine Installation, kein Build und keine Internetverbindung erforderlich. Den ganzen Ordner zusammenhalten.

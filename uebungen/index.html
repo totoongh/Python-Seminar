@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15191b" />
+    <title>Übungen · Computer verstehen</title>
+    <link rel="stylesheet" href="styles.css?v=1" />
+    <script src="script.js?v=1" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../"><span>[·]</span> COMPUTER VERSTEHEN</a>
+      <span class="edition">ÜBUNGEN / EIGENBEARBEITUNG</span>
+      <a class="presentation-link" href="../praesentation/">Präsentation ↗</a>
+    </header>
+
+    <div class="page-shell">
+      <nav class="exercise-nav" aria-label="Übungen">
+        <a href="#1" data-nav="1"><span>01</span> Maschinencode</a>
+        <a href="#2" data-nav="2"><span>02</span> Python starten</a>
+        <a href="#3" data-nav="3"><span>03</span> Git starten</a>
+        <a href="#4" data-nav="4"><span>04</span> Programm & Prozess</a>
+        <a href="#5" data-nav="5"><span>05</span> Systemrollen</a>
+        <a href="#6" data-nav="6"><span>06</span> PowerShell-Basics</a>
+        <a href="#7" data-nav="7"><span>07</span> Notepad</a>
+        <a href="#8" data-nav="8"><span>08</span> PATH & Prozesse</a>
+      </nav>
+
+      <main>
+        <section class="exercise" data-exercise="1">
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 1 · 12-Bit-Maschinenprogramm</p>
+            <h1>Maschinenprogramm zusammenbauen</h1>
+            <p class="intro">
+              Erstelle ein Programm, das <strong>6 + 9</strong> berechnet und
+              das Ergebnis an <strong>Speicheradresse 4</strong> ablegt.
+            </p>
+          </div>
+
+          <div class="opcode-key" aria-label="Befehlstabelle">
+            <div><span>LOAD</span><code>0001</code></div>
+            <div><span>ADD</span><code>0010</code></div>
+            <div><span>STORE</span><code>0011</code></div>
+          </div>
+
+          <div class="instruction-note">
+            <strong>Eine Anweisung hat 12 Bits:</strong>
+            4 Bits Opcode und 8 Bits für Wert oder Adresse.
+          </div>
+
+          <div class="bit-program" aria-label="Maschinenprogramm eingeben">
+            <div class="bit-row">
+              <div class="instruction-label">
+                <span>1</span><strong>LOAD 6</strong>
+              </div>
+              <div
+                class="bit-input"
+                data-answer="000100000110"
+                data-label="LOAD 6"
+              ></div>
+            </div>
+            <div class="bit-row">
+              <div class="instruction-label">
+                <span>2</span><strong>ADD 9</strong>
+              </div>
+              <div
+                class="bit-input"
+                data-answer="001000001001"
+                data-label="ADD 9"
+              ></div>
+            </div>
+            <div class="bit-row">
+              <div class="instruction-label">
+                <span>3</span><strong>STORE 4</strong>
+              </div>
+              <div
+                class="bit-input"
+                data-answer="001100000100"
+                data-label="STORE 4"
+              ></div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="primary" id="check-bits">Eingabe prüfen</button>
+            <button id="reset-bits">Bits zurücksetzen</button>
+          </div>
+
+          <div class="success-box" id="bit-success" hidden aria-live="polite">
+            <span class="success-mark">✓</span>
+            <div>
+              <h2>Du hast es geschafft!</h2>
+              <pre>0001 00000110
+0010 00001001
+0011 00000100</pre>
+              <p>
+                Die CPU lädt 6, addiert 9 und speichert 15 an Adresse 4.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="exercise" data-exercise="2" hidden>
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 2 · Prozessschritte ordnen</p>
+            <h1>Was passiert bei <code>python rechnung.py</code>?</h1>
+            <p class="intro">
+              Bringe die Karten in eine sinnvolle Reihenfolge. Ziehe sie oder
+              benutze die Pfeiltasten an den Karten.
+            </p>
+          </div>
+
+          <ol
+            class="order-list"
+            data-order-list
+            data-answer="type,terminal,shell,search,found,process,cpu,output,display"
+          >
+            <li draggable="true" data-id="cpu">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Die CPU führt die benötigten Maschinenanweisungen aus.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="type">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Du tippst <code>python rechnung.py</code>.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="found">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p><code>python.exe</code> wird gefunden.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="display">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Das Terminal zeigt die Ausgabe an.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="terminal">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Das Terminal gibt die Zeichen an PowerShell weiter.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="process">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Das Betriebssystem startet einen neuen Prozess.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="shell">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>PowerShell übernimmt und untersucht den Befehl.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="output">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Das Python-Programm erzeugt die Ausgabe.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="search">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>PowerShell sucht nach dem Befehl <code>python</code>.</p>
+              <span class="move-controls"></span>
+            </li>
+          </ol>
+          <div class="actions">
+            <button class="primary check-order">Reihenfolge prüfen</button>
+          </div>
+          <p class="task-result" data-order-result aria-live="polite"></p>
+        </section>
+
+        <section class="exercise" data-exercise="3" hidden>
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 3 · Prozessschritte ordnen</p>
+            <h1>Was passiert bei <code>git status</code>?</h1>
+            <p class="intro">
+              Ordne auch diese Befehlskette. Achte darauf, wann PowerShell,
+              Betriebssystem, Git, CPU und Terminal beteiligt sind.
+            </p>
+          </div>
+
+          <ol
+            class="order-list"
+            data-order-list
+            data-answer="type,parse,search,process,cpu,inspect,write,display"
+          >
+            <li draggable="true" data-id="display">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Das Terminal zeigt das Ergebnis.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="parse">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>
+                PowerShell erkennt <code>git</code> als Befehlsnamen und
+                <code>status</code> als Argument.
+              </p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="inspect">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Git untersucht das aktuelle Verzeichnis.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="type">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Du gibst <code>git status</code> ein.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="cpu">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Die CPU führt Maschinenanweisungen aus.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="search">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p><code>git.exe</code> wird über einen Ordner aus PATH gefunden.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="write">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Git schreibt sein Ergebnis.</p>
+              <span class="move-controls"></span>
+            </li>
+            <li draggable="true" data-id="process">
+              <span class="grab" aria-hidden="true">⠿</span>
+              <p>Das Betriebssystem startet <code>git.exe</code> als Prozess.</p>
+              <span class="move-controls"></span>
+            </li>
+          </ol>
+          <div class="actions">
+            <button class="primary check-order">Reihenfolge prüfen</button>
+          </div>
+          <p class="task-result" data-order-result aria-live="polite"></p>
+        </section>
+
+        <section class="exercise" data-exercise="4" hidden>
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 4 · Single und Multiple Choice</p>
+            <h1>Programm oder Prozess?</h1>
+            <p class="intro">
+              Wähle bei jeder Frage die passende Antwort. Bei „Mehrere
+              Antworten“ können mehrere Aussagen richtig sein.
+            </p>
+          </div>
+
+          <div class="quiz">
+            <fieldset
+              class="quiz-question"
+              data-type="single"
+              data-answer="b"
+              data-explanation="Ein Prozess ist eine aktuell laufende Instanz eines Programms."
+            >
+              <legend><span>1</span> Was ist ein Prozess?</legend>
+              <label><input type="radio" name="q4-1" value="a" /> Eine Datei mit Programmcode</label>
+              <label><input type="radio" name="q4-1" value="b" /> Eine aktuell laufende Instanz eines Programms</label>
+              <label><input type="radio" name="q4-1" value="c" /> Ein Speicherort im RAM</label>
+              <label><input type="radio" name="q4-1" value="d" /> Ein Befehl der CPU</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset
+              class="quiz-question"
+              data-type="single"
+              data-answer="b"
+              data-explanation="Dieselbe Programmdatei kann mehrfach gestartet werden. Dabei entstehen mehrere Prozesse."
+            >
+              <legend><span>2</span> Du startest dieselbe Programmdatei dreimal. Was entsteht?</legend>
+              <label><input type="radio" name="q4-2" value="a" /> Drei neue Programmdateien</label>
+              <label><input type="radio" name="q4-2" value="b" /> Drei Prozesse</label>
+              <label><input type="radio" name="q4-2" value="c" /> Drei Betriebssysteme</label>
+              <label><input type="radio" name="q4-2" value="d" /> Ein einziger Prozess mit drei Dateinamen</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset
+              class="quiz-question"
+              data-type="multiple"
+              data-answer="a,b,d"
+              data-explanation="Prozesse entstehen aus Programmdateien, besitzen einen Zustand und verwenden Ressourcen."
+            >
+              <legend><span>3</span> Welche Aussagen sind richtig? <small>Mehrere Antworten</small></legend>
+              <label><input type="checkbox" value="a" /> Mehrere Prozesse können aus derselben Programmdatei entstehen.</label>
+              <label><input type="checkbox" value="b" /> Ein Prozess besitzt einen aktuellen Zustand.</label>
+              <label><input type="checkbox" value="c" /> Wird ein Prozess beendet, wird die Programmdatei gelöscht.</label>
+              <label><input type="checkbox" value="d" /> Ein Prozess kann Speicher und Rechenzeit verwenden.</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset
+              class="quiz-question"
+              data-type="single"
+              data-answer="b"
+              data-explanation="Der laufende Prozess endet. Die gespeicherte Programmdatei bleibt erhalten."
+            >
+              <legend><span>4</span> Du schließt ein laufendes Programm. Was bleibt normalerweise erhalten?</legend>
+              <label><input type="radio" name="q4-4" value="a" /> Der Prozess</label>
+              <label><input type="radio" name="q4-4" value="b" /> Die Programmdatei</label>
+              <label><input type="radio" name="q4-4" value="c" /> Der Registerzustand des beendeten Prozesses</label>
+              <label><input type="radio" name="q4-4" value="d" /> Die belegte Prozess-ID</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset
+              class="quiz-question"
+              data-type="multiple"
+              data-answer="a,b,c"
+              data-explanation="Prozess-ID, Arbeitsspeicher und Ausführungszustand gehören zur laufenden Instanz."
+            >
+              <legend><span>5</span> Welche Dinge gehören zu einem Prozess? <small>Mehrere Antworten</small></legend>
+              <label><input type="checkbox" value="a" /> eine Prozess-ID</label>
+              <label><input type="checkbox" value="b" /> belegter Arbeitsspeicher</label>
+              <label><input type="checkbox" value="c" /> aktueller Ausführungszustand</label>
+              <label><input type="checkbox" value="d" /> ausschließlich die dauerhafte Programmdatei</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <div class="actions">
+              <button class="primary check-quiz">Antworten prüfen</button>
+              <button class="reset-quiz">Antworten zurücksetzen</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="exercise" data-exercise="5" hidden>
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 5 · Single und Multiple Choice</p>
+            <h1>Betriebssystem, Terminal, Shell oder Prozess?</h1>
+            <p class="intro">Ordne den beteiligten Teilen ihre jeweilige Aufgabe zu.</p>
+          </div>
+
+          <div class="quiz">
+            <fieldset class="quiz-question" data-type="single" data-answer="b" data-explanation="PowerShell ist hier die Shell und interpretiert den eingegebenen Befehlsnamen.">
+              <legend><span>1</span> Wer interpretiert <code>Get-Date</code> als Befehl?</legend>
+              <label><input type="radio" name="q5-1" value="a" /> das Terminal</label>
+              <label><input type="radio" name="q5-1" value="b" /> PowerShell als Shell</label>
+              <label><input type="radio" name="q5-1" value="c" /> der Monitor</label>
+              <label><input type="radio" name="q5-1" value="d" /> die Tastatur</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset class="quiz-question" data-type="single" data-answer="a" data-explanation="Das Terminal stellt Ein- und Ausgabe eines darin laufenden Kommandozeilenprogramms dar.">
+              <legend><span>2</span> Welche Aufgabe besitzt ein Terminal?</legend>
+              <label><input type="radio" name="q5-2" value="a" /> Eingaben und Ausgaben darstellen</label>
+              <label><input type="radio" name="q5-2" value="b" /> Maschinencode erzeugen</label>
+              <label><input type="radio" name="q5-2" value="c" /> sämtliche Prozesse verwalten</label>
+              <label><input type="radio" name="q5-2" value="d" /> Python-Quellcode schreiben</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset class="quiz-question" data-type="single" data-answer="c" data-explanation="Das Betriebssystem stellt Funktionen bereit, um Prozesse zu starten und zu verwalten.">
+              <legend><span>3</span> Wer startet und verwaltet Prozesse?</legend>
+              <label><input type="radio" name="q5-3" value="a" /> das Terminal</label>
+              <label><input type="radio" name="q5-3" value="b" /> der Textcursor</label>
+              <label><input type="radio" name="q5-3" value="c" /> das Betriebssystem</label>
+              <label><input type="radio" name="q5-3" value="d" /> der Dateiname</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset class="quiz-question" data-type="multiple" data-answer="a,b,c" data-explanation="Terminal, Shell und Prozess sind verschiedene Rollen. Windows Terminal ist nicht das Betriebssystem.">
+              <legend><span>4</span> Du öffnest Windows Terminal und startest darin PowerShell. Was ist richtig? <small>Mehrere Antworten</small></legend>
+              <label><input type="checkbox" value="a" /> Windows Terminal stellt die Oberfläche dar.</label>
+              <label><input type="checkbox" value="b" /> PowerShell interpretiert Befehle.</label>
+              <label><input type="checkbox" value="c" /> PowerShell läuft als Prozess.</label>
+              <label><input type="checkbox" value="d" /> Windows Terminal ist das Betriebssystem.</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset class="quiz-question" data-type="single" data-answer="c" data-explanation="Ein Prozess ist eine konkrete laufende Instanz eines Programms.">
+              <legend><span>5</span> Welche Aussage beschreibt einen Prozess?</legend>
+              <label><input type="radio" name="q5-5" value="a" /> Ein Name in PATH</label>
+              <label><input type="radio" name="q5-5" value="b" /> Ein Terminalfenster</label>
+              <label><input type="radio" name="q5-5" value="c" /> Eine laufende Programminstanz</label>
+              <label><input type="radio" name="q5-5" value="d" /> Eine Programmiersprache</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <fieldset class="quiz-question" data-type="single" data-answer="b" data-explanation="Für getrennte PowerShell-Sitzungen können mehrere PowerShell-Prozesse laufen.">
+              <legend><span>6</span> Du öffnest in Windows Terminal zwei PowerShell-Tabs. Was kann dabei entstehen?</legend>
+              <label><input type="radio" name="q5-6" value="a" /> zwei Betriebssysteme</label>
+              <label><input type="radio" name="q5-6" value="b" /> mehrere PowerShell-Prozesse</label>
+              <label><input type="radio" name="q5-6" value="c" /> zwei CPUs</label>
+              <label><input type="radio" name="q5-6" value="d" /> zwei Kopien aller Programmdateien</label>
+              <p class="question-result" aria-live="polite"></p>
+            </fieldset>
+
+            <div class="actions">
+              <button class="primary check-quiz">Antworten prüfen</button>
+              <button class="reset-quiz">Antworten zurücksetzen</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="exercise powershell-exercise" data-exercise="6" hidden>
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 6 · Auf dem eigenen Windows-PC</p>
+            <h1>PowerShell kennenlernen</h1>
+            <p class="intro">
+              Öffne PowerShell auf deinem Rechner und führe die Befehle
+              nacheinander aus. Die Befehle lesen Informationen oder wechseln
+              nur das aktuelle Verzeichnis. Sie verändern keine Dateien.
+            </p>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">A</span>
+            <div>
+              <h2>PowerShell und Zeit</h2>
+              <p>Finde zuerst heraus, welche PowerShell-Version du verwendest.</p>
+              <div class="command"><code>$PSVersionTable.PSVersion</code><button data-copy="$PSVersionTable.PSVersion">Kopieren</button></div>
+              <ul class="prompts"><li>Welche Versionsnummer wird angezeigt?</li><li>Welche Hauptversion steht ganz vorne?</li></ul>
+              <div class="command"><code>Get-Date</code><button data-copy="Get-Date">Kopieren</button></div>
+              <ul class="prompts"><li>Welche Informationen liefert der Befehl?</li><li>Entspricht die Ausgabe deiner aktuellen Uhrzeit?</li></ul>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">B</span>
+            <div>
+              <h2>Aktuelles Verzeichnis</h2>
+              <div class="command"><code>Get-Location</code><button data-copy="Get-Location">Kopieren</button></div>
+              <ul class="prompts"><li>In welchem Verzeichnis befindest du dich?</li><li>Ist der angezeigte Pfad absolut oder relativ?</li></ul>
+              <div class="command"><code>Get-ChildItem</code><button data-copy="Get-ChildItem">Kopieren</button></div>
+              <ul class="prompts"><li>Welche Dateien und Ordner erkennst du?</li><li>Woran unterscheidest du Dateien und Ordner?</li></ul>
+              <div class="command"><code>dir</code><button data-copy="dir">Kopieren</button></div>
+              <ul class="prompts"><li>Vergleiche die Ausgabe mit <code>Get-ChildItem</code>.</li></ul>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">C</span>
+            <div>
+              <h2>Alias und Befehl unterscheiden</h2>
+              <div class="command"><code>Get-Command dir</code><button data-copy="Get-Command dir">Kopieren</button></div>
+              <div class="command"><code>Get-Alias dir</code><button data-copy="Get-Alias dir">Kopieren</button></div>
+              <ul class="prompts"><li>Ist <code>dir</code> ein eigenständiges Programm?</li><li>Auf welchen PowerShell-Befehl verweist der Name?</li></ul>
+              <div class="command"><code>Get-Command Get-Date</code><button data-copy="Get-Command Get-Date">Kopieren</button></div>
+              <ul class="prompts"><li>Welchen <code>CommandType</code> besitzt <code>Get-Date</code>?</li></ul>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">D</span>
+            <div>
+              <h2>Eine Ordnerebene wechseln</h2>
+              <p>Wähle einen vorhandenen Ordner aus der Ausgabe von <code>Get-ChildItem</code>. Ersetze den Beispielnamen durch diesen Ordner.</p>
+              <div class="command"><code>Set-Location "Name-des-Ordners"</code><button data-copy="Set-Location &quot;Name-des-Ordners&quot;">Kopieren</button></div>
+              <div class="command"><code>Get-Location</code><button data-copy="Get-Location">Kopieren</button></div>
+              <div class="command"><code>Set-Location ..</code><button data-copy="Set-Location ..">Kopieren</button></div>
+              <ul class="prompts"><li>Wie verändert sich der aktuelle Pfad?</li><li>Was bewirkt <code>..</code>?</li><li>Wann sind Anführungszeichen um einen Ordnernamen hilfreich?</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="exercise powershell-exercise" data-exercise="7" hidden>
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 7 · Programmdatei und Prozess</p>
+            <h1>Notepad finden und im Terminal öffnen</h1>
+            <p class="intro">
+              Finde den Speicherort von Notepad, starte das Programm direkt aus
+              PowerShell und untersuche den entstandenen Prozess.
+            </p>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">1</span>
+            <div>
+              <h2>Notepad als Befehl untersuchen</h2>
+              <div class="command"><code>Get-Command notepad</code><button data-copy="Get-Command notepad">Kopieren</button></div>
+              <ul class="prompts"><li>Welcher <code>CommandType</code> wird angezeigt?</li><li>Was steht unter <code>Name</code> und <code>Source</code>?</li></ul>
+              <div class="command"><code>Get-Command notepad | Select-Object Name, CommandType, Source</code><button data-copy="Get-Command notepad | Select-Object Name, CommandType, Source">Kopieren</button></div>
+              <div class="command"><code>(Get-Command notepad).Source</code><button data-copy="(Get-Command notepad).Source">Kopieren</button></div>
+              <label class="observation">Gefundener Pfad zu Notepad<input type="text" placeholder="Pfad aus PowerShell hier eintragen" /></label>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">2</span>
+            <div>
+              <h2>Notepad aus PowerShell starten</h2>
+              <div class="command"><code>notepad</code><button data-copy="notepad">Kopieren</button></div>
+              <ul class="prompts"><li>Öffnet sich Notepad?</li><li>Musstest du den vollständigen Pfad eingeben?</li><li>Warum konnte PowerShell das Programm trotzdem finden?</li></ul>
+              <p class="note">Notepad nur öffnen. Du musst keine Datei erstellen oder speichern.</p>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">3</span>
+            <div>
+              <h2>Den laufenden Prozess untersuchen</h2>
+              <p>Lass Notepad geöffnet und wechsle zurück zu PowerShell.</p>
+              <div class="command"><code>Get-Process notepad</code><button data-copy="Get-Process notepad">Kopieren</button></div>
+              <div class="command"><code>Get-Process notepad | Select-Object Name, Id, Path</code><button data-copy="Get-Process notepad | Select-Object Name, Id, Path">Kopieren</button></div>
+              <ul class="prompts"><li>Welche Prozess-ID wird angezeigt?</li><li>Welche Information steht unter <code>Path</code>?</li><li>Vergleiche den Pfad mit dem Ergebnis von <code>Get-Command notepad</code>.</li></ul>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">4</span>
+            <div>
+              <h2>Notepad schließen</h2>
+              <p>Schließe Notepad über das normale <strong>X</strong>. Führe danach beide Befehle erneut aus.</p>
+              <div class="command"><code>Get-Process notepad</code><button data-copy="Get-Process notepad">Kopieren</button></div>
+              <div class="command"><code>Get-Command notepad</code><button data-copy="Get-Command notepad">Kopieren</button></div>
+              <ul class="prompts"><li>Was ist beim Schließen verschwunden?</li><li>Was ist weiterhin vorhanden?</li><li>Was zeigt das über den Unterschied zwischen Programmdatei und Prozess?</li></ul>
+              <p class="note">Falls ein weiteres Notepad-Fenster geöffnet ist, kann weiterhin ein Notepad-Prozess erscheinen.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="exercise powershell-exercise" data-exercise="8" hidden>
+          <div class="exercise-heading">
+            <p class="eyebrow">Übung 8 · Auf dem eigenen Windows-PC</p>
+            <h1>PATH und Prozesse erkunden</h1>
+            <p class="intro">
+              Die Ergebnisse können sich von Rechner zu Rechner unterscheiden.
+              Notiere Auffälligkeiten für die gemeinsame Besprechung.
+            </p>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">A</span>
+            <div>
+              <h2>Externe Programme finden</h2>
+              <div class="command"><code>Get-Command git</code><button data-copy="Get-Command git">Kopieren</button></div>
+              <div class="command"><code>Get-Command python</code><button data-copy="Get-Command python">Kopieren</button></div>
+              <ul class="prompts"><li>Werden beide Programme gefunden?</li><li>Welcher <code>CommandType</code> wird angezeigt?</li><li>Unter welchem vollständigen Pfad liegen sie?</li><li>Welche Meldung erscheint, wenn ein Programm nicht auffindbar ist?</li></ul>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">B</span>
+            <div>
+              <h2>Die PATH-Liste ansehen</h2>
+              <div class="command"><code>$env:PATH -split ";"</code><button data-copy="$env:PATH -split &quot;;&quot;">Kopieren</button></div>
+              <ul class="prompts"><li>Wie viele Ordner stehen ungefähr in der Liste?</li><li>Findest du einen Ordner, der zu Git oder Python gehört?</li><li>Warum durchsucht PowerShell mehrere Ordner?</li></ul>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">C</span>
+            <div>
+              <h2>Laufende Prozesse ansehen</h2>
+              <div class="command"><code>Get-Process</code><button data-copy="Get-Process">Kopieren</button></div>
+              <ul class="prompts"><li>Welche Programme erkennst du?</li><li>Gibt es mehrere Prozesse mit demselben Namen?</li></ul>
+              <div class="command"><code>Get-Process | Select-Object -First 5 Name, Id</code><button data-copy="Get-Process | Select-Object -First 5 Name, Id">Kopieren</button></div>
+              <ul class="prompts"><li>Was bewirkt <code>Select-Object -First 5</code>?</li><li>Besitzt jeder Prozess eine eigene ID?</li></ul>
+            </div>
+          </div>
+
+          <div class="work-block">
+            <span class="work-number">D</span>
+            <div>
+              <h2>Prozesse sortieren</h2>
+              <div class="command multi"><code>Get-Process |
+  Sort-Object CPU -Descending |
+  Select-Object -First 5 Name, Id, CPU</code><button data-copy="Get-Process | Sort-Object CPU -Descending | Select-Object -First 5 Name, Id, CPU">Kopieren</button></div>
+              <ul class="prompts"><li>Wonach wird sortiert?</li><li>Welcher Prozess steht auf deinem Rechner oben?</li><li>Warum können andere Personen ein anderes Ergebnis erhalten?</li></ul>
+              <p class="optional-label">Optional</p>
+              <div class="command"><code>Get-Process | Get-Member</code><button data-copy="Get-Process | Get-Member">Kopieren</button></div>
+              <ul class="prompts"><li>Welche weiteren Eigenschaften entdeckst du?</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Zwischen Übungen wechseln">
+          <button id="previous-exercise">← Vorherige Übung</button>
+          <a href="../">Zur Startseite</a>
+          <button class="primary" id="next-exercise">Nächste Übung →</button>
+        </nav>
+      </main>
+    </div>
+
+    <div id="announcement" class="sr-only" aria-live="polite"></div>
+  </body>
+</html>
