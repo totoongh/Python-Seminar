@@ -1,9 +1,10 @@
 # Computer verstehen · Python-Seminar
 
-Statische Lernseite zu Bits, Maschinencode, Python, Betriebssystem, Terminal, Shell und PowerShell.
+Statische Lernseite mit einem Intro-Kapitel und einem anschließenden Python-Einstieg.
 
-- `praesentation/`: 111 HTML-Folien für den gemeinsamen Unterricht
-- `uebungen/`: acht nummerierte Aufgaben zur Eigenbearbeitung
+- `praesentation/`: Kapitel 1, Intro zu Programmiersprachen und Terminal
+- `uebungen/`: acht nummerierte Intro-Übungen zur Eigenbearbeitung
+- `python/`: Kapitel 2, Installation, Syntax, Konsole, Skripte, VS Code und erste Python-Übungen
 - `plan.md`: inhaltliches Storyboard
 
 Die Übungen enthalten keinen gespeicherten Fortschritt. Die Browseraufgaben werden direkt ausgewertet; die PowerShell-Aufgaben führen sichere, überwiegend lesende Befehle auf dem eigenen Windows-PC aus und werden anschließend gemeinsam besprochen.

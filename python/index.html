@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15191b" />
+    <title>Python · Einstieg · Python-Seminar</title>
+    <link rel="stylesheet" href="styles.css?v=1" />
+    <script src="script.js?v=1" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a>
+      <span class="edition">03 / PYTHON · EINSTIEG</span>
+      <a class="intro-link" href="../praesentation/">Intro ↗</a>
+    </header>
+
+    <div class="page-shell">
+      <nav class="chapter-nav" aria-label="Python-Kapitel">
+        <a href="#1" data-nav="1"><span>01</span> Installation</a>
+        <a href="#2" data-nav="2"><span>02</span> PATH</a>
+        <a href="#3" data-nav="3"><span>03</span> Syntax</a>
+        <a href="#4" data-nav="4"><span>04</span> Konsole</a>
+        <a href="#5" data-nav="5"><span>05</span> Skripte</a>
+        <a href="#6" data-nav="6"><span>06</span> VS Code</a>
+        <a href="#7" data-nav="7"><span>07</span> input & if</a>
+        <a href="#8" data-nav="8"><span>08</span> Übungen</a>
+      </nav>
+
+      <main>
+        <section class="chapter-section" data-section="1">
+          <p class="eyebrow">Python · Einstieg</p>
+          <h1>Python installieren und Versionen verstehen</h1>
+          <p class="lead">
+            Python ist sowohl der Name einer Programmiersprache als auch eines
+            Programms auf deinem Rechner. Dieses Programm liest und startet
+            später unsere <code>.py</code>-Dateien.
+          </p>
+
+          <div class="two-cards">
+            <article class="info-card">
+              <span class="card-label">Programmiersprache</span>
+              <h2>Regeln zum Schreiben</h2>
+              <p>
+                Python legt fest, wie wir Anweisungen, Berechnungen und
+                Bedingungen formulieren.
+              </p>
+            </article>
+            <article class="info-card accent-card">
+              <span class="card-label">Python-Programm</span>
+              <h2>Programm zum Ausführen</h2>
+              <p>
+                Der installierte Python-Interpreter liest unseren Quellcode und
+                führt die benötigten Maschinenanweisungen aus.
+              </p>
+            </article>
+          </div>
+
+          <div class="callout">
+            <strong>Warum gibt es verschiedene Versionen?</strong>
+            Python wird weiterentwickelt: Neue Möglichkeiten kommen hinzu,
+            Fehler werden behoben und ältere Schreibweisen können irgendwann
+            wegfallen. Im Kurs verwenden alle möglichst dieselbe von der IT
+            freigegebene Python-3-Version.
+          </div>
+
+          <div class="steps">
+            <article><span>1</span><p>Python über die vereinbarte Quelle oder das Softwarecenter der Schule installieren.</p></article>
+            <article><span>2</span><p>Falls der Installer danach fragt: Python zum <code>PATH</code> hinzufügen.</p></article>
+            <article><span>3</span><p>Ein neues PowerShell-Fenster öffnen und die Installation prüfen.</p></article>
+          </div>
+
+          <div class="command"><code>python --version</code><button data-copy="python --version">Kopieren</button></div>
+          <div class="command"><code>py --version</code><button data-copy="py --version">Kopieren</button></div>
+          <p class="hint"><code>py</code> ist auf vielen Windows-Rechnern ein zusätzlicher Startname für Python. Falls einer der beiden Befehle nicht funktioniert, notiere die Meldung.</p>
+        </section>
+
+        <section class="chapter-section" data-section="2" hidden>
+          <p class="eyebrow">Python · Installation prüfen</p>
+          <h1>Wie findet PowerShell Python?</h1>
+          <p class="lead">
+            Wenn du <code>python</code> eingibst, sucht PowerShell nach einer
+            passenden Programmdatei. Die Liste der möglichen Ordner heißt
+            <code>PATH</code>.
+          </p>
+
+          <div class="path-story">
+            <div>Du tippst<br /><code>python</code></div>
+            <span>→</span>
+            <div>PowerShell durchsucht<br /><code>PATH</code></div>
+            <span>→</span>
+            <div><code>python.exe</code><br />wird gefunden</div>
+            <span>→</span>
+            <div>Python startet<br />als Prozess</div>
+          </div>
+
+          <div class="command"><code>Get-Command python</code><button data-copy="Get-Command python">Kopieren</button></div>
+          <ul class="prompts">
+            <li>Wird Python gefunden?</li>
+            <li>Welcher <code>CommandType</code> wird angezeigt?</li>
+            <li>Was steht unter <code>Source</code>?</li>
+          </ul>
+
+          <div class="command"><code>$env:PATH -split ";"</code><button data-copy="$env:PATH -split &quot;;&quot;">Kopieren</button></div>
+          <p class="hint">Wenn <code>python</code> nicht gefunden wird, hilft es oft schon, PowerShell nach der Installation zu schließen und neu zu öffnen. Bleibt die Meldung bestehen, wird der fehlende PATH-Eintrag gemeinsam untersucht.</p>
+        </section>
+
+        <section class="chapter-section" data-section="3" hidden>
+          <p class="eyebrow">Python · Schreibregeln</p>
+          <h1>Syntax: Wie Python geschrieben werden muss</h1>
+          <p class="lead">
+            Syntax sind die Schreibregeln einer Sprache. Python kann nur
+            Anweisungen ausführen, die zu diesen Regeln passen.
+          </p>
+
+          <div class="syntax-grid">
+            <article class="code-card good"><span>gültig</span><pre>print("Hallo")</pre></article>
+            <article class="code-card bad"><span>ungültig</span><pre>print("Hallo)</pre></article>
+            <article class="code-card good"><span>gültig</span><pre>name = "Mia"
+print(name)</pre></article>
+            <article class="code-card bad"><span>ungültig</span><pre>Print("Hallo")</pre></article>
+          </div>
+
+          <div class="callout">
+            <strong>Fehlermeldungen sind Hinweise.</strong>
+            Lies zuerst die letzte Zeile der Meldung. Sie nennt meistens die
+            Fehlerart und häufig auch die betroffene Zeile.
+          </div>
+
+          <fieldset class="mini-quiz" data-answer="b" data-explanation="Python unterscheidet Groß- und Kleinschreibung. Die eingebaute Funktion heißt genau print.">
+            <legend>Welche Zeile kann Python ausführen?</legend>
+            <label><input type="radio" name="syntax" value="a" /> <code>Print("Hallo")</code></label>
+            <label><input type="radio" name="syntax" value="b" /> <code>print("Hallo")</code></label>
+            <label><input type="radio" name="syntax" value="c" /> <code>print Hallo</code></label>
+            <div class="actions"><button class="primary check-mini-quiz">Antwort prüfen</button></div>
+            <p class="question-result" aria-live="polite"></p>
+          </fieldset>
+        </section>
+
+        <section class="chapter-section" data-section="4" hidden>
+          <p class="eyebrow">Python · Direkt ausprobieren</p>
+          <h1>Simple Ausdrücke in der Konsole</h1>
+          <p class="lead">
+            Starte Python in PowerShell. Der Prompt <code>&gt;&gt;&gt;</code>
+            bedeutet: Python wartet auf eine Anweisung von dir.
+          </p>
+
+          <div class="command"><code>python</code><button data-copy="python">Kopieren</button></div>
+          <p class="hint">Falls das auf deinem Rechner nicht funktioniert, probiere <code>py</code>. Beenden kannst du die Python-Konsole mit <code>exit()</code>.</p>
+
+          <div class="experiment-grid">
+            <article><span>Rechnen</span><code>2 + 3</code><code>7 / 2</code><code>7 // 2</code><code>7 % 2</code></article>
+            <article><span>Text</span><code>"Hallo"</code><code>"Hallo" + " Welt"</code><code>"Hallo" * 3</code></article>
+            <article><span>Ausgabe</span><code>print(5 + 3)</code><code>print("5 + 3")</code><code>type(5)</code></article>
+          </div>
+
+          <div class="callout">
+            <strong>Arbeitsauftrag:</strong> Probiere jeden Ausdruck aus.
+            Schreibe erst eine Vermutung auf und danach, was tatsächlich
+            erscheint. Nutze dafür im Editor eine Datei namens
+            <code>experimente.md</code> oder <code>experimente.txt</code>.
+          </div>
+        </section>
+
+        <section class="chapter-section" data-section="5" hidden>
+          <p class="eyebrow">Python · Quellcode speichern</p>
+          <h1>Python-Skripte sind <code>.py</code>-Dateien</h1>
+          <p class="lead">
+            In der Konsole gibst du eine Anweisung nach der anderen ein. Ein
+            Skript speichert mehrere Anweisungen als Quellcode in einer Datei.
+          </p>
+
+          <div class="two-cards">
+            <article class="info-card"><span class="card-label">Konsole</span><h2>Direkt ausprobieren</h2><pre>&gt;&gt;&gt; 2 + 3
+5</pre></article>
+            <article class="info-card accent-card"><span class="card-label">Skript</span><h2>Später erneut starten</h2><pre>print("Hallo")
+print(2 + 3)</pre></article>
+          </div>
+
+          <div class="script-card">
+            <p>Lege eine Datei <code>hallo.py</code> an:</p>
+            <pre>print("Hallo aus einer Datei")
+print(5 + 3)</pre>
+            <p>Starte sie im Terminal aus dem gleichen Ordner:</p>
+            <div class="command"><code>python hallo.py</code><button data-copy="python hallo.py">Kopieren</button></div>
+          </div>
+
+          <p class="hint">Eine <code>.py</code>-Datei ist Plain Text: Sie enthält nur Zeichen. Python deutet diese Zeichen nach den Syntaxregeln als Programm.</p>
+        </section>
+
+        <section class="chapter-section" data-section="6" hidden>
+          <p class="eyebrow">Python · Entwicklungsumgebung</p>
+          <h1>VS Code einrichten</h1>
+          <p class="lead">
+            IDE bedeutet Integrated Development Environment, auf Deutsch
+            Entwicklungsumgebung. Visual Studio Code bündelt Editor, Terminal,
+            Erweiterungen und später Debugging an einem Ort.
+          </p>
+
+          <div class="setup-list">
+            <article><span>1</span><div><h2>VS Code öffnen</h2><p>Den Kursordner als Ordner öffnen, nicht nur eine einzelne Datei.</p></div></article>
+            <article><span>2</span><div><h2>Python-Erweiterung installieren</h2><p>In den Erweiterungen nach <strong>Python</strong> suchen und die Microsoft-Erweiterung installieren.</p></div></article>
+            <article><span>3</span><div><h2>Interpreter auswählen</h2><p>Unten in VS Code die passende installierte Python-Version auswählen.</p></div></article>
+            <article><span>4</span><div><h2>Terminal öffnen</h2><p>In VS Code ein neues Terminal öffnen und <code>python --version</code> ausführen.</p></div></article>
+            <article><span>5</span><div><h2>Erste Datei starten</h2><p><code>hallo.py</code> anlegen und mit <code>python hallo.py</code> ausführen.</p></div></article>
+          </div>
+
+          <div class="proxy-card">
+            <h2>Falls die Schule einen Proxy verwendet</h2>
+            <p>Vor der Installation der Erweiterung braucht ihr von der IT die Proxy-Adresse, den Port, mögliche Anmeldedaten und gegebenenfalls ein Zertifikat. Diese Angaben werden zentral in VS Code eingerichtet; nicht raten und keine Sicherheitsprüfung abschalten.</p>
+            <pre>"http.proxy": "http://proxy.beispiel.de:8080"</pre>
+            <p class="hint">Die Adresse ist nur ein Muster. Die echte Proxy-Adresse muss von eurer IT kommen.</p>
+          </div>
+        </section>
+
+        <section class="chapter-section" data-section="7" hidden>
+          <p class="eyebrow">Python · Programme reagieren lassen</p>
+          <h1>Eingaben und <code>if</code>-Anweisungen</h1>
+          <p class="lead">
+            Mit <code>input()</code> lesen wir Text von der Tastatur. Mit
+            <code>if</code> entscheidet ein Programm, welche Anweisung unter
+            einer Bedingung ausgeführt wird.
+          </p>
+
+          <div class="script-card">
+            <p>Name einlesen und ausgeben:</p>
+            <pre>name = input("Wie heißt du? ")
+print("Hallo", name)</pre>
+          </div>
+
+          <div class="script-card">
+            <p>Alter als Zahl behandeln und eine Bedingung prüfen:</p>
+            <pre>alter = int(input("Wie alt bist du? "))
+
+if alter >= 18:
+    print("Du bist volljährig.")
+else:
+    print("Du bist minderjährig.")</pre>
+          </div>
+
+          <div class="callout">
+            <strong>Wichtig:</strong> Die Einrückung gehört zur Syntax. Die
+            eingerückte Zeile gehört zur Bedingung direkt darüber.
+          </div>
+
+          <div class="comparison-grid"><code>alter >= 18</code><span>größer oder gleich</span><code>alter == 18</code><span>genau gleich</span><code>alter &lt; 18</code><span>kleiner als</span></div>
+        </section>
+
+        <section class="chapter-section" data-section="8" hidden>
+          <p class="eyebrow">Python · Eigenbearbeitung</p>
+          <h1>Erste Python-Übungen</h1>
+          <p class="lead">
+            Bearbeite die Aufgaben in VS Code. Starte jede Datei danach über
+            das Terminal. Schreibe vor dem Start auf, was du erwartest.
+          </p>
+
+          <article class="task-card">
+            <span>Übung A · Konsole</span>
+            <h2>Ausgabe vorhersagen</h2>
+            <p>Erstelle <code>experimente.py</code>. Ergänze vor jeder Zeile einen Kommentar mit deiner Vermutung. Starte die Datei und ergänze danach die tatsächliche Ausgabe.</p>
+            <pre># Vermutung:
+print(3 + 4)
+
+# Vermutung:
+print("3" + "4")
+
+# Vermutung:
+print(10 // 4)
+
+# Vermutung:
+print(10 % 4)</pre>
+          </article>
+
+          <article class="task-card">
+            <span>Übung B · input</span>
+            <h2>Persönliche Begrüßung</h2>
+            <p>Erstelle <code>begruessung.py</code>. Frage nach einem Namen und gib eine Begrüßung aus, die diesen Namen enthält.</p>
+          </article>
+
+          <article class="task-card">
+            <span>Übung C · if</span>
+            <h2>Altersprüfung</h2>
+            <p>Erstelle <code>alter.py</code>. Lies ein Alter ein und gib abhängig von der Eingabe „volljährig“ oder „minderjährig“ aus.</p>
+          </article>
+
+          <article class="task-card">
+            <span>Übung D · if und Rest</span>
+            <h2>Gerade oder ungerade?</h2>
+            <p>Erstelle <code>gerade.py</code>. Lies eine ganze Zahl ein. Nutze <code>% 2</code>, um zu entscheiden, ob die Zahl gerade oder ungerade ist.</p>
+          </article>
+
+          <article class="task-card">
+            <span>Übung E · Zusatz</span>
+            <h2>Notenprüfung</h2>
+            <p>Frage nach einer Note. Bei den Noten 1 bis 4 soll „bestanden“, bei 5 oder 6 „nicht bestanden“ erscheinen.</p>
+          </article>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Zwischen Python-Abschnitten wechseln">
+          <button id="previous-section">← Vorheriger Abschnitt</button>
+          <a href="../">Zur Kapitelübersicht</a>
+          <button class="primary" id="next-section">Nächster Abschnitt →</button>
+        </nav>
+      </main>
+    </div>
+    <div id="announcement" class="sr-only" aria-live="polite"></div>
+  </body>
+</html>
