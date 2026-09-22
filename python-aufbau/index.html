@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15191b" />
+    <title>Python · Aufbau · Python-Seminar</title>
+    <link rel="stylesheet" href="../python/styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=1" />
+    <script src="../python/script.js?v=2" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a>
+      <span class="edition">04 / PYTHON · AUFBAU</span>
+      <div class="topbar-actions">
+        <button id="view-toggle" type="button" aria-pressed="false" title="Zur Präsentationsansicht wechseln">
+          <span>Switch View</span><small>Präsentation</small>
+        </button>
+        <a class="intro-link" href="../python/">Einstieg ↗</a>
+      </div>
+    </header>
+
+    <div class="page-shell">
+      <nav class="chapter-nav" aria-label="Python-Aufbaukapitel">
+        <a href="#1" data-nav="1"><span>01</span> Datentypen</a>
+        <a href="#2" data-nav="2"><span>02</span> elif &amp; else</a>
+        <a href="#3" data-nav="3"><span>03</span> Bedingungen</a>
+        <a href="#4" data-nav="4"><span>04</span> while</a>
+        <a href="#5" data-nav="5"><span>05</span> Listen</a>
+        <a href="#6" data-nav="6"><span>06</span> for</a>
+        <a href="#7" data-nav="7"><span>07</span> Training</a>
+      </nav>
+
+      <main>
+        <section class="chapter-section" data-section="1">
+          <p class="eyebrow">Python · Werte verstehen</p>
+          <h1>Datentypen und Umwandlungen</h1>
+          <p class="lead">Python muss wissen, ob ein Wert Text, eine Zahl oder ein Wahrheitswert ist. Der Datentyp legt fest, was Python damit tun kann.</p>
+
+          <div class="type-grid">
+            <article><code>str</code><strong>Text</strong><span><code>"12"</code>, <code>"Hallo"</code></span></article>
+            <article><code>int</code><strong>Ganze Zahl</strong><span><code>12</code>, <code>-4</code></span></article>
+            <article><code>float</code><strong>Kommazahl</strong><span><code>12.5</code>, <code>0.75</code></span></article>
+            <article><code>bool</code><strong>Wahrheitswert</strong><span><code>True</code>, <code>False</code></span></article>
+          </div>
+
+          <div class="syntax-grid">
+            <article class="code-card bad"><span>Text wird aneinandergehängt</span><pre>zahl = input("Zahl: ")
+print(zahl + zahl)
+
+# Eingabe 5 → Ausgabe 55</pre></article>
+            <article class="code-card good"><span>Text wird zur Zahl</span><pre>zahl = int(input("Zahl: "))
+print(zahl + zahl)
+
+# Eingabe 5 → Ausgabe 10</pre></article>
+          </div>
+
+          <div class="conversion-flow">
+            <div><code>input()</code><span>liefert immer Text</span></div><b>→</b>
+            <div><code>int(text)</code><span>ganze Zahl</span></div><b>oder</b>
+            <div><code>float(text)</code><span>Kommazahl</span></div>
+          </div>
+
+          <div class="script-card">
+            <p>Datentypen sichtbar machen:</p>
+            <pre>alter = 17
+preis = 2.50
+name = "Mika"
+angemeldet = True
+
+print(type(alter))
+print(type(preis))
+print(type(name))
+print(type(angemeldet))</pre>
+          </div>
+
+          <div class="callout">
+            <strong>Umwandlungen können scheitern.</strong> Bei <code>int("fünf")</code> weiß Python nicht, welche Zahl gemeint ist. Probiere bewusst gültige und ungültige Eingaben und lies die letzte Zeile der Fehlermeldung.
+          </div>
+
+          <article class="task-card direct-exercise">
+            <span>Datentypen · Übung 1 von 2</span>
+            <h2>Datentyp-Detektiv</h2>
+            <p>Speichere das Programm als <code>datentypen.py</code>. Sage jede Ausgabe voraus, starte das Programm und ergänze anschließend drei eigene Werte.</p>
+            <pre>print(type("25"))
+print(type(25))
+print(type(25.0))
+print("5" + "3")
+print(5 + 3)
+print(float("5.3"))</pre>
+            <ul class="check-list"><li>Notiere Wert und Datentyp jeder Ausgabe.</li><li>Erkläre den Unterschied zwischen <code>"8"</code> und <code>8</code>.</li></ul>
+          </article>
+
+          <article class="task-card direct-exercise">
+            <span>Datentypen · Übung 2 von 2</span>
+            <h2>Kinokasse</h2>
+            <p>Frage nach der Anzahl der Tickets und dem Preis pro Ticket. Berechne den Gesamtpreis und gib einen vollständigen Satz aus.</p>
+            <pre>anzahl = int(input("Wie viele Tickets? "))
+preis = float(input("Preis pro Ticket: "))
+
+# Berechne hier den Gesamtpreis.
+# Gib Anzahl und Gesamtpreis aus.</pre>
+            <ul class="check-list"><li>Teste mit 3 Tickets zu 8.50 Euro.</li><li>Teste, was bei der Eingabe <code>acht</code> passiert.</li></ul>
+          </article>
+        </section>
+
+        <section class="chapter-section" data-section="2" hidden>
+          <p class="eyebrow">Python · Mehrere Wege</p>
+          <h1>Entscheidungen mit <code>elif</code> und <code>else</code></h1>
+          <p class="lead"><code>if</code> prüft den ersten Fall, <code>elif</code> weitere Fälle und <code>else</code> fängt alles Übrige auf. Genau ein Zweig wird ausgeführt.</p>
+
+          <div class="decision-flow">
+            <div><code>if</code><span>Trifft der erste Fall zu?</span></div><b>sonst →</b>
+            <div><code>elif</code><span>Trifft dieser Fall zu?</span></div><b>sonst →</b>
+            <div><code>else</code><span>Alle übrigen Fälle</span></div>
+          </div>
+
+          <div class="script-card">
+            <p>Mehrere Temperaturbereiche unterscheiden:</p>
+            <pre>temperatur = int(input("Temperatur: "))
+
+if temperatur < 0:
+    print("Frost")
+elif temperatur < 20:
+    print("Kühl")
+else:
+    print("Warm")</pre>
+          </div>
+
+          <div class="callout">
+            <strong>Python prüft von oben nach unten.</strong> Sobald eine Bedingung passt, überspringt Python alle folgenden Zweige. Deshalb muss die Reihenfolge zu den Wertebereichen passen.
+          </div>
+
+          <div class="syntax-grid">
+            <article class="code-card bad"><span>Reihenfolge verdeckt Fälle</span><pre>if punkte >= 50:
+    print("Bestanden")
+elif punkte >= 90:
+    print("Sehr gut")</pre></article>
+            <article class="code-card good"><span>Spezieller Fall zuerst</span><pre>if punkte >= 90:
+    print("Sehr gut")
+elif punkte >= 50:
+    print("Bestanden")
+else:
+    print("Nicht bestanden")</pre></article>
+          </div>
+
+          <article class="task-card direct-exercise">
+            <span>elif &amp; else · Übung 1 von 2</span>
+            <h2>Versandkosten berechnen</h2>
+            <p>Frage nach dem Bestellwert. Unter 25 Euro kostet der Versand 5 Euro, von 25 bis unter 50 Euro kostet er 2 Euro, ab 50 Euro ist er kostenlos.</p>
+            <ul class="check-list"><li>Gib Versandkosten und Gesamtsumme aus.</li><li>Teste 10, 25, 49 und 50 Euro.</li><li>Überlege, warum die Grenzwerte wichtig sind.</li></ul>
+          </article>
+
+          <article class="task-card direct-exercise">
+            <span>elif &amp; else · Übung 2 von 2</span>
+            <h2>Punkte auswerten</h2>
+            <p>Ordne eine Punktzahl ein: 0–49 „noch nicht bestanden“, 50–79 „bestanden“, 80–100 „sehr gut“. Werte unter 0 oder über 100 sollen „ungültige Punktzahl“ ergeben.</p>
+            <ul class="check-list"><li>Plane zuerst die Reihenfolge der Bedingungen.</li><li>Teste mindestens −1, 0, 49, 50, 80, 100 und 101.</li></ul>
+          </article>
+        </section>
+
+        <section class="chapter-section" data-section="3" hidden>
+          <p class="eyebrow">Python · Mehrere Prüfungen</p>
+          <h1>Bedingungen miteinander verbinden</h1>
+          <p class="lead">Mit <code>and</code>, <code>or</code> und <code>not</code> kann eine Entscheidung von mehreren Voraussetzungen abhängen.</p>
+
+          <div class="operator-grid">
+            <article><code>and</code><strong>Beides muss stimmen</strong><p>Alter passt <em>und</em> Ticket ist vorhanden.</p></article>
+            <article><code>or</code><strong>Mindestens eins reicht</strong><p>Passwort <em>oder</em> Ersatzcode stimmt.</p></article>
+            <article><code>not</code><strong>Wahrheitswert umkehren</strong><p><em>Nicht</em> gesperrt bedeutet: Zugang möglich.</p></article>
+          </div>
+
+          <div class="script-card">
+            <p>Mehrere Voraussetzungen gleichzeitig prüfen:</p>
+            <pre>alter = int(input("Alter: "))
+ticket = input("Ticket vorhanden? ")
+
+if alter >= 18 and ticket == "ja":
+    print("Einlass erlaubt")
+else:
+    print("Kein Einlass")</pre>
+          </div>
+
+          <div class="two-cards">
+            <article class="info-card"><span class="card-label">Wertebereich</span><h2>Zwischen 10 und 20</h2><pre>if zahl >= 10 and zahl <= 20:
+    print("Im Bereich")</pre></article>
+            <article class="info-card accent-card"><span class="card-label">Python-Kurzform</span><h2>Dieselbe Prüfung</h2><pre>if 10 <= zahl <= 20:
+    print("Im Bereich")</pre></article>
+          </div>
+
+          <article class="task-card direct-exercise">
+            <span>Bedingungen · Übung 1 von 2</span>
+            <h2>Serverzugang</h2>
+            <p>Frage nach Rolle, Sicherheitscode und Sperrstatus. Zugang gibt es nur für die Rolle <code>admin</code> mit Code <code>4711</code>, wenn das Konto nicht gesperrt ist.</p>
+            <ul class="check-list"><li>Verwende mindestens einmal <code>and</code> und einmal <code>not</code>.</li><li>Speichere den Sperrstatus zunächst als <code>False</code> oder <code>True</code>.</li><li>Teste vier unterschiedliche Kombinationen.</li></ul>
+          </article>
+
+          <article class="task-card direct-exercise">
+            <span>Bedingungen · Übung 2 von 2</span>
+            <h2>Freizeitplaner</h2>
+            <p>Frage nach Wetter und Temperatur. Bei Sonne und mindestens 18 Grad wird ein Ausflug empfohlen. Bei Regen oder weniger als 8 Grad wird ein Museumsbesuch empfohlen. In allen anderen Fällen gibt es einen Spaziergang.</p>
+            <ul class="check-list"><li>Verwende <code>and</code>, <code>or</code> und <code>elif</code>.</li><li>Teste jede der drei Empfehlungen.</li></ul>
+          </article>
+        </section>
+
+        <section class="chapter-section" data-section="4" hidden>
+          <p class="eyebrow">Python · Wiederholen</p>
+          <h1><code>while</code>-Schleifen</h1>
+          <p class="lead">Eine <code>while</code>-Schleife wiederholt ihren eingerückten Block, solange ihre Bedingung <code>True</code> ergibt.</p>
+
+          <div class="loop-model">
+            <div><strong>1</strong><span>Bedingung prüfen</span></div><b>→</b>
+            <div><strong>2</strong><span>Block ausführen</span></div><b>→</b>
+            <div><strong>3</strong><span>Wert verändern</span></div><b>↺</b>
+          </div>
+
+          <div class="script-card">
+            <p>Eine Eingabe wiederholen, bis sie gültig ist:</p>
+            <pre>antwort = input("links oder rechts? ")
+
+while antwort != "links" and antwort != "rechts":
+    print("Diese Antwort kenne ich nicht.")
+    antwort = input("Bitte links oder rechts: ")
+
+print("Gewählt:", antwort)</pre>
+          </div>
+
+          <div class="syntax-grid">
+            <article class="code-card good"><span>Zähler verändert sich</span><pre>zahl = 1
+
+while zahl <= 5:
+    print(zahl)
+    zahl = zahl + 1</pre></article>
+            <article class="code-card bad"><span>Endlosschleife</span><pre>zahl = 1
+
+while zahl <= 5:
+    print(zahl)
+
+# zahl bleibt immer 1</pre></article>
+          </div>
+
+          <div class="callout"><strong>Vor jedem Start fragen:</strong> Was muss sich im Schleifenblock verändern, damit die Bedingung irgendwann <code>False</code> wird?</div>
+
+          <article class="task-card direct-exercise">
+            <span>while · Übung 1 von 2</span>
+            <h2>PIN mit drei Versuchen</h2>
+            <p>Frage nach der PIN <code>2468</code>. Die Eingabe darf höchstens dreimal versucht werden. Melde nach jedem falschen Versuch, wie viele Versuche noch übrig sind.</p>
+            <ul class="check-list"><li>Verwende eine Variable für die Anzahl der Versuche.</li><li>Die Schleife läuft nur, solange die PIN falsch und noch ein Versuch vorhanden ist.</li><li>Gib am Ende „Zugang“ oder „Karte gesperrt“ aus.</li></ul>
+          </article>
+
+          <article class="task-card direct-exercise">
+            <span>while · Übung 2 von 2</span>
+            <h2>Sparziel erreichen</h2>
+            <p>Frage nach einem Sparziel. Danach werden nacheinander eingezahlte Beträge abgefragt und addiert, bis das Ziel erreicht ist.</p>
+            <ul class="check-list"><li>Zeige nach jeder Einzahlung den aktuellen Gesamtbetrag.</li><li>Gib am Ende aus, um wie viel das Ziel erreicht oder überschritten wurde.</li><li>Teste auch mehrere kleine Einzahlungen.</li></ul>
+          </article>
+        </section>
+
+        <section class="chapter-section" data-section="5" hidden>
+          <p class="eyebrow">Python · Mehrere Werte</p>
+          <h1>Listen</h1>
+          <p class="lead">Eine Liste speichert mehrere Werte in einer festen Reihenfolge. Jeder Wert besitzt eine Position, den sogenannten Index.</p>
+
+          <div class="list-visual">
+            <span>Index</span><b>0</b><b>1</b><b>2</b>
+            <span>Wert</span><code>"Hammer"</code><code>"Zange"</code><code>"Säge"</code>
+          </div>
+
+          <div class="script-card">
+            <p>Liste anlegen, lesen und verändern:</p>
+            <pre>werkzeuge = ["Hammer", "Zange", "Säge"]
+
+print(werkzeuge[0])
+print(len(werkzeuge))
+
+werkzeuge.append("Bohrer")
+werkzeuge[1] = "Kombizange"
+
+print(werkzeuge)</pre>
+          </div>
+
+          <div class="operator-grid list-operations">
+            <article><code>liste[0]</code><strong>Wert lesen</strong><p>Der erste Index ist immer 0.</p></article>
+            <article><code>append(wert)</code><strong>Wert anhängen</strong><p>Der neue Wert landet am Ende.</p></article>
+            <article><code>len(liste)</code><strong>Länge ermitteln</strong><p>Anzahl der gespeicherten Werte.</p></article>
+          </div>
+
+          <div class="callout"><strong>Typischer Fehler:</strong> Eine Liste mit drei Elementen besitzt die Indizes 0, 1 und 2. Der Zugriff auf Index 3 führt zu einem <code>IndexError</code>.</div>
+
+          <article class="task-card direct-exercise">
+            <span>Listen · Übung 1 von 2</span>
+            <h2>Packliste erweitern</h2>
+            <p>Beginne mit <code>packliste = ["Laptop", "Ladekabel"]</code>. Frage dreimal nach einem weiteren Gegenstand und hänge jede Eingabe an die Liste an.</p>
+            <ul class="check-list"><li>Gib anschließend die vollständige Liste aus.</li><li>Gib die Anzahl der Gegenstände aus.</li><li>Zeige den ersten und den letzten Gegenstand mit ihrem Index.</li></ul>
+          </article>
+
+          <article class="task-card direct-exercise">
+            <span>Listen · Übung 2 von 2</span>
+            <h2>Schichtplan korrigieren</h2>
+            <p>Gegeben ist <code>team = ["Aylin", "Ben", "Cem", "Dana"]</code>. Ben fällt aus und wird durch Eli ersetzt. Danach kommt Farah als fünfte Person hinzu.</p>
+            <ul class="check-list"><li>Ändere den passenden Listeneintrag.</li><li>Füge Farah mit <code>append()</code> hinzu.</li><li>Gib die neue Teamgröße und die fertige Liste aus.</li></ul>
+          </article>
+        </section>
+
+        <section class="chapter-section" data-section="6" hidden>
+          <p class="eyebrow">Python · Listen verarbeiten</p>
+          <h1><code>for</code>-Schleifen</h1>
+          <p class="lead">Eine <code>for</code>-Schleife nimmt nacheinander jeden Wert aus einer Liste. Mit <code>range()</code> kann sie auch eine festgelegte Zahlenfolge durchlaufen.</p>
+
+          <div class="syntax-grid">
+            <article class="code-card good"><span>Werte einer Liste</span><pre>namen = ["Aylin", "Ben", "Cem"]
+
+for name in namen:
+    print("Hallo", name)</pre></article>
+            <article class="code-card good"><span>Zahlen mit range</span><pre>for zahl in range(1, 6):
+    print(zahl)
+
+# 1, 2, 3, 4, 5</pre></article>
+          </div>
+
+          <div class="loop-model for-model">
+            <div><strong>Liste</strong><span><code>["A", "B", "C"]</code></span></div><b>→</b>
+            <div><strong>Aktueller Wert</strong><span><code>wert</code></span></div><b>→</b>
+            <div><strong>Block</strong><span>einmal pro Wert</span></div>
+          </div>
+
+          <div class="script-card">
+            <p>Werte während der Schleife zusammenzählen:</p>
+            <pre>preise = [4, 7, 3]
+gesamt = 0
+
+for preis in preise:
+    gesamt = gesamt + preis
+
+print("Gesamt:", gesamt)</pre>
+          </div>
+
+          <div class="callout"><strong><code>while</code> oder <code>for</code>?</strong> Verwende <code>for</code>, wenn alle Werte einer Sammlung oder eine feste Zahlenfolge verarbeitet werden. <code>while</code> passt, wenn vorher nicht feststeht, wie oft wiederholt werden muss.</div>
+
+          <article class="task-card direct-exercise">
+            <span>for · Übung 1 von 2</span>
+            <h2>Persönliche Begrüßungen</h2>
+            <p>Lege eine Liste mit mindestens fünf Namen an. Gib für jede Person eine eigene Begrüßungszeile aus.</p>
+            <ul class="check-list"><li>Verwende genau eine <code>for</code>-Schleife.</li><li>Gib nach der Schleife die Anzahl der begrüßten Personen aus.</li><li>Ergänze einen Namen und starte erneut.</li></ul>
+          </article>
+
+          <article class="task-card direct-exercise">
+            <span>for · Übung 2 von 2</span>
+            <h2>Wochenkosten auswerten</h2>
+            <p>Speichere fünf Tagesausgaben in einer Liste. Gib jede Ausgabe aus und berechne während der Schleife die Gesamtsumme.</p>
+            <ul class="check-list"><li>Gib nach der Schleife die Summe aus.</li><li>Zähle zusätzlich, wie viele Ausgaben mindestens 20 Euro betragen.</li><li>Verwende dafür <code>if</code> innerhalb der Schleife.</li></ul>
+          </article>
+        </section>
+
+        <section class="chapter-section" data-section="7" hidden>
+          <p class="eyebrow">Python · Transfertraining</p>
+          <h1>Von kleinen Übungen zu eigenen Programmen</h1>
+          <p class="lead">Bearbeite die Aufgaben der Reihe nach. Jede Stufe verbindet mehr Konzepte. Schreibe vor jedem Start Testfälle auf und prüfe besonders die Grenzwerte.</p>
+
+          <div class="level-banner level-one"><span>Stufe 1</span><strong>Ein Konzept sicher anwenden</strong></div>
+
+          <article class="task-card challenge-card">
+            <span>Training 01 · leicht</span><h2>Profilkarte</h2>
+            <p>Frage Name, Alter und Körpergröße in Metern ab. Gib anschließend eine übersichtliche Profilkarte aus. Alter soll <code>int</code>, Körpergröße <code>float</code> sein. Zeige mit <code>type()</code>, dass die Umwandlungen funktioniert haben.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 02 · leicht</span><h2>Ticketberater</h2>
+            <p>Unter 6 Jahren ist der Eintritt kostenlos, von 6 bis 17 ermäßigt, ab 18 regulär. Ab 65 gilt wieder der ermäßigte Preis. Frage das Alter ab und gib die richtige Kategorie aus.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 03 · leicht</span><h2>Gerade Zahlen</h2>
+            <p>Gib mit <code>for</code> und <code>range()</code> alle Zahlen von 1 bis 30 aus, die gerade sind. Der Operator <code>%</code> liefert den Rest einer Division: <code>zahl % 2 == 0</code>.</p>
+          </article>
+
+          <div class="level-banner level-two"><span>Stufe 2</span><strong>Mehrere Grundlagen verbinden</strong></div>
+
+          <article class="task-card challenge-card">
+            <span>Training 04 · mittel</span><h2>Gültiges Alter erzwingen</h2>
+            <p>Frage ein Alter ab. Solange es kleiner als 0 oder größer als 120 ist, wird erneut gefragt. Ordne das gültige Alter danach mit <code>if</code>, <code>elif</code> und <code>else</code> einer Altersgruppe zu.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 05 · mittel</span><h2>Dynamische Einkaufsliste</h2>
+            <p>Beginne mit einer leeren Liste. Frage in einer <code>while</code>-Schleife nach Produkten. Bei <code>fertig</code> endet die Eingabe. Gib danach mit <code>for</code> jedes Produkt in einer eigenen Zeile und die Anzahl aus.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 06 · mittel</span><h2>Temperaturen untersuchen</h2>
+            <p>Speichere sieben Temperaturen in einer Liste. Gib für jeden Wert „kalt“, „mild“ oder „warm“ aus. Zähle zusätzlich, an wie vielen Tagen Frost herrschte.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 07 · mittel</span><h2>Vielfache finden</h2>
+            <p>Frage zwei ganze Zahlen ab. Gib von 1 bis 100 alle Zahlen aus, die durch mindestens eine der beiden Zahlen teilbar sind. Markiere Werte, die durch beide teilbar sind, gesondert.</p>
+          </article>
+
+          <div class="level-banner level-three"><span>Stufe 3</span><strong>Kleine vollständige Programme</strong></div>
+
+          <article class="task-card challenge-card">
+            <span>Training 08 · anspruchsvoll</span><h2>Login mit Sperre</h2>
+            <p>Speichere Benutzername und Passwort. Erlaube höchstens drei Versuche. Nur wenn beide Eingaben stimmen, erscheint „Willkommen“. Nach drei Fehlversuchen wird das Konto gesperrt. Zeige die verbleibenden Versuche an.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 09 · anspruchsvoll</span><h2>Punkte einer Gruppe</h2>
+            <p>Verarbeite eine Liste aus mindestens acht Punktzahlen. Ordne jede Punktzahl einer Leistungsstufe zu. Berechne Gesamtpunkte und Durchschnitt und zähle, wie viele Ergebnisse bestanden sind.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 10 · anspruchsvoll</span><h2>Getränkeautomat</h2>
+            <p>Zeige in einer <code>while</code>-Schleife ein Menü mit drei Getränken und <code>ende</code>. Frage Auswahl und eingeworfenes Geld ab. Prüfe Auswahl und Guthaben, berechne Rückgeld und zeige danach das Menü erneut.</p>
+          </article>
+
+          <article class="task-card challenge-card">
+            <span>Training 11 · anspruchsvoll</span><h2>Mini-Quiz</h2>
+            <p>Speichere Fragen und Lösungen in zwei gleich langen Listen. Durchlaufe die Positionen mit <code>for index in range(len(fragen))</code>, stelle jede Frage und erhöhe bei richtiger Antwort den Punktestand. Werte das Ergebnis am Ende mit <code>elif</code> aus.</p>
+          </article>
+
+          <div class="level-banner level-four"><span>Stufe 4</span><strong>Größere eigene Programme</strong></div>
+
+          <article class="task-card challenge-card project-card">
+            <span>Training 12 · Mini-Projekt</span><h2>Textabenteuer 2.0</h2>
+            <p>Erweitere dein erstes Abenteuer. Die Spielfigur besitzt eine Inventarliste, kann Gegenstände aufnehmen und trifft in einer Schleife wiederholt Entscheidungen. Manche Wege dürfen nur mit einem bestimmten Gegenstand betreten werden.</p>
+            <ul class="check-list"><li>Mindestens fünf Entscheidungen und vier Enden</li><li>Mindestens zwei Gegenstände in einer Liste</li><li><code>while</code>-Schleife für den Spielablauf</li><li><code>and</code>, <code>or</code> oder <code>not</code> an sinnvollen Stellen</li></ul>
+          </article>
+
+          <article class="task-card challenge-card project-card">
+            <span>Training 13 · Mini-Projekt</span><h2>Lernfortschritt-Tracker</h2>
+            <p>Ein Menü erlaubt, erreichte Punkte einzutragen, alle Punkte anzuzeigen oder das Programm zu beenden. Speichere die Punkte in einer Liste. Berechne Anzahl, Summe und Durchschnitt und gib passend zum Durchschnitt eine Rückmeldung aus.</p>
+            <ul class="check-list"><li>Menü in einer <code>while</code>-Schleife</li><li>Eingaben mit <code>if</code>/<code>elif</code> unterscheiden</li><li>Liste mit <code>append()</code> erweitern</li><li>Werte mit <code>for</code> ausgeben und addieren</li></ul>
+          </article>
+
+          <article class="task-card challenge-card project-card">
+            <span>Training 14 · Freies Mini-Projekt</span><h2>Entwirf dein eigenes Programm</h2>
+            <p>Wähle ein reales Problem aus Schule, Betrieb oder Freizeit. Entwirf zuerst Ein- und Ausgaben sowie mindestens drei Testfälle. Setze es danach mit den bekannten Sprachmitteln um.</p>
+            <ul class="check-list"><li>Mindestens eine Liste</li><li>Mindestens eine <code>while</code>- und eine <code>for</code>-Schleife</li><li>Mindestens eine verbundene Bedingung</li><li>Verständliche Rückmeldungen für falsche Eingaben</li></ul>
+          </article>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Zwischen Python-Aufbauabschnitten wechseln">
+          <button id="previous-section">← Vorheriger Abschnitt</button>
+          <a class="overview-link" href="../">Zur Kapitelübersicht</a>
+          <div class="presentation-position" hidden aria-live="polite">
+            <span id="slide-counter">Folie 01 / 01</span><strong id="slide-chapter"></strong>
+          </div>
+          <button class="primary" id="next-section">Nächster Abschnitt →</button>
+        </nav>
+      </main>
+    </div>
+    <div id="announcement" class="sr-only" aria-live="polite"></div>
+  </body>
+</html>

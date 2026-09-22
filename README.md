@@ -1,10 +1,11 @@
 # Computer verstehen · Python-Seminar
 
-Statische Lernseite mit einem Intro-Kapitel und einem anschließenden Python-Einstieg.
+Statische Lernseite vom Computer-Grundverständnis bis zu einem aufgabenreichen Python-Aufbaukurs.
 
 - `praesentation/`: Kapitel 1, Intro zu Programmiersprachen und Terminal
 - `uebungen/`: acht nummerierte Intro-Übungen zur Eigenbearbeitung
-- `python/`: Kapitel 2, Installation, Syntax, Konsole, Skripte, VS Code und erste Python-Übungen
+- `python/`: Python-Einstieg mit Installation, Syntax, Konsole, Skripten, VS Code und ersten Übungen
+- `python-aufbau/`: Datentypen, Verzweigungen, Schleifen und Listen mit direkten Übungen und Transfertraining
 - `plan.md`: inhaltliches Storyboard
 
 Die Übungen enthalten keinen gespeicherten Fortschritt. Die Browseraufgaben werden direkt ausgewertet; die PowerShell-Aufgaben führen sichere, überwiegend lesende Befehle auf dem eigenen Windows-PC aus und werden anschließend gemeinsam besprochen.
