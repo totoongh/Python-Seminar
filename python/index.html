@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#15191b" />
     <title>Python · Einstieg · Python-Seminar</title>
-    <link rel="stylesheet" href="styles.css?v=1" />
-    <script src="script.js?v=1" defer></script>
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <script src="script.js?v=2" defer></script>
   </head>
   <body>
     <header class="topbar">
       <a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a>
       <span class="edition">03 / PYTHON · EINSTIEG</span>
-      <a class="intro-link" href="../praesentation/">Intro ↗</a>
+      <div class="topbar-actions">
+        <button
+          id="view-toggle"
+          type="button"
+          aria-pressed="false"
+          title="Zur Präsentationsansicht wechseln"
+        >
+          <span>Switch View</span>
+          <small>Präsentation</small>
+        </button>
+        <a class="intro-link" href="../praesentation/">Intro ↗</a>
+      </div>
     </header>
 
     <div class="page-shell">
@@ -294,7 +305,11 @@ print "Wetterbericht beendet"</pre>
 
         <nav class="bottom-nav" aria-label="Zwischen Python-Abschnitten wechseln">
           <button id="previous-section">← Vorheriger Abschnitt</button>
-          <a href="../">Zur Kapitelübersicht</a>
+          <a class="overview-link" href="../">Zur Kapitelübersicht</a>
+          <div class="presentation-position" hidden aria-live="polite">
+            <span id="slide-counter">Folie 01 / 01</span>
+            <strong id="slide-chapter"></strong>
+          </div>
           <button class="primary" id="next-section">Nächster Abschnitt →</button>
         </nav>
       </main>
