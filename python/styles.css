@@ -321,6 +321,61 @@ pre {
 .comparison-grid code { color: var(--mint); }
 .comparison-grid span { color: var(--muted); }
 .task-card h2 { margin-bottom: 7px; }
+.task-card h2 code { color: var(--mint); font-size: .86em; }
+.indentation-intro { max-width: 880px; }
+.trial-steps, .requirements-list {
+  color: var(--muted);
+  line-height: 1.55;
+}
+.trial-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 28px;
+  margin: 18px 0;
+  padding-left: 24px;
+}
+.indentation-versions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.indentation-versions section {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #111517;
+}
+.indentation-versions strong {
+  display: block;
+  padding: 12px 14px 0;
+  color: var(--ink);
+  font-size: 13px;
+}
+.indentation-versions pre { padding: 14px; font-size: 12px; }
+.creative-task-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: 28px;
+  margin-top: 22px;
+}
+.creative-task-layout h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 17px;
+}
+.creative-task-layout h3:not(:first-child) { margin-top: 22px; }
+.requirements-list { margin: 0; padding-left: 22px; }
+.requirements-list li + li { margin-top: 5px; }
+.adventure-stub {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #111517;
+}
+.adventure-stub p { margin-bottom: 8px; }
+.adventure-stub pre { padding: 12px 0 0; font-size: 12px; }
 
 .bottom-nav {
   max-width: 1020px;
@@ -430,6 +485,24 @@ body.presentation-mode { overflow: hidden; }
 }
 .presentation-mode .setup-list h2 { font-size: 18px; }
 .presentation-mode .setup-list p { line-height: 1.4; }
+.presentation-mode .indentation-workshop,
+.presentation-mode .creative-task { padding: clamp(18px, 2vw, 28px); }
+.presentation-mode .indentation-workshop > span,
+.presentation-mode .creative-task > span { margin-bottom: 8px; }
+.presentation-mode .indentation-workshop h2,
+.presentation-mode .creative-task h2 { font-size: clamp(24px, 2.6vw, 36px); }
+.presentation-mode .indentation-intro { margin-bottom: 10px; line-height: 1.45; }
+.presentation-mode .trial-steps { margin: 10px 0 14px; }
+.presentation-mode .creative-task-layout { margin-top: 14px; }
+.presentation-mode .creative-task-layout p,
+.presentation-mode .requirements-list { line-height: 1.4; }
+.presentation-mode .creative-task-layout h3:not(:first-child) { margin-top: 14px; }
+.presentation-mode .adventure-stub { padding: 14px; }
+.presentation-mode .adventure-stub pre {
+  padding-top: 6px;
+  font-size: 11px;
+  line-height: 1.4;
+}
 
 @keyframes slide-in {
   from { opacity: 0; transform: translateX(16px); }
@@ -461,6 +534,13 @@ body.presentation-mode { overflow: hidden; }
     width: min(94vw, 900px);
     height: calc(100vh - 190px);
   }
+}
+
+@media (max-width: 760px) {
+  .trial-steps,
+  .indentation-versions,
+  .creative-task-layout { grid-template-columns: 1fr; }
+  .indentation-versions pre { font-size: 11px; }
 }
 
 @media (max-width: 680px) {

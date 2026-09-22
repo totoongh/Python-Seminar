@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#15191b" />
     <title>Python · Einstieg · Python-Seminar</title>
-    <link rel="stylesheet" href="styles.css?v=2" />
-    <script src="script.js?v=2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <script src="script.js?v=3" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -300,6 +300,101 @@ print "Wetterbericht beendet"</pre>
             <span>Übung E · Alles zusammen</span>
             <h2>Lagerbestand prüfen</h2>
             <p>In einem Lager liegen 12 Tastaturen. Frage, wie viele bestellt werden sollen. Reicht der Bestand, gib „Bestellung möglich“ und den verbleibenden Bestand aus. Andernfalls soll „Nicht genügend Tastaturen“ erscheinen. Teste mindestens die Bestellmengen 5, 12 und 15.</p>
+          </article>
+
+          <article class="task-card indentation-workshop">
+            <span>Vorbereitung · Einrückungen ausprobieren</span>
+            <h2>Welche Zeile gehört zum <code>if</code>?</h2>
+            <p class="indentation-intro">
+              Stell dir das <code>if</code> wie eine Tür vor: Nur die um vier
+              Leerzeichen eingerückten Zeilen liegen hinter dieser Tür. Zeilen
+              wieder ganz am linken Rand werden unabhängig von der Bedingung
+              ausgeführt.
+            </p>
+
+            <ol class="trial-steps">
+              <li>Speichere jede Version einzeln als <code>einrueckung.py</code>.</li>
+              <li>Sage vor dem Start voraus, was passieren wird.</li>
+              <li>Teste jede Version einmal mit <code>regen</code> und einmal mit <code>sonne</code>.</li>
+              <li>Notiere Ausgabe oder Fehlermeldung und erkläre den Unterschied.</li>
+            </ol>
+
+            <div class="indentation-versions">
+              <section>
+                <strong>A · Eine Zeile hinter der Tür</strong>
+                <pre>wetter = input("Wetter? ")
+
+if wetter == "regen":
+    print("Nimm einen Schirm mit.")
+
+print("Los geht's!")</pre>
+              </section>
+              <section>
+                <strong>B · Der Block fehlt</strong>
+                <pre>wetter = input("Wetter? ")
+
+if wetter == "regen":
+print("Nimm einen Schirm mit.")
+
+print("Los geht's!")</pre>
+              </section>
+              <section>
+                <strong>C · Zwei Zeilen hinter der Tür</strong>
+                <pre>wetter = input("Wetter? ")
+
+if wetter == "regen":
+    print("Nimm einen Schirm mit.")
+    print("Los geht's!")</pre>
+              </section>
+            </div>
+          </article>
+
+          <article class="task-card creative-task">
+            <span>Übung F · Kreativaufgabe</span>
+            <h2>Dein eigenes Mini-Abenteuer</h2>
+
+            <div class="creative-task-layout">
+              <section>
+                <h3>Aufgabenstellung</h3>
+                <p>
+                  Schreibe ein kurzes interaktives Textabenteuer. Die spielende
+                  Person trifft Entscheidungen und erlebt abhängig von ihren
+                  Eingaben unterschiedliche Teile deiner Geschichte. Thema,
+                  Figuren und Schauplatz bestimmst du selbst.
+                </p>
+
+                <h3>Mindestanforderungen</h3>
+                <ul class="requirements-list">
+                  <li>Frage den Namen der spielenden Person ab.</li>
+                  <li>Verwende mindestens zwei weitere <code>input()</code>-Abfragen.</li>
+                  <li>Prüfe Entscheidungen mit mindestens zwei <code>if</code>-Anweisungen.</li>
+                  <li>Schreibe mindestens drei verschiedene Enden.</li>
+                  <li>Gib verständliche Erzähltexte mit <code>print()</code> aus.</li>
+                  <li>Teste jeden möglichen Weg durch deine Geschichte.</li>
+                </ul>
+              </section>
+
+              <section class="adventure-stub">
+                <h3>Stub (Startcode)</h3>
+                <p>Der Anfang ist vorbereitet. Ersetze die Kommentare und führe die Geschichte weiter.</p>
+                <pre>name = input("Wie heißt du? ")
+
+print("Willkommen,", name)
+print("Du stehst vor einem geheimnisvollen Ort.")
+
+weg = input("Gehst du nach links oder rechts? ")
+
+if weg == "links":
+    print("Du hörst ein seltsames Geräusch.")
+    # Frage nach der nächsten Entscheidung.
+    # Prüfe die Antwort mit einem weiteren if.
+    # Schreibe hier mindestens zwei mögliche Enden.
+
+if weg == "rechts":
+    # Erzähle diesen Weg weiter.
+    # Baue hier mindestens ein weiteres Ende ein.</pre>
+              </section>
+            </div>
           </article>
         </section>
 
