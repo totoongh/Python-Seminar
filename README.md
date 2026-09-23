@@ -5,7 +5,7 @@ Statische Lernseite vom Computer-Grundverständnis bis zu einem aufgabenreichen 
 - `praesentation/`: Kapitel 1, Intro zu Programmiersprachen und Terminal
 - `uebungen/`: acht nummerierte Intro-Übungen zur Eigenbearbeitung
 - `python/`: Python-Einstieg mit Installation, Syntax, Konsole, Skripten, VS Code und ersten Übungen
-- `python-aufbau/`: Datentypen, Verzweigungen, Schleifen und Listen mit direkten Übungen und Transfertraining
+- `python-aufbau/`: Datentypen, Verzweigungen, Schleifen und Listen mit Kernübungen, zusätzlichen Schritten für `while` und Listen, offenen Pufferaufgaben und Transfertraining
 - `plan.md`: inhaltliches Storyboard
 
 Die Übungen enthalten keinen gespeicherten Fortschritt. Die Browseraufgaben werden direkt ausgewertet; die PowerShell-Aufgaben führen sichere, überwiegend lesende Befehle auf dem eigenen Windows-PC aus und werden anschließend gemeinsam besprochen.
