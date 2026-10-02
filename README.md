@@ -7,6 +7,7 @@ Statische Lernseite vom Computer-Grundverständnis bis zu einem aufgabenreichen 
 - `python/`: Python-Einstieg mit Installation, Syntax, Konsole, Skripten, VS Code und ersten Übungen
 - `python-aufbau/`: Datentypen, Verzweigungen, Schleifen und Listen mit Kernübungen, zusätzlichen Schritten für `while` und Listen, offenen Pufferaufgaben und Transfertraining
 - `python-training/`: Standortbestimmung, KI zum Lernen, Output vorhersagen (Gültigkeitsbereiche), Refactoring, Bug-Suche, Papier-Coding, Vertiefung. Lehrkraft-Modus mit Lösungen: `?lehrer` an die Adresse hängen
+- `python-for/`: kleinschrittige Übungsseite nur zur `for`-Schleife (Lesen, Ausgabe vorhersagen mit Prüfung, Lücken, eigene Programme, Hinweise und Lösungen zum Aufklappen)
 - `notebooks/`: Jupyter Notebooks für Fortgeschrittene (Strings, Fehlerbehandlung, Dictionaries, Module), direkt in Colab öffenbar
 - `LEHRKRAFT.md`: Ablaufplan für die Trainingseinheit
 - `plan.md`: inhaltliches Storyboard
