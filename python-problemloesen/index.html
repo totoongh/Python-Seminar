@@ -1,0 +1,127 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#15191b"><title>Systematisch Probleme lösen · Python-Seminar</title><link rel="stylesheet" href="../python/styles.css?v=3"><link rel="stylesheet" href="styles.css?v=1"><script src="../python/script.js?v=3" defer></script></head><body><header class="topbar"><a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a><span class="edition">07 / PROBLEMLÖSEN</span><div class="topbar-actions"><button id="view-toggle" type="button" aria-pressed="false" title="Zur Präsentationsansicht wechseln"><span>Switch View</span><small>Präsentation</small></button><a class="intro-link" href="../python-training/">Training ↗</a></div></header><div class="page-shell">
+<nav class="chapter-nav" aria-label="Abschnitte zum Problemlösen"><a href="#1" data-nav="1"><span>01</span> Der nächste Schritt</a><a href="#2" data-nav="2"><span>02</span> Gemeinsam rechnen</a><a href="#3" data-nav="3"><span>03</span> Klein umsetzen</a><a href="#4" data-nav="4"><span>04</span> Gezielt Fehler finden</a><a href="#5" data-nav="5"><span>05</span> Übungen</a><a href="#6" data-nav="6"><span>06</span> Rückblick</a></nav><main>
+<section class="chapter-section" data-section="1"><p class="eyebrow">Problemlösen · 01</p><h1>Ich komme nicht weiter. Was jetzt?</h1><p class="lead">Wir lösen eine Aufgabe gemeinsam und halten jeden Gedankenschritt fest. Danach übt ihr denselben Ablauf an neuen Aufgaben.</p>
+<article class="task-card"><span>Einstieg · 2 Minuten</span><h2>Was fehlt dir gerade?</h2><p>„Ich weiß nicht, wie ich das programmieren soll.“ Welche Frage steckt dahinter?</p><ol><li>Was soll herauskommen?</li><li>Wie rechne ich es auf Papier?</li><li>Welcher Python-Befehl fehlt mir?</li><li>Welche Stelle liefert ein falsches Ergebnis?</li></ol><p>Nennt ein eigenes Beispiel. Je genauer ihr die Lücke beschreibt, desto kleiner wird der nächste Schritt.</p></article>
+
+<article class="task-card"><span>Unser Werkzeug</span><h2>Acht Schritte, die du wiederverwenden kannst</h2><ol><li><strong>Verstehen:</strong> Ziel, Eingabe und Ausgabe in eigenen Worten.</li><li><strong>Konkretisieren:</strong> einen Beispielinput mit erwarteter Ausgabe festlegen.</li><li><strong>Zerlegen:</strong> kleine Teilprobleme finden.</li><li><strong>Planen:</strong> auf Papier lösen und Pseudocode schreiben.</li><li><strong>Implementieren:</strong> den kleinsten Teil programmieren.</li><li><strong>Testen:</strong> Soll und Ist vergleichen.</li><li><strong>Fehler eingrenzen:</strong> eine Vermutung gezielt prüfen.</li><li><strong>Reflektieren:</strong> den hilfreichen Gedankenschritt erklären.</li></ol><p>Beim Testen darfst du zurück zum Plan oder zur Aufgabenklärung gehen.</p></article>
+
+<article class="task-card"><span>Arbeitsweise</span><h2>Jeder Schritt hinterlässt eine Spur</h2><p>Unser Protokoll auf Papier:</p><pre><code>Ziel und offene Fragen:
+Beispiel: Eingabe → erwartete Ausgabe
+Teilprobleme und Pseudocode:
+Kleinstes Experiment und Vorhersage:
+Beobachtung: Soll / Ist
+Hypothese → gezielter Test → Ergebnis
+Nächster Schritt:
+Was hat mich weitergebracht?</code></pre><p>Erst überlegen, dann auflösen. Hinweise und Lösungen bleiben zunächst zugeklappt.</p><p><a href="Programmieren-mit-System-A4.pdf" download>Farbiges A4-Merkblatt herunterladen (2 Seiten)</a>. Doppelseitig drucken, an der langen Kante wenden.</p></article>
+</section>
+<section class="chapter-section" data-section="2"><p class="eyebrow">Problemlösen · 02</p><h1>Beispiel: unser Notendurchschnitt</h1><p class="lead">Gegeben ist eine Liste gültiger Noten von 1 bis 6. Jede Note zählt gleich viel. Bei einer leeren Liste soll „Keine Noten“ erscheinen. Wir beginnen mit [2, 3, 1, 4].</p>
+<article class="task-card"><span>1 · Verstehen</span><h2>Was soll das Programm leisten?</h2><p>Formuliert einen Satz. Was ist die Eingabe? Was ist die Ausgabe? Müssen wir etwas eingeben oder können wir mit festen Werten starten?</p><details><summary>Gemeinsam auflösen</summary><div><p>Eingabe: eine feste Liste gültiger Noten. Ausgabe: ihr arithmetischer Durchschnitt als Zahl, bei leerer Liste der Text „Keine Noten“. Eingabevalidierung gehört hier noch nicht zur Aufgabe.</p></div></details></article>
+
+<article class="task-card"><span>2 · Konkretisieren</span><h2>Welches Ergebnis erwarten wir?</h2><pre><code>noten = [2, 3, 1, 4]</code></pre><p>Rechnet gemeinsam auf Papier: Welche Summe? Wie viele Noten? Welcher Durchschnitt?</p><details><summary>Gemeinsam auflösen</summary><div><p><strong>2 + 3 + 1 + 4 = 10</strong><br>Vier Noten. <strong>10 / 4 = 2.5</strong><br>Diese 2.5 ist unser Sollwert, bevor wir Python starten.</p></div></details></article>
+
+<article class="task-card"><span>3 · Zerlegen</span><h2>Welche kleinen Probleme stecken darin?</h2><p>Sammelt Teilprobleme. Welches können wir schon lösen?</p><details><summary>Gemeinsam auflösen</summary><div><ol><li>Liste bereitstellen.</li><li>Prüfen, ob sie leer ist.</li><li>Noten addieren.</li><li>Anzahl bestimmen.</li><li>Summe durch Anzahl teilen.</li><li>Ergebnis ausgeben.</li></ol></div></details></article>
+
+<article class="task-card"><span>4 · Planen</span><h2>Wie addieren wir ohne Computer?</h2><p>Wir führen einen laufenden Rechenstand. Füllt die rechte Spalte zuerst selbst aus.</p><table><thead><tr><th>Schritt</th><th>Neue Note</th><th>Summe danach?</th></tr></thead><tbody><tr><td>Start</td><td>–</td><td>0</td></tr><tr><td>1</td><td>2</td><td>?</td></tr><tr><td>2</td><td>3</td><td>?</td></tr><tr><td>3</td><td>1</td><td>?</td></tr><tr><td>4</td><td>4</td><td>?</td></tr></tbody></table><details><summary>Gemeinsam auflösen</summary><div><p>Die Rechenstände sind <strong>2, 5, 6, 10</strong>. Die vorherige Summe bleibt erhalten, dann kommt die nächste Note dazu.</p></div></details></article>
+
+<article class="task-card"><span>4 · Planen</span><h2>Unser Plan in Alltagssprache</h2><p>Formuliert den Ablauf zuerst selbst. Welche Entscheidung brauchen wir vor dem Teilen?</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>Wenn die Liste leer ist:
+    Gib „Keine Noten“ aus
+Sonst:
+    Starte die Summe bei 0
+    Für jede Note: addiere sie zur bisherigen Summe
+    Teile die Summe durch die Anzahl der Noten
+    Gib den Durchschnitt aus</code></pre></div></details></article>
+</section>
+<section class="chapter-section" data-section="3"><p class="eyebrow">Problemlösen · 03</p><h1>Vom Plan zu kleinen Experimenten</h1><p class="lead">Wir schreiben jeweils nur einen Teil. Vor jedem Start sagen wir voraus, was erscheinen soll.</p>
+<article class="task-card"><span>5 + 6 · Implementieren und testen</span><h2>Experiment 1: eine Addition</h2><p>Wie können wir das Addieren mit nur einer Note ausprobieren? Erwartet ihr 0 oder 2?</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>summe = 0
+note = 2
+summe = summe + note
+print(summe)</code></pre><p>Soll und Ist: <strong>2</strong>. Jetzt funktioniert ein einzelner Schritt.</p></div></details></article>
+
+<article class="task-card"><span>5 + 6 · Wiederholung</span><h2>Experiment 2: alle Noten addieren</h2><p>Übertragt den einzelnen Schritt in eine Schleife. Welche Zwischenausgaben erwarten wir?</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>noten = [2, 3, 1, 4]
+summe = 0
+for note in noten:
+    summe = summe + note
+    print(summe)</code></pre><p>Soll und Ist, Zeile für Zeile: <strong>2, 5, 6, 10</strong>. Vergleicht mit der Papierrechnung.</p></div></details></article>
+
+<article class="task-card"><span>5 + 6 · Zusammensetzen</span><h2>Experiment 3: den Durchschnitt ausgeben</h2><p>Die Summe steht. Welches kleine Experiment prüft jetzt die Anzahl?</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>print(len(noten))  # Erwartet: 4
+durchschnitt = summe / len(noten)
+print(durchschnitt)  # Erwartet: 2.5</code></pre><p>Diese Zeilen stehen nach der Schleife. <code>len()</code> liefert die Anzahl der Listenelemente.</p></div></details></article>
+
+<article class="task-card"><span>6 · Testfälle</span><h2>Reicht ein erfolgreiches Beispiel?</h2><p>Legt die Sollwerte fest, bevor ihr startet. Was macht unser bisheriger Code mit einer leeren Liste?</p><details><summary>Gemeinsam auflösen</summary><div><table><thead><tr><th>Eingabe</th><th>Soll</th><th>Wozu?</th></tr></thead><tbody><tr><td>[2, 3, 1, 4]</td><td>2.5</td><td>Normalfall</td></tr><tr><td>[3]</td><td>3.0</td><td>Eine Note</td></tr><tr><td>[1, 6]</td><td>3.5</td><td>Dezimalergebnis</td></tr><tr><td>[]</td><td>Keine Noten</td><td>Leere Liste</td></tr></tbody></table><p>Bisher führt die leere Liste zu einer Division durch null. Wir ergänzen die Entscheidung aus unserem Plan.</p></div></details></article>
+
+<article class="task-card"><span>5 + 6 · Vollständige Version</span><h2>Unser Plan wird zu Python</h2><p>Wo muss die Prüfung stehen, damit wir bei einer leeren Liste gar nicht erst teilen?</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>noten = [2, 3, 1, 4]
+if len(noten) == 0:
+    print(&quot;Keine Noten&quot;)
+else:
+    summe = 0
+    for note in noten:
+        summe = summe + note
+    durchschnitt = summe / len(noten)
+    print(durchschnitt)</code></pre><p>Führt alle vier Testfälle aus. Dokumentiert Soll und Ist.</p></div></details></article>
+</section>
+<section class="chapter-section" data-section="4"><p class="eyebrow">Problemlösen · 04</p><h1>Ein Fehler ist eine überprüfbare Frage</h1><p class="lead">Wir bekommen 1.0 statt 2.5. Wir ändern erst etwas, wenn eine Beobachtung unsere Vermutung stützt.</p>
+<article class="task-card"><span>7 · Fehler eingrenzen</span><h2>Was passiert in diesem Programm?</h2><pre><code>noten = [2, 3, 1, 4]
+summe = 0
+for note in noten:
+    summe = note
+print(summe / len(noten))</code></pre><p>Erklärt jede Zeile laut. Notiert Soll und Ist. Formuliert eine Hypothese und einen Test, bevor ihr Code ändert.</p></article>
+
+<article class="task-card"><span>7 · Hypothese testen</span><h2>Wird die Anzahl falsch bestimmt?</h2><p>Hypothese A: „Wir teilen durch die falsche Anzahl.“ Was müsste ein gezielter Test zeigen?</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>print(len(noten))</code></pre><p>Ist: <strong>4</strong>, genau unser Soll. Diese Beobachtung erklärt den Fehler nicht. Als Nächstes prüfen wir die Summe.</p></div></details></article>
+
+<article class="task-card"><span>7 · Neue Hypothese</span><h2>Bleibt die bisherige Summe erhalten?</h2><p>Hypothese B: „Die Summe enthält nur die letzte Note.“ Wie machen wir das sichtbar?</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>for note in noten:
+    summe = note
+    print(&quot;Note:&quot;, note, &quot;Summe:&quot;, summe)</code></pre><p>Ist-Summen: <strong>2, 3, 1, 4</strong>. Soll-Summen: <strong>2, 5, 6, 10</strong>. Ab dem zweiten Durchlauf überschreiben wir die bisherige Summe.</p></div></details></article>
+
+<article class="task-card"><span>7 + 8 · Korrigieren und reflektieren</span><h2>Welche einzelne Änderung passt zur Beobachtung?</h2><p>Formuliert die Änderung und sagt die neue Ausgabe voraus. Danach alle Testfälle wiederholen.</p><details><summary>Gemeinsam auflösen</summary><div><pre><code>summe = summe + note</code></pre><p>Die alte Summe fließt wieder ein. Die Summe ist 10, der Durchschnitt 2.5.</p></div></details><p><strong>Reflexion:</strong> Welche Beobachtung hat den Fehler eingegrenzt? Was hätte wahlloses Ändern erschwert?</p></article>
+
+<article class="task-card"><span>Wenn du feststeckst</span><h2>Fünf Fragen für deinen nächsten Schritt</h2><ol><li>Was will ich erreichen und was beobachte ich tatsächlich?</li><li>Welcher einzelne Teil ist noch unklar?</li><li>Wie löse ich diesen Teil mit Papier oder einem konkreten Beispiel?</li><li>Was ist meine Vermutung und welches kleine Experiment prüft sie?</li><li>Was lerne ich daraus und welche konkrete Frage stelle ich jetzt?</li></ol><p>Hilfe darfst du jederzeit holen. Beschreibe deinen bisherigen Denkweg, auch wenn du noch keine Vermutung hast.</p></article>
+
+<article class="task-card"><span>Hilfe holen</span><h2>Eine Frage, mit der andere arbeiten können</h2><p>„Ich will den Durchschnitt berechnen. Für [2, 3, 1, 4] erwarte ich 2.5, bekomme aber 1.0. len(noten) liefert korrekt 4. Die Summe ist am Ende 4. Ich vermute, dass ich sie überschreibe. Wie kann ich die Rechenstände in der Schleife sichtbar machen?“</p><p>Hilfreiche Werkzeuge: Pseudocode vor dem Code, lautes Erklären, ein möglichst kleines Fehlerbeispiel und ein Test pro Hypothese.</p></article>
+
+<article class="task-card"><span>Werkzeugkasten</span><h2>Fünf Methoden für konkrete Fragen</h2><ol><li><strong>Pseudocode:</strong> Vor dem Programmieren die Logik in Alltagssprache aufschreiben.</li><li><strong>Rubber Duck Debugging:</strong> Den Code laut Zeile für Zeile erklären und Erwartungen benennen.</li><li><strong>Minimal Reproducible Example:</strong> Code und Daten verkleinern, bis ein kleines Beispiel denselben Fehler zeigt.</li><li><strong>Hypothesengetriebenes Debugging:</strong> Eine Vermutung mit einem gezielten Experiment prüfen.</li><li><strong>Testgetriebenes Denken:</strong> Vor dem Start Sollwerte für Normalfälle und Grenzen festlegen.</li></ol></article>
+
+<article class="task-card"><span>Unsere Regeln</span><h2>Drei Regeln fürs Weiterkommen</h2><ol><li><strong>Mach das Problem kleiner.</strong> Suche einen Teil, den du schon lösen oder gezielt ausprobieren kannst.</li><li><strong>Vermute nicht nur. Experimentiere.</strong> Prüfe eine Hypothese mit wenig Code und einer klaren Vorhersage.</li><li><strong>Stelle konkrete Fragen.</strong> Benenne dein Ziel, die Beobachtung und deine Wissenslücke.</li></ol></article>
+</section>
+<section class="chapter-section" data-section="5"><p class="eyebrow">Problemlösen · 05</p><h1>Jetzt übt ihr den Denkweg</h1><p class="lead">Arbeitet zu zweit. Eine Person programmiert, die andere fragt nach dem Plan und den Vorhersagen. Tauscht nach jedem Experiment. Gebt euer Protokoll zusammen mit dem Code ab.</p>
+<article class="task-card"><span>Für jede Aufgabe</span><h2>Euer Arbeitsauftrag</h2><ol><li>Ziel in eigenen Worten und offene Fragen aufschreiben.</li><li>Mindestens einen Normalfall und einen Randfall mit Soll-Ausgabe angeben.</li><li>Teilprobleme und Pseudocode formulieren.</li><li>Kleinstes Experiment samt Vorhersage notieren, dann ausführen.</li><li>Soll und Ist vergleichen. Bei Abweichung: Hypothese, gezielter Test, Beobachtung.</li><li>Lösung erklären und einen hilfreichen Gedankenschritt festhalten.</li></ol><p>Bearbeitet die Aufgaben in eurer IDE. Die offenen Denkwege besprechen wir gemeinsam. Felder auf dieser Seite bleiben nur bis zum Neuladen erhalten.</p></article>
+
+<article class="task-card"><span>Übung 1 · 10 Minuten · mit Leitfragen</span><h2>Gerade Zahlen auswählen</h2><p>Gib alle geraden Zahlen aus einer Liste in ihrer ursprünglichen Reihenfolge aus, je eine pro Zeile. Eine leere Liste erzeugt keine Ausgabe. Start: <code>[5, 2, 8, 3, 0, -4]</code>.</p><ol><li>Welche Zahlen müssen auf Papier übrig bleiben?</li><li>Wie erkennst du bei einer einzelnen Zahl, ob sie gerade ist?</li><li>Was ist dein kleinstes Experiment, bevor du die Schleife schreibst?</li></ol><details><summary>Hinweis</summary><div><p>Der Rest beim Teilen durch 2 hilft: <code>zahl % 2 == 0</code>. Teste zunächst nur 5 und 2.</p></div></details><details><summary>Lösung und Denkweg</summary><div><pre><code>zahlen = [5, 2, 8, 3, 0, -4]
+for zahl in zahlen:
+    if zahl % 2 == 0:
+        print(zahl)</code></pre><p>Soll: 2, 8, 0, -4 auf getrennten Zeilen. Prüfe auch [] und [1, 3]. Der Denkweg beginnt mit dem Test einer einzelnen Zahl.</p></div></details></article>
+
+<article class="task-card"><span>Übung 2 · 15 Minuten · weniger Hilfen</span><h2>Die größte Zahl finden</h2><p>Gib die größte Zahl einer Liste aus. Bei [] erscheint „Keine Zahlen“. Verwende eine Schleife ohne <code>max()</code>. Beginne mit <code>[5, 8, 2]</code>. Wähle selbst weitere Testfälle, auch mit ausschließlich negativen Zahlen.</p><p>Protokolliert den bisherigen größten Wert nach jedem Durchlauf. Welches Experiment könnte zuerst zwei Zahlen vergleichen?</p><details><summary>Hinweis</summary><div><p>Als Startwert eignet sich der erste Listeneintrag. Der Wert 0 scheitert beispielsweise bei [-5, -2, -9].</p></div></details><details><summary>Lösung und Denkweg</summary><div><pre><code>zahlen = [5, 8, 2]
+if len(zahlen) == 0:
+    print(&quot;Keine Zahlen&quot;)
+else:
+    groesste = zahlen[0]
+    for zahl in zahlen:
+        if zahl &gt; groesste:
+            groesste = zahl
+    print(groesste)</code></pre><p>Soll: [5, 8, 2] ergibt 8. [-5, -2, -9] ergibt -2. [7] ergibt 7. Vergleiche zunächst zwei feste Werte, erweitere erst danach auf die Liste.</p></div></details></article>
+
+<article class="task-card"><span>Übung 3 · 10 Minuten · Debugging</span><h2>Eine Summe stimmt nicht</h2><p>Das Programm soll 14 liefern. Führt zunächst keine Änderung durch. Erklärt den Code, sagt die Ausgabe voraus und plant einen gezielten Test.</p><pre><code>zahlen = [4, 7, 3]
+summe = 0
+for zahl in zahlen:
+    summe = 0
+    summe = summe + zahl
+print(summe)</code></pre><p>Dokumentiert: Hypothese, Test, erwartete Beobachtung, tatsächliche Beobachtung, einzelne Korrektur.</p><details><summary>Hinweis</summary><div><p>Vergleicht die Rechenstände vor und nach dem Zurücksetzen innerhalb der Schleife.</p></div></details><details><summary>Lösung und Denkweg</summary><div><p>Ist: 3. In jedem Durchlauf wird summe auf 0 gesetzt. Eine Ausgabe von summe zu Beginn jedes Durchlaufs macht das sichtbar. Entferne nur das Zurücksetzen innerhalb der Schleife. Erwartete Zwischensummen: 4, 11, 14. Prüfe danach auch [] (0) und [5] (5).</p></div></details></article>
+
+<article class="task-card"><span>Übung 4 · 20 Minuten · selbstständig</span><h2>Versandkosten berechnen</h2><p>Gegeben ist ein nichtnegativer Warenwert in Euro und ein Wahrheitswert <code>express</code>. Unter 50 € kostet der Versand 4.90 €, ab 50 € ist er kostenlos. Express kostet zusätzlich immer 3 €. Gib Versandkosten und Gesamtpreis aus.</p><p>Start: <code>warenwert = 40</code>, <code>express = True</code>. Bestimmt selbst die Teilprobleme, einen Grenzfall und die Reihenfolge eurer Experimente.</p><details><summary>Hinweis</summary><div><p>Prüfe zunächst nur die Grenze für normalen Versand. Teste dann Express separat. Zuletzt setzt du die Teile zusammen.</p></div></details><details><summary>Lösung und Denkweg</summary><div><pre><code>warenwert = 40
+express = True
+if warenwert &lt; 50:
+    versand = 4.90
+else:
+    versand = 0
+if express:
+    versand = versand + 3
+gesamt = warenwert + versand
+print(f&quot;Versand: {versand:.2f} Euro&quot;)
+print(f&quot;Gesamt: {gesamt:.2f} Euro&quot;)</code></pre><p>40 / True: 7.90 € Versand, 47.90 € gesamt. 50 / False: 0.00 € und 50.00 €. 50 / True: 3.00 € und 53.00 €. Prüft außerdem knapp unter 50 €. <code>:.2f</code> formatiert die Ausgabe mit zwei Nachkommastellen.</p></div></details></article>
+</section>
+<section class="chapter-section" data-section="6"><p class="eyebrow">Problemlösen · 06</p><h1>Welche Strategie kannst du wiederverwenden?</h1><p class="lead">Besprecht euren Lösungsweg. Auch ein unfertiges Programm kann einen klaren Plan, gute Experimente und eine hilfreiche Frage zeigen.</p>
+<article class="task-card"><span>Reflexion · 5 Minuten</span><h2>Dein nächstes unbekanntes Problem</h2><p>Vervollständige die Sätze:</p><ol><li>Am Anfang war mir unklar …</li><li>Mein kleinstes hilfreiches Experiment war …</li><li>Ich erwartete … und beobachtete …</li><li>Meine Vermutung habe ich geprüft, indem …</li><li>Beim nächsten Problem beginne ich mit …</li></ol><p><label for="reflection">Deine Notizen</label><textarea id="reflection" rows="5" placeholder="Welche konkrete Beobachtung hat dich weitergebracht?"></textarea></p></article>
+
+<article class="task-card"><span>Gemeinsame Besprechung</span><h2>Woran erkennen wir systematisches Vorgehen?</h2><ol><li>Das Ziel und mindestens ein Sollwert sind klar.</li><li>Die Teilprobleme sind klein genug zum Ausprobieren.</li><li>Der Plan lässt sich ohne Python erklären.</li><li>Tests prüfen auch einen Randfall.</li><li>Eine Codeänderung folgt aus einer Beobachtung.</li><li>Die offene Frage benennt die konkrete Wissenslücke.</li></ol><p>Die Lehrkraft fragt: „Was weißt du schon sicher?“ und „Welches Experiment könnte deine Vermutung prüfen?“</p></article>
+</section>
+<nav class="bottom-nav" aria-label="Zwischen Abschnitten wechseln"><button id="previous-section">← Vorheriger Abschnitt</button><a class="overview-link" href="../">Zur Kapitelübersicht</a><div class="presentation-position" hidden aria-live="polite"><span id="slide-counter">Folie 01 / 01</span><strong id="slide-chapter"></strong></div><button class="primary" id="next-section">Nächster Abschnitt →</button></nav></main></div><div id="announcement" class="sr-only" aria-live="polite"></div></body></html>
