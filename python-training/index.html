@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="styles.css?v=1" />
     <script src="lehrer.js?v=1"></script>
     <script src="../python/script.js?v=2" defer></script>
-  </head>
+  <script src="../assets/aufgabe-ziel.js?v=1" defer></script>
+</head>
   <body>
     <header class="topbar">
       <a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a>
@@ -43,14 +44,14 @@
 
           <div class="level-banner"><span>Ablauf</span><strong>Max. 2–3 Minuten pro Stufe · aufhören, wenn es nicht mehr geht</strong></div>
 
-          <article class="task-card stage"><span>Stufe A · Variablen &amp; Datentypen</span><h2>Was wird ausgegeben?</h2>
+          <article class="task-card stage" id="aufgabe-2d3eab0ecb"><span>Stufe A · Variablen &amp; Datentypen</span><h2>Was wird ausgegeben?</h2>
 <pre><code>a = "3"
 b = 4
 print(a * b)</code></pre>
             <div class="lehrer-only solution"><strong>Lösung</strong><pre>3333</pre><p>Text mal Zahl wiederholt den Text. Wer <code>12</code> schreibt, hat <code>str</code>/<code>int</code> noch nicht sicher.</p></div>
           </article>
 
-          <article class="task-card stage"><span>Stufe B · if / elif / else</span><h2>Schreibe das Programm</h2>
+          <article class="task-card stage" id="aufgabe-95e17174b0"><span>Stufe B · if / elif / else</span><h2>Schreibe das Programm</h2>
             <p>Frage das Alter ab. Unter 14 → <code>Kind</code>, unter 18 → <code>Jugendlich</code>, sonst <code>Erwachsen</code>.</p>
             <div class="lehrer-only solution"><strong>Lösung</strong><pre>alter = int(input("Alter: "))
 if alter &lt; 14:
@@ -61,7 +62,7 @@ else:
     print("Erwachsen")</pre><p>Achten auf: <code>int()</code> vergessen? Reihenfolge der Bedingungen?</p></div>
           </article>
 
-          <article class="task-card stage"><span>Stufe C · while</span><h2>Was wird ausgegeben?</h2>
+          <article class="task-card stage" id="aufgabe-cceb497cdc"><span>Stufe C · while</span><h2>Was wird ausgegeben?</h2>
 <pre><code>i = 10
 while i &gt; 0:
     i = i - 3
@@ -72,7 +73,7 @@ while i &gt; 0:
 -2</pre><p>Die <code>-2</code> ist der Knackpunkt: Die Bedingung wird erst am Anfang des nächsten Durchlaufs geprüft.</p></div>
           </article>
 
-          <article class="task-card stage"><span>Stufe D · Listen &amp; for</span><h2>Schreibe den Code</h2>
+          <article class="task-card stage" id="aufgabe-48ef65f95a"><span>Stufe D · Listen &amp; for</span><h2>Schreibe den Code</h2>
             <p>Gegeben ist <code>zahlen = [4, 8, 15, 16]</code>. Berechne die Summe <strong>ohne</strong> <code>sum()</code> und gib sie aus.</p>
             <div class="lehrer-only solution"><strong>Lösung</strong><pre>summe = 0
 for zahl in zahlen:
@@ -80,7 +81,7 @@ for zahl in zahlen:
 print(summe)   # 43</pre></div>
           </article>
 
-          <article class="task-card stage"><span>Stufe E · Funktionen</span><h2>Schreibe die Funktion</h2>
+          <article class="task-card stage" id="aufgabe-2795094f6f"><span>Stufe E · Funktionen</span><h2>Schreibe die Funktion</h2>
             <p>Schreibe <code>ist_gerade(zahl)</code>, die <code>True</code> oder <code>False</code> <strong>zurückgibt</strong> (nicht ausgibt). Rufe sie danach mit <code>7</code> auf und gib das Ergebnis aus.</p>
             <div class="lehrer-only solution"><strong>Lösung</strong><pre>def ist_gerade(zahl):
     return zahl % 2 == 0
@@ -157,7 +158,7 @@ Regeln:
 - Frag mich am Ende, ob ich es in eigenen Worten erklären kann.</pre>
           </article>
 
-          <article class="task-card stepping-task"><span>Übung · 15 min</span><h2>KI als Tutor ausprobieren</h2>
+          <article class="task-card stepping-task" id="aufgabe-5e13150d09"><span>Übung · 15 min</span><h2>KI als Tutor ausprobieren</h2>
             <ol class="check-list">
               <li>Starte einen neuen Chat mit dem Tutor-Prompt.</li>
               <li>Nimm einen Bug aus Kapitel 05, den du <em>nicht</em> sofort findest.</li>
@@ -191,24 +192,24 @@ Regeln:
           <div class="level-banner"><span>Regeln</span><strong>Papier oder Editor · kein Python ausführen · keine KI · ca. 20 min</strong></div>
 
           <div class="snippet-grid">
-<article class="task-card snippet"><span>Snippet 01 · warm</span><pre><code>def gruss():
+<article class="task-card snippet" id="aufgabe-eb37498676"><span>Snippet 01 · warm</span><pre><code>def gruss():
     print(&quot;Hallo&quot;)
 
 gruss()
 gruss()</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>Hallo
 Hallo</pre></div></article>
-<article class="task-card snippet"><span>Snippet 02 · warm</span><pre><code>def doppelt(x):
+<article class="task-card snippet" id="aufgabe-93b7e921b0"><span>Snippet 02 · warm</span><pre><code>def doppelt(x):
     return x * 2
 
 ergebnis = doppelt(4)
 print(ergebnis + 1)</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>9</pre></div></article>
-<article class="task-card snippet"><span>Snippet 03 · warm</span><pre><code>def doppelt(x):
+<article class="task-card snippet" id="aufgabe-de77603d3e"><span>Snippet 03 · warm</span><pre><code>def doppelt(x):
     print(x * 2)
 
 ergebnis = doppelt(4)
 print(ergebnis)</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>8
 None</pre></div></article>
-<article class="task-card snippet"><span>Snippet 04 · scope</span><pre><code>punkte = 10
+<article class="task-card snippet" id="aufgabe-57955e1133"><span>Snippet 04 · scope</span><pre><code>punkte = 10
 
 def bonus():
     punkte = 50
@@ -217,7 +218,7 @@ def bonus():
 bonus()
 print(&quot;außen:&quot;, punkte)</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>innen: 50
 außen: 10</pre></div></article>
-<article class="task-card snippet"><span>Snippet 05 · scope</span><pre><code>name = &quot;Mia&quot;
+<article class="task-card snippet" id="aufgabe-b093ed0b49"><span>Snippet 05 · scope</span><pre><code>name = &quot;Mia&quot;
 
 def begruessen(name):
     name = name.upper()
@@ -226,7 +227,7 @@ def begruessen(name):
 print(begruessen(&quot;Leon&quot;))
 print(name)</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>Hallo LEON
 Mia</pre></div></article>
-<article class="task-card snippet"><span>Snippet 06 · scope</span><pre><code>def zaehle():
+<article class="task-card snippet" id="aufgabe-748b08fdfb"><span>Snippet 06 · scope</span><pre><code>def zaehle():
     zaehler = 0
     zaehler = zaehler + 1
     return zaehler
@@ -236,7 +237,7 @@ print(zaehle())
 print(zaehle())</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>1
 1
 1</pre></div></article>
-<article class="task-card snippet"><span>Snippet 07 · knifflig</span><pre><code>def pruefe(zahl):
+<article class="task-card snippet" id="aufgabe-12dc9771d4"><span>Snippet 07 · knifflig</span><pre><code>def pruefe(zahl):
     if zahl &gt; 10:
         return &quot;groß&quot;
     print(&quot;geprüft&quot;)
@@ -246,14 +247,14 @@ print(pruefe(20))
 print(pruefe(3))</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>groß
 geprüft
 klein</pre></div></article>
-<article class="task-card snippet"><span>Snippet 08 · knifflig</span><pre><code>liste = [1, 2]
+<article class="task-card snippet" id="aufgabe-82e3709b70"><span>Snippet 08 · knifflig</span><pre><code>liste = [1, 2]
 
 def ergaenze(werte):
     werte.append(3)
 
 ergaenze(liste)
 print(liste)</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>[1, 2, 3]</pre></div></article>
-<article class="task-card snippet"><span>Snippet 09 · knifflig</span><pre><code>x = 5
+<article class="task-card snippet" id="aufgabe-7e7be22c77"><span>Snippet 09 · knifflig</span><pre><code>x = 5
 
 def aendern():
     x = x + 1
@@ -262,7 +263,7 @@ def aendern():
 print(aendern())</code></pre><div class="lehrer-only solution"><strong>Ausgabe</strong><pre>Fehler: UnboundLocalError
 (x wird in der Funktion zugewiesen → Python hält x für lokal,
 liest es aber, bevor es einen Wert hat)</pre></div></article>
-<article class="task-card snippet"><span>Snippet 10 · knifflig</span><pre><code>def a(n):
+<article class="task-card snippet" id="aufgabe-5c234efa83"><span>Snippet 10 · knifflig</span><pre><code>def a(n):
     return n + 1
 
 def b(n):
@@ -287,7 +288,7 @@ Am unsichersten war ich bei Nr.: ...</pre>
             <p>Mehrzeilige Ausgaben mit <code>/</code> trennen, z. B. <code>Hallo / Hallo</code>.</p>
           </article>
 
-          <article class="task-card stepping-task"><span>Danach</span><h2>Selbst überprüfen</h2>
+          <article class="task-card stepping-task" id="aufgabe-6d9eba2990"><span>Danach</span><h2>Selbst überprüfen</h2>
             <p>Erst nach dem Abschicken: Tippe die Snippets ab und führe sie aus. Bei jedem Unterschied schreibst du einen Satz: <em>„Ich dachte …, aber eigentlich …, weil …“</em></p>
           </article>
 
@@ -309,7 +310,7 @@ Am unsichersten war ich bei Nr.: ...</pre>
           <h1>Refactoring: Der Getränkeautomat</h1>
           <p class="lead"><strong>Refactoring</strong> heißt: Code umbauen, <em>ohne</em> dass sich sein Verhalten ändert. Das Programm unten funktioniert – ist aber ein langer Block. Zerlege es in Funktionen.</p>
 
-          <article class="task-card"><span>Ausgangscode</span><h2>Funktioniert, aber unübersichtlich</h2>
+          <article class="task-card" id="aufgabe-1e5c599dcd"><span>Ausgangscode</span><h2>Funktioniert, aber unübersichtlich</h2>
             <p>Kopiere den Code in eine neue Datei <code>automat.py</code> (oder <a href="../notebooks/getraenkeautomat.py" download>herunterladen</a>) und probiere ihn einmal aus.</p>
 <pre class="copy"><code>getraenke = [&quot;Wasser&quot;, &quot;Cola&quot;, &quot;Saft&quot;]
 preise = [1.0, 1.5, 2.0]
@@ -343,7 +344,7 @@ while True:
           </article>
 
           <div class="level-banner"><span>Stufe 1</span><strong>Mit Gerüst – für alle</strong></div>
-          <article class="task-card stepping-task"><span>Aufgabe</span><h2>Diese Funktionen sollen entstehen</h2>
+          <article class="task-card stepping-task" id="aufgabe-ffe38829e6"><span>Aufgabe</span><h2>Diese Funktionen sollen entstehen</h2>
             <ul class="check-list">
               <li><code>zeige_menue()</code> – gibt nur das Menü aus.</li>
               <li><code>ist_gueltige_auswahl(auswahl)</code> – gibt <code>True</code>/<code>False</code> <strong>zurück</strong>.</li>
@@ -422,7 +423,7 @@ main()</code></pre>
             <p>Extra-Aufgabe: <code>1 &lt;= int(auswahl) &lt;= len(getraenke)</code> bzw. <code>auswahl in [str(n) for n in range(1, len(getraenke) + 1)]</code>.</p>
           </article>
 
-          <article class="task-card"><span>Danach</span><h2>Paararbeit: Zahlenraten zu zweit</h2>
+          <article class="task-card" id="aufgabe-ba3590c0a7"><span>Danach</span><h2>Paararbeit: Zahlenraten zu zweit</h2>
             <p>Weiter geht es mit <a href="https://totoongh.github.io/python_methoden/">Teil 5 der Funktionen-Seite</a>. Eine Person tippt, die andere liest mit und sagt an – nach jeder Funktion wird gewechselt.</p>
           </article>
         </section>
@@ -436,7 +437,7 @@ main()</code></pre>
           <div class="level-banner"><span>Schema</span><strong>Zeile · Was passiert? · Korrektur</strong></div>
 
           <div class="snippet-grid">
-            <article class="task-card snippet"><span>Bug 01 · leicht</span><h2>Volljährig?</h2>
+            <article class="task-card snippet" id="aufgabe-9e41392549"><span>Bug 01 · leicht</span><h2>Volljährig?</h2>
 <pre><code>alter = input("Alter: ")
 if alter &gt;= 18:
     print("Volljährig")
@@ -444,20 +445,20 @@ else:
     print("Minderjährig")</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Zeile 1: <code>input</code> liefert Text → <code>TypeError</code> beim Vergleich. Korrektur: <code>int(input(...))</code>.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 02 · leicht</span><h2>Note prüfen</h2>
+            <article class="task-card snippet" id="aufgabe-e9bcaa8dc5"><span>Bug 02 · leicht</span><h2>Note prüfen</h2>
 <pre><code>note = int(input("Note: "))
 if note = 1:
     print("Sehr gut!")</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Zeile 2: <code>=</code> ist Zuweisung → <code>SyntaxError</code>. Vergleich mit <code>==</code>.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 03 · leicht</span><h2>Countdown</h2>
+            <article class="task-card snippet" id="aufgabe-365435154c"><span>Bug 03 · leicht</span><h2>Countdown</h2>
 <pre><code>zahl = 5
 while zahl &gt; 0:
     print(zahl)
 print("Start!")</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Endlosschleife: <code>zahl</code> wird nie kleiner. In der Schleife <code>zahl = zahl - 1</code> ergänzen.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 04 · mittel</span><h2>Abfrage</h2>
+            <article class="task-card snippet" id="aufgabe-2a684bbbcb"><span>Bug 04 · mittel</span><h2>Abfrage</h2>
 <pre><code>antwort = input("Weiter? (ja/nein) ")
 if antwort == "ja" or "j":
     print("Es geht weiter.")
@@ -465,7 +466,7 @@ else:
     print("Ende.")</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Zeile 2: <code>"j"</code> allein ist immer wahr → es geht <em>immer</em> weiter. Korrekt: <code>antwort == "ja" or antwort == "j"</code>.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 05 · mittel</span><h2>Summe der Liste</h2>
+            <article class="task-card snippet" id="aufgabe-26f766fe86"><span>Bug 05 · mittel</span><h2>Summe der Liste</h2>
 <pre><code>zahlen = [5, 10, 20]
 summe = 0
 for i in range(1, len(zahlen)):
@@ -473,12 +474,12 @@ for i in range(1, len(zahlen)):
 print(summe)   # soll 35 sein</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Zeile 3: Index startet bei 0 → das erste Element fehlt, Ausgabe 30. <code>range(len(zahlen))</code> oder <code>for zahl in zahlen</code>.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 06 · mittel</span><h2>Letzter Eintrag</h2>
+            <article class="task-card snippet" id="aufgabe-18472fcd6d"><span>Bug 06 · mittel</span><h2>Letzter Eintrag</h2>
 <pre><code>namen = ["Ali", "Bea", "Cem"]
 print("Zuletzt:", namen[len(namen)])</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p><code>IndexError</code>: Letzter Index ist <code>len - 1</code>. Besser: <code>namen[-1]</code>.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 07 · knifflig</span><h2>Mehrwertsteuer</h2>
+            <article class="task-card snippet" id="aufgabe-0105101d8e"><span>Bug 07 · knifflig</span><h2>Mehrwertsteuer</h2>
 <pre><code>def brutto(netto):
     ergebnis = netto * 1.19
 
@@ -486,7 +487,7 @@ preis = brutto(100)
 print("Brutto:", round(preis, 2))</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Kein <code>return</code> → <code>preis</code> ist <code>None</code> → <code>TypeError</code> bei <code>round</code>. <code>return netto * 1.19</code>.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 08 · knifflig</span><h2>Durchschnitt</h2>
+            <article class="task-card snippet" id="aufgabe-a7c8094754"><span>Bug 08 · knifflig</span><h2>Durchschnitt</h2>
 <pre><code>punkte = [3, 7, 8]
 summe = 0
 for p in punkte:
@@ -494,7 +495,7 @@ for p in punkte:
     print("Schnitt:", summe / len(punkte))</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Letzte Zeile ist zu weit eingerückt → wird dreimal mit Zwischenständen ausgegeben. Ausrücken.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 09 · knifflig</span><h2>Zähler</h2>
+            <article class="task-card snippet" id="aufgabe-f6e9980375"><span>Bug 09 · knifflig</span><h2>Zähler</h2>
 <pre><code>anzahl = 0
 
 def hochzaehlen():
@@ -504,7 +505,7 @@ hochzaehlen()
 print(anzahl)</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p><code>UnboundLocalError</code> (vgl. Snippet 9). Sauber: <code>def hochzaehlen(anzahl): return anzahl + 1</code> und <code>anzahl = hochzaehlen(anzahl)</code>.</p></div></article>
 
-            <article class="task-card snippet"><span>Bug 10 · knifflig</span><h2>Größte Zahl</h2>
+            <article class="task-card snippet" id="aufgabe-e25844ddee"><span>Bug 10 · knifflig</span><h2>Größte Zahl</h2>
 <pre><code>def groesste(zahlen):
     maximum = 0
     for z in zahlen:
@@ -516,7 +517,7 @@ print(groesste([-5, -2, -9]))   # soll -2 sein</code></pre>
               <div class="lehrer-only solution"><strong>Lösung</strong><p>Logikfehler: Start bei 0 → Ergebnis 0. Start mit <code>maximum = zahlen[0]</code>.</p></div></article>
           </div>
 
-          <article class="task-card stepping-task"><span>Dreh den Spieß um</span><h2>Bugs für andere bauen</h2>
+          <article class="task-card stepping-task" id="aufgabe-6ec371cd17"><span>Dreh den Spieß um</span><h2>Bugs für andere bauen</h2>
             <p>Nimm ein eigenes funktionierendes Programm und baue <strong>genau einen</strong> Fehler ein. Tausche mit deinem Nachbarn. Wer findet den Bug schneller?</p>
           </article>
 
@@ -547,7 +548,7 @@ for zahl in [3, 5, 2]:
               <tbody><tr><td>Start</td><td>–</td><td>0</td><td></td></tr><tr><td>1</td><td>3</td><td>3</td><td>3</td></tr><tr><td>2</td><td>5</td><td>8</td><td>8</td></tr><tr><td>3</td><td>2</td><td>10</td><td>10</td></tr></tbody></table>
           </article>
 
-          <article class="task-card stepping-task"><span>Aufgabe P1</span><h2>Ablauftabelle: while</h2>
+          <article class="task-card stepping-task" id="aufgabe-8d9dac0093"><span>Aufgabe P1</span><h2>Ablauftabelle: while</h2>
 <pre><code>n = 1
 schritte = 0
 while n &lt; 20:
@@ -557,7 +558,7 @@ print(n, schritte)</code></pre>
             <div class="lehrer-only solution"><strong>Lösung</strong><p>n: 1 → 3 → 9 → 27, schritte: 0 → 1 → 2 → 3. Ausgabe: <code>27 3</code></p></div>
           </article>
 
-          <article class="task-card stepping-task"><span>Aufgabe P2</span><h2>Ablauftabelle: Liste und if</h2>
+          <article class="task-card stepping-task" id="aufgabe-cea5c5d326"><span>Aufgabe P2</span><h2>Ablauftabelle: Liste und if</h2>
 <pre><code>werte = [4, 11, 7, 20]
 treffer = []
 for w in werte:
@@ -568,7 +569,7 @@ print(treffer)</code></pre>
           </article>
 
           <div class="level-banner"><span>Technik 2</span><strong>Zeilen-Puzzle (Parsons)</strong></div>
-          <article class="task-card stepping-task"><span>Aufgabe P3</span><h2>Bring die Zeilen in die richtige Reihenfolge – und rück sie ein</h2>
+          <article class="task-card stepping-task" id="aufgabe-846e6b52f2"><span>Aufgabe P3</span><h2>Bring die Zeilen in die richtige Reihenfolge – und rück sie ein</h2>
             <p>Das Programm soll so lange Zahlen einlesen, bis <code>0</code> eingegeben wird, und dann die Summe ausgeben. <strong>Eine Zeile ist überflüssig!</strong></p>
 <pre><code>print("Summe:", summe)
 summe = summe + zahl
@@ -586,7 +587,7 @@ print("Summe:", summe)
 # überflüssig: summe = 1</pre></div>
           </article>
 
-          <article class="task-card stepping-task"><span>Aufgabe P4</span><h2>Funktion puzzeln</h2>
+          <article class="task-card stepping-task" id="aufgabe-64228a2dca"><span>Aufgabe P4</span><h2>Funktion puzzeln</h2>
             <p>Die Funktion soll zählen, wie viele Namen in einer Liste mit „A“ beginnen.</p>
 <pre><code>return anzahl
 anzahl = anzahl + 1
@@ -603,7 +604,7 @@ if name[0] == "A":</code></pre>
           </article>
 
           <div class="level-banner level-four"><span>Technik 3</span><strong>Von Hand schreiben</strong></div>
-          <article class="task-card challenge-card"><span>Aufgabe P5–P7</span><h2>Schreibe auf Papier</h2>
+          <article class="task-card challenge-card" id="aufgabe-c19c076a64"><span>Aufgabe P5–P7</span><h2>Schreibe auf Papier</h2>
             <ul class="check-list">
               <li><strong>P5:</strong> <code>kleinste(zahlen)</code> gibt die kleinste Zahl einer Liste zurück – ohne <code>min()</code>.</li>
               <li><strong>P6:</strong> <code>zaehle_vokale(text)</code> gibt zurück, wie viele Vokale im Text stecken. (Tipp: <code>if buchstabe in "aeiou"</code>)</li>
@@ -653,7 +654,7 @@ print(date.today())</code></pre>
             </article>
           </div>
 
-          <article class="task-card challenge-card project-card"><span>Abschluss für Fortgeschrittene</span><h2>Werkzeugausleihe</h2>
+          <article class="task-card challenge-card project-card" id="aufgabe-13192f1280"><span>Abschluss für Fortgeschrittene</span><h2>Werkzeugausleihe</h2>
             <p>Baue eine Konsolen-Verwaltung für die Werkzeugausgabe im Betrieb: Werkzeuge ausleihen, zurückgeben, Liste anzeigen.</p>
             <ul class="check-list"><li>Bestand als Dictionary <code>{"Bohrmaschine": "verfügbar", ...}</code></li><li>Jede Menüaktion ist eine eigene Funktion</li><li>Falsche Eingaben werden mit <code>try</code>/<code>except</code> bzw. <code>if</code> abgefangen</li><li>Ausgaben mit f-Strings formatiert</li><li><strong>Bonus:</strong> Bestand in einer Textdatei speichern</li></ul>
           </article>

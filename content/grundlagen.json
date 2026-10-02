@@ -1,0 +1,252 @@
+[
+  {
+    "slug": "cpu-ram-ssd",
+    "title": "CPU, Arbeitsspeicher und SSD",
+    "group": "Computer und Programmausführung",
+    "goal": "Du kannst Ausführen, kurzfristiges Bereithalten und dauerhaftes Speichern unterscheiden.",
+    "body": "<p>Die <strong>CPU</strong> führt Maschinenanweisungen aus: Sie rechnet, vergleicht und steuert den Ablauf. Der <strong>Arbeitsspeicher (RAM)</strong> hält aktuell benötigte Daten und Anweisungen bereit. Sein Inhalt geht ohne Strom verloren. Die <strong>SSD</strong> speichert Dateien dauerhaft, etwa python.exe, ein Skript und gespeicherte Ergebnisse.</p><p>Beim Start eines Programms lädt das Betriebssystem benötigte Inhalte in den Arbeitsspeicher. Die CPU verarbeitet Anweisungen und Daten. Ein geänderter Variablenwert wird dadurch nicht automatisch dauerhaft in der Skriptdatei gespeichert. Dafür müsste das Programm ausdrücklich eine Datei schreiben.</p><p>Mehr freier SSD-Speicher ist nicht dasselbe wie mehr RAM. Auch eine Datei auf einer schnellen SSD rechnet nicht selbst: Die CPU führt die Rechenoperationen aus.</p>",
+    "check": "Eine Skriptdatei liegt auf der SSD. Wo wird gerechnet, und bleiben alle aktuellen Variablenwerte nach dem Ausschalten erhalten?",
+    "answer": "Die CPU rechnet. Aktuelle Werte im RAM bleiben ohne Strom nicht erhalten; die gespeicherte Skriptdatei bleibt auf der SSD.",
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "slug": "bits-bytes",
+    "title": "Bits, Bytes und ihre Interpretation",
+    "group": "Computer und Programmausführung",
+    "goal": "Du weißt, dass eine Bitfolge erst durch ihre Verwendung eine Bedeutung bekommt.",
+    "body": "<p>Ein <strong>Bit</strong> hat einen von zwei Zuständen, dargestellt als 0 oder 1. Ein <strong>Byte</strong> besteht aus acht Bits. Damit sind 2⁸ = 256 Bitmuster möglich. Bei Interpretation als vorzeichenlose ganze Zahl liegen die Werte zwischen 0 und 255.</p><p>Für eine vorzeichenlose Binärzahl haben die acht Stellen die Gewichte 128, 64, 32, 16, 8, 4, 2 und 1. Für <code>00110001</code> addierst du 32 + 16 + 1 = 49.</p><p>Dasselbe Byte kann nach ASCII das Zeichen „1“ codieren. In einem anderen Zusammenhang kann es zu einer Maschinenanweisung gehören. An den Bits allein erkennst du nicht, welche Interpretation verwendet wird. Dafür brauchst du die Codierungsregeln und den Kontext.</p><p>Die Zahl 49, das Zeichen „1“ und die Zahl 1 sind verschiedene Bedeutungen. Eine passende Rechenregel allein beweist deshalb nicht, dass ein Byte im Programm eine Zahl darstellt.</p>",
+    "check": "Bedeutet 00110001 in jedem beliebigen Programm den Zahlenwert 49? Begründe.",
+    "answer": "Nein. Als vorzeichenlose Binärzahl ergibt es 49; seine Verwendung kann aber beispielsweise ein ASCII-Zeichen sein. Der Kontext bestimmt die Interpretation.",
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "slug": "maschinencode",
+    "title": "Maschinencode, Opcode, Operand und Assembly",
+    "group": "Computer und Programmausführung",
+    "goal": "Du kannst eine einfache Maschinenanweisung nach vorgegebenen Regeln lesen.",
+    "body": "<p><strong>Maschinencode</strong> besteht aus Bitmustern, die eine bestimmte CPU als Anweisungen versteht. Der <strong>Opcode</strong> legt die Operation fest; ein <strong>Operand</strong> gibt z. B. einen Wert oder eine Adresse an. Die Bedeutung hängt vom Befehlssatz dieser CPU ab.</p><p><strong>Assembly</strong> verwendet lesbare Befehlsnamen wie LOAD, ADD und STORE. Ein Assembler übersetzt sie in Maschinencode. Python verwendet höhere Sprachkonstrukte wie Variablen und Schleifen; die CPU führt diese Python-Wörter nicht unmittelbar aus.</p><p>Beispiel einer erfundenen Lern-CPU: 4 Bit Opcode und 8 Bit Operand. LOAD setzt den Rechenstand, ADD addiert einen Wert, STORE kopiert den Rechenstand in eine RAM-Adresse, ohne ihn zu verändern.</p><div class=\"table-scroll\"><table><thead><tr><th>Opcode</th><th>Assembly</th><th>Bedeutung</th></tr></thead><tbody><tr><td>0001</td><td>LOAD x</td><td>Wert x laden</td></tr><tr><td>0010</td><td>ADD x</td><td>Wert x addieren</td></tr><tr><td>0011</td><td>STORE a</td><td>Rechenstand an Adresse a speichern</td></tr></tbody></table></div><pre data-language=\"text\"><code>0001 | 00000101   → LOAD 5\n0010 | 00000011   → ADD 3\n0011 | 00001100   → STORE 12</code></pre><p>Danach steht der Rechenstand auf 8; RAM-Adresse 12 enthält ebenfalls 8. Bei STORE ist 12 eine Adresse, kein zu addierender Wert. Das Beispiel ist ein Lernmodell, kein echter allgemeingültiger CPU-Befehlssatz.</p>",
+    "check": "Welche Operation und welcher Operand gehören zu 0010 | 00000011?",
+    "answer": "Operation ADD, Operand 3. Assembly: ADD 3.",
+    "tags": [
+      "maschinencode",
+      "system"
+    ]
+  },
+  {
+    "slug": "compiler-interpreter",
+    "title": "Compiler und Interpreter",
+    "group": "Computer und Programmausführung",
+    "goal": "Du kannst Übersetzen und Ausführen zur Laufzeit unterscheiden.",
+    "body": "<p>Ein <strong>Compiler</strong> übersetzt Quellcode in Zielcode, etwa Maschinencode oder Bytecode. Dieser Zielcode kann anschließend ausgeführt werden. Ein <strong>Interpreter</strong> verarbeitet Code zur Laufzeit und veranlasst seine Ausführung.</p><p>Die Begriffe beschreiben Aufgaben von Software. Sie bedeuten nicht, dass eine Sprache immer ausschließlich die eine oder die andere Technik verwendet. Mischformen sind möglich.</p><p>Die verbreitete Python-Implementierung CPython übersetzt Python-Quellcode zunächst in Bytecode. Dieser wird anschließend von der Python-Laufzeit ausgeführt. Für die Grundlagen reicht: Compiler übersetzen Code; Interpreter verarbeiten ihn bei der Ausführung. „Python wird einfach Zeichen für Zeichen direkt von der CPU gelesen“ wäre falsch.</p>",
+    "check": "Erkläre kurz den Unterschied zwischen Compiler und Interpreter.",
+    "answer": "Ein Compiler übersetzt Quellcode in Zielcode. Ein Interpreter verarbeitet Code zur Laufzeit und führt ihn aus. Beide Techniken können kombiniert werden.",
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "slug": "programm-prozess",
+    "title": "Programm und Prozess",
+    "group": "Computer und Programmausführung",
+    "goal": "Du unterscheidest eine gespeicherte ausführbare Datei von einer laufenden Instanz.",
+    "body": "<p>Ein <strong>Programm</strong> ist eine gespeicherte Folge von Anweisungen, z. B. die Datei python.exe. Ein <strong>Prozess</strong> ist eine laufende Instanz eines Programms. Das Betriebssystem verwaltet ihren Ausführungszustand und ihre Ressourcen.</p><p>Startest du dasselbe Programm zweimal, können zwei Prozesse entstehen. Sie haben unterschiedliche <strong>Prozess-IDs (PIDs)</strong> und können unterschiedliche Daten verarbeiten. Das Beenden eines Prozesses löscht nicht die Programmdatei.</p><p>Eine PID beschreibt also eine laufende Instanz, nicht den Dateinamen auf der SSD. Die Programmausführung nutzt CPU-Zeit und Speicher; die Datei kann danach weiterhin gestartet werden.</p>",
+    "check": "Zwei laufende Instanzen von python.exe haben unterschiedliche PIDs. Müssen dafür zwei unterschiedliche python.exe-Dateien existieren?",
+    "answer": "Nein. Dieselbe Programmdatei kann mehrfach gestartet werden und unterschiedliche Prozesse erzeugen.",
+    "tags": [
+      "prozesse",
+      "system"
+    ]
+  },
+  {
+    "slug": "terminal-shell",
+    "title": "Terminal und Shell",
+    "group": "Terminal und Arbeitsumgebung",
+    "goal": "Du kannst das Eingabefenster und das darin laufende Befehlsprogramm unterscheiden.",
+    "body": "<p>Das <strong>Terminal</strong> stellt eine Oberfläche für Texteingabe und Textausgabe bereit. Die <strong>Shell</strong> ist das Programm, das deine Befehle interpretiert und ausführt oder weitere Programme startet. PowerShell ist eine Shell; Windows Terminal ist ein Terminal.</p><p>Ein Terminal kann unterschiedliche Shells anzeigen. Wenn du <code>python</code> eingibst, entscheidet die Shell, wie der Befehl gefunden und gestartet wird. Eine Fehlermeldung erscheint im Terminal, stammt aber vom beteiligten Programm, etwa der Shell.</p><pre data-language=\"text\"><code>PS C:\\Users\\Azubi&gt; python --version\nPython 3.13.0</code></pre><p>Die Versionsausgabe hier ist ein Beispiel. Der Prompt <code>PS …&gt;</code> gehört nicht zum Befehl. Du tippst nur <code>python --version</code> ein.</p>",
+    "check": "Ist PowerShell das Gleiche wie Windows Terminal?",
+    "answer": "Nein. PowerShell verarbeitet Befehle; Windows Terminal stellt das Fenster für Ein- und Ausgabe bereit.",
+    "tags": [
+      "shell",
+      "terminal"
+    ]
+  },
+  {
+    "slug": "path",
+    "title": "Ausführbare Dateien, Pfade und PATH",
+    "group": "Terminal und Arbeitsumgebung",
+    "goal": "Du verstehst, warum ein vorhandenes Programm beim Aufruf trotzdem nicht gefunden werden kann.",
+    "body": "<p>Ein <strong>Pfad</strong> beschreibt den Ort einer Datei oder eines Ordners. Ein absoluter Pfad ist vollständig, etwa <code>C:\\Tools\\Python\\python.exe</code>. Ein relativer Pfad bezieht sich auf das aktuelle Verzeichnis; <code>.\\python.exe</code> meint diese Datei im aktuellen Ordner.</p><p><strong>PATH</strong> ist eine Umgebungsvariable mit einer Liste von Verzeichnissen. Bei einem externen Befehl wie <code>python</code> sucht PowerShell unter anderem dort nach einer passenden ausführbaren Datei. PowerShell berücksichtigt auch eigene Befehlsarten, etwa Cmdlets und Aliase.</p><p>Existiert python.exe in C:\\Tools\\Python, wird aber nicht gefunden, kannst du diesen Ordner in PATH aufnehmen und eine neue Shell öffnen. Eingetragen wird der <strong>Ordner</strong>, nicht die einzelne EXE-Datei. Alternativ funktioniert ein direkter Aufruf:</p><pre data-language=\"text\"><code>&amp; &quot;C:\\Tools\\Python\\python.exe&quot; --version\n# Oder im Ordner C:\\Tools\\Python:\n.\\python.exe --version</code></pre><p>PowerShell startet eine Datei im aktuellen Ordner normalerweise nicht allein über ihren Namen. Die Schreibweise <code>.\\</code> macht den lokalen Pfad ausdrücklich. Das <code>&amp;</code> führt einen in Anführungszeichen geschriebenen Programmpfad aus.</p>",
+    "check": "python.exe existiert, aber python wird nicht erkannt. Nenne zwei mögliche Lösungen.",
+    "answer": "Den Installationsordner zu PATH hinzufügen und die Shell neu öffnen; oder die EXE über ihren vollständigen Pfad aufrufen. Auch .\\python.exe im passenden Ordner ist möglich.",
+    "tags": [
+      "path",
+      "terminal"
+    ]
+  },
+  {
+    "slug": "python-starten",
+    "title": "Python starten, Skripte und Editor",
+    "group": "Terminal und Arbeitsumgebung",
+    "goal": "Du unterscheidest Python-Konsole, Skriptdatei und Editor.",
+    "body": "<p>Nach der Installation kannst du mit <code>python --version</code> prüfen, ob Python über diesen Befehl erreichbar ist. Ein Aufruf von <code>python</code> ohne Dateiname startet gewöhnlich die interaktive Konsole; dort steht der Prompt <code>&gt;&gt;&gt;</code>. Dieser Prompt gehört nicht zu deinem Code.</p><p>Eine Skriptdatei, z. B. <code>rechnung.py</code>, enthält Python-Quellcode. Ein Editor wie VS Code hilft beim Schreiben. Der Editor selbst ist nicht der Python-Interpreter. Speichere die Datei, bevor du sie startest.</p><pre data-language=\"text\"><code>python rechnung.py</code></pre><p>Den Befehl gibst du in der Shell ein, im Ordner der Datei oder mit ihrem Pfad. Ausgabe und Fehlermeldungen erscheinen im Terminal. Im Editor musst du ggf. den installierten Python-Interpreter auswählen.</p><p><a href=\"../python/#1\">Installationsanleitung</a> · <a href=\"../python/#6\">VS Code einrichten</a></p>",
+    "check": "Was ist der Unterschied zwischen rechnung.py und python.exe?",
+    "answer": "rechnung.py enthält den Quellcode deines Skripts. python.exe ist die ausführbare Python-Laufzeit, mit der du das Skript starten kannst.",
+    "tags": [
+      "terminal"
+    ]
+  },
+  {
+    "slug": "variablen",
+    "title": "Variablen und Zuweisungen",
+    "group": "Python-Grundlagen",
+    "goal": "Du verfolgst, welchen Wert ein Name nach einer Codezeile bezeichnet.",
+    "body": "<p>Mit <code>=</code> weist du einer Variablen einen Wert zu. Python wertet zuerst die rechte Seite aus und ordnet das Ergebnis dann dem Namen links zu. <code>==</code> prüft dagegen auf Gleichheit.</p><pre data-language=\"python\"><code>n = 3\nergebnis = 2\nn = ergebnis + n * 2\nergebnis = n - 3\nprint(n, ergebnis)</code></pre><p>Zuerst sind n = 3 und ergebnis = 2. In Zeile 3 wird mit den bisherigen Werten gerechnet: 2 + 3 · 2 = 8. Danach ist n = 8. Die nächste Zeile setzt ergebnis auf 5. Ausgabe: <code>8 5</code>.</p><p>Ein Schreibtischtest notiert die Werte <strong>nach der jeweils ausgeführten Zeile</strong>. Arbeite in Ausführungsreihenfolge; spätere Änderungen verändern frühere Rechenschritte nicht nachträglich.</p>",
+    "check": "Welchen Wert hat n nach n = n + 1, wenn n zuvor 4 war?",
+    "answer": "5. Die rechte Seite verwendet den bisherigen Wert 4; anschließend wird das Ergebnis 5 zugewiesen.",
+    "tags": [
+      "variablen"
+    ]
+  },
+  {
+    "slug": "rechnen-strings",
+    "title": "Rechenoperationen und Strings",
+    "group": "Python-Grundlagen",
+    "goal": "Du kannst Rechenoperatoren lesen und Texte zusammensetzen.",
+    "body": "<div class=\"table-scroll\"><table><thead><tr><th>Operator</th><th>Bedeutung</th><th>Beispiel</th></tr></thead><tbody><tr><td>+</td><td>Addition</td><td>5 + 2 = 7</td></tr><tr><td>-</td><td>Subtraktion</td><td>5 - 2 = 3</td></tr><tr><td>*</td><td>Multiplikation</td><td>5 * 2 = 10</td></tr><tr><td>/</td><td>Division; bei int-Eingaben float-Ergebnis</td><td>5 / 2 = 2.5</td></tr><tr><td>//</td><td>Ganzzahlige Division, abgerundet</td><td>5 // 2 = 2</td></tr><tr><td>%</td><td>Divisionsrest</td><td>5 % 2 = 1</td></tr><tr><td>**</td><td>Potenz</td><td>2 ** 3 = 8</td></tr></tbody></table></div><p>Klammern werden zuerst ausgewertet. Potenzen stehen vor Multiplikation/Division/Rest, diese vor Addition/Subtraktion. Gleichrangige Operationen wie + und - werden von links nach rechts ausgewertet.</p><pre data-language=\"python\"><code>text = &quot;84&quot;\nn = 5\nprint(int(text) // (n + 1))\nprint(text + str(n - 2))\nprint(&quot;ha&quot; * 3)</code></pre><p>Ausgabe: 14, dann 843, dann hahaha. <code>+</code> fügt zwei Strings zusammen. Eine Zahl musst du dafür mit <code>str(...)</code> in Text umwandeln. String mal int wiederholt Text. String plus int ist keine gültige Addition. <code>print(\"Wert:\", n)</code> kann mehrere Werte anzeigen, ohne sie vorher zu einem String zusammenzufügen.</p>",
+    "check": "Welchen Wert und Typ hat 8 / 4? Was ergibt \"8\" + \"4\"?",
+    "answer": "8 / 4 ergibt 2.0 vom Typ float. Die String-Verknüpfung ergibt \"84\" vom Typ str.",
+    "tags": [
+      "rechnen",
+      "strings"
+    ]
+  },
+  {
+    "slug": "datentypen",
+    "title": "Datentypen und Typumwandlungen",
+    "group": "Python-Grundlagen",
+    "goal": "Du unterscheidest str, int, float und bool und wandelst gültige Werte um.",
+    "body": "<div class=\"table-scroll\"><table><thead><tr><th>Typ</th><th>Bedeutung</th><th>Beispiele</th></tr></thead><tbody><tr><td>str</td><td>Text</td><td>&quot;12&quot;, &quot;Hallo&quot;</td></tr><tr><td>int</td><td>Ganze Zahl</td><td>12, -4</td></tr><tr><td>float</td><td>Gleitkommazahl</td><td>12.5, 0.0</td></tr><tr><td>bool</td><td>Wahrheitswert</td><td>True, False</td></tr></tbody></table></div><p>Anführungszeichen machen aus <code>12</code> den String <code>\"12\"</code>. <code>type(wert)</code> zeigt den Typ. Mit <code>int(...)</code>, <code>float(...)</code>, <code>str(...)</code> und <code>bool(...)</code> kannst du passende Werte umwandeln.</p><pre data-language=\"python\"><code>text = &quot;12&quot;\nzahl = int(text)\npreis = float(&quot;2.5&quot;)\nmeldung = &quot;Anzahl: &quot; + str(zahl)\nprint(type(zahl))\nprint(preis, meldung)</code></pre><p>zahl hat den Typ int, preis float und meldung str. Eine gültige Schreibweise ist Voraussetzung: <code>int(\"Hallo\")</code> führt zu einem Fehler. Bei float wird in Python ein Punkt verwendet. <code>int(3.9)</code> ergibt 3, keine kaufmännische Rundung.</p><p><code>bool(0)</code> und <code>bool(\"\")</code> ergeben False. Ein nichtleerer String ist True, also auch <code>bool(\"False\")</code>. Eine Typumwandlung liest nicht automatisch die sprachliche Bedeutung eines Textes.</p>",
+    "check": "Welche Datentypen haben \"False\", False und float(5)?",
+    "answer": "str, bool und float. float(5) hat den Wert 5.0.",
+    "tags": [
+      "datentypen"
+    ]
+  },
+  {
+    "slug": "eingabe-ausgabe",
+    "title": "input und print",
+    "group": "Python-Grundlagen",
+    "goal": "Du liest Eingaben als Text ein und wandelst sie für Rechnungen passend um.",
+    "body": "<p><code>input(\"Frage: \")</code> zeigt die Frage an, wartet auf eine Eingabe und liefert deren Inhalt als <strong>String</strong> zurück. Auch beim Eintippen von 84 ist die Rückgabe zunächst <code>\"84\"</code>. Für Rechnungen mit einer ganzen Zahl brauchst du z. B. <code>int(input(...))</code>.</p><pre data-language=\"python\"><code>text = input(&quot;Zahl: &quot;)\nzahl = int(text)\nprint(zahl + 1)\nprint(&quot;Eingabe:&quot;, text)</code></pre><p>Bei Eingabe 84 wird nach der Frage 85 und anschließend <code>Eingabe: 84</code> ausgegeben. Die Umwandlung erzeugt einen neuen Wert; text bleibt str. Die eingegebene Zeichenfolge ist selbst keine print-Ausgabe des Programms.</p><p><code>print</code> stellt Werte für die Ausgabe dar. Es verändert den Typ der gespeicherten Variablen nicht. Mehrere Argumente werden standardmäßig durch Leerzeichen getrennt, jede print-Anweisung endet standardmäßig mit einem Zeilenumbruch. Die Rückgabe von print ist None.</p><p>Bei Aufgaben zu gültigen ganzen Eingaben ist gemeint, dass der Text zu int umgewandelt werden kann. Der Rückgabetyp von input bleibt trotzdem str.</p>",
+    "check": "Nach x = input(\"Zahl: \") wird 7 eingegeben. Hat x den Typ int?",
+    "answer": "Nein, x ist der String \"7\". Erst z. B. x = int(x) ordnet x den ganzzahligen Wert 7 zu.",
+    "tags": [
+      "eingabe",
+      "datentypen"
+    ]
+  },
+  {
+    "slug": "vergleiche",
+    "title": "Vergleiche und Wahrheitswerte",
+    "group": "Python-Grundlagen",
+    "goal": "Du wertest Vergleiche zu True oder False aus.",
+    "body": "<div class=\"table-scroll\"><table><thead><tr><th>Operator</th><th>Frage</th></tr></thead><tbody><tr><td>==</td><td>Gleich?</td></tr><tr><td>!=</td><td>Ungleich?</td></tr><tr><td>&lt;</td><td>Kleiner?</td></tr><tr><td>&lt;=</td><td>Kleiner oder gleich?</td></tr><tr><td>&gt;</td><td>Größer?</td></tr><tr><td>&gt;=</td><td>Größer oder gleich?</td></tr></tbody></table></div><p>Ein Vergleich wie <code>punkte &gt;= 50</code> wird zu True oder False ausgewertet. Beide Werte haben den Typ bool. <code>True</code> ohne Anführungszeichen ist ein Wahrheitswert; <code>\"True\"</code> ist Text.</p><pre data-language=\"python\"><code>punkte = 62\nbestanden = punkte &gt;= 50\nprint(bestanden)\nprint(punkte == 62)\nprint(punkte != 62)</code></pre><p>Die Ausgaben sind True, True und False. Die Grenze ist wichtig: <code>&gt; 50</code> schließt 50 aus, <code>&gt;= 50</code> schließt 50 ein. Vergleiche sollen sich auf passend vergleichbare Werte beziehen; ein int und ein String sind nicht automatisch dieselbe Zahl.</p>",
+    "check": "Welche Werte ergeben 5 >= 5 und 5 > 5?",
+    "answer": "True und False. >= schließt den gleichen Wert ein.",
+    "tags": [
+      "bedingungen",
+      "wahrheitswerte"
+    ]
+  },
+  {
+    "slug": "verzweigungen",
+    "title": "if, elif und else",
+    "group": "Python-Grundlagen",
+    "goal": "Du schreibst eine Entscheidung mit korrektem Doppelpunkt und Einrückung.",
+    "body": "<p>Python prüft die Bedingungen einer if/elif/else-Kette von oben nach unten. Der Block der <strong>ersten wahren Bedingung</strong> wird ausgeführt. Die weiteren Zweige dieser Kette werden übersprungen. Trifft keine Bedingung zu, wird der optionale else-Block ausgeführt.</p><pre data-language=\"python\"><code>temperatur = 12\nif temperatur &lt; 0:\n    print(&quot;Frost&quot;)\nelif temperatur &lt; 15:\n    print(&quot;kuehl&quot;)\nelse:\n    print(&quot;warm&quot;)\nprint(&quot;Fertig&quot;)</code></pre><p>Ausgabe: kuehl, danach Fertig. Hinter if und elif steht eine Bedingung. Hinter else steht keine Bedingung. Jede Kopfzeile endet mit einem Doppelpunkt; der zugehörige Block ist eingerückt, üblicherweise mit vier Leerzeichen.</p><p>Mehrere einzelne if-Anweisungen sind keine gemeinsame Kette und können mehrere Ausgaben erzeugen. Die Reihenfolge der Bedingungen ist daher Teil deiner Lösung.</p>",
+    "check": "Was gibt der Code bei temperatur = 15 aus?",
+    "answer": "warm, danach Fertig. 15 < 15 ist False.",
+    "tags": [
+      "bedingungen"
+    ]
+  },
+  {
+    "slug": "logik",
+    "title": "and, or, not und Wahrheitstafeln",
+    "group": "Python-Grundlagen",
+    "goal": "Du verknüpfst bis zu drei Wahrheitswerte und bestimmst Teil- und Gesamtergebnis.",
+    "body": "<p><code>and</code> ergibt bei bool-Werten nur dann True, wenn beide Seiten True sind. <code>or</code> ergibt True, wenn mindestens eine Seite True ist, auch wenn beide True sind. <code>not</code> kehrt einen Wahrheitswert um.</p><div class=\"table-scroll\"><table><thead><tr><th>A</th><th>B</th><th>A and B</th><th>A or B</th></tr></thead><tbody><tr><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td>False</td><td>True</td><td>False</td><td>True</td></tr><tr><td>True</td><td>False</td><td>False</td><td>True</td></tr><tr><td>True</td><td>True</td><td>True</td><td>True</td></tr></tbody></table></div><p>Eine Wahrheitstafel zeigt alle Kombinationen. Bei zwei unabhängigen bool-Werten gibt es 4 Zeilen, bei drei 8. Klammern bestimmen die Gruppierung. Bei logischen Operatoren gilt ansonsten: not vor and vor or.</p><div class=\"table-scroll\"><table><thead><tr><th>A</th><th>B</th><th>C</th><th>B or C</th><th>A and (B or C)</th></tr></thead><tbody><tr><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td>False</td><td>False</td><td>True</td><td>True</td><td>False</td></tr><tr><td>False</td><td>True</td><td>False</td><td>True</td><td>False</td></tr><tr><td>False</td><td>True</td><td>True</td><td>True</td><td>False</td></tr><tr><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td>True</td><td>False</td><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>True</td><td>False</td><td>True</td><td>True</td></tr><tr><td>True</td><td>True</td><td>True</td><td>True</td><td>True</td></tr></tbody></table></div><p>Beispiel <code>(A or B) and not C</code> mit A=True, B=False, C=True: Die Klammer ergibt True; not C ergibt False; True and False ergibt False. Bestimme Teilwerte, bevor du das Gesamtergebnis einträgst.</p><p>Python kann abkürzen: Bei False and … und True or … steht das Ergebnis schon fest. Hier verwenden wir nur bool-Werte bzw. Vergleiche. <a href=\"../klausurvorbereitung/#1\">Eine Wahrheitstafel selbst ausfüllen</a>.</p>",
+    "check": "Schreibe eine Bedingung mit and für einen Wert zwischen 50 und 80 einschließlich beider Grenzen.",
+    "answer": "wert >= 50 and wert <= 80",
+    "tags": [
+      "bedingungen",
+      "wahrheitswerte"
+    ]
+  },
+  {
+    "slug": "while",
+    "title": "while-Schleifen und Endlosschleifen",
+    "group": "Python-Grundlagen",
+    "goal": "Du verfolgst Startwert, Prüfung, Schleifenblock und Zustandsänderung.",
+    "body": "<p><code>while bedingung:</code> prüft die Bedingung <strong>vor jedem Durchlauf</strong>. Ist sie True, wird der eingerückte Block ausgeführt; anschließend wird erneut geprüft. Ist sie schon am Anfang False, gibt es keinen Durchlauf.</p><pre data-language=\"python\"><code>zaehler = 3\nwhile zaehler &gt; 0:\n    print(zaehler)\n    zaehler = zaehler - 1\nprint(&quot;Ende&quot;)</code></pre><p>Ausgabe: 3, 2, 1 und Ende, jeweils in einer eigenen Zeile. Nach jedem Durchlauf wird zaehler kleiner. Bei 0 ist die Bedingung False. Die letzte Zeile steht außerhalb der Schleife und wird einmal ausgeführt.</p><p>Eine Endlosschleife entsteht, wenn die Bedingung dauerhaft True bleibt. Fehlt die Änderung oder steht dort <code>zaehler = zaehler + 1</code>, bleibt der Zähler bei diesem Startwert positiv. Auch eine unpassende Grenze kann verhindern, dass die Schleife endet.</p><p>Beim Schreibtischtest sind „Durchlauf 2“ und „nach Zeile 4“ unterschiedliche Zeitpunkte. Notiere ausdrücklich, nach welcher Zeile in welchem Durchlauf du den Zustand meinst.</p>",
+    "check": "Was passiert, wenn im Beispiel zaehler = zaehler - 1 durch zaehler = zaehler ersetzt wird?",
+    "answer": "zaehler bleibt 3. Die Bedingung bleibt True; die Schleife gibt fortlaufend 3 aus und endet nicht.",
+    "tags": [
+      "while"
+    ]
+  },
+  {
+    "slug": "listen",
+    "title": "Flache Listen, append, len, Indizes und Slices",
+    "group": "Python-Grundlagen",
+    "goal": "Du liest und veränderst eine eindimensionale Liste.",
+    "body": "<p>Eine Liste speichert eine geordnete Folge von Werten, geschrieben mit eckigen Klammern. Eine flache Liste enthält hier einzelne Werte statt weiterer Listen. Der erste Index ist <strong>0</strong>, der letzte ist <code>len(liste) - 1</code>.</p><pre data-language=\"python\"><code>geraete = [&quot;Maus&quot;, &quot;Monitor&quot;, &quot;Tastatur&quot;]\ngeraete.append(&quot;Headset&quot;)\nprint(len(geraete))\nprint(geraete[1])\nprint(geraete[0:2])\ngeraete[0] = &quot;Webcam&quot;\nprint(geraete[0])</code></pre><p>Ausgabe: 4, Monitor, ['Maus', 'Monitor'] und Webcam. <code>append(wert)</code> hängt ein Element an. Eine Zuweisung an einen bestehenden Index ersetzt ein Element und verändert die Länge nicht.</p><p><code>liste[start:stopp]</code> liefert einen einfachen Ausschnitt als neue Liste. start ist enthalten, stopp ausgeschlossen. <code>liste[:2]</code> beginnt am Anfang; <code>liste[1:]</code> reicht bis zum Ende. <code>liste[-1]</code> bezeichnet das letzte Element. Ein einzelner Index außerhalb der Liste führt zu einem Fehler.</p><p>Methoden wie <code>geraete.append(...)</code> gehören zu einem Objekt. <code>len(geraete)</code> ist dagegen ein Funktionsaufruf. append verändert die Liste und gibt None zurück. Wenn ein Debugger <strong>vor</strong> einer Zeile anhält, wurde diese Zeile noch nicht ausgeführt.</p>",
+    "check": "Welche Werte liefert [4, 7, 9, 2][1:3]? Verändert das Ersetzen des ersten Elements die Länge?",
+    "answer": "Der Slice liefert [7, 9]. Ersetzen verändert die Länge nicht.",
+    "tags": [
+      "listen"
+    ]
+  },
+  {
+    "slug": "for-range",
+    "title": "for und range: Grundlagen",
+    "group": "Python-Grundlagen",
+    "goal": "Du liest for-Schleifen und bestimmst die Werte einer range-Folge.",
+    "body": "<p><code>for laufvariable in sammlung:</code> nimmt nacheinander die Werte einer Sammlung und führt den eingerückten Block für jeden Wert aus. Hinter dem Kopf steht ein Doppelpunkt. Im Gegensatz zur while-Zählschleife musst du die Laufvariable nicht selbst weiterzählen.</p><pre data-language=\"python\"><code>for name in [&quot;Ali&quot;, &quot;Bea&quot;]:\n    print(name)\nprint(&quot;Fertig&quot;)</code></pre><div class=\"table-scroll\"><table><thead><tr><th>Aufruf</th><th>Gelieferte Werte</th></tr></thead><tbody><tr><td>range(4)</td><td>0, 1, 2, 3</td></tr><tr><td>range(2, 5)</td><td>2, 3, 4</td></tr><tr><td>range(2, 8, 2)</td><td>2, 4, 6</td></tr><tr><td>range(6, 0, -2)</td><td>6, 4, 2</td></tr></tbody></table></div><p><code>range(start, stopp, schritt)</code>: Der Stoppwert ist ausgeschlossen. Ohne start beginnt die Folge bei 0; ohne schritt beträgt die Schrittweite 1. Die Folge kann leer sein. Die Richtung muss zur Schrittweite passen; 0 ist keine gültige Schrittweite. <code>len(range(1, 5))</code> ergibt 4.</p><pre data-language=\"python\"><code>zahl = 2\nwhile zahl &lt; 8:\n    print(zahl)\n    zahl = zahl + 2\n\nfor zahl in range(2, 8, 2):\n    print(zahl)</code></pre><p>Beide Schleifen geben 2, 4 und 6 aus. Der Wert von zahl nach der Schleife kann unterschiedlich sein: hier 8 nach while und 6 nach for. Gleiche Ausgabe bedeutet nicht automatisch gleichen Endzustand. <a href=\"../python-for/\">Zum eigenständigen ausführlichen for-Lernweg</a>.</p>",
+    "check": "Welche Zahlen liefert range(3, 13, 3)?",
+    "answer": "3, 6, 9, 12. 13 ist ausgeschlossen.",
+    "tags": [
+      "for",
+      "range"
+    ]
+  },
+  {
+    "slug": "funktionen",
+    "title": "Funktionen, Parameter, Argumente, return und print",
+    "group": "Python-Grundlagen",
+    "goal": "Du definierst und rufst Funktionen auf und unterscheidest Rückgabe und Ausgabe.",
+    "body": "<p>Eine Funktion bündelt Anweisungen unter einem Namen. <code>def name(parameter):</code> ist die Definition, der eingerückte Block der Funktionskörper. Die Definition führt den Körper noch nicht aus. Erst <code>name(argument)</code> ruft ihn auf.</p><pre data-language=\"python\"><code>def verdoppeln(zahl):\n    print(&quot;Start&quot;)\n    return zahl * 2\n\nergebnis = verdoppeln(4)\nprint(ergebnis + 1)</code></pre><p><strong>Parameter</strong> ist die benannte Eingangsvariable der Definition, hier zahl. Ein <strong>Argument</strong> ist der beim Aufruf übergebene Wert oder Ausdruck, hier 4. Ausgabe: Start und 9. Der Aufruf liefert 8 zurück, sodass ergebnis auf 8 gesetzt wird.</p><p><code>print</code> zeigt Werte an. <code>return</code> liefert einen Wert an den Aufrufer und beendet den aktuellen Funktionsaufruf. Ohne ausgeführtes return mit Wert liefert die Funktion None. Entfernst du oben die return-Zeile, wird ergebnis None; None + 1 führt dann zu einem Fehler.</p><pre data-language=\"python\"><code>def summe_bis(n):\n    summe = 0\n    zahl = 1\n    while zahl &lt;= n:\n        summe = summe + zahl\n        zahl = zahl + 1\n    return summe\n\nprint(summe_bis(3))</code></pre><p>Die Ausgabe ist 6. return steht nach der Schleife, damit alle Zahlen verarbeitet werden. Ein Zähler wächst bei einem Treffer um 1; eine Summe wächst um den jeweiligen Wert. Für n = 0 gibt diese Funktion 0 zurück.</p><p>Eine Methode ist eine an ein Objekt bzw. einen Typ gebundene Funktion, z. B. liste.append(wert). Die oben frei definierte Funktion verdoppeln wird ohne Objekt vor dem Namen aufgerufen.</p>",
+    "check": "Welche Rolle spielen zahl und 4 im ersten Beispiel, und welcher Wert wird in ergebnis gespeichert?",
+    "answer": "zahl ist der Parameter; 4 das Argument. Gespeichert wird die Rückgabe 8, nicht der angezeigte Text Start.",
+    "tags": [
+      "funktionen"
+    ]
+  },
+  {
+    "slug": "syntax-schreibtischtest",
+    "title": "Syntax, Schreibtischtest und Debugger",
+    "group": "Python-Grundlagen",
+    "goal": "Du prüfst Schreibweise, Einrückung und den Zeitpunkt eines Zustands.",
+    "body": "<p>Runde Klammern gehören zu Aufrufen wie <code>print(...)</code>, <code>int(...)</code> und <code>range(...)</code>, außerdem zu Funktionsdefinitionen und zur Gruppierung von Ausdrücken. Eckige Klammern gehören zu Listen und Indizes/Slices.</p><p>Hinter <code>if</code>, <code>elif</code>, <code>else</code>, <code>while</code>, <code>for</code> und <code>def</code> endet die Kopfzeile mit einem Doppelpunkt. Der zugehörige Block ist eingerückt. if und while brauchen keine Pflichtklammern um ihre Bedingung. Die Reihenfolge bei for ist <code>for name in sammlung:</code>.</p><p>Beim Schreibtischtest führst du den Code gedanklich aus. Eine Tabelle hält Zustände nach konkreten Zeilen fest. Bei einer Schleife gibst du zusätzlich den Durchlauf an. Ein Breakpoint vor einer Zeile zeigt den Zustand <strong>vor ihrer Ausführung</strong>.</p><p>Beim eigenen Programmieren: Ziel und erwartete Ausgabe festlegen, kleine Schritte planen, Randfälle testen. Eine Fehlermeldung ist ein Hinweis auf eine konkrete Stelle. Lies zuerst Fehlerart und Zeilennummer; vergleiche dann Soll und Ist.</p><p><a href=\"../python-problemloesen/\">Geführter Lernweg: systematisch Probleme lösen</a></p>",
+    "check": "Vor geraete.append(\"Headset\") hält ein Breakpoint. Ist das Element bereits angehängt?",
+    "answer": "Nein. Die angehaltene Zeile wurde noch nicht ausgeführt.",
+    "tags": [
+      "syntax",
+      "variablen"
+    ]
+  }
+]

@@ -1,0 +1,192 @@
+{
+  "aufgabe-ca14f9748c": {
+    "tags": [
+      "eingabe",
+      "datentypen",
+      "rechnen",
+      "bedingungen"
+    ]
+  },
+  "aufgabe-c7f3fe37a4": {
+    "format": "Schreibtischtest"
+  },
+  "aufgabe-5f56f52dd4": {
+    "tags": [
+      "while",
+      "eingabe",
+      "bedingungen"
+    ]
+  },
+  "aufgabe-4d7b6611a0": {
+    "tags": [
+      "while",
+      "eingabe",
+      "bedingungen"
+    ]
+  },
+  "aufgabe-262fa3dba8": {
+    "format": "Ausgabe bestimmen"
+  },
+  "aufgabe-d8184eb81b": {
+    "level": "Einstieg"
+  },
+  "aufgabe-227c2d3cbb": {
+    "tags": [
+      "eingabe",
+      "bedingungen"
+    ],
+    "level": "Einstieg"
+  },
+  "aufgabe-a5391a47b3": {
+    "tags": [
+      "for",
+      "range",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Einstieg"
+  },
+  "aufgabe-7d5594bab1": {
+    "tags": [
+      "while",
+      "eingabe",
+      "bedingungen"
+    ]
+  },
+  "aufgabe-25125a9bf4": {
+    "tags": [
+      "listen",
+      "for",
+      "bedingungen",
+      "rechnen"
+    ]
+  },
+  "aufgabe-daf2a79c3a": {
+    "tags": [
+      "for",
+      "range",
+      "eingabe",
+      "rechnen",
+      "bedingungen",
+      "wahrheitswerte"
+    ]
+  },
+  "aufgabe-e809426747": {
+    "tags": [
+      "while",
+      "eingabe",
+      "strings",
+      "bedingungen",
+      "wahrheitswerte"
+    ]
+  },
+  "aufgabe-d5aa332d2b": {
+    "tags": [
+      "listen",
+      "for",
+      "rechnen",
+      "bedingungen"
+    ]
+  },
+  "aufgabe-caf5e757ea": {
+    "level": "Einstieg"
+  },
+  "aufgabe-f3bd2d69c0": {
+    "level": "Einstieg"
+  },
+  "aufgabe-6f3e8c139b": {
+    "level": "Einstieg"
+  },
+  "aufgabe-25b6226c09": {
+    "level": "Einstieg"
+  },
+  "aufgabe-dd092b0ae9": {
+    "level": "Einstieg"
+  },
+  "aufgabe-c00e02a5ef": {
+    "level": "Einstieg"
+  },
+  "aufgabe-f5216d1d39": {
+    "level": "Einstieg"
+  },
+  "aufgabe-6550d112ab": {
+    "level": "Einstieg"
+  },
+  "aufgabe-a73f4a0938": {
+    "level": "Einstieg"
+  },
+  "aufgabe-3f5b9bea7e": {
+    "level": "Einstieg"
+  },
+  "aufgabe-efb5402f52": {
+    "level": "Einstieg"
+  },
+  "aufgabe-7022f3f1e9": {
+    "level": "Einstieg"
+  },
+  "aufgabe-5f3ba6ff68": {
+    "level": "Einstieg"
+  },
+  "aufgabe-33fd13a9fb": {
+    "level": "Einstieg"
+  },
+  "aufgabe-8027f82b5a": {
+    "level": "Einstieg"
+  },
+  "aufgabe-e87ee81bc2": {
+    "level": "Einstieg"
+  },
+  "aufgabe-607d78bb6a": {
+    "level": "Einstieg"
+  },
+  "aufgabe-c5eda25996": {
+    "tags": [
+      "for",
+      "strings",
+      "bedingungen",
+      "rechnen"
+    ]
+  },
+  "aufgabe-e2ed920851": {
+    "format": "Erklären"
+  },
+  "aufgabe-17dbc8ac11": {
+    "format": "Code umwandeln"
+  },
+  "aufgabe-5e13150d09": {
+    "format": "Erklären"
+  },
+  "aufgabe-1e5c599dcd": {
+    "tags": [
+      "while",
+      "eingabe",
+      "datentypen",
+      "rechnen",
+      "bedingungen",
+      "funktionen"
+    ]
+  },
+  "aufgabe-ba3590c0a7": {
+    "tags": [
+      "funktionen",
+      "while",
+      "eingabe",
+      "bedingungen"
+    ]
+  },
+  "aufgabe-6ec371cd17": {
+    "format": "Code schreiben"
+  },
+  "aufgabe-56e3b058e3": {
+    "format": "Code schreiben"
+  },
+  "aufgabe-1e806247fd": {
+    "tags": [
+      "for",
+      "listen",
+      "rechnen",
+      "problemlosen"
+    ],
+    "format": "Fehler finden"
+  }
+}

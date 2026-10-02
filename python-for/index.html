@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="styles.css?v=1" />
     <script src="../python/script.js?v=2" defer></script>
     <script src="check.js?v=1" defer></script>
-  </head>
+  <script src="../assets/aufgabe-ziel.js?v=1" defer></script>
+</head>
   <body>
     <header class="topbar">
       <a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a>
@@ -47,7 +48,7 @@ Hallo Cem</pre></div></div><p>Das geht bei 3 Namen. Aber bei 30? Oder wenn du ga
 for name in namen:
     print(&quot;Hallo&quot;, name)</code></pre><div class="out"><small>Ausgabe</small><pre>Hallo Ali
 Hallo Bea
-Hallo Cem</pre></div></div><p>Lies die Schleife laut wie einen deutschen Satz:</p><p class="speak">„<strong>Für jeden</strong> <code>name</code> <strong>in</strong> der Liste <code>namen</code>: gib Hallo und den Namen aus.“</p><p>Das ist die ganze Idee. Eine <code>for</code>-Schleife heißt immer: <strong>„Mach das Gleiche für jedes Ding in einer Sammlung.“</strong></p></article><article class="task-card read-card"><span>Merken</span><h2>Die Alltags-Übersetzung</h2><ul class="check-list"><li><strong>Für jeden</strong> Brief im Stapel: Briefmarke draufkleben.</li><li><strong>Für jedes</strong> Paket auf der Palette: Etikett scannen.</li><li><strong>Für jede</strong> Schraube im Karton: festziehen.</li></ul><p>Immer gleich: ein <em>Stapel von Dingen</em> + eine <em>Tätigkeit, die mit jedem Ding gemacht wird</em>.</p></article><article class="task-card stepping-task exercise"><span>Aufgabe 01 · Ausgabe vorhersagen</span><h2>Die erste Vorhersage</h2>
+Hallo Cem</pre></div></div><p>Lies die Schleife laut wie einen deutschen Satz:</p><p class="speak">„<strong>Für jeden</strong> <code>name</code> <strong>in</strong> der Liste <code>namen</code>: gib Hallo und den Namen aus.“</p><p>Das ist die ganze Idee. Eine <code>for</code>-Schleife heißt immer: <strong>„Mach das Gleiche für jedes Ding in einer Sammlung.“</strong></p></article><article class="task-card read-card"><span>Merken</span><h2>Die Alltags-Übersetzung</h2><ul class="check-list"><li><strong>Für jeden</strong> Brief im Stapel: Briefmarke draufkleben.</li><li><strong>Für jedes</strong> Paket auf der Palette: Etikett scannen.</li><li><strong>Für jede</strong> Schraube im Karton: festziehen.</li></ul><p>Immer gleich: ein <em>Stapel von Dingen</em> + eine <em>Tätigkeit, die mit jedem Ding gemacht wird</em>.</p></article><article class="task-card stepping-task exercise" id="aufgabe-caf5e757ea"><span>Aufgabe 01 · Ausgabe vorhersagen</span><h2>Die erste Vorhersage</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>tiere = [&quot;Hund&quot;, &quot;Katze&quot;]
 for tier in tiere:
@@ -55,7 +56,7 @@ for tier in tiere:
 <div class="check" data-answer="Hund
 Katze"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Die Liste hat zwei Einträge. Die Zeile <code>print(tier)</code> läuft also zweimal.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>Hund
-Katze</pre><p>Erster Durchlauf: <code>tier</code> ist „Hund“. Zweiter Durchlauf: <code>tier</code> ist „Katze“.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 02 · Ausgabe vorhersagen</span><h2>Drei Durchläufe</h2>
+Katze</pre><p>Erster Durchlauf: <code>tier</code> ist „Hund“. Zweiter Durchlauf: <code>tier</code> ist „Katze“.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-f3bd2d69c0"><span>Aufgabe 02 · Ausgabe vorhersagen</span><h2>Drei Durchläufe</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for farbe in [&quot;rot&quot;, &quot;gelb&quot;, &quot;grün&quot;]:
     print(&quot;Die Ampel ist&quot;, farbe)</code></pre>
@@ -64,7 +65,7 @@ Die Ampel ist gelb
 Die Ampel ist grün"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Die Liste darf auch direkt hinter <code>in</code> stehen.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div><code>print</code> mit Komma setzt automatisch ein Leerzeichen dazwischen.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>Die Ampel ist rot
 Die Ampel ist gelb
-Die Ampel ist grün</pre><p>Die Tätigkeit ist immer gleich, nur <code>farbe</code> hat jedes Mal einen anderen Wert.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 03 · Lücke füllen</span><h2>Dein erstes for</h2>
+Die Ampel ist grün</pre><p>Die Tätigkeit ist immer gleich, nur <code>farbe</code> hat jedes Mal einen anderen Wert.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-6f3e8c139b"><span>Aufgabe 03 · Lücke füllen</span><h2>Dein erstes for</h2>
 <p>Ersetze <code>___</code> so, dass jedes Werkzeug ausgegeben wird.</p><pre><code>werkzeuge = [&quot;Hammer&quot;, &quot;Zange&quot;, &quot;Säge&quot;]
 for ___ in ___:
     print(werkzeug)</code></pre>
@@ -98,7 +99,7 @@ Bea</pre></div></div><p>Beide Schleifen machen genau dasselbe. Python ist der Na
 print(&quot;nach der Schleife&quot;)</code></pre><div class="out"><small>Ausgabe</small><pre>in der Schleife 1
 in der Schleife 2
 in der Schleife 3
-nach der Schleife</pre></div></div><p>Eingerückt = wird <strong>jedes Mal</strong> ausgeführt. Nicht eingerückt = wird <strong>einmal</strong> ausgeführt, wenn die Schleife fertig ist.</p></article><article class="task-card stepping-task exercise"><span>Aufgabe 04 · Ausgabe vorhersagen</span><h2>Drin oder draußen? (1)</h2>
+nach der Schleife</pre></div></div><p>Eingerückt = wird <strong>jedes Mal</strong> ausgeführt. Nicht eingerückt = wird <strong>einmal</strong> ausgeführt, wenn die Schleife fertig ist.</p></article><article class="task-card stepping-task exercise" id="aufgabe-25b6226c09"><span>Aufgabe 04 · Ausgabe vorhersagen</span><h2>Drin oder draußen? (1)</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for n in [1, 2, 3]:
     print(&quot;A&quot;)
@@ -110,7 +111,7 @@ B"><textarea rows="4" placeholder="Deine Vorhersage …" spellcheck="false"></te
 <details class="hint-box"><summary>Hinweis </summary><div>Wie oft läuft die eingerückte Zeile? Wie oft die nicht eingerückte?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>A
 A
 A
-B</pre><p>„A“ ist eingerückt → dreimal. „B“ steht draußen → einmal am Ende.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 05 · Ausgabe vorhersagen</span><h2>Drin oder draußen? (2)</h2>
+B</pre><p>„A“ ist eingerückt → dreimal. „B“ steht draußen → einmal am Ende.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-dd092b0ae9"><span>Aufgabe 05 · Ausgabe vorhersagen</span><h2>Drin oder draußen? (2)</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for n in [1, 2, 3]:
     print(&quot;A&quot;)
@@ -126,7 +127,7 @@ B
 A
 B
 A
-B</pre><p>Beide Zeilen laufen in jedem Durchlauf: A B, A B, A B.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 06 · Ausgabe vorhersagen</span><h2>Die Laufvariable benutzen</h2>
+B</pre><p>Beide Zeilen laufen in jedem Durchlauf: A B, A B, A B.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-c00e02a5ef"><span>Aufgabe 06 · Ausgabe vorhersagen</span><h2>Die Laufvariable benutzen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for preis in [10, 20, 50]:
     print(preis + 1)</code></pre>
@@ -135,7 +136,7 @@ B</pre><p>Beide Zeilen laufen in jedem Durchlauf: A B, A B, A B.</p></div></deta
 51"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Leg eine kleine Tabelle an: Durchlauf – preis – Ausgabe.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>11
 21
-51</pre><p>preis ist nacheinander 10, 20, 50. Jedes Mal wird 1 dazugezählt.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 07 · Ausgabe vorhersagen</span><h2>Die Laufvariable NICHT benutzen</h2>
+51</pre><p>preis ist nacheinander 10, 20, 50. Jedes Mal wird 1 dazugezählt.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-f5216d1d39"><span>Aufgabe 07 · Ausgabe vorhersagen</span><h2>Die Laufvariable NICHT benutzen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for preis in [10, 20, 50]:
     print(&quot;Kasse&quot;)</code></pre>
@@ -144,7 +145,7 @@ Kasse
 Kasse"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Man <em>muss</em> die Laufvariable im Block nicht verwenden. Wie viele Dinge sind in der Liste?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>Kasse
 Kasse
-Kasse</pre><p>Die Liste hat drei Einträge, also drei Durchläufe – egal, was im Block steht.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 08 · Lücke füllen</span><h2>Doppelpunkt und Einrückung</h2>
+Kasse</pre><p>Die Liste hat drei Einträge, also drei Durchläufe – egal, was im Block steht.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-6550d112ab"><span>Aufgabe 08 · Lücke füllen</span><h2>Doppelpunkt und Einrückung</h2>
 <p>In diesem Programm fehlen zwei Kleinigkeiten. Finde und ergänze sie.</p><pre><code>staedte = [&quot;Ulm&quot;, &quot;Bonn&quot;]
 for stadt in staedte
 print(&quot;Ich fahre nach&quot;, stadt)</code></pre>
@@ -152,7 +153,7 @@ print(&quot;Ich fahre nach&quot;, stadt)</code></pre>
 Ich fahre nach Bonn</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Was steht immer am Ende der <code>for</code>-Zeile?</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Was muss mit der Zeile passieren, die wiederholt werden soll?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>staedte = [&quot;Ulm&quot;, &quot;Bonn&quot;]
 for stadt in staedte:
-    print(&quot;Ich fahre nach&quot;, stadt)</code></pre><p>Doppelpunkt hinter der <code>for</code>-Zeile, und der Block muss eingerückt sein.</p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 09 · Selbst schreiben</span><h2>Einkaufszettel</h2>
+    print(&quot;Ich fahre nach&quot;, stadt)</code></pre><p>Doppelpunkt hinter der <code>for</code>-Zeile, und der Block muss eingerückt sein.</p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-a73f4a0938"><span>Aufgabe 09 · Selbst schreiben</span><h2>Einkaufszettel</h2>
 <p>Lege eine Liste <code>einkauf</code> mit Brot, Milch und Eier an. Gib für jeden Eintrag eine Zeile aus.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Kaufen: Brot
 Kaufen: Milch
 Kaufen: Eier</pre>
@@ -186,7 +187,7 @@ for zahl in range(3, 0, -1):
 10
 3
 2
-1</pre></div></div><p>Die dritte Zahl ist die Schrittweite. Mit <code>-1</code> zählst du rückwärts.</p></article><article class="task-card read-card"><span>Übersicht</span><h2>Spickzettel</h2><table class="trace"><thead><tr><th>Schreibweise</th><th>liefert</th><th>Typischer Zweck</th></tr></thead><tbody><tr><td><code>range(4)</code></td><td>0, 1, 2, 3</td><td>etwas 4-mal tun</td></tr><tr><td><code>range(1, 5)</code></td><td>1, 2, 3, 4</td><td>von 1 bis 4 zählen</td></tr><tr><td><code>range(2, 9, 2)</code></td><td>2, 4, 6, 8</td><td>gerade Zahlen</td></tr><tr><td><code>range(5, 0, -1)</code></td><td>5, 4, 3, 2, 1</td><td>Countdown</td></tr></tbody></table></article><article class="task-card stepping-task exercise"><span>Aufgabe 10 · Ausgabe vorhersagen</span><h2>range mit einer Zahl</h2>
+1</pre></div></div><p>Die dritte Zahl ist die Schrittweite. Mit <code>-1</code> zählst du rückwärts.</p></article><article class="task-card read-card"><span>Übersicht</span><h2>Spickzettel</h2><table class="trace"><thead><tr><th>Schreibweise</th><th>liefert</th><th>Typischer Zweck</th></tr></thead><tbody><tr><td><code>range(4)</code></td><td>0, 1, 2, 3</td><td>etwas 4-mal tun</td></tr><tr><td><code>range(1, 5)</code></td><td>1, 2, 3, 4</td><td>von 1 bis 4 zählen</td></tr><tr><td><code>range(2, 9, 2)</code></td><td>2, 4, 6, 8</td><td>gerade Zahlen</td></tr><tr><td><code>range(5, 0, -1)</code></td><td>5, 4, 3, 2, 1</td><td>Countdown</td></tr></tbody></table></article><article class="task-card stepping-task exercise" id="aufgabe-3f5b9bea7e"><span>Aufgabe 10 · Ausgabe vorhersagen</span><h2>range mit einer Zahl</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for i in range(4):
     print(i)</code></pre>
@@ -197,7 +198,7 @@ for zahl in range(3, 0, -1):
 <details class="hint-box"><summary>Hinweis </summary><div>Start ist 0. Die 4 ist nicht dabei.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>0
 1
 2
-3</pre><p>Vier Zahlen: 0 bis 3.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 11 · Ausgabe vorhersagen</span><h2>range mit zwei Zahlen</h2>
+3</pre><p>Vier Zahlen: 0 bis 3.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-efb5402f52"><span>Aufgabe 11 · Ausgabe vorhersagen</span><h2>range mit zwei Zahlen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for i in range(3, 7):
     print(i)</code></pre>
@@ -208,7 +209,7 @@ for zahl in range(3, 0, -1):
 <details class="hint-box"><summary>Hinweis </summary><div>Start 3 ist dabei, Stopp 7 nicht.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>3
 4
 5
-6</pre><p>3, 4, 5, 6 – vor der 7 ist Schluss.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 12 · Ausgabe vorhersagen</span><h2>Rechnen mit i</h2>
+6</pre><p>3, 4, 5, 6 – vor der 7 ist Schluss.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-7022f3f1e9"><span>Aufgabe 12 · Ausgabe vorhersagen</span><h2>Rechnen mit i</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for i in range(1, 4):
     print(i * 10)</code></pre>
@@ -217,7 +218,7 @@ for zahl in range(3, 0, -1):
 30"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Welche Werte hat i? Schreib sie zuerst auf, dann rechne.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>10
 20
-30</pre><p>i ist 1, 2, 3 → 10, 20, 30.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 13 · Ausgabe vorhersagen</span><h2>In Schritten</h2>
+30</pre><p>i ist 1, 2, 3 → 10, 20, 30.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-5f3ba6ff68"><span>Aufgabe 13 · Ausgabe vorhersagen</span><h2>In Schritten</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for i in range(10, 0, -3):
     print(i)</code></pre>
@@ -228,7 +229,7 @@ for zahl in range(3, 0, -1):
 <details class="hint-box"><summary>Hinweis </summary><div>Start 10, jedes Mal 3 abziehen. Aufhören, bevor 0 erreicht oder unterschritten wird.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>10
 7
 4
-1</pre><p>10 → 7 → 4 → 1. Die nächste Zahl wäre -2, das liegt hinter dem Stopp.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 14 · Lücke füllen</span><h2>Von 1 bis 5</h2>
+1</pre><p>10 → 7 → 4 → 1. Die nächste Zahl wäre -2, das liegt hinter dem Stopp.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-33fd13a9fb"><span>Aufgabe 14 · Lücke füllen</span><h2>Von 1 bis 5</h2>
 <p>Ergänze die Lücken.</p><pre><code>for zahl in range(___, ___):
     print(zahl)</code></pre>
 <p class="target">Gewünschte Ausgabe:</p><pre class="target-out">1
@@ -237,7 +238,7 @@ for zahl in range(3, 0, -1):
 4
 5</pre>
 <details class="hint-box"><summary>Hinweis </summary><div>Die Stopp-Zahl ist nicht mehr dabei. Du brauchst also eine größer.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>for zahl in range(1, 6):
-    print(zahl)</code></pre><p></p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 15 · Lücke füllen</span><h2>Countdown</h2>
+    print(zahl)</code></pre><p></p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-8027f82b5a"><span>Aufgabe 15 · Lücke füllen</span><h2>Countdown</h2>
 <p>Ergänze die Lücken.</p><pre><code>for sek in range(___, ___, ___):
     print(sek)
 print(&quot;Start!&quot;)</code></pre>
@@ -247,7 +248,7 @@ print(&quot;Start!&quot;)</code></pre>
 Start!</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Rückwärts geht es mit Schritt <code>-1</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Die 1 soll noch ausgegeben werden – der Stopp ist also 0.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>for sek in range(3, 0, -1):
     print(sek)
-print(&quot;Start!&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 16 · Selbst schreiben</span><h2>Einmaleins der 7</h2>
+print(&quot;Start!&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-e87ee81bc2"><span>Aufgabe 16 · Selbst schreiben</span><h2>Einmaleins der 7</h2>
 <p>Gib das kleine Einmaleins der 7 aus (1 bis 10).</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">1 mal 7 ist 7
 2 mal 7 ist 14
 3 mal 7 ist 21
@@ -259,7 +260,7 @@ print(&quot;Start!&quot;)</code></pre><p></p></div></details></article><article 
 9 mal 7 ist 63
 10 mal 7 ist 70</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Du brauchst die Zahlen 1 bis 10: <code>range(1, 11)</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Im Block: <code>print(i, "mal 7 ist", i * 7)</code></div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>for i in range(1, 11):
-    print(i, &quot;mal 7 ist&quot;, i * 7)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 17 · Selbst schreiben</span><h2>Trennlinie</h2>
+    print(i, &quot;mal 7 ist&quot;, i * 7)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-607d78bb6a"><span>Aufgabe 17 · Selbst schreiben</span><h2>Trennlinie</h2>
 <p>Gib 5-mal die Zeile <code>----------</code> aus. Schreibe <code>print</code> nur einmal.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">----------
 ----------
 ----------
@@ -280,14 +281,14 @@ print(&quot;Gesamt:&quot;, summe)</code></pre><div class="out"><small>Ausgabe</s
 anzahl = 0
 for name in namen:
     anzahl = anzahl + 1
-print(&quot;Es sind&quot;, anzahl, &quot;Personen&quot;)</code></pre><div class="out"><small>Ausgabe</small><pre>Es sind 4 Personen</pre></div></div><p>Statt des Wertes wird einfach jedes Mal <code>1</code> eingeworfen.</p></article><article class="task-card read-card"><span>Typische Fehler</span><h2>Drei Fallen</h2><ul class="check-list"><li><strong><code>summe = 0</code> in der Schleife:</strong> Dann wird das Sparschwein in jedem Durchlauf geleert.</li><li><strong><code>summe = 0</code> vergessen:</strong> Python kennt <code>summe</code> noch nicht → <code>NameError</code>.</li><li><strong><code>print(summe)</code> eingerückt:</strong> Dann siehst du jeden Zwischenstand statt nur das Ergebnis.</li></ul></article><article class="task-card stepping-task exercise"><span>Aufgabe 18 · Ausgabe vorhersagen</span><h2>Summe verfolgen</h2>
+print(&quot;Es sind&quot;, anzahl, &quot;Personen&quot;)</code></pre><div class="out"><small>Ausgabe</small><pre>Es sind 4 Personen</pre></div></div><p>Statt des Wertes wird einfach jedes Mal <code>1</code> eingeworfen.</p></article><article class="task-card read-card"><span>Typische Fehler</span><h2>Drei Fallen</h2><ul class="check-list"><li><strong><code>summe = 0</code> in der Schleife:</strong> Dann wird das Sparschwein in jedem Durchlauf geleert.</li><li><strong><code>summe = 0</code> vergessen:</strong> Python kennt <code>summe</code> noch nicht → <code>NameError</code>.</li><li><strong><code>print(summe)</code> eingerückt:</strong> Dann siehst du jeden Zwischenstand statt nur das Ergebnis.</li></ul></article><article class="task-card stepping-task exercise" id="aufgabe-01104551b0"><span>Aufgabe 18 · Ausgabe vorhersagen</span><h2>Summe verfolgen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>summe = 0
 for zahl in [2, 4, 6]:
     summe = summe + zahl
 print(summe)</code></pre>
 <div class="check" data-answer="12"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Mach eine Tabelle wie oben: zahl – summe nachher.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>12</pre><p>0 → 2 → 6 → 12. Ausgegeben wird nur am Ende.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 19 · Ausgabe vorhersagen</span><h2>print in der Schleife</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Mach eine Tabelle wie oben: zahl – summe nachher.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>12</pre><p>0 → 2 → 6 → 12. Ausgegeben wird nur am Ende.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-352771c94c"><span>Aufgabe 19 · Ausgabe vorhersagen</span><h2>print in der Schleife</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>summe = 0
 for zahl in [2, 4, 6]:
@@ -298,21 +299,21 @@ for zahl in [2, 4, 6]:
 12"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Achte auf die Einrückung von <code>print</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>2
 6
-12</pre><p>Jetzt steht <code>print</code> im Block → jeder Zwischenstand wird ausgegeben.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 20 · Ausgabe vorhersagen</span><h2>Die Falle</h2>
+12</pre><p>Jetzt steht <code>print</code> im Block → jeder Zwischenstand wird ausgegeben.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-6bda1121d0"><span>Aufgabe 20 · Ausgabe vorhersagen</span><h2>Die Falle</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for zahl in [2, 4, 6]:
     summe = 0
     summe = summe + zahl
 print(summe)</code></pre>
 <div class="check" data-answer="6"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Was passiert in jedem Durchlauf als Erstes?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>6</pre><p>Das Sparschwein wird jedes Mal geleert. Am Ende steckt nur der letzte Wert drin: 6.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 21 · Ausgabe vorhersagen</span><h2>Summe mit range</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Was passiert in jedem Durchlauf als Erstes?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>6</pre><p>Das Sparschwein wird jedes Mal geleert. Am Ende steckt nur der letzte Wert drin: 6.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-059d0b1201"><span>Aufgabe 21 · Ausgabe vorhersagen</span><h2>Summe mit range</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>summe = 0
 for i in range(1, 5):
     summe = summe + i
 print(summe)</code></pre>
 <div class="check" data-answer="10"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Welche Zahlen liefert <code>range(1, 5)</code>?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>10</pre><p>1 + 2 + 3 + 4 = 10.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 22 · Lücke füllen</span><h2>Wochenstunden</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Welche Zahlen liefert <code>range(1, 5)</code>?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>10</pre><p>1 + 2 + 3 + 4 = 10.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-3c029557af"><span>Aufgabe 22 · Lücke füllen</span><h2>Wochenstunden</h2>
 <p>Ergänze die Lücken, damit die Stunden addiert werden.</p><pre><code>stunden = [8, 7, 8, 6, 5]
 gesamt = ___
 for s in stunden:
@@ -323,7 +324,7 @@ print(&quot;Wochenstunden:&quot;, gesamt)</code></pre>
 gesamt = 0
 for s in stunden:
     gesamt = gesamt + s
-print(&quot;Wochenstunden:&quot;, gesamt)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 23 · Selbst schreiben</span><h2>Durchschnitt</h2>
+print(&quot;Wochenstunden:&quot;, gesamt)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-bffcd3d2f6"><span>Aufgabe 23 · Selbst schreiben</span><h2>Durchschnitt</h2>
 <p>Gegeben ist <code>noten = [2, 3, 1, 4]</code>. Berechne Summe und Durchschnitt – ohne <code>sum()</code>.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Summe: 10
 Durchschnitt: 2.5</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Erst das Sparschwein-Muster für die Summe.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Nach der Schleife: <code>durchschnitt = summe / len(noten)</code>.</div></details><details class="hint-box"><summary>Hinweis 3</summary><div><code>len(noten)</code> liefert die Anzahl der Einträge.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>noten = [2, 3, 1, 4]
@@ -331,7 +332,7 @@ summe = 0
 for note in noten:
     summe = summe + note
 print(&quot;Summe:&quot;, summe)
-print(&quot;Durchschnitt:&quot;, summe / len(noten))</code></pre><p>Der Durchschnitt wird <strong>nach</strong> der Schleife berechnet – nicht eingerückt.</p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 24 · Selbst schreiben</span><h2>1 bis 100</h2>
+print(&quot;Durchschnitt:&quot;, summe / len(noten))</code></pre><p>Der Durchschnitt wird <strong>nach</strong> der Schleife berechnet – nicht eingerückt.</p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-b79587eb67"><span>Aufgabe 24 · Selbst schreiben</span><h2>1 bis 100</h2>
 <p>Addiere alle Zahlen von 1 bis 100.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">5050</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Die Zahlen liefert <code>range(1, 101)</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Sonst genau das Sparschwein-Muster.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>summe = 0
 for i in range(1, 101):
@@ -358,7 +359,7 @@ print(&quot;Nicht bestanden:&quot;, nicht_bestanden)</code></pre><div class="out
         print(zahl, &quot;ungerade&quot;)</code></pre><div class="out"><small>Ausgabe</small><pre>1 ungerade
 2 gerade
 3 ungerade
-4 gerade</pre></div></div><p><code>zahl % 2</code> ist der Rest beim Teilen durch 2. Ist der Rest 0, ist die Zahl gerade.</p></article><article class="task-card stepping-task exercise"><span>Aufgabe 25 · Ausgabe vorhersagen</span><h2>Nur die Großen</h2>
+4 gerade</pre></div></div><p><code>zahl % 2</code> ist der Rest beim Teilen durch 2. Ist der Rest 0, ist die Zahl gerade.</p></article><article class="task-card stepping-task exercise" id="aufgabe-d3de798ff2"><span>Aufgabe 25 · Ausgabe vorhersagen</span><h2>Nur die Großen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for zahl in [3, 8, 5, 10]:
     if zahl &gt; 5:
@@ -366,7 +367,7 @@ print(&quot;Nicht bestanden:&quot;, nicht_bestanden)</code></pre><div class="out
 <div class="check" data-answer="8
 10"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Geh jede Zahl einzeln durch und frag: größer als 5?</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Genau 5 ist <em>nicht</em> größer als 5.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>8
-10</pre><p>Nur 8 und 10 erfüllen die Bedingung.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 26 · Ausgabe vorhersagen</span><h2>Zählen mit Bedingung</h2>
+10</pre><p>Nur 8 und 10 erfüllen die Bedingung.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-112bc8eaa8"><span>Aufgabe 26 · Ausgabe vorhersagen</span><h2>Zählen mit Bedingung</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>treffer = 0
 for wort in [&quot;ja&quot;, &quot;nein&quot;, &quot;ja&quot;, &quot;ja&quot;]:
@@ -374,7 +375,7 @@ for wort in [&quot;ja&quot;, &quot;nein&quot;, &quot;ja&quot;, &quot;ja&quot;]:
         treffer = treffer + 1
 print(treffer)</code></pre>
 <div class="check" data-answer="3"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Wie oft steht „ja“ in der Liste?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>3</pre><p>Dreimal „ja“ → dreimal wird 1 dazugezählt.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 27 · Ausgabe vorhersagen</span><h2>Summe mit Bedingung</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Wie oft steht „ja“ in der Liste?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>3</pre><p>Dreimal „ja“ → dreimal wird 1 dazugezählt.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-a2be05c12f"><span>Aufgabe 27 · Ausgabe vorhersagen</span><h2>Summe mit Bedingung</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>summe = 0
 for zahl in [1, 2, 3, 4, 5, 6]:
@@ -382,7 +383,7 @@ for zahl in [1, 2, 3, 4, 5, 6]:
         summe = summe + zahl
 print(summe)</code></pre>
 <div class="check" data-answer="12"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Welche Zahlen sind gerade? Nur die werden addiert.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>12</pre><p>2 + 4 + 6 = 12.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 28 · Ausgabe vorhersagen</span><h2>if und else</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Welche Zahlen sind gerade? Nur die werden addiert.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>12</pre><p>2 + 4 + 6 = 12.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-b146904f5e"><span>Aufgabe 28 · Ausgabe vorhersagen</span><h2>if und else</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for alter in [15, 18, 30]:
     if alter &gt;= 18:
@@ -394,7 +395,7 @@ darf rein
 darf rein"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Für jedes Alter gibt es genau eine Ausgabe.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>darf nicht rein
 darf rein
-darf rein</pre><p>15 → nein, 18 → ja (größer <em>oder gleich</em>), 30 → ja.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 29 · Lücke füllen</span><h2>Lagerwarnung</h2>
+darf rein</pre><p>15 → nein, 18 → ja (größer <em>oder gleich</em>), 30 → ja.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-30551ab58f"><span>Aufgabe 29 · Lücke füllen</span><h2>Lagerwarnung</h2>
 <p>Gib alle Bestände aus, die unter 10 liegen.</p><pre><code>bestaende = [25, 4, 13, 7]
 for bestand in bestaende:
     if ___ ___ 10:
@@ -404,20 +405,20 @@ Nachbestellen: 7</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Was soll geprüft werden? Der aktuelle Bestand.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>„Unter 10“ heißt <code>&lt; 10</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>bestaende = [25, 4, 13, 7]
 for bestand in bestaende:
     if bestand &lt; 10:
-        print(&quot;Nachbestellen:&quot;, bestand)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 30 · Selbst schreiben</span><h2>Lange Namen</h2>
+        print(&quot;Nachbestellen:&quot;, bestand)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-9427485e88"><span>Aufgabe 30 · Selbst schreiben</span><h2>Lange Namen</h2>
 <p>Gegeben ist <code>namen = ["Ali", "Alexander", "Bea", "Charlotte"]</code>. Gib nur die Namen aus, die länger als 5 Buchstaben sind.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Alexander
 Charlotte</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Die Länge eines Textes bekommst du mit <code>len(name)</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div><code>if len(name) &gt; 5:</code></div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>namen = [&quot;Ali&quot;, &quot;Alexander&quot;, &quot;Bea&quot;, &quot;Charlotte&quot;]
 for name in namen:
     if len(name) &gt; 5:
-        print(name)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 31 · Selbst schreiben</span><h2>Positive zählen</h2>
+        print(name)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-020eedd8b6"><span>Aufgabe 31 · Selbst schreiben</span><h2>Positive zählen</h2>
 <p>Gegeben ist <code>temperaturen = [-3, 5, 0, 12, -1, 8]</code>. Zähle, wie viele Werte über 0 liegen.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Tage über 0 Grad: 3</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Du brauchst einen Zähler, der bei 0 startet.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>In der Schleife: <code>if temp &gt; 0:</code> und dann den Zähler um 1 erhöhen.</div></details><details class="hint-box"><summary>Hinweis 3</summary><div>Die Ausgabe steht nach der Schleife.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>temperaturen = [-3, 5, 0, 12, -1, 8]
 anzahl = 0
 for temp in temperaturen:
     if temp &gt; 0:
         anzahl = anzahl + 1
-print(&quot;Tage über 0 Grad:&quot;, anzahl)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 32 · Selbst schreiben</span><h2>Durch 3 teilbar</h2>
+print(&quot;Tage über 0 Grad:&quot;, anzahl)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-490ea57843"><span>Aufgabe 32 · Selbst schreiben</span><h2>Durch 3 teilbar</h2>
 <p>Gib alle Zahlen von 1 bis 20 aus, die durch 3 teilbar sind.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">3
 6
 9
@@ -446,7 +447,7 @@ grosse = []
 for zahl in alle:
     if zahl &gt; 7:
         grosse.append(zahl)
-print(grosse)</code></pre><div class="out"><small>Ausgabe</small><pre>[14, 8, 21]</pre></div></div><p>Kombination aus Muster 2 und 3: Nur was die Bedingung erfüllt, kommt in die neue Liste.</p></article><article class="task-card stepping-task exercise"><span>Aufgabe 33 · Ausgabe vorhersagen</span><h2>Rekord verfolgen</h2>
+print(grosse)</code></pre><div class="out"><small>Ausgabe</small><pre>[14, 8, 21]</pre></div></div><p>Kombination aus Muster 2 und 3: Nur was die Bedingung erfüllt, kommt in die neue Liste.</p></article><article class="task-card stepping-task exercise" id="aufgabe-03db46c9f9"><span>Aufgabe 33 · Ausgabe vorhersagen</span><h2>Rekord verfolgen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>werte = [5, 9, 3, 11, 6]
 rekord = werte[0]
@@ -455,7 +456,7 @@ for w in werte:
         rekord = w
 print(rekord)</code></pre>
 <div class="check" data-answer="11"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Tabelle: w – rekord danach. Der Rekord ändert sich nur, wenn w größer ist.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>11</pre><p>5 → 9 → 9 → 11 → 11.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 34 · Ausgabe vorhersagen</span><h2>Kleinster Wert</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Tabelle: w – rekord danach. Der Rekord ändert sich nur, wenn w größer ist.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>11</pre><p>5 → 9 → 9 → 11 → 11.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-bb7a6cee0b"><span>Aufgabe 34 · Ausgabe vorhersagen</span><h2>Kleinster Wert</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>werte = [5, 9, 3, 11, 6]
 kleinster = werte[0]
@@ -464,14 +465,14 @@ for w in werte:
         kleinster = w
 print(kleinster)</code></pre>
 <div class="check" data-answer="3"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Dasselbe Muster, nur mit <code>&lt;</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>3</pre><p>5 → 5 → 3 → 3 → 3.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 35 · Ausgabe vorhersagen</span><h2>Liste bauen</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Dasselbe Muster, nur mit <code>&lt;</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>3</pre><p>5 → 5 → 3 → 3 → 3.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-9a50d32fe2"><span>Aufgabe 35 · Ausgabe vorhersagen</span><h2>Liste bauen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>ergebnis = []
 for i in range(1, 4):
     ergebnis.append(i * i)
 print(ergebnis)</code></pre>
 <div class="check" data-answer="[1, 4, 9]"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>i ist 1, 2, 3. Was ist i mal i?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>[1, 4, 9]</pre><p>1·1, 2·2, 3·3 werden nacheinander angehängt.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 36 · Lücke füllen</span><h2>Längster Name</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>i ist 1, 2, 3. Was ist i mal i?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>[1, 4, 9]</pre><p>1·1, 2·2, 3·3 werden nacheinander angehängt.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-ce9c2ddccd"><span>Aufgabe 36 · Lücke füllen</span><h2>Längster Name</h2>
 <p>Ergänze die Lücken, damit der längste Name gefunden wird.</p><pre><code>namen = [&quot;Bea&quot;, &quot;Alexander&quot;, &quot;Cem&quot;]
 laengster = namen[0]
 for name in namen:
@@ -484,20 +485,20 @@ laengster = namen[0]
 for name in namen:
     if len(name) &gt; len(laengster):
         laengster = name
-print(laengster)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 37 · Selbst schreiben</span><h2>Günstigstes Angebot</h2>
+print(laengster)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-e15ca8dc13"><span>Aufgabe 37 · Selbst schreiben</span><h2>Günstigstes Angebot</h2>
 <p>Gegeben ist <code>angebote = [49, 35, 62, 38]</code>. Finde den niedrigsten Preis – ohne <code>min()</code>.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Günstigstes Angebot: 35</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Startwert: <code>guenstigster = angebote[0]</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>In der Schleife: <code>if preis &lt; guenstigster:</code></div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>angebote = [49, 35, 62, 38]
 guenstigster = angebote[0]
 for preis in angebote:
     if preis &lt; guenstigster:
         guenstigster = preis
-print(&quot;Günstigstes Angebot:&quot;, guenstigster)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 38 · Selbst schreiben</span><h2>Alles in Großbuchstaben</h2>
+print(&quot;Günstigstes Angebot:&quot;, guenstigster)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-bb5983f5dc"><span>Aufgabe 38 · Selbst schreiben</span><h2>Alles in Großbuchstaben</h2>
 <p>Gegeben ist <code>namen = ["ali", "bea", "cem"]</code>. Baue eine neue Liste, in der alle Namen groß geschrieben sind.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">[&#x27;ALI&#x27;, &#x27;BEA&#x27;, &#x27;CEM&#x27;]</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Leere Liste vor der Schleife: <code>gross = []</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div><code>name.upper()</code> macht aus einem Text Großbuchstaben.</div></details><details class="hint-box"><summary>Hinweis 3</summary><div><code>gross.append(name.upper())</code></div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>namen = [&quot;ali&quot;, &quot;bea&quot;, &quot;cem&quot;]
 gross = []
 for name in namen:
     gross.append(name.upper())
-print(gross)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 39 · Selbst schreiben</span><h2>Bestanden-Liste</h2>
+print(gross)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-7a5e75e976"><span>Aufgabe 39 · Selbst schreiben</span><h2>Bestanden-Liste</h2>
 <p>Gegeben ist <code>punkte = [45, 80, 30, 66, 51]</code>. Baue eine Liste mit allen Werten ab 50.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">[80, 66, 51]</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Leere Liste, Schleife, <code>if</code>, <code>append</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>„Ab 50“ heißt <code>&gt;= 50</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>punkte = [45, 80, 30, 66, 51]
 bestanden = []
@@ -526,7 +527,7 @@ Bea hat 17 Punkte
 Cem hat 9 Punkte</pre></div></div><p>Zwei Listen gehören zusammen: Position 0 in <code>namen</code> gehört zu Position 0 in <code>punkte</code>. Mit <code>i</code> greifst du in beide gleichzeitig.</p></article><article class="task-card read-card"><span>Lesen</span><h2>Auch Texte kann man durchlaufen</h2><div class="example"><pre><code>for buchstabe in &quot;Hey&quot;:
     print(buchstabe)</code></pre><div class="out"><small>Ausgabe</small><pre>H
 e
-y</pre></div></div><p>Ein Text ist eine Sammlung von Zeichen. Die Schleife nimmt sich ein Zeichen nach dem anderen.</p></article><article class="task-card read-card"><span>Entscheidungshilfe</span><h2>Welche Variante?</h2><table class="trace"><thead><tr><th>Ich brauche …</th><th>Dann schreibe ich …</th></tr></thead><tbody><tr><td>nur die Dinge</td><td><code>for name in namen:</code></td></tr><tr><td>eine Nummerierung</td><td><code>for i in range(len(namen)):</code></td></tr><tr><td>zwei Listen gleichzeitig</td><td><code>for i in range(len(namen)):</code></td></tr><tr><td>einfach n Wiederholungen</td><td><code>for i in range(n):</code></td></tr></tbody></table></article><article class="task-card stepping-task exercise"><span>Aufgabe 40 · Ausgabe vorhersagen</span><h2>Positionen ausgeben</h2>
+y</pre></div></div><p>Ein Text ist eine Sammlung von Zeichen. Die Schleife nimmt sich ein Zeichen nach dem anderen.</p></article><article class="task-card read-card"><span>Entscheidungshilfe</span><h2>Welche Variante?</h2><table class="trace"><thead><tr><th>Ich brauche …</th><th>Dann schreibe ich …</th></tr></thead><tbody><tr><td>nur die Dinge</td><td><code>for name in namen:</code></td></tr><tr><td>eine Nummerierung</td><td><code>for i in range(len(namen)):</code></td></tr><tr><td>zwei Listen gleichzeitig</td><td><code>for i in range(len(namen)):</code></td></tr><tr><td>einfach n Wiederholungen</td><td><code>for i in range(n):</code></td></tr></tbody></table></article><article class="task-card stepping-task exercise" id="aufgabe-0a63b86ffc"><span>Aufgabe 40 · Ausgabe vorhersagen</span><h2>Positionen ausgeben</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>farben = [&quot;rot&quot;, &quot;blau&quot;]
 for i in range(len(farben)):
@@ -534,7 +535,7 @@ for i in range(len(farben)):
 <div class="check" data-answer="0
 1"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Hier wird nur <code>i</code> ausgegeben, nicht <code>farben[i]</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>0
-1</pre><p>len ist 2 → range(2) → 0 und 1.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 41 · Ausgabe vorhersagen</span><h2>Nummerierte Liste</h2>
+1</pre><p>len ist 2 → range(2) → 0 und 1.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-b8dcec0122"><span>Aufgabe 41 · Ausgabe vorhersagen</span><h2>Nummerierte Liste</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>aufgaben = [&quot;fegen&quot;, &quot;sortieren&quot;, &quot;zählen&quot;]
 for i in range(len(aufgaben)):
@@ -544,7 +545,7 @@ for i in range(len(aufgaben)):
 3 zählen"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>i startet bei 0. Was ist dann <code>i + 1</code>?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>1 fegen
 2 sortieren
-3 zählen</pre><p>Mit <code>i + 1</code> beginnt die Nummerierung bei 1 statt bei 0.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 42 · Ausgabe vorhersagen</span><h2>Zwei Listen</h2>
+3 zählen</pre><p>Mit <code>i + 1</code> beginnt die Nummerierung bei 1 statt bei 0.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-e9b6d6a5b2"><span>Aufgabe 42 · Ausgabe vorhersagen</span><h2>Zwei Listen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>artikel = [&quot;Stift&quot;, &quot;Heft&quot;]
 preise = [2, 3]
@@ -553,7 +554,7 @@ for i in range(len(artikel)):
 <div class="check" data-answer="Stift 20
 Heft 30"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>Bei i = 0: <code>artikel[0]</code> und <code>preise[0]</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>Stift 20
-Heft 30</pre><p>Gleiche Position in beiden Listen gehört zusammen.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 43 · Ausgabe vorhersagen</span><h2>Buchstaben zählen</h2>
+Heft 30</pre><p>Gleiche Position in beiden Listen gehört zusammen.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-c5eda25996"><span>Aufgabe 43 · Ausgabe vorhersagen</span><h2>Buchstaben zählen</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>anzahl = 0
 for b in &quot;banane&quot;:
@@ -561,7 +562,7 @@ for b in &quot;banane&quot;:
         anzahl = anzahl + 1
 print(anzahl)</code></pre>
 <div class="check" data-answer="2"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Wie oft kommt „a“ in „banane“ vor?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>2</pre><p>b-<strong>a</strong>-n-<strong>a</strong>-n-e → zwei Treffer.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 44 · Lücke füllen</span><h2>Bestellübersicht</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Wie oft kommt „a“ in „banane“ vor?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>2</pre><p>b-<strong>a</strong>-n-<strong>a</strong>-n-e → zwei Treffer.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-e917e34b28"><span>Aufgabe 44 · Lücke füllen</span><h2>Bestellübersicht</h2>
 <p>Ergänze die Lücken.</p><pre><code>artikel = [&quot;Schrauben&quot;, &quot;Dübel&quot;, &quot;Nägel&quot;]
 mengen = [100, 50, 200]
 for i in range(___(artikel)):
@@ -572,13 +573,13 @@ Nägel - 200 Stück</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Die Anzahl der Einträge liefert <code>len()</code>.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>In beide Listen greifst du mit derselben Variable.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>artikel = [&quot;Schrauben&quot;, &quot;Dübel&quot;, &quot;Nägel&quot;]
 mengen = [100, 50, 200]
 for i in range(len(artikel)):
-    print(artikel[i], &quot;-&quot;, mengen[i], &quot;Stück&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 45 · Selbst schreiben</span><h2>Platzierung</h2>
+    print(artikel[i], &quot;-&quot;, mengen[i], &quot;Stück&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-138f15693f"><span>Aufgabe 45 · Selbst schreiben</span><h2>Platzierung</h2>
 <p>Gegeben ist <code>ziel = ["Mia", "Leon", "Sara"]</code> in der Reihenfolge des Zieleinlaufs. Gib die Platzierung aus.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Platz 1 : Mia
 Platz 2 : Leon
 Platz 3 : Sara</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Du brauchst die Position → Variante B.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Platz = <code>i + 1</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>ziel = [&quot;Mia&quot;, &quot;Leon&quot;, &quot;Sara&quot;]
 for i in range(len(ziel)):
-    print(&quot;Platz&quot;, i + 1, &quot;:&quot;, ziel[i])</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 46 · Selbst schreiben</span><h2>Gesamtpreis</h2>
+    print(&quot;Platz&quot;, i + 1, &quot;:&quot;, ziel[i])</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-a4e58dca88"><span>Aufgabe 46 · Selbst schreiben</span><h2>Gesamtpreis</h2>
 <p>Gegeben sind <code>mengen = [2, 5, 1]</code> und <code>preise = [3, 2, 10]</code>. Berechne den Gesamtpreis (Menge mal Preis, alles addiert).</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Gesamtpreis: 26</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Zwei Listen → Positionen durchlaufen.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Sparschwein: <code>gesamt = gesamt + mengen[i] * preise[i]</code></div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>mengen = [2, 5, 1]
 preise = [3, 2, 10]
@@ -599,7 +600,7 @@ while i &lt; 4:
     print(i)
     i = i + 1</code></pre><div class="out"><small>Ausgabe</small><pre>1
 2
-3</pre></div></div><p>Bei <code>while</code> musst du dich um drei Dinge selbst kümmern: Startwert, Bedingung, Hochzählen. Bei <code>for</code> erledigt <code>range</code> das alles. Darum ist <code>for</code> beim Zählen kürzer und sicherer – eine Endlosschleife kann dir kaum passieren.</p></article><article class="task-card read-card"><span>Übersicht</span><h2>Typische Einsatzfälle für for</h2><ul class="check-list"><li><strong>Alles ausgeben:</strong> jede Zeile einer Liste anzeigen</li><li><strong>Etwas n-mal tun:</strong> 3 Versuche, 5 Runden, 10 Zeilen</li><li><strong>Zusammenrechnen:</strong> Summe, Durchschnitt, Anzahl</li><li><strong>Aussortieren:</strong> nur die teuren, nur die bestandenen</li><li><strong>Bestes finden:</strong> größter, kleinster, längster</li><li><strong>Umwandeln:</strong> aus einer Liste eine neue machen</li><li><strong>Tabelle erzeugen:</strong> Einmaleins, Preisliste</li></ul></article><article class="task-card stepping-task exercise"><span>Aufgabe 47 · Entscheiden</span><h2>for oder while?</h2><p>Entscheide für jede Situation. Klick zum Prüfen auf deine Wahl.</p><div class="choose"><div class="choose-row" data-right="for"><p>Alle Namen einer Teilnehmerliste ausdrucken.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Es gibt eine Liste → für jeden Namen.</small></div><div class="choose-row" data-right="while"><p>So lange nach der PIN fragen, bis sie stimmt.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Niemand weiß vorher, wie viele Versuche nötig sind.</small></div><div class="choose-row" data-right="for"><p>Die Zahlen von 1 bis 50 addieren.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Feste Anzahl → range(1, 51).</small></div><div class="choose-row" data-right="while"><p>Ein Menü anzeigen, bis der Nutzer „ende“ wählt.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Das Ende hängt von einer Eingabe ab.</small></div><div class="choose-row" data-right="for"><p>Aus 20 Messwerten den größten finden.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Jeden Wert der Liste einmal ansehen.</small></div><div class="choose-row" data-right="while"><p>Jeden Monat 50 € sparen, bis 1000 € erreicht sind.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Wiederholen, solange das Ziel nicht erreicht ist.</small></div><div class="choose-row" data-right="for"><p>Genau 3 Runden eines Quiz spielen.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Feste Anzahl → range(3).</small></div><div class="choose-row" data-right="for"><p>Zählen, wie viele E-Mails in einer Liste „@“ enthalten.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Jeden Eintrag der Liste prüfen.</small></div></div></article><article class="task-card challenge-card exercise"><span>Aufgabe 48 · Selbst schreiben</span><h2>Umbau: while → for</h2>
+3</pre></div></div><p>Bei <code>while</code> musst du dich um drei Dinge selbst kümmern: Startwert, Bedingung, Hochzählen. Bei <code>for</code> erledigt <code>range</code> das alles. Darum ist <code>for</code> beim Zählen kürzer und sicherer – eine Endlosschleife kann dir kaum passieren.</p></article><article class="task-card read-card"><span>Übersicht</span><h2>Typische Einsatzfälle für for</h2><ul class="check-list"><li><strong>Alles ausgeben:</strong> jede Zeile einer Liste anzeigen</li><li><strong>Etwas n-mal tun:</strong> 3 Versuche, 5 Runden, 10 Zeilen</li><li><strong>Zusammenrechnen:</strong> Summe, Durchschnitt, Anzahl</li><li><strong>Aussortieren:</strong> nur die teuren, nur die bestandenen</li><li><strong>Bestes finden:</strong> größter, kleinster, längster</li><li><strong>Umwandeln:</strong> aus einer Liste eine neue machen</li><li><strong>Tabelle erzeugen:</strong> Einmaleins, Preisliste</li></ul></article><article class="task-card stepping-task exercise" id="aufgabe-e2ed920851"><span>Aufgabe 47 · Entscheiden</span><h2>for oder while?</h2><p>Entscheide für jede Situation. Klick zum Prüfen auf deine Wahl.</p><div class="choose"><div class="choose-row" data-right="for"><p>Alle Namen einer Teilnehmerliste ausdrucken.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Es gibt eine Liste → für jeden Namen.</small></div><div class="choose-row" data-right="while"><p>So lange nach der PIN fragen, bis sie stimmt.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Niemand weiß vorher, wie viele Versuche nötig sind.</small></div><div class="choose-row" data-right="for"><p>Die Zahlen von 1 bis 50 addieren.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Feste Anzahl → range(1, 51).</small></div><div class="choose-row" data-right="while"><p>Ein Menü anzeigen, bis der Nutzer „ende“ wählt.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Das Ende hängt von einer Eingabe ab.</small></div><div class="choose-row" data-right="for"><p>Aus 20 Messwerten den größten finden.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Jeden Wert der Liste einmal ansehen.</small></div><div class="choose-row" data-right="while"><p>Jeden Monat 50 € sparen, bis 1000 € erreicht sind.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Wiederholen, solange das Ziel nicht erreicht ist.</small></div><div class="choose-row" data-right="for"><p>Genau 3 Runden eines Quiz spielen.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Feste Anzahl → range(3).</small></div><div class="choose-row" data-right="for"><p>Zählen, wie viele E-Mails in einer Liste „@“ enthalten.</p><button type="button" data-v="for">for</button><button type="button" data-v="while">while</button><small>Jeden Eintrag der Liste prüfen.</small></div></div></article><article class="task-card challenge-card exercise" id="aufgabe-17dbc8ac11"><span>Aufgabe 48 · Selbst schreiben</span><h2>Umbau: while → for</h2>
 <p>Dieses Programm funktioniert, ist aber umständlich. Schreibe es mit <code>for</code> und <code>range</code> neu.<pre><code>i = 1
 while i &lt;= 5:
     print("Runde", i)
@@ -615,7 +616,7 @@ Runde 5</pre>
 <p class="eyebrow">for-Schleife · Training</p>
 <h1>Gemischtes Training</h1>
 <p class="lead">Jetzt ohne Ankündigung, welches Muster gebraucht wird. Überlege bei jeder Aufgabe zuerst: <strong>Worüber läuft die Schleife? Was passiert mit jedem Ding? Brauche ich ein Sparschwein?</strong></p>
-<article class="task-card read-card"><span>Vor jeder Aufgabe</span><h2>Die vier Fragen</h2><ol class="check-list"><li><strong>Worüber</strong> läuft die Schleife? (Liste, Text, Zahlenbereich)</li><li><strong>Was</strong> soll mit jedem Ding passieren?</li><li>Muss ich mir etwas <strong>merken</strong>? (Summe, Zähler, Rekord, neue Liste → vor der Schleife anlegen)</li><li>Was passiert <strong>nach</strong> der Schleife? (Ergebnis ausgeben → nicht eingerückt)</li></ol></article><div class="level-banner"><span>Stufe 1</span><strong>Aufwärmen</strong></div><article class="task-card stepping-task exercise"><span>Aufgabe 49 · Ausgabe vorhersagen</span><h2>Mischung 1</h2>
+<article class="task-card read-card"><span>Vor jeder Aufgabe</span><h2>Die vier Fragen</h2><ol class="check-list"><li><strong>Worüber</strong> läuft die Schleife? (Liste, Text, Zahlenbereich)</li><li><strong>Was</strong> soll mit jedem Ding passieren?</li><li>Muss ich mir etwas <strong>merken</strong>? (Summe, Zähler, Rekord, neue Liste → vor der Schleife anlegen)</li><li>Was passiert <strong>nach</strong> der Schleife? (Ergebnis ausgeben → nicht eingerückt)</li></ol></article><div class="level-banner"><span>Stufe 1</span><strong>Aufwärmen</strong></div><article class="task-card stepping-task exercise" id="aufgabe-3dce1ead10"><span>Aufgabe 49 · Ausgabe vorhersagen</span><h2>Mischung 1</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>for i in range(2, 5):
     print(i, i + i)</code></pre>
@@ -624,14 +625,14 @@ Runde 5</pre>
 4 8"><textarea rows="3" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
 <details class="hint-box"><summary>Hinweis </summary><div>i ist 2, 3, 4.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>2 4
 3 6
-4 8</pre><p>Pro Durchlauf zwei Werte: i und das Doppelte.</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 50 · Ausgabe vorhersagen</span><h2>Mischung 2</h2>
+4 8</pre><p>Pro Durchlauf zwei Werte: i und das Doppelte.</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-6203c2ffbb"><span>Aufgabe 50 · Ausgabe vorhersagen</span><h2>Mischung 2</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>text = &quot;&quot;
 for wort in [&quot;Py&quot;, &quot;th&quot;, &quot;on&quot;]:
     text = text + wort
 print(text)</code></pre>
 <div class="check" data-answer="Python"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Das Sparschwein ist hier ein leerer Text. <code>+</code> hängt Texte aneinander.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>Python</pre><p>"" → "Py" → "Pyth" → "Python".</p></div></details></article><article class="task-card stepping-task exercise"><span>Aufgabe 51 · Ausgabe vorhersagen</span><h2>Mischung 3</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Das Sparschwein ist hier ein leerer Text. <code>+</code> hängt Texte aneinander.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>Python</pre><p>"" → "Py" → "Pyth" → "Python".</p></div></details></article><article class="task-card stepping-task exercise" id="aufgabe-7aebe38880"><span>Aufgabe 51 · Ausgabe vorhersagen</span><h2>Mischung 3</h2>
 <p>Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – <strong>ohne</strong> es auszuführen.</p>
 <pre><code>anzahl = 0
 for zahl in range(1, 11):
@@ -639,7 +640,7 @@ for zahl in range(1, 11):
         anzahl = anzahl + 1
 print(anzahl)</code></pre>
 <div class="check" data-answer="3"><textarea rows="2" placeholder="Deine Vorhersage …" spellcheck="false"></textarea><button type="button">Prüfen</button><p class="feedback" aria-live="polite"></p></div>
-<details class="hint-box"><summary>Hinweis </summary><div>Welche Zahlen von 1 bis 10 sind größer als 7?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>3</pre><p>8, 9 und 10 → drei Treffer.</p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 52 · Selbst schreiben</span><h2>Begrüßung für alle</h2>
+<details class="hint-box"><summary>Hinweis </summary><div>Welche Zahlen von 1 bis 10 sind größer als 7?</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre>3</pre><p>8, 9 und 10 → drei Treffer.</p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-b9c99a584c"><span>Aufgabe 52 · Selbst schreiben</span><h2>Begrüßung für alle</h2>
 <p>Gegeben ist <code>team = ["Ali", "Bea", "Cem"]</code>. Begrüße alle und gib danach aus, wie viele es waren.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Guten Morgen, Ali
 Guten Morgen, Bea
 Guten Morgen, Cem
@@ -647,7 +648,7 @@ Das waren 3 Personen.</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Die Anzahl kannst du mitzählen oder mit <code>len(team)</code> holen.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Die letzte Zeile steht nach der Schleife.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>team = [&quot;Ali&quot;, &quot;Bea&quot;, &quot;Cem&quot;]
 for person in team:
     print(&quot;Guten Morgen,&quot;, person)
-print(&quot;Das waren&quot;, len(team), &quot;Personen.&quot;)</code></pre><p></p></div></details></article><div class="level-banner"><span>Stufe 2</span><strong>Muster kombinieren</strong></div><article class="task-card challenge-card exercise"><span>Aufgabe 53 · Selbst schreiben</span><h2>Kassenbon</h2>
+print(&quot;Das waren&quot;, len(team), &quot;Personen.&quot;)</code></pre><p></p></div></details></article><div class="level-banner"><span>Stufe 2</span><strong>Muster kombinieren</strong></div><article class="task-card challenge-card exercise" id="aufgabe-383551f5b0"><span>Aufgabe 53 · Selbst schreiben</span><h2>Kassenbon</h2>
 <p>Gegeben ist <code>preise = [3, 12, 7, 25]</code>. Gib jeden Preis aus und am Ende die Summe.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Artikel: 3 Euro
 Artikel: 12 Euro
 Artikel: 7 Euro
@@ -658,21 +659,21 @@ summe = 0
 for preis in preise:
     print(&quot;Artikel:&quot;, preis, &quot;Euro&quot;)
     summe = summe + preis
-print(&quot;Summe:&quot;, summe, &quot;Euro&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 54 · Selbst schreiben</span><h2>Überstunden</h2>
+print(&quot;Summe:&quot;, summe, &quot;Euro&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-6d752220fd"><span>Aufgabe 54 · Selbst schreiben</span><h2>Überstunden</h2>
 <p>Gegeben ist <code>stunden = [8, 10, 7, 9, 8]</code>. Alles über 8 Stunden am Tag sind Überstunden. Wie viele Überstunden sind es insgesamt?</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Überstunden: 3</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Nur Tage mit mehr als 8 Stunden zählen: <code>if s &gt; 8:</code></div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Dazugezählt wird nicht <code>s</code>, sondern <code>s - 8</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>stunden = [8, 10, 7, 9, 8]
 ueber = 0
 for s in stunden:
     if s &gt; 8:
         ueber = ueber + (s - 8)
-print(&quot;Überstunden:&quot;, ueber)</code></pre><p>10 → 2 Überstunden, 9 → 1 Überstunde.</p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 55 · Selbst schreiben</span><h2>Vokale zählen</h2>
+print(&quot;Überstunden:&quot;, ueber)</code></pre><p>10 → 2 Überstunden, 9 → 1 Überstunde.</p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-76ef096234"><span>Aufgabe 55 · Selbst schreiben</span><h2>Vokale zählen</h2>
 <p>Zähle die Vokale im Wort <code>"programmieren"</code>.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">5</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Über einen Text läuft die Schleife Zeichen für Zeichen.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div><code>if b in "aeiou":</code> prüft, ob der Buchstabe ein Vokal ist.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>wort = &quot;programmieren&quot;
 vokale = 0
 for b in wort:
     if b in &quot;aeiou&quot;:
         vokale = vokale + 1
-print(vokale)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 56 · Selbst schreiben</span><h2>Notenspiegel</h2>
+print(vokale)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-9222cf1a3a"><span>Aufgabe 56 · Selbst schreiben</span><h2>Notenspiegel</h2>
 <p>Gegeben sind <code>namen = ["Ali", "Bea", "Cem"]</code> und <code>noten = [2, 5, 3]</code>. Gib für jede Person aus, ob sie bestanden hat (Note bis 4).</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Ali hat bestanden
 Bea hat nicht bestanden
 Cem hat bestanden</pre>
@@ -682,14 +683,14 @@ for i in range(len(namen)):
     if noten[i] &lt;= 4:
         print(namen[i], &quot;hat bestanden&quot;)
     else:
-        print(namen[i], &quot;hat nicht bestanden&quot;)</code></pre><p></p></div></details></article><div class="level-banner"><span>Stufe 3</span><strong>Knobeln</strong></div><article class="task-card challenge-card exercise"><span>Aufgabe 57 · Selbst schreiben</span><h2>Treppe</h2>
+        print(namen[i], &quot;hat nicht bestanden&quot;)</code></pre><p></p></div></details></article><div class="level-banner"><span>Stufe 3</span><strong>Knobeln</strong></div><article class="task-card challenge-card exercise" id="aufgabe-35b1327d4a"><span>Aufgabe 57 · Selbst schreiben</span><h2>Treppe</h2>
 <p>Gib diese Treppe aus. Tipp: <code>"#" * 3</code> ergibt <code>###</code>.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">#
 ##
 ###
 ####
 #####</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Du brauchst die Zahlen 1 bis 5.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div><code>print("#" * i)</code></div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>for i in range(1, 6):
-    print(&quot;#&quot; * i)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 58 · Selbst schreiben</span><h2>Wärmster Tag</h2>
+    print(&quot;#&quot; * i)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-a8838356f4"><span>Aufgabe 58 · Selbst schreiben</span><h2>Wärmster Tag</h2>
 <p>Gegeben sind <code>tage = ["Mo", "Di", "Mi", "Do"]</code> und <code>temperaturen = [14, 19, 23, 17]</code>. Gib den wärmsten Tag mit Temperatur aus.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">Wärmster Tag: Mi mit 23 Grad</pre>
 <details class="hint-box"><summary>Hinweis 1</summary><div>Rekord-Muster – aber merke dir die <strong>Position</strong> des Rekords, nicht nur den Wert.</div></details><details class="hint-box"><summary>Hinweis 2</summary><div>Start: <code>beste = 0</code>. Vergleich: <code>if temperaturen[i] &gt; temperaturen[beste]:</code></div></details><details class="hint-box"><summary>Hinweis 3</summary><div>Dann <code>beste = i</code>.</div></details><details class="sol-box"><summary>Lösung anzeigen</summary><div><pre><code>tage = [&quot;Mo&quot;, &quot;Di&quot;, &quot;Mi&quot;, &quot;Do&quot;]
 temperaturen = [14, 19, 23, 17]
@@ -697,7 +698,7 @@ beste = 0
 for i in range(len(tage)):
     if temperaturen[i] &gt; temperaturen[beste]:
         beste = i
-print(&quot;Wärmster Tag:&quot;, tage[beste], &quot;mit&quot;, temperaturen[beste], &quot;Grad&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise"><span>Aufgabe 59 · Selbst schreiben</span><h2>Kleines Einmaleins als Tabelle</h2>
+print(&quot;Wärmster Tag:&quot;, tage[beste], &quot;mit&quot;, temperaturen[beste], &quot;Grad&quot;)</code></pre><p></p></div></details></article><article class="task-card challenge-card exercise" id="aufgabe-45f0e0acc6"><span>Aufgabe 59 · Selbst schreiben</span><h2>Kleines Einmaleins als Tabelle</h2>
 <p>Eine Schleife <em>in</em> einer Schleife: Gib das Einmaleins von 1 bis 3 aus, jeweils mal 1 bis 3.</p><p class="target">So soll die Ausgabe aussehen:</p><pre class="target-out">1 x 1 = 1
 1 x 2 = 2
 1 x 3 = 3

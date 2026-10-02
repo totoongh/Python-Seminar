@@ -1,0 +1,2575 @@
+[
+  {
+    "id": "aufgabe-8f622acf39",
+    "title": "Maschinenprogramm zusammenbauen",
+    "description": "Übung 1 · 12-Bit-Maschinenprogramm",
+    "searchText": "Übung 1 · 12-Bit-Maschinenprogramm Maschinenprogramm zusammenbauen Erstelle ein Programm, das 6 + 9 berechnet und das Ergebnis an Speicheradresse 4 ablegt. LOAD 0001 ADD 0010 STORE 0011 Eine Anweisung hat 12 Bits: 4 Bits Opcode und 8 Bits für Wert oder Adresse. 1 LOAD 6 2 ADD 9 3 STORE 4 Eingabe prüfen Bits zurücksetzen ✓ Du hast es geschafft! 0001 00000110 0010 00001001 0011 00000100 Die CPU lädt 6, addiert 9 und speichert 15 an Adresse 4.",
+    "tags": [
+      "system",
+      "maschinencode"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-8f622acf39#1",
+    "order": 1
+  },
+  {
+    "id": "aufgabe-2b924258d0",
+    "title": "Was passiert bei python rechnung.py ?",
+    "description": "Übung 2 · Prozessschritte ordnen",
+    "searchText": "Übung 2 · Prozessschritte ordnen Was passiert bei python rechnung.py ? Bringe die Karten in eine sinnvolle Reihenfolge. Ziehe sie oder benutze die Pfeiltasten an den Karten. ⠿ Die CPU führt die benötigten Maschinenanweisungen aus. ⠿ Du tippst python rechnung.py . ⠿ python.exe wird gefunden. ⠿ Das Terminal zeigt die Ausgabe an. ⠿ Das Terminal gibt die Zeichen an PowerShell weiter. ⠿ Das Betriebssystem startet einen neuen Prozess. ⠿ PowerShell übernimmt und untersucht den Befehl. ⠿ Das Python-Programm erzeugt die Ausgabe. ⠿ PowerShell sucht nach dem Befehl python . Reihenfolge prüfen",
+    "tags": [
+      "system",
+      "terminal",
+      "prozesse"
+    ],
+    "level": "Einstieg",
+    "format": "Zeilen ordnen",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-2b924258d0#2",
+    "order": 2
+  },
+  {
+    "id": "aufgabe-ce58c8267c",
+    "title": "Was passiert bei git status ?",
+    "description": "Übung 3 · Prozessschritte ordnen",
+    "searchText": "Übung 3 · Prozessschritte ordnen Was passiert bei git status ? Ordne auch diese Befehlskette. Achte darauf, wann PowerShell, Betriebssystem, Git, CPU und Terminal beteiligt sind. ⠿ Das Terminal zeigt das Ergebnis. ⠿ PowerShell erkennt git als Befehlsnamen und status als Argument. ⠿ Git untersucht das aktuelle Verzeichnis. ⠿ Du gibst git status ein. ⠿ Die CPU führt Maschinenanweisungen aus. ⠿ git.exe wird über einen Ordner aus PATH gefunden. ⠿ Git schreibt sein Ergebnis. ⠿ Das Betriebssystem startet git.exe als Prozess. Reihenfolge prüfen",
+    "tags": [
+      "system",
+      "terminal",
+      "prozesse"
+    ],
+    "level": "Einstieg",
+    "format": "Zeilen ordnen",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-ce58c8267c#3",
+    "order": 3
+  },
+  {
+    "id": "aufgabe-6451bafa04",
+    "title": "Programm oder Prozess?",
+    "description": "Übung 4 · Single und Multiple Choice",
+    "searchText": "Übung 4 · Single und Multiple Choice Programm oder Prozess? Wähle bei jeder Frage die passende Antwort. Bei „Mehrere Antworten“ können mehrere Aussagen richtig sein. 1 Was ist ein Prozess? Eine Datei mit Programmcode Eine aktuell laufende Instanz eines Programms Ein Speicherort im RAM Ein Befehl der CPU 2 Du startest dieselbe Programmdatei dreimal. Was entsteht? Drei neue Programmdateien Drei Prozesse Drei Betriebssysteme Ein einziger Prozess mit drei Dateinamen 3 Welche Aussagen sind richtig? Mehrere Antworten Mehrere Prozesse können aus derselben Programmdatei entstehen. Ein Prozess besitzt einen aktuellen Zustand. Wird ein Prozess beendet, wird die Programmdatei gelöscht. Ein Prozess kann Speicher und Rechenzeit verwenden. 4 Du schließt ein laufendes Programm. Was bleibt normalerweise erhalten? Der Prozess Die Programmdatei Der Registerzustand des beendeten Prozesses Die belegte Prozess-ID 5 Welche Dinge gehören zu einem Prozess? Mehrere Antworten eine Prozess-ID belegter Arbeitsspeicher aktueller Ausführungszustand ausschließlich die dauerhafte Programmdatei Antworten prüfen Antworten zurücksetzen",
+    "tags": [
+      "system",
+      "prozesse"
+    ],
+    "level": "Einstieg",
+    "format": "Zuordnen",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-6451bafa04#4",
+    "order": 4
+  },
+  {
+    "id": "aufgabe-78017d9375",
+    "title": "Betriebssystem, Terminal, Shell oder Prozess?",
+    "description": "Übung 5 · Single und Multiple Choice",
+    "searchText": "Übung 5 · Single und Multiple Choice Betriebssystem, Terminal, Shell oder Prozess? Ordne den beteiligten Teilen ihre jeweilige Aufgabe zu. 1 Wer interpretiert Get-Date als Befehl? das Terminal PowerShell als Shell der Monitor die Tastatur 2 Welche Aufgabe besitzt ein Terminal? Eingaben und Ausgaben darstellen Maschinencode erzeugen sämtliche Prozesse verwalten Python-Quellcode schreiben 3 Wer startet und verwaltet Prozesse? das Terminal der Textcursor das Betriebssystem der Dateiname 4 Du öffnest Windows Terminal und startest darin PowerShell. Was ist richtig? Mehrere Antworten Windows Terminal stellt die Oberfläche dar. PowerShell interpretiert Befehle. PowerShell läuft als Prozess. Windows Terminal ist das Betriebssystem. 5 Welche Aussage beschreibt einen Prozess? Ein Name in PATH Ein Terminalfenster Eine laufende Programminstanz Eine Programmiersprache 6 Du öffnest in Windows Terminal zwei PowerShell-Tabs. Was kann dabei entstehen? zwei Betriebssysteme mehrere PowerShell-Prozesse zwei CPUs zwei Kopien aller Programmdateien Antworten prüfen Antworten zurücksetzen",
+    "tags": [
+      "system",
+      "terminal",
+      "shell",
+      "prozesse"
+    ],
+    "level": "Einstieg",
+    "format": "Zuordnen",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-78017d9375#5",
+    "order": 5
+  },
+  {
+    "id": "aufgabe-8649673517",
+    "title": "PowerShell kennenlernen",
+    "description": "Übung 6 · Auf dem eigenen Windows-PC",
+    "searchText": "Übung 6 · Auf dem eigenen Windows-PC PowerShell kennenlernen Öffne PowerShell auf deinem Rechner und führe die Befehle nacheinander aus. Die Befehle lesen Informationen oder wechseln nur das aktuelle Verzeichnis. Sie verändern keine Dateien. A PowerShell und Zeit Finde zuerst heraus, welche PowerShell-Version du verwendest. $PSVersionTable.PSVersion Kopieren Welche Versionsnummer wird angezeigt? Welche Hauptversion steht ganz vorne? Get-Date Kopieren Welche Informationen liefert der Befehl? Entspricht die Ausgabe deiner aktuellen Uhrzeit? B Aktuelles Verzeichnis Get-Location Kopieren In welchem Verzeichnis befindest du dich? Ist der angezeigte Pfad absolut oder relativ? Get-ChildItem Kopieren Welche Dateien und Ordner erkennst du? Woran unterscheidest du Dateien und Ordner? dir Kopieren Vergleiche die Ausgabe mit Get-ChildItem . C Alias und Befehl unterscheiden Get-Command dir Kopieren Get-Alias dir Kopieren Ist dir ein eigenständiges Programm? Auf welchen PowerShell-Befehl verweist der Name? Get-Command Get-Date Kopieren Welchen CommandType besitzt Get-Date ? D Eine Ordnerebene wechseln Wähle einen vorhandenen Ordner aus der Ausgabe von Get-ChildItem . Ersetze den Beispielnamen durch diesen Ordner. Set-Location \"Name-des-Ordners\" Kopieren Get-Location Kopieren Set-Location .. Kopieren Wie verändert sich der aktuelle Pfad? Was bewirkt .. ? Wann sind Anführungszeichen um einen Ordnernamen hilfreich?",
+    "tags": [
+      "terminal",
+      "shell"
+    ],
+    "level": "Anwendung",
+    "format": "Terminal erkunden",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-8649673517#6",
+    "order": 6
+  },
+  {
+    "id": "aufgabe-6ed89dd67c",
+    "title": "Notepad finden und im Terminal öffnen",
+    "description": "Übung 7 · Programmdatei und Prozess",
+    "searchText": "Übung 7 · Programmdatei und Prozess Notepad finden und im Terminal öffnen Finde den Speicherort von Notepad, starte das Programm direkt aus PowerShell und untersuche den entstandenen Prozess. 1 Notepad als Befehl untersuchen Get-Command notepad Kopieren Welcher CommandType wird angezeigt? Was steht unter Name und Source ? Get-Command notepad | Select-Object Name, CommandType, Source Kopieren (Get-Command notepad).Source Kopieren Gefundener Pfad zu Notepad 2 Notepad aus PowerShell starten notepad Kopieren Öffnet sich Notepad? Musstest du den vollständigen Pfad eingeben? Warum konnte PowerShell das Programm trotzdem finden? Notepad nur öffnen. Du musst keine Datei erstellen oder speichern. 3 Den laufenden Prozess untersuchen Lass Notepad geöffnet und wechsle zurück zu PowerShell. Get-Process notepad Kopieren Get-Process notepad | Select-Object Name, Id, Path Kopieren Welche Prozess-ID wird angezeigt? Welche Information steht unter Path ? Vergleiche den Pfad mit dem Ergebnis von Get-Command notepad . 4 Notepad schließen Schließe Notepad über das normale X . Führe danach beide Befehle erneut aus. Get-Process notepad Kopieren Get-Command notepad Kopieren Was ist beim Schließen verschwunden? Was ist weiterhin vorhanden? Was zeigt das über den Unterschied zwischen Programmdatei und Prozess? Falls ein weiteres Notepad-Fenster geöffnet ist, kann weiterhin ein Notepad-Prozess erscheinen.",
+    "tags": [
+      "terminal",
+      "path",
+      "prozesse"
+    ],
+    "level": "Anwendung",
+    "format": "Terminal erkunden",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-6ed89dd67c#7",
+    "order": 7
+  },
+  {
+    "id": "aufgabe-f68c7dfd72",
+    "title": "PATH und Prozesse erkunden",
+    "description": "Übung 8 · Auf dem eigenen Windows-PC",
+    "searchText": "Übung 8 · Auf dem eigenen Windows-PC PATH und Prozesse erkunden Die Ergebnisse können sich von Rechner zu Rechner unterscheiden. Notiere Auffälligkeiten für die gemeinsame Besprechung. A Externe Programme finden Get-Command git Kopieren Get-Command python Kopieren Werden beide Programme gefunden? Welcher CommandType wird angezeigt? Unter welchem vollständigen Pfad liegen sie? Welche Meldung erscheint, wenn ein Programm nicht auffindbar ist? B Die PATH-Liste ansehen $env:PATH -split \";\" Kopieren Wie viele Ordner stehen ungefähr in der Liste? Findest du einen Ordner, der zu Git oder Python gehört? Warum durchsucht PowerShell mehrere Ordner? C Laufende Prozesse ansehen Get-Process Kopieren Welche Programme erkennst du? Gibt es mehrere Prozesse mit demselben Namen? Get-Process | Select-Object -First 5 Name, Id Kopieren Was bewirkt Select-Object -First 5 ? Besitzt jeder Prozess eine eigene ID? D Prozesse sortieren Get-Process | Sort-Object CPU -Descending | Select-Object -First 5 Name, Id, CPU Kopieren Wonach wird sortiert? Welcher Prozess steht auf deinem Rechner oben? Warum können andere Personen ein anderes Ergebnis erhalten? Optional Get-Process | Get-Member Kopieren Welche weiteren Eigenschaften entdeckst du?",
+    "tags": [
+      "terminal",
+      "path",
+      "prozesse"
+    ],
+    "level": "Anwendung",
+    "format": "Terminal erkunden",
+    "source": "uebungen",
+    "sourceLabel": "Intro-Übungen",
+    "url": "../uebungen/?aufgabe=aufgabe-f68c7dfd72#8",
+    "order": 8
+  },
+  {
+    "id": "aufgabe-cbadce95e4",
+    "title": "Datentyp-Detektiv",
+    "description": "Speichere das Programm als datentypen.py . Sage jede Ausgabe voraus, starte das Programm und ergänze anschließend drei eigene Werte.",
+    "searchText": "Datentypen · Übung 1 von 2 Datentyp-Detektiv Speichere das Programm als datentypen.py . Sage jede Ausgabe voraus, starte das Programm und ergänze anschließend drei eigene Werte. print(type(\"25\")) print(type(25)) print(type(25.0)) print(\"5\" + \"3\") print(5 + 3) print(float(\"5.3\")) Notiere Wert und Datentyp jeder Ausgabe. Erkläre den Unterschied zwischen \"8\" und 8 .",
+    "tags": [
+      "datentypen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-cbadce95e4#1",
+    "order": 9
+  },
+  {
+    "id": "aufgabe-ca14f9748c",
+    "title": "Kinokasse",
+    "description": "Frage nach der Anzahl der Tickets und dem Preis pro Ticket. Berechne den Gesamtpreis und gib einen vollständigen Satz aus.",
+    "searchText": "Datentypen · Übung 2 von 2 Kinokasse Frage nach der Anzahl der Tickets und dem Preis pro Ticket. Berechne den Gesamtpreis und gib einen vollständigen Satz aus. anzahl = int(input(\"Wie viele Tickets? \")) preis = float(input(\"Preis pro Ticket: \")) # Berechne hier den Gesamtpreis. # Gib Anzahl und Gesamtpreis aus. Teste mit 3 Tickets zu 8.50 Euro. Teste, was bei der Eingabe acht passiert.",
+    "tags": [
+      "eingabe",
+      "datentypen",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-ca14f9748c#1",
+    "order": 10
+  },
+  {
+    "id": "aufgabe-00849c307f",
+    "title": "Dein Rechenlabor",
+    "description": "Baue ein Programm, das aus Eingaben nützliche Ergebnisse berechnet. Beginne mit zwei Zahlen und Summe, Differenz und Produkt. Erweitere es danach in deinem eigenen Tempo.",
+    "searchText": "Für Schnelle · Offene Pufferaufgabe Dein Rechenlabor Baue ein Programm, das aus Eingaben nützliche Ergebnisse berechnet. Beginne mit zwei Zahlen und Summe, Differenz und Produkt. Erweitere es danach in deinem eigenen Tempo. Ergänze Division und erkläre den Unterschied zwischen int und float an den Ergebnissen. Wähle ein Thema wie Kinokasse, Reisebudget oder Maßeinheiten und baue mehrere Berechnungen dazu. Erfinde weitere Eingaben, sinnvolle Ausgaben und Grenzfälle. Schreibe für jede neue Rechnung einen Testfall auf. Wenn alles funktioniert: Denke dir eine neue Rechnung oder einen neuen Sonderfall aus und erweitere dein Programm weiter.",
+    "tags": [
+      "eingabe",
+      "datentypen",
+      "rechnen"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-00849c307f#1",
+    "order": 11
+  },
+  {
+    "id": "aufgabe-310776799b",
+    "title": "Versandkosten berechnen",
+    "description": "Frage nach dem Bestellwert. Unter 25 Euro kostet der Versand 5 Euro, von 25 bis unter 50 Euro kostet er 2 Euro, ab 50 Euro ist er kostenlos.",
+    "searchText": "elif & else · Übung 1 von 2 Versandkosten berechnen Frage nach dem Bestellwert. Unter 25 Euro kostet der Versand 5 Euro, von 25 bis unter 50 Euro kostet er 2 Euro, ab 50 Euro ist er kostenlos. Gib Versandkosten und Gesamtsumme aus. Teste 10, 25, 49 und 50 Euro. Überlege, warum die Grenzwerte wichtig sind.",
+    "tags": [
+      "eingabe",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-310776799b#2",
+    "order": 12
+  },
+  {
+    "id": "aufgabe-f0c75410e3",
+    "title": "Punkte auswerten",
+    "description": "Ordne eine Punktzahl ein: 0–49 „noch nicht bestanden“, 50–79 „bestanden“, 80–100 „sehr gut“. Werte unter 0 oder über 100 sollen „ungültige Punktzahl“ ergeben.",
+    "searchText": "elif & else · Übung 2 von 2 Punkte auswerten Ordne eine Punktzahl ein: 0–49 „noch nicht bestanden“, 50–79 „bestanden“, 80–100 „sehr gut“. Werte unter 0 oder über 100 sollen „ungültige Punktzahl“ ergeben. Plane zuerst die Reihenfolge der Bedingungen. Teste mindestens −1, 0, 49, 50, 80, 100 und 101.",
+    "tags": [
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Zeilen ordnen",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-f0c75410e3#2",
+    "order": 13
+  },
+  {
+    "id": "aufgabe-e83a8546e2",
+    "title": "Entscheidungsatlas",
+    "description": "Entwirf einen Berater mit mehreren abgestuften Ergebnissen, zum Beispiel für Ticketpreise, Versand, Fitness oder Wetter. Schreibe die Regeln zuerst als Tabelle und setze sie dann mit if , elif und else um.",
+    "searchText": "Für Schnelle · Offene Pufferaufgabe Entscheidungsatlas Entwirf einen Berater mit mehreren abgestuften Ergebnissen, zum Beispiel für Ticketpreise, Versand, Fitness oder Wetter. Schreibe die Regeln zuerst als Tabelle und setze sie dann mit if , elif und else um. Beginne mit vier eindeutig unterscheidbaren Bereichen. Ergänze Sonderfälle und eine Meldung für ungültige Werte. Füge weitere Bereiche hinzu. Prüfe nach jeder Änderung die Übergänge direkt vor und auf jedem Grenzwert. Nächste Ausbaustufe: Lass eine andere Person einen Fall nennen und prüfe, ob dein Programm ihn eindeutig einordnet.",
+    "tags": [
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-e83a8546e2#2",
+    "order": 14
+  },
+  {
+    "id": "aufgabe-1b503b09b4",
+    "title": "Serverzugang",
+    "description": "Frage nach Rolle, Sicherheitscode und Sperrstatus. Zugang gibt es nur für die Rolle admin mit Code 4711 , wenn das Konto nicht gesperrt ist.",
+    "searchText": "Bedingungen · Übung 1 von 2 Serverzugang Frage nach Rolle, Sicherheitscode und Sperrstatus. Zugang gibt es nur für die Rolle admin mit Code 4711 , wenn das Konto nicht gesperrt ist. Verwende mindestens einmal and und einmal not . Speichere den Sperrstatus zunächst als False oder True . Teste vier unterschiedliche Kombinationen.",
+    "tags": [
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-1b503b09b4#3",
+    "order": 15
+  },
+  {
+    "id": "aufgabe-66e36b6414",
+    "title": "Freizeitplaner",
+    "description": "Frage nach Wetter und Temperatur. Bei Sonne und mindestens 18 Grad wird ein Ausflug empfohlen. Bei Regen oder weniger als 8 Grad wird ein Museumsbesuch empfohlen. In allen anderen Fällen gibt es einen Spaziergang.",
+    "searchText": "Bedingungen · Übung 2 von 2 Freizeitplaner Frage nach Wetter und Temperatur. Bei Sonne und mindestens 18 Grad wird ein Ausflug empfohlen. Bei Regen oder weniger als 8 Grad wird ein Museumsbesuch empfohlen. In allen anderen Fällen gibt es einen Spaziergang. Verwende and , or und elif . Teste jede der drei Empfehlungen.",
+    "tags": [
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-66e36b6414#3",
+    "order": 16
+  },
+  {
+    "id": "aufgabe-f4274ee534",
+    "title": "Regelwerk für einen Zugang",
+    "description": "Erfinde eine Situation mit mehreren Voraussetzungen: etwa einen Werkstattraum, eine Veranstaltung oder ein Computerspiel. Das Programm fragt die Voraussetzungen ab und erklärt, warum Zugang erlaubt oder verweigert wird.",
+    "searchText": "Für Schnelle · Offene Pufferaufgabe Regelwerk für einen Zugang Erfinde eine Situation mit mehreren Voraussetzungen: etwa einen Werkstattraum, eine Veranstaltung oder ein Computerspiel. Das Programm fragt die Voraussetzungen ab und erklärt, warum Zugang erlaubt oder verweigert wird. Starte mit zwei Bedingungen, die beide erfüllt sein müssen. Baue eine alternative Berechtigung mit or und einen Sperrstatus mit not ein. Ergänze Sonderfälle und teste Kombinationen systematisch. Halte für jeden Test Eingaben und erwartete Ausgabe fest. Wenn dir neue Regeln einfallen, ergänze sie und prüfe, ob ältere Testfälle weiterhin richtig funktionieren.",
+    "tags": [
+      "eingabe",
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-f4274ee534#3",
+    "order": 17
+  },
+  {
+    "id": "aufgabe-c7f3fe37a4",
+    "title": "Was passiert bei jedem Durchlauf?",
+    "description": "Schreibe vor dem Start auf, was der Code ausgibt. Starte ihn danach und vergleiche deine Vorhersage. Ändere anschließend 3 in der Bedingung zu 5 .",
+    "searchText": "while · Schritt 1 · Mit Beispiel Was passiert bei jedem Durchlauf? Schreibe vor dem Start auf, was der Code ausgibt. Starte ihn danach und vergleiche deine Vorhersage. Ändere anschließend 3 in der Bedingung zu 5 . zahl = 1 while zahl <= 3: print(\"Aktuelle Zahl:\", zahl) zahl = zahl + 1 print(\"Fertig:\", zahl) Notiere vor jedem Durchlauf den Wert von zahl und das Ergebnis von zahl <= 3 . Tipp: Die Bedingung wird vor jedem Durchlauf erneut geprüft. Die letzte print() -Zeile steht außerhalb der Schleife. Typischer Fehler: Ohne zahl = zahl + 1 endet die Schleife nicht. Falls du das ausprobieren möchtest, nutze zum Abbrechen Strg+C im Terminal.",
+    "tags": [
+      "while",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Schreibtischtest",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-c7f3fe37a4#4",
+    "order": 18
+  },
+  {
+    "id": "aufgabe-78b4efc8a2",
+    "title": "Countdown bis zum Start",
+    "description": "Ergänze die fehlende Zeile so, dass 3 , 2 , 1 und danach genau einmal „Start!“ ausgegeben wird.",
+    "searchText": "while · Schritt 2 · Lücke füllen Countdown bis zum Start Ergänze die fehlende Zeile so, dass 3 , 2 , 1 und danach genau einmal „Start!“ ausgegeben wird. rest = 3 while rest > 0: print(rest) # Hier muss rest kleiner werden. print(\"Start!\") Teste erst mit rest = 3 , danach mit rest = 5 . Tipp: Die fehlende Zeile gehört eingerückt in die Schleife. Nutze rest = rest - 1 . Typischer Fehler: Steht „Start!“ eingerückt, erscheint es bei jedem Durchlauf.",
+    "tags": [
+      "while"
+    ],
+    "level": "Anwendung",
+    "format": "Lückencode",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-78b4efc8a2#4",
+    "order": 19
+  },
+  {
+    "id": "aufgabe-76e337691d",
+    "title": "Nur gültige Richtung akzeptieren",
+    "description": "Frage nach links oder rechts . Solange die Antwort anders lautet, zeige einen Hinweis und frage erneut. Erst danach gibst du die gültige Richtung aus.",
+    "searchText": "while · Schritt 3 · Teilweise selbst bauen Nur gültige Richtung akzeptieren Frage nach links oder rechts . Solange die Antwort anders lautet, zeige einen Hinweis und frage erneut. Erst danach gibst du die gültige Richtung aus. richtung = input(\"links oder rechts? \") while ______________________________: print(\"Bitte links oder rechts eingeben.\") # Frage richtung hier erneut ab. print(\"Gewählt:\", richtung) Teste zuerst oben , dann links . Teste auch eine sofort gültige Antwort. Hinweis: Die Schleife soll laufen, wenn die Antwort weder links noch rechts ist. Beide Vergleiche müssen dafür gleichzeitig zutreffen.",
+    "tags": [
+      "while",
+      "eingabe"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-76e337691d#4",
+    "order": 20
+  },
+  {
+    "id": "aufgabe-5f56f52dd4",
+    "title": "PIN mit drei Versuchen",
+    "description": "Frage nach der PIN 2468 . Die Eingabe darf höchstens dreimal versucht werden. Melde nach jedem falschen Versuch, wie viele Versuche noch übrig sind.",
+    "searchText": "while · Übung 1 von 2 PIN mit drei Versuchen Frage nach der PIN 2468 . Die Eingabe darf höchstens dreimal versucht werden. Melde nach jedem falschen Versuch, wie viele Versuche noch übrig sind. Verwende eine Variable für die Anzahl der Versuche. Die Schleife läuft nur, solange die PIN falsch und noch ein Versuch vorhanden ist. Gib am Ende „Zugang“ oder „Karte gesperrt“ aus.",
+    "tags": [
+      "while",
+      "eingabe",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-5f56f52dd4#4",
+    "order": 21
+  },
+  {
+    "id": "aufgabe-e9a95505a1",
+    "title": "Sparziel erreichen",
+    "description": "Frage nach einem Sparziel. Danach werden nacheinander eingezahlte Beträge abgefragt und addiert, bis das Ziel erreicht ist.",
+    "searchText": "while · Übung 2 von 2 Sparziel erreichen Frage nach einem Sparziel. Danach werden nacheinander eingezahlte Beträge abgefragt und addiert, bis das Ziel erreicht ist. Zeige nach jeder Einzahlung den aktuellen Gesamtbetrag. Gib am Ende aus, um wie viel das Ziel erreicht oder überschritten wurde. Teste auch mehrere kleine Einzahlungen.",
+    "tags": [
+      "while",
+      "eingabe",
+      "rechnen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-e9a95505a1#4",
+    "order": 22
+  },
+  {
+    "id": "aufgabe-690bc587b1",
+    "title": "Menü bis zum Ende",
+    "description": "Zeige wiederholt ein Menü mit den Befehlen hallo , hilfe und ende . Reagiere auf die Auswahl. Bei ende stoppt das Programm; unbekannte Befehle bekommen eine passende Rückmeldung. Zähle, wie oft ein gültiger Befehl gewählt wurde.",
+    "searchText": "while · Schritt 4 · Eigenständig Menü bis zum Ende Zeige wiederholt ein Menü mit den Befehlen hallo , hilfe und ende . Reagiere auf die Auswahl. Bei ende stoppt das Programm; unbekannte Befehle bekommen eine passende Rückmeldung. Zähle, wie oft ein gültiger Befehl gewählt wurde. Teste einen gültigen, einen unbekannten und den beendenden Befehl.",
+    "tags": [
+      "while"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-690bc587b1#4",
+    "order": 23
+  },
+  {
+    "id": "aufgabe-4d7b6611a0",
+    "title": "Menüwerkstatt",
+    "description": "Baue ein eigenes Programm mit einem Menü, das bis zur Auswahl ende wiederkehrt. Es kann ein Spiel, ein einfacher Rechner oder ein Auskunftsschalter sein.",
+    "searchText": "Für Schnelle · Offene Pufferaufgabe Menüwerkstatt Baue ein eigenes Programm mit einem Menü, das bis zur Auswahl ende wiederkehrt. Es kann ein Spiel, ein einfacher Rechner oder ein Auskunftsschalter sein. Beginne mit zwei Aktionen und einer klaren Beenden-Auswahl. Ergänze weitere Aktionen, Eingaben und Zähler für ihre Nutzung. Füge Sonderfälle und ungültige Eingaben hinzu. Prüfe nach jeder Erweiterung, ob das Menü wieder erscheint und ende weiterhin funktioniert. Weitere Idee? Ergänze eine neue Menüfunktion, ohne die vorhandenen zu beschädigen.",
+    "tags": [
+      "while",
+      "eingabe",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-4d7b6611a0#4",
+    "order": 24
+  },
+  {
+    "id": "aufgabe-262fa3dba8",
+    "title": "Welche Position ist gemeint?",
+    "description": "Lege die Liste an und sage vor jedem Start voraus, was die drei Ausgaben zeigen. Ändere danach einen Index und überprüfe deine Vermutung.",
+    "searchText": "Listen · Schritt 1 · Mit Beispiel Welche Position ist gemeint? Lege die Liste an und sage vor jedem Start voraus, was die drei Ausgaben zeigen. Ändere danach einen Index und überprüfe deine Vermutung. obst = [\"Apfel\", \"Birne\", \"Kiwi\"] print(obst[0]) print(obst[2]) print(len(obst)) Zeichne drei Kästchen mit den Indizes 0 , 1 und 2 . Tipp: len(obst) ist die Anzahl der Werte, nicht der letzte Index. Typischer Fehler: obst[3] liegt außerhalb dieser Liste. Probiere es aus und lies die Fehlermeldung.",
+    "tags": [
+      "listen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-262fa3dba8#5",
+    "order": 25
+  },
+  {
+    "id": "aufgabe-080771391d",
+    "title": "Ein Wert kommt dazu",
+    "description": "Ergänze die fehlende Zeile. Am Ende soll die Liste drei Tiere und die Anzahl 3 enthalten.",
+    "searchText": "Listen · Schritt 2 · Lücke füllen Ein Wert kommt dazu Ergänze die fehlende Zeile. Am Ende soll die Liste drei Tiere und die Anzahl 3 enthalten. tiere = [\"Hund\", \"Katze\"] neues_tier = input(\"Noch ein Tier: \") # Füge neues_tier am Ende von tiere an. print(tiere) print(len(tiere)) Tipp: Die Form lautet tiere.append(neues_tier) . Der eingegebene Wert steht bereits in der Variablen. Typischer Fehler: print(neues_tier) zeigt den Wert nur an; dadurch landet er noch nicht in der Liste.",
+    "tags": [
+      "listen",
+      "eingabe"
+    ],
+    "level": "Anwendung",
+    "format": "Lückencode",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-080771391d#5",
+    "order": 26
+  },
+  {
+    "id": "aufgabe-2f12473f56",
+    "title": "Packliste erweitern",
+    "description": "Beginne mit packliste = [\"Laptop\", \"Ladekabel\"] . Frage dreimal nach einem weiteren Gegenstand und hänge jede Eingabe an die Liste an.",
+    "searchText": "Listen · Übung 1 von 2 Packliste erweitern Beginne mit packliste = [\"Laptop\", \"Ladekabel\"] . Frage dreimal nach einem weiteren Gegenstand und hänge jede Eingabe an die Liste an. Gib anschließend die vollständige Liste aus. Gib die Anzahl der Gegenstände aus. Zeige den ersten und den letzten Gegenstand mit ihrem Index.",
+    "tags": [
+      "listen",
+      "eingabe"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-2f12473f56#5",
+    "order": 27
+  },
+  {
+    "id": "aufgabe-3d19f7915a",
+    "title": "Schichtplan korrigieren",
+    "description": "Gegeben ist team = [\"Aylin\", \"Ben\", \"Cem\", \"Dana\"] . Ben fällt aus und wird durch Eli ersetzt. Danach kommt Farah als fünfte Person hinzu.",
+    "searchText": "Listen · Übung 2 von 2 Schichtplan korrigieren Gegeben ist team = [\"Aylin\", \"Ben\", \"Cem\", \"Dana\"] . Ben fällt aus und wird durch Eli ersetzt. Danach kommt Farah als fünfte Person hinzu. Ändere den passenden Listeneintrag. Füge Farah mit append() hinzu. Gib die neue Teamgröße und die fertige Liste aus.",
+    "tags": [
+      "listen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-3d19f7915a#5",
+    "order": 28
+  },
+  {
+    "id": "aufgabe-8b5f1776d6",
+    "title": "Warteliste am Empfang",
+    "description": "Beginne mit warteliste = [\"Mia\", \"Noah\", \"Omar\"] . Frage einen weiteren Namen ab und hänge ihn an. Danach sagt Mia ab und wird durch Lea ersetzt. Gib den ersten und letzten Namen sowie die Anzahl der Personen aus.",
+    "searchText": "Listen · Schritt 3 · Eigenständig Warteliste am Empfang Beginne mit warteliste = [\"Mia\", \"Noah\", \"Omar\"] . Frage einen weiteren Namen ab und hänge ihn an. Danach sagt Mia ab und wird durch Lea ersetzt. Gib den ersten und letzten Namen sowie die Anzahl der Personen aus. Probiere danach eine zweite Änderung deiner Wahl aus und beschreibe, welcher Index betroffen ist.",
+    "tags": [
+      "listen",
+      "eingabe",
+      "strings"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-8b5f1776d6#5",
+    "order": 29
+  },
+  {
+    "id": "aufgabe-25b781700c",
+    "title": "Dein eigenes Inventar",
+    "description": "Entwirf eine Liste für ein Thema deiner Wahl: Werkzeuge, Reisegepäck, Spielgegenstände oder Sportgeräte. Das Programm soll Einträge anzeigen, neue Werte aufnehmen und vorhandene Werte an einer bekannten Position ändern.",
+    "searchText": "Für Schnelle · Offene Pufferaufgabe Dein eigenes Inventar Entwirf eine Liste für ein Thema deiner Wahl: Werkzeuge, Reisegepäck, Spielgegenstände oder Sportgeräte. Das Programm soll Einträge anzeigen, neue Werte aufnehmen und vorhandene Werte an einer bekannten Position ändern. Starte mit drei Gegenständen und zeige ersten, letzten und Anzahl. Lass weitere Gegenstände per input() hinzufügen und ändere einen Eintrag. Erweitere um Regeln: maximale Anzahl, eine Meldung bei leerem Namen oder mehrere Varianten deines Inventars. Bleibe bei den bisher bekannten Listenbefehlen. Jede weitere Inventarregel ist eine neue Ausbaustufe.",
+    "tags": [
+      "listen",
+      "eingabe",
+      "strings"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-25b781700c#5",
+    "order": 30
+  },
+  {
+    "id": "aufgabe-648889fec6",
+    "title": "Persönliche Begrüßungen",
+    "description": "Lege eine Liste mit mindestens fünf Namen an. Gib für jede Person eine eigene Begrüßungszeile aus.",
+    "searchText": "for · Übung 1 von 2 Persönliche Begrüßungen Lege eine Liste mit mindestens fünf Namen an. Gib für jede Person eine eigene Begrüßungszeile aus. Verwende genau eine for -Schleife. Gib nach der Schleife die Anzahl der begrüßten Personen aus. Ergänze einen Namen und starte erneut.",
+    "tags": [
+      "for",
+      "listen",
+      "strings"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-648889fec6#6",
+    "order": 31
+  },
+  {
+    "id": "aufgabe-57137d2463",
+    "title": "Wochenkosten auswerten",
+    "description": "Speichere fünf Tagesausgaben in einer Liste. Gib jede Ausgabe aus und berechne während der Schleife die Gesamtsumme.",
+    "searchText": "for · Übung 2 von 2 Wochenkosten auswerten Speichere fünf Tagesausgaben in einer Liste. Gib jede Ausgabe aus und berechne während der Schleife die Gesamtsumme. Gib nach der Schleife die Summe aus. Zähle zusätzlich, wie viele Ausgaben mindestens 20 Euro betragen. Verwende dafür if innerhalb der Schleife.",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-57137d2463#6",
+    "order": 32
+  },
+  {
+    "id": "aufgabe-17c2ba385a",
+    "title": "Auswertungswerkstatt",
+    "description": "Wähle eine Liste mit Zahlen, etwa Tagesausgaben, Temperaturen oder Quizpunkten. Eine for -Schleife soll jeden Wert verarbeiten und am Ende eine verständliche Auswertung ausgeben.",
+    "searchText": "Für Schnelle · Offene Pufferaufgabe Auswertungswerkstatt Wähle eine Liste mit Zahlen, etwa Tagesausgaben, Temperaturen oder Quizpunkten. Eine for -Schleife soll jeden Wert verarbeiten und am Ende eine verständliche Auswertung ausgeben. Beginne mit Summe und Anzahl der Werte. Ergänze Durchschnitt und verschiedene Kategorien, die während der Schleife gezählt werden. Denke dir neue Fragen an deine Daten aus, etwa „Wie viele Werte liegen im gewünschten Bereich?“, und teste jede Auswertung mit einer kleinen Liste, deren Ergebnis du von Hand kennst. Wähle weitere Daten oder neue Auswertungsfragen; jedes neue Ergebnis soll mit einem Testfall überprüfbar sein.",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-17c2ba385a#6",
+    "order": 33
+  },
+  {
+    "id": "aufgabe-d8184eb81b",
+    "title": "Profilkarte",
+    "description": "Frage Name, Alter und Körpergröße in Metern ab. Gib anschließend eine übersichtliche Profilkarte aus. Alter soll int , Körpergröße float sein. Zeige mit type() , dass die Umwandlungen funktioniert haben.",
+    "searchText": "Training 01 · leicht Profilkarte Frage Name, Alter und Körpergröße in Metern ab. Gib anschließend eine übersichtliche Profilkarte aus. Alter soll int , Körpergröße float sein. Zeige mit type() , dass die Umwandlungen funktioniert haben.",
+    "tags": [
+      "eingabe",
+      "datentypen",
+      "strings"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-d8184eb81b#7",
+    "order": 34
+  },
+  {
+    "id": "aufgabe-227c2d3cbb",
+    "title": "Ticketberater",
+    "description": "Unter 6 Jahren ist der Eintritt kostenlos, von 6 bis 17 ermäßigt, ab 18 regulär. Ab 65 gilt wieder der ermäßigte Preis. Frage das Alter ab und gib die richtige Kategorie aus.",
+    "searchText": "Training 02 · leicht Ticketberater Unter 6 Jahren ist der Eintritt kostenlos, von 6 bis 17 ermäßigt, ab 18 regulär. Ab 65 gilt wieder der ermäßigte Preis. Frage das Alter ab und gib die richtige Kategorie aus.",
+    "tags": [
+      "eingabe",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-227c2d3cbb#7",
+    "order": 35
+  },
+  {
+    "id": "aufgabe-a5391a47b3",
+    "title": "Gerade Zahlen",
+    "description": "Gib mit for und range() alle Zahlen von 1 bis 30 aus, die gerade sind. Der Operator % liefert den Rest einer Division: zahl % 2 == 0 .",
+    "searchText": "Training 03 · leicht Gerade Zahlen Gib mit for und range() alle Zahlen von 1 bis 30 aus, die gerade sind. Der Operator % liefert den Rest einer Division: zahl % 2 == 0 .",
+    "tags": [
+      "for",
+      "range",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-a5391a47b3#7",
+    "order": 36
+  },
+  {
+    "id": "aufgabe-7d5594bab1",
+    "title": "Gültiges Alter erzwingen",
+    "description": "Frage ein Alter ab. Solange es kleiner als 0 oder größer als 120 ist, wird erneut gefragt. Ordne das gültige Alter danach mit if , elif und else einer Altersgruppe zu.",
+    "searchText": "Training 04 · mittel Gültiges Alter erzwingen Frage ein Alter ab. Solange es kleiner als 0 oder größer als 120 ist, wird erneut gefragt. Ordne das gültige Alter danach mit if , elif und else einer Altersgruppe zu.",
+    "tags": [
+      "while",
+      "eingabe",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-7d5594bab1#7",
+    "order": 37
+  },
+  {
+    "id": "aufgabe-5fe3a861af",
+    "title": "Dynamische Einkaufsliste",
+    "description": "Beginne mit einer leeren Liste. Frage in einer while -Schleife nach Produkten. Bei fertig endet die Eingabe. Gib danach mit for jedes Produkt in einer eigenen Zeile und die Anzahl aus.",
+    "searchText": "Training 05 · mittel Dynamische Einkaufsliste Beginne mit einer leeren Liste. Frage in einer while -Schleife nach Produkten. Bei fertig endet die Eingabe. Gib danach mit for jedes Produkt in einer eigenen Zeile und die Anzahl aus.",
+    "tags": [
+      "while",
+      "for",
+      "listen",
+      "eingabe"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-5fe3a861af#7",
+    "order": 38
+  },
+  {
+    "id": "aufgabe-25125a9bf4",
+    "title": "Temperaturen untersuchen",
+    "description": "Speichere sieben Temperaturen in einer Liste. Gib für jeden Wert „kalt“, „mild“ oder „warm“ aus. Zähle zusätzlich, an wie vielen Tagen Frost herrschte.",
+    "searchText": "Training 06 · mittel Temperaturen untersuchen Speichere sieben Temperaturen in einer Liste. Gib für jeden Wert „kalt“, „mild“ oder „warm“ aus. Zähle zusätzlich, an wie vielen Tagen Frost herrschte.",
+    "tags": [
+      "listen",
+      "for",
+      "bedingungen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-25125a9bf4#7",
+    "order": 39
+  },
+  {
+    "id": "aufgabe-daf2a79c3a",
+    "title": "Vielfache finden",
+    "description": "Frage zwei ganze Zahlen ab. Gib von 1 bis 100 alle Zahlen aus, die durch mindestens eine der beiden Zahlen teilbar sind. Markiere Werte, die durch beide teilbar sind, gesondert.",
+    "searchText": "Training 07 · mittel Vielfache finden Frage zwei ganze Zahlen ab. Gib von 1 bis 100 alle Zahlen aus, die durch mindestens eine der beiden Zahlen teilbar sind. Markiere Werte, die durch beide teilbar sind, gesondert.",
+    "tags": [
+      "for",
+      "range",
+      "eingabe",
+      "rechnen",
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-daf2a79c3a#7",
+    "order": 40
+  },
+  {
+    "id": "aufgabe-e809426747",
+    "title": "Login mit Sperre",
+    "description": "Speichere Benutzername und Passwort. Erlaube höchstens drei Versuche. Nur wenn beide Eingaben stimmen, erscheint „Willkommen“. Nach drei Fehlversuchen wird das Konto gesperrt. Zeige die verbleibenden Versuche an.",
+    "searchText": "Training 08 · anspruchsvoll Login mit Sperre Speichere Benutzername und Passwort. Erlaube höchstens drei Versuche. Nur wenn beide Eingaben stimmen, erscheint „Willkommen“. Nach drei Fehlversuchen wird das Konto gesperrt. Zeige die verbleibenden Versuche an.",
+    "tags": [
+      "while",
+      "eingabe",
+      "strings",
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-e809426747#7",
+    "order": 41
+  },
+  {
+    "id": "aufgabe-d5aa332d2b",
+    "title": "Punkte einer Gruppe",
+    "description": "Verarbeite eine Liste aus mindestens acht Punktzahlen. Ordne jede Punktzahl einer Leistungsstufe zu. Berechne Gesamtpunkte und Durchschnitt und zähle, wie viele Ergebnisse bestanden sind.",
+    "searchText": "Training 09 · anspruchsvoll Punkte einer Gruppe Verarbeite eine Liste aus mindestens acht Punktzahlen. Ordne jede Punktzahl einer Leistungsstufe zu. Berechne Gesamtpunkte und Durchschnitt und zähle, wie viele Ergebnisse bestanden sind.",
+    "tags": [
+      "listen",
+      "for",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-d5aa332d2b#7",
+    "order": 42
+  },
+  {
+    "id": "aufgabe-a2759c4667",
+    "title": "Getränkeautomat",
+    "description": "Zeige in einer while -Schleife ein Menü mit drei Getränken und ende . Frage Auswahl und eingeworfenes Geld ab. Prüfe Auswahl und Guthaben, berechne Rückgeld und zeige danach das Menü erneut.",
+    "searchText": "Training 10 · anspruchsvoll Getränkeautomat Zeige in einer while -Schleife ein Menü mit drei Getränken und ende . Frage Auswahl und eingeworfenes Geld ab. Prüfe Auswahl und Guthaben, berechne Rückgeld und zeige danach das Menü erneut.",
+    "tags": [
+      "while",
+      "eingabe",
+      "rechnen"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-a2759c4667#7",
+    "order": 43
+  },
+  {
+    "id": "aufgabe-5aff0622f8",
+    "title": "Mini-Quiz",
+    "description": "Speichere Fragen und Lösungen in zwei gleich langen Listen. Durchlaufe die Positionen mit for index in range(len(fragen)) , stelle jede Frage und erhöhe bei richtiger Antwort den Punktestand. Werte das Ergebnis am Ende mit elif aus.",
+    "searchText": "Training 11 · anspruchsvoll Mini-Quiz Speichere Fragen und Lösungen in zwei gleich langen Listen. Durchlaufe die Positionen mit for index in range(len(fragen)) , stelle jede Frage und erhöhe bei richtiger Antwort den Punktestand. Werte das Ergebnis am Ende mit elif aus.",
+    "tags": [
+      "for",
+      "range",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Code schreiben",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-5aff0622f8#7",
+    "order": 44
+  },
+  {
+    "id": "aufgabe-5da9a39ef1",
+    "title": "Textabenteuer 2.0",
+    "description": "Erweitere dein erstes Abenteuer. Die Spielfigur besitzt eine Inventarliste, kann Gegenstände aufnehmen und trifft in einer Schleife wiederholt Entscheidungen. Manche Wege dürfen nur mit einem bestimmten Gegenstand betreten werden.",
+    "searchText": "Training 12 · Mini-Projekt Textabenteuer 2.0 Erweitere dein erstes Abenteuer. Die Spielfigur besitzt eine Inventarliste, kann Gegenstände aufnehmen und trifft in einer Schleife wiederholt Entscheidungen. Manche Wege dürfen nur mit einem bestimmten Gegenstand betreten werden. Mindestens fünf Entscheidungen und vier Enden Mindestens zwei Gegenstände in einer Liste while -Schleife für den Spielablauf and , or oder not an sinnvollen Stellen",
+    "tags": [
+      "while",
+      "listen",
+      "wahrheitswerte"
+    ],
+    "level": "Transfer",
+    "format": "Projekt",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-5da9a39ef1#7",
+    "order": 45
+  },
+  {
+    "id": "aufgabe-08c5caa220",
+    "title": "Lernfortschritt-Tracker",
+    "description": "Ein Menü erlaubt, erreichte Punkte einzutragen, alle Punkte anzuzeigen oder das Programm zu beenden. Speichere die Punkte in einer Liste. Berechne Anzahl, Summe und Durchschnitt und gib passend zum Durchschnitt eine Rückmeldung aus.",
+    "searchText": "Training 13 · Mini-Projekt Lernfortschritt-Tracker Ein Menü erlaubt, erreichte Punkte einzutragen, alle Punkte anzuzeigen oder das Programm zu beenden. Speichere die Punkte in einer Liste. Berechne Anzahl, Summe und Durchschnitt und gib passend zum Durchschnitt eine Rückmeldung aus. Menü in einer while -Schleife Eingaben mit if / elif unterscheiden Liste mit append() erweitern Werte mit for ausgeben und addieren",
+    "tags": [
+      "while",
+      "for",
+      "listen",
+      "eingabe",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Projekt",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-08c5caa220#7",
+    "order": 46
+  },
+  {
+    "id": "aufgabe-869e8d3c28",
+    "title": "Entwirf dein eigenes Programm",
+    "description": "Wähle ein reales Problem aus Schule, Betrieb oder Freizeit. Entwirf zuerst Ein- und Ausgaben sowie mindestens drei Testfälle. Setze es danach mit den bekannten Sprachmitteln um.",
+    "searchText": "Training 14 · Freies Mini-Projekt Entwirf dein eigenes Programm Wähle ein reales Problem aus Schule, Betrieb oder Freizeit. Entwirf zuerst Ein- und Ausgaben sowie mindestens drei Testfälle. Setze es danach mit den bekannten Sprachmitteln um. Mindestens eine Liste Mindestens eine while - und eine for -Schleife Mindestens eine verbundene Bedingung Verständliche Rückmeldungen für falsche Eingaben",
+    "tags": [
+      "while",
+      "for",
+      "listen",
+      "eingabe",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Projekt",
+    "source": "python-aufbau",
+    "sourceLabel": "Python: Aufbau",
+    "url": "../python-aufbau/?aufgabe=aufgabe-869e8d3c28#7",
+    "order": 47
+  },
+  {
+    "id": "aufgabe-caf5e757ea",
+    "title": "Die erste Vorhersage",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 01 · Ausgabe vorhersagen Die erste Vorhersage Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. tiere = [\"Hund\", \"Katze\"] for tier in tiere: print(tier) Prüfen",
+    "tags": [
+      "for",
+      "listen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-caf5e757ea#1",
+    "order": 48
+  },
+  {
+    "id": "aufgabe-f3bd2d69c0",
+    "title": "Drei Durchläufe",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 02 · Ausgabe vorhersagen Drei Durchläufe Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for farbe in [\"rot\", \"gelb\", \"grün\"]: print(\"Die Ampel ist\", farbe) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "strings"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-f3bd2d69c0#1",
+    "order": 49
+  },
+  {
+    "id": "aufgabe-6f3e8c139b",
+    "title": "Dein erstes for",
+    "description": "Ersetze ___ so, dass jedes Werkzeug ausgegeben wird.",
+    "searchText": "Aufgabe 03 · Lücke füllen Dein erstes for Ersetze ___ so, dass jedes Werkzeug ausgegeben wird. werkzeuge = [\"Hammer\", \"Zange\", \"Säge\"] for ___ in ___: print(werkzeug) Gewünschte Ausgabe: Hammer Zange Säge",
+    "tags": [
+      "for",
+      "listen"
+    ],
+    "level": "Einstieg",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-6f3e8c139b#1",
+    "order": 50
+  },
+  {
+    "id": "aufgabe-25b6226c09",
+    "title": "Drin oder draußen? (1)",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 04 · Ausgabe vorhersagen Drin oder draußen? (1) Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for n in [1, 2, 3]: print(\"A\") print(\"B\") Prüfen",
+    "tags": [
+      "for",
+      "listen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-25b6226c09#2",
+    "order": 51
+  },
+  {
+    "id": "aufgabe-dd092b0ae9",
+    "title": "Drin oder draußen? (2)",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 05 · Ausgabe vorhersagen Drin oder draußen? (2) Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for n in [1, 2, 3]: print(\"A\") print(\"B\") Prüfen",
+    "tags": [
+      "for",
+      "listen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-dd092b0ae9#2",
+    "order": 52
+  },
+  {
+    "id": "aufgabe-c00e02a5ef",
+    "title": "Die Laufvariable benutzen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 06 · Ausgabe vorhersagen Die Laufvariable benutzen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for preis in [10, 20, 50]: print(preis + 1) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-c00e02a5ef#2",
+    "order": 53
+  },
+  {
+    "id": "aufgabe-f5216d1d39",
+    "title": "Die Laufvariable NICHT benutzen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 07 · Ausgabe vorhersagen Die Laufvariable NICHT benutzen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for preis in [10, 20, 50]: print(\"Kasse\") Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-f5216d1d39#2",
+    "order": 54
+  },
+  {
+    "id": "aufgabe-6550d112ab",
+    "title": "Doppelpunkt und Einrückung",
+    "description": "In diesem Programm fehlen zwei Kleinigkeiten. Finde und ergänze sie.",
+    "searchText": "Aufgabe 08 · Lücke füllen Doppelpunkt und Einrückung In diesem Programm fehlen zwei Kleinigkeiten. Finde und ergänze sie. staedte = [\"Ulm\", \"Bonn\"] for stadt in staedte print(\"Ich fahre nach\", stadt) Gewünschte Ausgabe: Ich fahre nach Ulm Ich fahre nach Bonn",
+    "tags": [
+      "for",
+      "listen",
+      "syntax"
+    ],
+    "level": "Einstieg",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-6550d112ab#2",
+    "order": 55
+  },
+  {
+    "id": "aufgabe-a73f4a0938",
+    "title": "Einkaufszettel",
+    "description": "Lege eine Liste einkauf mit Brot, Milch und Eier an. Gib für jeden Eintrag eine Zeile aus.",
+    "searchText": "Aufgabe 09 · Selbst schreiben Einkaufszettel Lege eine Liste einkauf mit Brot, Milch und Eier an. Gib für jeden Eintrag eine Zeile aus. So soll die Ausgabe aussehen: Kaufen: Brot Kaufen: Milch Kaufen: Eier",
+    "tags": [
+      "for",
+      "listen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-a73f4a0938#2",
+    "order": 56
+  },
+  {
+    "id": "aufgabe-3f5b9bea7e",
+    "title": "range mit einer Zahl",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 10 · Ausgabe vorhersagen range mit einer Zahl Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for i in range(4): print(i) Prüfen",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-3f5b9bea7e#3",
+    "order": 57
+  },
+  {
+    "id": "aufgabe-efb5402f52",
+    "title": "range mit zwei Zahlen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 11 · Ausgabe vorhersagen range mit zwei Zahlen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for i in range(3, 7): print(i) Prüfen",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-efb5402f52#3",
+    "order": 58
+  },
+  {
+    "id": "aufgabe-7022f3f1e9",
+    "title": "Rechnen mit i",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 12 · Ausgabe vorhersagen Rechnen mit i Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for i in range(1, 4): print(i * 10) Prüfen",
+    "tags": [
+      "for",
+      "range",
+      "rechnen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-7022f3f1e9#3",
+    "order": 59
+  },
+  {
+    "id": "aufgabe-5f3ba6ff68",
+    "title": "In Schritten",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 13 · Ausgabe vorhersagen In Schritten Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for i in range(10, 0, -3): print(i) Prüfen",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-5f3ba6ff68#3",
+    "order": 60
+  },
+  {
+    "id": "aufgabe-33fd13a9fb",
+    "title": "Von 1 bis 5",
+    "description": "Ergänze die Lücken.",
+    "searchText": "Aufgabe 14 · Lücke füllen Von 1 bis 5 Ergänze die Lücken. for zahl in range(___, ___): print(zahl) Gewünschte Ausgabe: 1 2 3 4 5",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Einstieg",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-33fd13a9fb#3",
+    "order": 61
+  },
+  {
+    "id": "aufgabe-8027f82b5a",
+    "title": "Countdown",
+    "description": "Ergänze die Lücken.",
+    "searchText": "Aufgabe 15 · Lücke füllen Countdown Ergänze die Lücken. for sek in range(___, ___, ___): print(sek) print(\"Start!\") Gewünschte Ausgabe: 3 2 1 Start!",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Einstieg",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-8027f82b5a#3",
+    "order": 62
+  },
+  {
+    "id": "aufgabe-e87ee81bc2",
+    "title": "Einmaleins der 7",
+    "description": "Gib das kleine Einmaleins der 7 aus (1 bis 10).",
+    "searchText": "Aufgabe 16 · Selbst schreiben Einmaleins der 7 Gib das kleine Einmaleins der 7 aus (1 bis 10). So soll die Ausgabe aussehen: 1 mal 7 ist 7 2 mal 7 ist 14 3 mal 7 ist 21 4 mal 7 ist 28 5 mal 7 ist 35 6 mal 7 ist 42 7 mal 7 ist 49 8 mal 7 ist 56 9 mal 7 ist 63 10 mal 7 ist 70",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-e87ee81bc2#3",
+    "order": 63
+  },
+  {
+    "id": "aufgabe-607d78bb6a",
+    "title": "Trennlinie",
+    "description": "Gib 5-mal die Zeile ---------- aus. Schreibe print nur einmal.",
+    "searchText": "Aufgabe 17 · Selbst schreiben Trennlinie Gib 5-mal die Zeile ---------- aus. Schreibe print nur einmal. So soll die Ausgabe aussehen: ---------- ---------- ---------- ---------- ----------",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-607d78bb6a#3",
+    "order": 64
+  },
+  {
+    "id": "aufgabe-01104551b0",
+    "title": "Summe verfolgen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 18 · Ausgabe vorhersagen Summe verfolgen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. summe = 0 for zahl in [2, 4, 6]: summe = summe + zahl print(summe) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-01104551b0#4",
+    "order": 65
+  },
+  {
+    "id": "aufgabe-352771c94c",
+    "title": "print in der Schleife",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 19 · Ausgabe vorhersagen print in der Schleife Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. summe = 0 for zahl in [2, 4, 6]: summe = summe + zahl print(summe) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen",
+      "syntax"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-352771c94c#4",
+    "order": 66
+  },
+  {
+    "id": "aufgabe-6bda1121d0",
+    "title": "Die Falle",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 20 · Ausgabe vorhersagen Die Falle Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for zahl in [2, 4, 6]: summe = 0 summe = summe + zahl print(summe) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-6bda1121d0#4",
+    "order": 67
+  },
+  {
+    "id": "aufgabe-059d0b1201",
+    "title": "Summe mit range",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 21 · Ausgabe vorhersagen Summe mit range Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. summe = 0 for i in range(1, 5): summe = summe + i print(summe) Prüfen",
+    "tags": [
+      "for",
+      "range",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-059d0b1201#4",
+    "order": 68
+  },
+  {
+    "id": "aufgabe-3c029557af",
+    "title": "Wochenstunden",
+    "description": "Ergänze die Lücken, damit die Stunden addiert werden.",
+    "searchText": "Aufgabe 22 · Lücke füllen Wochenstunden Ergänze die Lücken, damit die Stunden addiert werden. stunden = [8, 7, 8, 6, 5] gesamt = ___ for s in stunden: gesamt = ___ + ___ print(\"Wochenstunden:\", gesamt) Gewünschte Ausgabe: Wochenstunden: 34",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-3c029557af#4",
+    "order": 69
+  },
+  {
+    "id": "aufgabe-bffcd3d2f6",
+    "title": "Durchschnitt",
+    "description": "Gegeben ist noten = [2, 3, 1, 4] . Berechne Summe und Durchschnitt – ohne sum() .",
+    "searchText": "Aufgabe 23 · Selbst schreiben Durchschnitt Gegeben ist noten = [2, 3, 1, 4] . Berechne Summe und Durchschnitt – ohne sum() . So soll die Ausgabe aussehen: Summe: 10 Durchschnitt: 2.5",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-bffcd3d2f6#4",
+    "order": 70
+  },
+  {
+    "id": "aufgabe-b79587eb67",
+    "title": "1 bis 100",
+    "description": "Addiere alle Zahlen von 1 bis 100.",
+    "searchText": "Aufgabe 24 · Selbst schreiben 1 bis 100 Addiere alle Zahlen von 1 bis 100. So soll die Ausgabe aussehen: 5050",
+    "tags": [
+      "for",
+      "range",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-b79587eb67#4",
+    "order": 71
+  },
+  {
+    "id": "aufgabe-d3de798ff2",
+    "title": "Nur die Großen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 25 · Ausgabe vorhersagen Nur die Großen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for zahl in [3, 8, 5, 10]: if zahl > 5: print(zahl) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-d3de798ff2#5",
+    "order": 72
+  },
+  {
+    "id": "aufgabe-112bc8eaa8",
+    "title": "Zählen mit Bedingung",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 26 · Ausgabe vorhersagen Zählen mit Bedingung Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. treffer = 0 for wort in [\"ja\", \"nein\", \"ja\", \"ja\"]: if wort == \"ja\": treffer = treffer + 1 print(treffer) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-112bc8eaa8#5",
+    "order": 73
+  },
+  {
+    "id": "aufgabe-a2be05c12f",
+    "title": "Summe mit Bedingung",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 27 · Ausgabe vorhersagen Summe mit Bedingung Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. summe = 0 for zahl in [1, 2, 3, 4, 5, 6]: if zahl % 2 == 0: summe = summe + zahl print(summe) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-a2be05c12f#5",
+    "order": 74
+  },
+  {
+    "id": "aufgabe-b146904f5e",
+    "title": "if und else",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 28 · Ausgabe vorhersagen if und else Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for alter in [15, 18, 30]: if alter >= 18: print(\"darf rein\") else: print(\"darf nicht rein\") Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-b146904f5e#5",
+    "order": 75
+  },
+  {
+    "id": "aufgabe-30551ab58f",
+    "title": "Lagerwarnung",
+    "description": "Gib alle Bestände aus, die unter 10 liegen.",
+    "searchText": "Aufgabe 29 · Lücke füllen Lagerwarnung Gib alle Bestände aus, die unter 10 liegen. bestaende = [25, 4, 13, 7] for bestand in bestaende: if ___ ___ 10: print(\"Nachbestellen:\", bestand) Gewünschte Ausgabe: Nachbestellen: 4 Nachbestellen: 7",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-30551ab58f#5",
+    "order": 76
+  },
+  {
+    "id": "aufgabe-9427485e88",
+    "title": "Lange Namen",
+    "description": "Gegeben ist namen = [\"Ali\", \"Alexander\", \"Bea\", \"Charlotte\"] . Gib nur die Namen aus, die länger als 5 Buchstaben sind.",
+    "searchText": "Aufgabe 30 · Selbst schreiben Lange Namen Gegeben ist namen = [\"Ali\", \"Alexander\", \"Bea\", \"Charlotte\"] . Gib nur die Namen aus, die länger als 5 Buchstaben sind. So soll die Ausgabe aussehen: Alexander Charlotte",
+    "tags": [
+      "for",
+      "listen",
+      "strings",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-9427485e88#5",
+    "order": 77
+  },
+  {
+    "id": "aufgabe-020eedd8b6",
+    "title": "Positive zählen",
+    "description": "Gegeben ist temperaturen = [-3, 5, 0, 12, -1, 8] . Zähle, wie viele Werte über 0 liegen.",
+    "searchText": "Aufgabe 31 · Selbst schreiben Positive zählen Gegeben ist temperaturen = [-3, 5, 0, 12, -1, 8] . Zähle, wie viele Werte über 0 liegen. So soll die Ausgabe aussehen: Tage über 0 Grad: 3",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-020eedd8b6#5",
+    "order": 78
+  },
+  {
+    "id": "aufgabe-490ea57843",
+    "title": "Durch 3 teilbar",
+    "description": "Gib alle Zahlen von 1 bis 20 aus, die durch 3 teilbar sind.",
+    "searchText": "Aufgabe 32 · Selbst schreiben Durch 3 teilbar Gib alle Zahlen von 1 bis 20 aus, die durch 3 teilbar sind. So soll die Ausgabe aussehen: 3 6 9 12 15 18",
+    "tags": [
+      "for",
+      "range",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-490ea57843#5",
+    "order": 79
+  },
+  {
+    "id": "aufgabe-03db46c9f9",
+    "title": "Rekord verfolgen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 33 · Ausgabe vorhersagen Rekord verfolgen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. werte = [5, 9, 3, 11, 6] rekord = werte[0] for w in werte: if w > rekord: rekord = w print(rekord) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-03db46c9f9#6",
+    "order": 80
+  },
+  {
+    "id": "aufgabe-bb7a6cee0b",
+    "title": "Kleinster Wert",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 34 · Ausgabe vorhersagen Kleinster Wert Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. werte = [5, 9, 3, 11, 6] kleinster = werte[0] for w in werte: if w < kleinster: kleinster = w print(kleinster) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-bb7a6cee0b#6",
+    "order": 81
+  },
+  {
+    "id": "aufgabe-9a50d32fe2",
+    "title": "Liste bauen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 35 · Ausgabe vorhersagen Liste bauen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. ergebnis = [] for i in range(1, 4): ergebnis.append(i * i) print(ergebnis) Prüfen",
+    "tags": [
+      "for",
+      "range",
+      "listen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-9a50d32fe2#6",
+    "order": 82
+  },
+  {
+    "id": "aufgabe-ce9c2ddccd",
+    "title": "Längster Name",
+    "description": "Ergänze die Lücken, damit der längste Name gefunden wird.",
+    "searchText": "Aufgabe 36 · Lücke füllen Längster Name Ergänze die Lücken, damit der längste Name gefunden wird. namen = [\"Bea\", \"Alexander\", \"Cem\"] laengster = namen[0] for name in namen: if len(name) > len(___): ___ = name print(laengster) Gewünschte Ausgabe: Alexander",
+    "tags": [
+      "for",
+      "listen",
+      "strings",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-ce9c2ddccd#6",
+    "order": 83
+  },
+  {
+    "id": "aufgabe-e15ca8dc13",
+    "title": "Günstigstes Angebot",
+    "description": "Gegeben ist angebote = [49, 35, 62, 38] . Finde den niedrigsten Preis – ohne min() .",
+    "searchText": "Aufgabe 37 · Selbst schreiben Günstigstes Angebot Gegeben ist angebote = [49, 35, 62, 38] . Finde den niedrigsten Preis – ohne min() . So soll die Ausgabe aussehen: Günstigstes Angebot: 35",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-e15ca8dc13#6",
+    "order": 84
+  },
+  {
+    "id": "aufgabe-bb5983f5dc",
+    "title": "Alles in Großbuchstaben",
+    "description": "Gegeben ist namen = [\"ali\", \"bea\", \"cem\"] . Baue eine neue Liste, in der alle Namen groß geschrieben sind.",
+    "searchText": "Aufgabe 38 · Selbst schreiben Alles in Großbuchstaben Gegeben ist namen = [\"ali\", \"bea\", \"cem\"] . Baue eine neue Liste, in der alle Namen groß geschrieben sind. So soll die Ausgabe aussehen: ['ALI', 'BEA', 'CEM']",
+    "tags": [
+      "for",
+      "listen",
+      "strings"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-bb5983f5dc#6",
+    "order": 85
+  },
+  {
+    "id": "aufgabe-7a5e75e976",
+    "title": "Bestanden-Liste",
+    "description": "Gegeben ist punkte = [45, 80, 30, 66, 51] . Baue eine Liste mit allen Werten ab 50.",
+    "searchText": "Aufgabe 39 · Selbst schreiben Bestanden-Liste Gegeben ist punkte = [45, 80, 30, 66, 51] . Baue eine Liste mit allen Werten ab 50. So soll die Ausgabe aussehen: [80, 66, 51]",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-7a5e75e976#6",
+    "order": 86
+  },
+  {
+    "id": "aufgabe-0a63b86ffc",
+    "title": "Positionen ausgeben",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 40 · Ausgabe vorhersagen Positionen ausgeben Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. farben = [\"rot\", \"blau\"] for i in range(len(farben)): print(i) Prüfen",
+    "tags": [
+      "for",
+      "range",
+      "listen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-0a63b86ffc#7",
+    "order": 87
+  },
+  {
+    "id": "aufgabe-b8dcec0122",
+    "title": "Nummerierte Liste",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 41 · Ausgabe vorhersagen Nummerierte Liste Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. aufgaben = [\"fegen\", \"sortieren\", \"zählen\"] for i in range(len(aufgaben)): print(i + 1, aufgaben[i]) Prüfen",
+    "tags": [
+      "for",
+      "range",
+      "listen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-b8dcec0122#7",
+    "order": 88
+  },
+  {
+    "id": "aufgabe-e9b6d6a5b2",
+    "title": "Zwei Listen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 42 · Ausgabe vorhersagen Zwei Listen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. artikel = [\"Stift\", \"Heft\"] preise = [2, 3] for i in range(len(artikel)): print(artikel[i], preise[i] * 10) Prüfen",
+    "tags": [
+      "for",
+      "range",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-e9b6d6a5b2#7",
+    "order": 89
+  },
+  {
+    "id": "aufgabe-c5eda25996",
+    "title": "Buchstaben zählen",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 43 · Ausgabe vorhersagen Buchstaben zählen Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. anzahl = 0 for b in \"banane\": if b == \"a\": anzahl = anzahl + 1 print(anzahl) Prüfen",
+    "tags": [
+      "for",
+      "strings",
+      "bedingungen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-c5eda25996#7",
+    "order": 90
+  },
+  {
+    "id": "aufgabe-e917e34b28",
+    "title": "Bestellübersicht",
+    "description": "Ergänze die Lücken.",
+    "searchText": "Aufgabe 44 · Lücke füllen Bestellübersicht Ergänze die Lücken. artikel = [\"Schrauben\", \"Dübel\", \"Nägel\"] mengen = [100, 50, 200] for i in range(___(artikel)): print(artikel[___], \"-\", mengen[___], \"Stück\") Gewünschte Ausgabe: Schrauben - 100 Stück Dübel - 50 Stück Nägel - 200 Stück",
+    "tags": [
+      "for",
+      "range",
+      "listen"
+    ],
+    "level": "Anwendung",
+    "format": "Lückencode",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-e917e34b28#7",
+    "order": 91
+  },
+  {
+    "id": "aufgabe-138f15693f",
+    "title": "Platzierung",
+    "description": "Gegeben ist ziel = [\"Mia\", \"Leon\", \"Sara\"] in der Reihenfolge des Zieleinlaufs. Gib die Platzierung aus.",
+    "searchText": "Aufgabe 45 · Selbst schreiben Platzierung Gegeben ist ziel = [\"Mia\", \"Leon\", \"Sara\"] in der Reihenfolge des Zieleinlaufs. Gib die Platzierung aus. So soll die Ausgabe aussehen: Platz 1 : Mia Platz 2 : Leon Platz 3 : Sara",
+    "tags": [
+      "for",
+      "range",
+      "listen"
+    ],
+    "level": "Anwendung",
+    "format": "Zeilen ordnen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-138f15693f#7",
+    "order": 92
+  },
+  {
+    "id": "aufgabe-a4e58dca88",
+    "title": "Gesamtpreis",
+    "description": "Gegeben sind mengen = [2, 5, 1] und preise = [3, 2, 10] . Berechne den Gesamtpreis (Menge mal Preis, alles addiert).",
+    "searchText": "Aufgabe 46 · Selbst schreiben Gesamtpreis Gegeben sind mengen = [2, 5, 1] und preise = [3, 2, 10] . Berechne den Gesamtpreis (Menge mal Preis, alles addiert). So soll die Ausgabe aussehen: Gesamtpreis: 26",
+    "tags": [
+      "for",
+      "range",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-a4e58dca88#7",
+    "order": 93
+  },
+  {
+    "id": "aufgabe-e2ed920851",
+    "title": "for oder while?",
+    "description": "Entscheide für jede Situation. Klick zum Prüfen auf deine Wahl.",
+    "searchText": "Aufgabe 47 · Entscheiden for oder while? Entscheide für jede Situation. Klick zum Prüfen auf deine Wahl. Alle Namen einer Teilnehmerliste ausdrucken. for while Es gibt eine Liste → für jeden Namen. So lange nach der PIN fragen, bis sie stimmt. for while Niemand weiß vorher, wie viele Versuche nötig sind. Die Zahlen von 1 bis 50 addieren. for while Feste Anzahl → range(1, 51). Ein Menü anzeigen, bis der Nutzer „ende“ wählt. for while Das Ende hängt von einer Eingabe ab. Aus 20 Messwerten den größten finden. for while Jeden Wert der Liste einmal ansehen. Jeden Monat 50 € sparen, bis 1000 € erreicht sind. for while Wiederholen, solange das Ziel nicht erreicht ist. Genau 3 Runden eines Quiz spielen. for while Feste Anzahl → range(3). Zählen, wie viele E-Mails in einer Liste „@“ enthalten. for while Jeden Eintrag der Liste prüfen.",
+    "tags": [
+      "while",
+      "for",
+      "range",
+      "listen",
+      "eingabe",
+      "strings",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Erklären",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-e2ed920851#8",
+    "order": 94
+  },
+  {
+    "id": "aufgabe-17dbc8ac11",
+    "title": "Umbau: while → for",
+    "description": "Dieses Programm funktioniert, ist aber umständlich. Schreibe es mit for und range neu. i = 1 while i <= 5: print(\"Runde\", i) i = i + 1",
+    "searchText": "Aufgabe 48 · Selbst schreiben Umbau: while → for Dieses Programm funktioniert, ist aber umständlich. Schreibe es mit for und range neu. i = 1 while i <= 5: print(\"Runde\", i) i = i + 1 So soll die Ausgabe aussehen: Runde 1 Runde 2 Runde 3 Runde 4 Runde 5",
+    "tags": [
+      "while",
+      "for",
+      "range",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code umwandeln",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-17dbc8ac11#8",
+    "order": 95
+  },
+  {
+    "id": "aufgabe-3dce1ead10",
+    "title": "Mischung 1",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 49 · Ausgabe vorhersagen Mischung 1 Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. for i in range(2, 5): print(i, i + i) Prüfen",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-3dce1ead10#9",
+    "order": 96
+  },
+  {
+    "id": "aufgabe-6203c2ffbb",
+    "title": "Mischung 2",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 50 · Ausgabe vorhersagen Mischung 2 Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. text = \"\" for wort in [\"Py\", \"th\", \"on\"]: text = text + wort print(text) Prüfen",
+    "tags": [
+      "for",
+      "listen",
+      "strings"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-6203c2ffbb#9",
+    "order": 97
+  },
+  {
+    "id": "aufgabe-7aebe38880",
+    "title": "Mischung 3",
+    "description": "Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen.",
+    "searchText": "Aufgabe 51 · Ausgabe vorhersagen Mischung 3 Was gibt dieses Programm aus? Schreib es Zeile für Zeile in das Feld – ohne es auszuführen. anzahl = 0 for zahl in range(1, 11): if zahl > 7: anzahl = anzahl + 1 print(anzahl) Prüfen",
+    "tags": [
+      "for",
+      "range",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-7aebe38880#9",
+    "order": 98
+  },
+  {
+    "id": "aufgabe-b9c99a584c",
+    "title": "Begrüßung für alle",
+    "description": "Gegeben ist team = [\"Ali\", \"Bea\", \"Cem\"] . Begrüße alle und gib danach aus, wie viele es waren.",
+    "searchText": "Aufgabe 52 · Selbst schreiben Begrüßung für alle Gegeben ist team = [\"Ali\", \"Bea\", \"Cem\"] . Begrüße alle und gib danach aus, wie viele es waren. So soll die Ausgabe aussehen: Guten Morgen, Ali Guten Morgen, Bea Guten Morgen, Cem Das waren 3 Personen.",
+    "tags": [
+      "for",
+      "listen",
+      "strings"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-b9c99a584c#9",
+    "order": 99
+  },
+  {
+    "id": "aufgabe-383551f5b0",
+    "title": "Kassenbon",
+    "description": "Gegeben ist preise = [3, 12, 7, 25] . Gib jeden Preis aus und am Ende die Summe.",
+    "searchText": "Aufgabe 53 · Selbst schreiben Kassenbon Gegeben ist preise = [3, 12, 7, 25] . Gib jeden Preis aus und am Ende die Summe. So soll die Ausgabe aussehen: Artikel: 3 Euro Artikel: 12 Euro Artikel: 7 Euro Artikel: 25 Euro Summe: 47 Euro",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-383551f5b0#9",
+    "order": 100
+  },
+  {
+    "id": "aufgabe-6d752220fd",
+    "title": "Überstunden",
+    "description": "Gegeben ist stunden = [8, 10, 7, 9, 8] . Alles über 8 Stunden am Tag sind Überstunden. Wie viele Überstunden sind es insgesamt?",
+    "searchText": "Aufgabe 54 · Selbst schreiben Überstunden Gegeben ist stunden = [8, 10, 7, 9, 8] . Alles über 8 Stunden am Tag sind Überstunden. Wie viele Überstunden sind es insgesamt? So soll die Ausgabe aussehen: Überstunden: 3",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-6d752220fd#9",
+    "order": 101
+  },
+  {
+    "id": "aufgabe-76ef096234",
+    "title": "Vokale zählen",
+    "description": "Zähle die Vokale im Wort \"programmieren\" .",
+    "searchText": "Aufgabe 55 · Selbst schreiben Vokale zählen Zähle die Vokale im Wort \"programmieren\" . So soll die Ausgabe aussehen: 5",
+    "tags": [
+      "for",
+      "strings",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-76ef096234#9",
+    "order": 102
+  },
+  {
+    "id": "aufgabe-9222cf1a3a",
+    "title": "Notenspiegel",
+    "description": "Gegeben sind namen = [\"Ali\", \"Bea\", \"Cem\"] und noten = [2, 5, 3] . Gib für jede Person aus, ob sie bestanden hat (Note bis 4).",
+    "searchText": "Aufgabe 56 · Selbst schreiben Notenspiegel Gegeben sind namen = [\"Ali\", \"Bea\", \"Cem\"] und noten = [2, 5, 3] . Gib für jede Person aus, ob sie bestanden hat (Note bis 4). So soll die Ausgabe aussehen: Ali hat bestanden Bea hat nicht bestanden Cem hat bestanden",
+    "tags": [
+      "for",
+      "range",
+      "listen",
+      "strings",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-9222cf1a3a#9",
+    "order": 103
+  },
+  {
+    "id": "aufgabe-35b1327d4a",
+    "title": "Treppe",
+    "description": "Gib diese Treppe aus. Tipp: \"#\" * 3 ergibt ### .",
+    "searchText": "Aufgabe 57 · Selbst schreiben Treppe Gib diese Treppe aus. Tipp: \"#\" * 3 ergibt ### . So soll die Ausgabe aussehen: # ## ### #### #####",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-35b1327d4a#9",
+    "order": 104
+  },
+  {
+    "id": "aufgabe-a8838356f4",
+    "title": "Wärmster Tag",
+    "description": "Gegeben sind tage = [\"Mo\", \"Di\", \"Mi\", \"Do\"] und temperaturen = [14, 19, 23, 17] . Gib den wärmsten Tag mit Temperatur aus.",
+    "searchText": "Aufgabe 58 · Selbst schreiben Wärmster Tag Gegeben sind tage = [\"Mo\", \"Di\", \"Mi\", \"Do\"] und temperaturen = [14, 19, 23, 17] . Gib den wärmsten Tag mit Temperatur aus. So soll die Ausgabe aussehen: Wärmster Tag: Mi mit 23 Grad",
+    "tags": [
+      "for",
+      "range",
+      "listen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-a8838356f4#9",
+    "order": 105
+  },
+  {
+    "id": "aufgabe-45f0e0acc6",
+    "title": "Kleines Einmaleins als Tabelle",
+    "description": "Eine Schleife in einer Schleife: Gib das Einmaleins von 1 bis 3 aus, jeweils mal 1 bis 3.",
+    "searchText": "Aufgabe 59 · Selbst schreiben Kleines Einmaleins als Tabelle Eine Schleife in einer Schleife: Gib das Einmaleins von 1 bis 3 aus, jeweils mal 1 bis 3. So soll die Ausgabe aussehen: 1 x 1 = 1 1 x 2 = 2 1 x 3 = 3 2 x 1 = 2 2 x 2 = 4 2 x 3 = 6 3 x 1 = 3 3 x 2 = 6 3 x 3 = 9",
+    "tags": [
+      "for",
+      "range"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-for",
+    "sourceLabel": "for-Schleife Schritt für Schritt",
+    "url": "../python-for/?aufgabe=aufgabe-45f0e0acc6#9",
+    "order": 106
+  },
+  {
+    "id": "aufgabe-2d3eab0ecb",
+    "title": "Stufe A · Variablen & Datentypen · Was wird ausgegeben?",
+    "description": "Löse die Aufgabe im ursprünglichen Lernweg. Hinweise und die dort vorhandene Selbstkontrolle bleiben erhalten.",
+    "searchText": "Stufe A · Variablen & Datentypen Was wird ausgegeben? a = \"3\" b = 4 print(a * b)",
+    "tags": [
+      "datentypen",
+      "strings"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-2d3eab0ecb#1",
+    "order": 107
+  },
+  {
+    "id": "aufgabe-95e17174b0",
+    "title": "Stufe B · if / elif / else · Schreibe das Programm",
+    "description": "Frage das Alter ab. Unter 14 → Kind , unter 18 → Jugendlich , sonst Erwachsen .",
+    "searchText": "Stufe B · if / elif / else Schreibe das Programm Frage das Alter ab. Unter 14 → Kind , unter 18 → Jugendlich , sonst Erwachsen .",
+    "tags": [
+      "eingabe",
+      "datentypen",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-95e17174b0#1",
+    "order": 108
+  },
+  {
+    "id": "aufgabe-cceb497cdc",
+    "title": "Stufe C · while · Was wird ausgegeben?",
+    "description": "Löse die Aufgabe im ursprünglichen Lernweg. Hinweise und die dort vorhandene Selbstkontrolle bleiben erhalten.",
+    "searchText": "Stufe C · while Was wird ausgegeben? i = 10 while i > 0: i = i - 3 print(i)",
+    "tags": [
+      "while",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-cceb497cdc#1",
+    "order": 109
+  },
+  {
+    "id": "aufgabe-48ef65f95a",
+    "title": "Stufe D · Listen & for · Schreibe den Code",
+    "description": "Gegeben ist zahlen = [4, 8, 15, 16] . Berechne die Summe ohne sum() und gib sie aus.",
+    "searchText": "Stufe D · Listen & for Schreibe den Code Gegeben ist zahlen = [4, 8, 15, 16] . Berechne die Summe ohne sum() und gib sie aus.",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-48ef65f95a#1",
+    "order": 110
+  },
+  {
+    "id": "aufgabe-2795094f6f",
+    "title": "Stufe E · Funktionen · Schreibe die Funktion",
+    "description": "Schreibe ist_gerade(zahl) , die True oder False zurückgibt (nicht ausgibt). Rufe sie danach mit 7 auf und gib das Ergebnis aus.",
+    "searchText": "Stufe E · Funktionen Schreibe die Funktion Schreibe ist_gerade(zahl) , die True oder False zurückgibt (nicht ausgibt). Rufe sie danach mit 7 auf und gib das Ergebnis aus.",
+    "tags": [
+      "funktionen",
+      "wahrheitswerte"
+    ],
+    "level": "Einstieg",
+    "format": "Code schreiben",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-2795094f6f#1",
+    "order": 111
+  },
+  {
+    "id": "aufgabe-5e13150d09",
+    "title": "KI als Tutor ausprobieren",
+    "description": "Abgabe in Teams: „Welche Frage der KI hat mir am meisten geholfen?“ – ein Satz reicht.",
+    "searchText": "Übung · 15 min KI als Tutor ausprobieren Starte einen neuen Chat mit dem Tutor-Prompt. Nimm einen Bug aus Kapitel 05, den du nicht sofort findest. Lass dich von der KI hinführen, bis du ihn selbst findest. Hat die KI die Regeln gebrochen und doch die Lösung verraten? Notier, wann. Abgabe in Teams: „Welche Frage der KI hat mir am meisten geholfen?“ – ein Satz reicht.",
+    "tags": [
+      "problemlosen"
+    ],
+    "level": "Anwendung",
+    "format": "Erklären",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-5e13150d09#2",
+    "order": 112
+  },
+  {
+    "id": "aufgabe-eb37498676",
+    "title": "Snippet 01 · warm",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 01 · warm def gruss(): print(\"Hallo\") gruss() gruss()",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-eb37498676#3",
+    "order": 113
+  },
+  {
+    "id": "aufgabe-93b7e921b0",
+    "title": "Snippet 02 · warm",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 02 · warm def doppelt(x): return x * 2 ergebnis = doppelt(4) print(ergebnis + 1)",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-93b7e921b0#3",
+    "order": 114
+  },
+  {
+    "id": "aufgabe-de77603d3e",
+    "title": "Snippet 03 · warm",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 03 · warm def doppelt(x): print(x * 2) ergebnis = doppelt(4) print(ergebnis)",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Einstieg",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-de77603d3e#3",
+    "order": 115
+  },
+  {
+    "id": "aufgabe-57955e1133",
+    "title": "Snippet 04 · scope",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 04 · scope punkte = 10 def bonus(): punkte = 50 print(\"innen:\", punkte) bonus() print(\"außen:\", punkte)",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-57955e1133#3",
+    "order": 116
+  },
+  {
+    "id": "aufgabe-b093ed0b49",
+    "title": "Snippet 05 · scope",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 05 · scope name = \"Mia\" def begruessen(name): name = name.upper() return \"Hallo \" + name print(begruessen(\"Leon\")) print(name)",
+    "tags": [
+      "funktionen",
+      "strings"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-b093ed0b49#3",
+    "order": 117
+  },
+  {
+    "id": "aufgabe-748b08fdfb",
+    "title": "Snippet 06 · scope",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 06 · scope def zaehle(): zaehler = 0 zaehler = zaehler + 1 return zaehler print(zaehle()) print(zaehle()) print(zaehle())",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Anwendung",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-748b08fdfb#3",
+    "order": 118
+  },
+  {
+    "id": "aufgabe-12dc9771d4",
+    "title": "Snippet 07 · knifflig",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 07 · knifflig def pruefe(zahl): if zahl > 10: return \"groß\" print(\"geprüft\") return \"klein\" print(pruefe(20)) print(pruefe(3))",
+    "tags": [
+      "funktionen",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-12dc9771d4#3",
+    "order": 119
+  },
+  {
+    "id": "aufgabe-82e3709b70",
+    "title": "Snippet 08 · knifflig",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 08 · knifflig liste = [1, 2] def ergaenze(werte): werte.append(3) ergaenze(liste) print(liste)",
+    "tags": [
+      "listen",
+      "funktionen"
+    ],
+    "level": "Transfer",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-82e3709b70#3",
+    "order": 120
+  },
+  {
+    "id": "aufgabe-7e7be22c77",
+    "title": "Snippet 09 · knifflig",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 09 · knifflig x = 5 def aendern(): x = x + 1 return x print(aendern())",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Transfer",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-7e7be22c77#3",
+    "order": 121
+  },
+  {
+    "id": "aufgabe-5c234efa83",
+    "title": "Snippet 10 · knifflig",
+    "description": "Bestimme die vollständige Ausgabe des gezeigten Python-Codes, bevor du ihn ausführst.",
+    "searchText": "Snippet 10 · knifflig def a(n): return n + 1 def b(n): return a(n) * 2 print(b(a(1)))",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Transfer",
+    "format": "Ausgabe bestimmen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-5c234efa83#3",
+    "order": 122
+  },
+  {
+    "id": "aufgabe-1e5c599dcd",
+    "title": "Funktioniert, aber unübersichtlich",
+    "description": "Kopiere den Code in eine neue Datei automat.py (oder herunterladen ) und probiere ihn einmal aus.",
+    "searchText": "Ausgangscode Funktioniert, aber unübersichtlich Kopiere den Code in eine neue Datei automat.py (oder herunterladen ) und probiere ihn einmal aus. getraenke = [\"Wasser\", \"Cola\", \"Saft\"] preise = [1.0, 1.5, 2.0] while True: print(\"--- Getränkeautomat ---\") for i in range(len(getraenke)): print(i + 1, getraenke[i], preise[i], \"€\") print(\"0 Ende\") auswahl = input(\"Auswahl: \") if auswahl == \"0\": print(\"Tschüss!\") break if auswahl not in [\"1\", \"2\", \"3\"]: print(\"Ungültige Auswahl.\") continue nummer = int(auswahl) - 1 preis = preise[nummer] geld = float(input(\"Geld einwerfen: \")) while geld < preis: print(\"Zu wenig! Es fehlen\", round(preis - geld, 2), \"€\") geld = geld + float(input(\"Nachwerfen: \")) rueckgeld = round(geld - preis, 2) print(\"Hier ist dein\", getraenke[nummer]) if rueckgeld > 0: print(\"Rückgeld:\", rueckgeld, \"€\")",
+    "tags": [
+      "while",
+      "eingabe",
+      "datentypen",
+      "rechnen",
+      "bedingungen",
+      "funktionen"
+    ],
+    "level": "Anwendung",
+    "format": "Code umwandeln",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-1e5c599dcd#4",
+    "order": 123
+  },
+  {
+    "id": "aufgabe-ba3590c0a7",
+    "title": "Paararbeit: Zahlenraten zu zweit",
+    "description": "Weiter geht es mit Teil 5 der Funktionen-Seite . Eine Person tippt, die andere liest mit und sagt an – nach jeder Funktion wird gewechselt.",
+    "searchText": "Danach Paararbeit: Zahlenraten zu zweit Weiter geht es mit Teil 5 der Funktionen-Seite . Eine Person tippt, die andere liest mit und sagt an – nach jeder Funktion wird gewechselt.",
+    "tags": [
+      "funktionen",
+      "while",
+      "eingabe",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Projekt",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-ba3590c0a7#4",
+    "order": 124
+  },
+  {
+    "id": "aufgabe-9e41392549",
+    "title": "Volljährig?",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 01 · leicht Volljährig? alter = input(\"Alter: \") if alter >= 18: print(\"Volljährig\") else: print(\"Minderjährig\")",
+    "tags": [
+      "eingabe",
+      "datentypen",
+      "strings",
+      "bedingungen"
+    ],
+    "level": "Einstieg",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-9e41392549#5",
+    "order": 125
+  },
+  {
+    "id": "aufgabe-e9bcaa8dc5",
+    "title": "Note prüfen",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 02 · leicht Note prüfen note = int(input(\"Note: \")) if note = 1: print(\"Sehr gut!\")",
+    "tags": [
+      "eingabe",
+      "datentypen",
+      "bedingungen",
+      "syntax"
+    ],
+    "level": "Einstieg",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-e9bcaa8dc5#5",
+    "order": 126
+  },
+  {
+    "id": "aufgabe-365435154c",
+    "title": "Countdown",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 03 · leicht Countdown zahl = 5 while zahl > 0: print(zahl) print(\"Start!\")",
+    "tags": [
+      "while"
+    ],
+    "level": "Einstieg",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-365435154c#5",
+    "order": 127
+  },
+  {
+    "id": "aufgabe-2a684bbbcb",
+    "title": "Abfrage",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 04 · mittel Abfrage antwort = input(\"Weiter? (ja/nein) \") if antwort == \"ja\" or \"j\": print(\"Es geht weiter.\") else: print(\"Ende.\")",
+    "tags": [
+      "eingabe",
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Anwendung",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-2a684bbbcb#5",
+    "order": 128
+  },
+  {
+    "id": "aufgabe-26f766fe86",
+    "title": "Summe der Liste",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 05 · mittel Summe der Liste zahlen = [5, 10, 20] summe = 0 for i in range(1, len(zahlen)): summe = summe + zahlen[i] print(summe) # soll 35 sein",
+    "tags": [
+      "for",
+      "range",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-26f766fe86#5",
+    "order": 129
+  },
+  {
+    "id": "aufgabe-18472fcd6d",
+    "title": "Letzter Eintrag",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 06 · mittel Letzter Eintrag namen = [\"Ali\", \"Bea\", \"Cem\"] print(\"Zuletzt:\", namen[len(namen)])",
+    "tags": [
+      "listen",
+      "strings"
+    ],
+    "level": "Anwendung",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-18472fcd6d#5",
+    "order": 130
+  },
+  {
+    "id": "aufgabe-0105101d8e",
+    "title": "Mehrwertsteuer",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 07 · knifflig Mehrwertsteuer def brutto(netto): ergebnis = netto * 1.19 preis = brutto(100) print(\"Brutto:\", round(preis, 2))",
+    "tags": [
+      "funktionen",
+      "rechnen"
+    ],
+    "level": "Transfer",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-0105101d8e#5",
+    "order": 131
+  },
+  {
+    "id": "aufgabe-a7c8094754",
+    "title": "Durchschnitt",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 08 · knifflig Durchschnitt punkte = [3, 7, 8] summe = 0 for p in punkte: summe = summe + p print(\"Schnitt:\", summe / len(punkte))",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen"
+    ],
+    "level": "Transfer",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-a7c8094754#5",
+    "order": 132
+  },
+  {
+    "id": "aufgabe-f6e9980375",
+    "title": "Zähler",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 09 · knifflig Zähler anzahl = 0 def hochzaehlen(): anzahl = anzahl + 1 hochzaehlen() print(anzahl)",
+    "tags": [
+      "funktionen"
+    ],
+    "level": "Transfer",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-f6e9980375#5",
+    "order": 133
+  },
+  {
+    "id": "aufgabe-e25844ddee",
+    "title": "Größte Zahl",
+    "description": "Finde und korrigiere den Fehler im gezeigten Code. Begründe, warum die Änderung zum gewünschten Verhalten führt.",
+    "searchText": "Bug 10 · knifflig Größte Zahl def groesste(zahlen): maximum = 0 for z in zahlen: if z > maximum: maximum = z return maximum print(groesste([-5, -2, -9])) # soll -2 sein",
+    "tags": [
+      "for",
+      "listen",
+      "funktionen",
+      "bedingungen"
+    ],
+    "level": "Transfer",
+    "format": "Fehler finden",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-e25844ddee#5",
+    "order": 134
+  },
+  {
+    "id": "aufgabe-6ec371cd17",
+    "title": "Bugs für andere bauen",
+    "description": "Nimm ein eigenes funktionierendes Programm und baue genau einen Fehler ein. Tausche mit deinem Nachbarn. Wer findet den Bug schneller?",
+    "searchText": "Dreh den Spieß um Bugs für andere bauen Nimm ein eigenes funktionierendes Programm und baue genau einen Fehler ein. Tausche mit deinem Nachbarn. Wer findet den Bug schneller?",
+    "tags": [
+      "variablen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-6ec371cd17#5",
+    "order": 135
+  },
+  {
+    "id": "aufgabe-8d9dac0093",
+    "title": "Ablauftabelle: while",
+    "description": "Löse die Aufgabe im ursprünglichen Lernweg. Hinweise und die dort vorhandene Selbstkontrolle bleiben erhalten.",
+    "searchText": "Aufgabe P1 Ablauftabelle: while n = 1 schritte = 0 while n < 20: n = n * 3 schritte = schritte + 1 print(n, schritte)",
+    "tags": [
+      "while"
+    ],
+    "level": "Anwendung",
+    "format": "Schreibtischtest",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-8d9dac0093#6",
+    "order": 136
+  },
+  {
+    "id": "aufgabe-cea5c5d326",
+    "title": "Ablauftabelle: Liste und if",
+    "description": "Löse die Aufgabe im ursprünglichen Lernweg. Hinweise und die dort vorhandene Selbstkontrolle bleiben erhalten.",
+    "searchText": "Aufgabe P2 Ablauftabelle: Liste und if werte = [4, 11, 7, 20] treffer = [] for w in werte: if w % 2 == 0 or w > 10: treffer.append(w) print(treffer)",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Anwendung",
+    "format": "Schreibtischtest",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-cea5c5d326#6",
+    "order": 137
+  },
+  {
+    "id": "aufgabe-846e6b52f2",
+    "title": "Bring die Zeilen in die richtige Reihenfolge – und rück sie ein",
+    "description": "Das Programm soll so lange Zahlen einlesen, bis 0 eingegeben wird, und dann die Summe ausgeben. Eine Zeile ist überflüssig!",
+    "searchText": "Aufgabe P3 Bring die Zeilen in die richtige Reihenfolge – und rück sie ein Das Programm soll so lange Zahlen einlesen, bis 0 eingegeben wird, und dann die Summe ausgeben. Eine Zeile ist überflüssig! print(\"Summe:\", summe) summe = summe + zahl zahl = int(input(\"Zahl: \")) summe = 0 while zahl != 0: zahl = int(input(\"Zahl: \")) summe = 1",
+    "tags": [
+      "while",
+      "eingabe",
+      "datentypen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Zeilen ordnen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-846e6b52f2#6",
+    "order": 138
+  },
+  {
+    "id": "aufgabe-64228a2dca",
+    "title": "Funktion puzzeln",
+    "description": "Die Funktion soll zählen, wie viele Namen in einer Liste mit „A“ beginnen.",
+    "searchText": "Aufgabe P4 Funktion puzzeln Die Funktion soll zählen, wie viele Namen in einer Liste mit „A“ beginnen. return anzahl anzahl = anzahl + 1 def zaehle_a(namen): for name in namen: anzahl = 0 if name[0] == \"A\":",
+    "tags": [
+      "for",
+      "listen",
+      "funktionen",
+      "strings",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Zeilen ordnen",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-64228a2dca#6",
+    "order": 139
+  },
+  {
+    "id": "aufgabe-c19c076a64",
+    "title": "Schreibe auf Papier",
+    "description": "Danach tauschst du dein Blatt mit dem Nachbarn: Er führt deinen Code mit einer Ablauftabelle aus. Stimmt das Ergebnis?",
+    "searchText": "Aufgabe P5–P7 Schreibe auf Papier P5: kleinste(zahlen) gibt die kleinste Zahl einer Liste zurück – ohne min() . P6: zaehle_vokale(text) gibt zurück, wie viele Vokale im Text stecken. (Tipp: if buchstabe in \"aeiou\" ) P7: fizzbuzz(n) gibt die Zahlen 1 bis n aus – bei Vielfachen von 3 Fizz , von 5 Buzz , von beiden FizzBuzz . Danach tauschst du dein Blatt mit dem Nachbarn: Er führt deinen Code mit einer Ablauftabelle aus. Stimmt das Ergebnis?",
+    "tags": [
+      "listen",
+      "strings",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-c19c076a64#6",
+    "order": 140
+  },
+  {
+    "id": "aufgabe-13192f1280",
+    "title": "Werkzeugausleihe",
+    "description": "Baue eine Konsolen-Verwaltung für die Werkzeugausgabe im Betrieb: Werkzeuge ausleihen, zurückgeben, Liste anzeigen.",
+    "searchText": "Abschluss für Fortgeschrittene Werkzeugausleihe Baue eine Konsolen-Verwaltung für die Werkzeugausgabe im Betrieb: Werkzeuge ausleihen, zurückgeben, Liste anzeigen. Bestand als Dictionary {\"Bohrmaschine\": \"verfügbar\", ...} Jede Menüaktion ist eine eigene Funktion Falsche Eingaben werden mit try / except bzw. if abgefangen Ausgaben mit f-Strings formatiert Bonus: Bestand in einer Textdatei speichern",
+    "tags": [
+      "listen",
+      "funktionen",
+      "eingabe",
+      "strings",
+      "bedingungen",
+      "dictionaries",
+      "fehlerbehandlung"
+    ],
+    "level": "Transfer",
+    "format": "Projekt",
+    "source": "python-training",
+    "sourceLabel": "Gemischtes Python-Training",
+    "url": "../python-training/?aufgabe=aufgabe-13192f1280#7",
+    "order": 141
+  },
+  {
+    "id": "aufgabe-56e3b058e3",
+    "title": "Gerade Zahlen auswählen",
+    "description": "Gib alle geraden Zahlen aus einer Liste in ihrer ursprünglichen Reihenfolge aus, je eine pro Zeile. Eine leere Liste erzeugt keine Ausgabe. Start: [5, 2, 8, 3, 0, -4] .",
+    "searchText": "Übung 1 · 10 Minuten · mit Leitfragen Gerade Zahlen auswählen Gib alle geraden Zahlen aus einer Liste in ihrer ursprünglichen Reihenfolge aus, je eine pro Zeile. Eine leere Liste erzeugt keine Ausgabe. Start: [5, 2, 8, 3, 0, -4] . Welche Zahlen müssen auf Papier übrig bleiben? Wie erkennst du bei einer einzelnen Zahl, ob sie gerade ist? Was ist dein kleinstes Experiment, bevor du die Schleife schreibst?",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen",
+      "problemlosen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-problemloesen",
+    "sourceLabel": "Systematisch Probleme lösen",
+    "url": "../python-problemloesen/?aufgabe=aufgabe-56e3b058e3#5",
+    "order": 142
+  },
+  {
+    "id": "aufgabe-10d7dd7bbd",
+    "title": "Die größte Zahl finden",
+    "description": "Gib die größte Zahl einer Liste aus. Bei [] erscheint „Keine Zahlen“. Verwende eine Schleife ohne max() . Beginne mit [5, 8, 2] . Wähle selbst weitere Testfälle, auch mit ausschließlich negativen Zahlen.",
+    "searchText": "Übung 2 · 15 Minuten · weniger Hilfen Die größte Zahl finden Gib die größte Zahl einer Liste aus. Bei [] erscheint „Keine Zahlen“. Verwende eine Schleife ohne max() . Beginne mit [5, 8, 2] . Wähle selbst weitere Testfälle, auch mit ausschließlich negativen Zahlen. Protokolliert den bisherigen größten Wert nach jedem Durchlauf. Welches Experiment könnte zuerst zwei Zahlen vergleichen?",
+    "tags": [
+      "for",
+      "listen",
+      "bedingungen",
+      "problemlosen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-problemloesen",
+    "sourceLabel": "Systematisch Probleme lösen",
+    "url": "../python-problemloesen/?aufgabe=aufgabe-10d7dd7bbd#5",
+    "order": 143
+  },
+  {
+    "id": "aufgabe-1e806247fd",
+    "title": "Eine Summe stimmt nicht",
+    "description": "Das Programm soll 14 liefern. Führt zunächst keine Änderung durch. Erklärt den Code, sagt die Ausgabe voraus und plant einen gezielten Test.",
+    "searchText": "Übung 3 · 10 Minuten · Debugging Eine Summe stimmt nicht Das Programm soll 14 liefern. Führt zunächst keine Änderung durch. Erklärt den Code, sagt die Ausgabe voraus und plant einen gezielten Test. zahlen = [4, 7, 3] summe = 0 for zahl in zahlen: summe = 0 summe = summe + zahl print(summe) Dokumentiert: Hypothese, Test, erwartete Beobachtung, tatsächliche Beobachtung, einzelne Korrektur.",
+    "tags": [
+      "for",
+      "listen",
+      "rechnen",
+      "problemlosen"
+    ],
+    "level": "Anwendung",
+    "format": "Fehler finden",
+    "source": "python-problemloesen",
+    "sourceLabel": "Systematisch Probleme lösen",
+    "url": "../python-problemloesen/?aufgabe=aufgabe-1e806247fd#5",
+    "order": 144
+  },
+  {
+    "id": "aufgabe-5adcf433ab",
+    "title": "Versandkosten berechnen",
+    "description": "Gegeben ist ein nichtnegativer Warenwert in Euro und ein Wahrheitswert express . Unter 50 € kostet der Versand 4.90 €, ab 50 € ist er kostenlos. Express kostet zusätzlich immer 3 €. Gib Versandkosten und Gesamtpreis aus.",
+    "searchText": "Übung 4 · 20 Minuten · selbstständig Versandkosten berechnen Gegeben ist ein nichtnegativer Warenwert in Euro und ein Wahrheitswert express . Unter 50 € kostet der Versand 4.90 €, ab 50 € ist er kostenlos. Express kostet zusätzlich immer 3 €. Gib Versandkosten und Gesamtpreis aus. Start: warenwert = 40 , express = True . Bestimmt selbst die Teilprobleme, einen Grenzfall und die Reihenfolge eurer Experimente.",
+    "tags": [
+      "rechnen",
+      "bedingungen",
+      "wahrheitswerte",
+      "problemlosen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "python-problemloesen",
+    "sourceLabel": "Systematisch Probleme lösen",
+    "url": "../python-problemloesen/?aufgabe=aufgabe-5adcf433ab#5",
+    "order": 145
+  },
+  {
+    "id": "aufgabe-602731bd4c",
+    "title": "Übung 1: Die Wahrheitstafel vervollständigen",
+    "description": "Ein Zugriff soll erlaubt sein, wenn A wahr ist und zusätzlich B oder C wahr ist. Für die Übung sind A, B und C unabhängige bool-Werte.",
+    "searchText": "Selbst bearbeiten Übung 1: Die Wahrheitstafel vervollständigen Ein Zugriff soll erlaubt sein, wenn A wahr ist und zusätzlich B oder C wahr ist. Für die Übung sind A, B und C unabhängige bool-Werte. Fülle in jeder Zeile zuerst B or C aus. Verbinde diesen Teilwert mit A: A and (B or C) . Erkläre auf Papier, warum das Gesamtergebnis in den ersten vier Zeilen immer gleich ist. Zeile A B C B or C A and (B or C) 1 False False False Auswahl True False Auswahl True False 2 False False True Auswahl True False Auswahl True False 3 False True False Auswahl True False Auswahl True False 4 False True True Auswahl True False Auswahl True False 5 True False False Auswahl True False Auswahl True False 6 True False True Auswahl True False Auswahl True False 7 True True False Auswahl True False Auswahl True False 8 True True True Auswahl True False Auswahl True False Wahrheitstafel prüfen Neu beginnen",
+    "tags": [
+      "bedingungen",
+      "wahrheitswerte"
+    ],
+    "level": "Anwendung",
+    "format": "Wahrheitstafel",
+    "source": "klausurvorbereitung",
+    "sourceLabel": "Klausurvorbereitung",
+    "url": "../klausurvorbereitung/?aufgabe=aufgabe-602731bd4c#1",
+    "order": 146
+  },
+  {
+    "id": "aufgabe-d01e48c1bb",
+    "title": "Übung 2: Von while zu for",
+    "description": "Lies den Code und notiere zuerst seine vollständige Ausgabe. Schreibe anschließend einen vollständigen Code mit for und range() , der genau dieselbe Ausgabe erzeugt. Verwende kein while . „Ende“ soll genau einmal nach der Schleife erscheinen.",
+    "searchText": "Selbst bearbeiten Übung 2: Von while zu for Lies den Code und notiere zuerst seine vollständige Ausgabe. Schreibe anschließend einen vollständigen Code mit for und range() , der genau dieselbe Ausgabe erzeugt. Verwende kein while . „Ende“ soll genau einmal nach der Schleife erscheinen. zahl = 10 while zahl > 0: print(zahl) zahl = zahl - 2 print(\"Ende\") Deine for-Version Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.",
+    "tags": [
+      "while",
+      "for",
+      "range"
+    ],
+    "level": "Anwendung",
+    "format": "Code umwandeln",
+    "source": "klausurvorbereitung",
+    "sourceLabel": "Klausurvorbereitung",
+    "url": "../klausurvorbereitung/?aufgabe=aufgabe-d01e48c1bb#2",
+    "order": 147
+  },
+  {
+    "id": "aufgabe-bf445a9221",
+    "title": "Übung 3: Von for zu while",
+    "description": "Notiere zuerst die Ausgabe. Ersetze dann die for-Schleife durch eine while -Schleife und schreibe den vollständigen Code. Verwende weder for noch range() . Startwert, Bedingung und Veränderung der Laufvariable müssen selbst geschrieben werden. Die Ausgabe bleibt unverändert.",
+    "searchText": "Selbst bearbeiten Übung 3: Von for zu while Notiere zuerst die Ausgabe. Ersetze dann die for-Schleife durch eine while -Schleife und schreibe den vollständigen Code. Verwende weder for noch range() . Startwert, Bedingung und Veränderung der Laufvariable müssen selbst geschrieben werden. Die Ausgabe bleibt unverändert. for zahl in range(3, 13, 3): print(zahl * 2) print(\"Fertig\") Deine while-Version Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.",
+    "tags": [
+      "while",
+      "for",
+      "range",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code umwandeln",
+    "source": "klausurvorbereitung",
+    "sourceLabel": "Klausurvorbereitung",
+    "url": "../klausurvorbereitung/?aufgabe=aufgabe-bf445a9221#2",
+    "order": 148
+  },
+  {
+    "id": "aufgabe-26f3cda720",
+    "title": "Übung 4: Rechnen mit while: Summe bis n",
+    "description": "Schreibe summe_bis(n) . Der Parameter n ist eine ganze Zahl ab 0. Addiere mit einer while -Schleife alle ganzen Zahlen von 1 bis einschließlich n und gib die Summe zurück. Für n = 0 soll 0 zurückgegeben werden.",
+    "searchText": "Selbst bearbeiten Übung 4: Rechnen mit while: Summe bis n Schreibe summe_bis(n) . Der Parameter n ist eine ganze Zahl ab 0. Addiere mit einer while -Schleife alle ganzen Zahlen von 1 bis einschließlich n und gib die Summe zurück. Für n = 0 soll 0 zurückgegeben werden. Testaufruf Erwartete Rückgabe summe_bis(0) 0 summe_bis(1) 1 summe_bis(5) 15 Deine Funktion und Testaufrufe Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.",
+    "tags": [
+      "while",
+      "funktionen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "klausurvorbereitung",
+    "sourceLabel": "Klausurvorbereitung",
+    "url": "../klausurvorbereitung/?aufgabe=aufgabe-26f3cda720#3",
+    "order": 149
+  },
+  {
+    "id": "aufgabe-ec7b843fd9",
+    "title": "Übung 5: Rechnen mit for: Quadrate addieren",
+    "description": "Schreibe quadratsumme(n) . Der Parameter n ist eine ganze Zahl ab 0. Addiere mit for und range() die Quadrate aller ganzen Zahlen von 1 bis einschließlich n. Das Quadrat einer Zahl erhältst du mit zahl * zahl . Gib das Ergebnis zurück. Für n = 0 soll das Ergebnis 0 sein.",
+    "searchText": "Selbst bearbeiten Übung 5: Rechnen mit for: Quadrate addieren Schreibe quadratsumme(n) . Der Parameter n ist eine ganze Zahl ab 0. Addiere mit for und range() die Quadrate aller ganzen Zahlen von 1 bis einschließlich n. Das Quadrat einer Zahl erhältst du mit zahl * zahl . Gib das Ergebnis zurück. Für n = 0 soll das Ergebnis 0 sein. Testaufruf Erwartete Rückgabe quadratsumme(0) 0 quadratsumme(1) 1 quadratsumme(3) 14 Deine Funktion und Testaufrufe Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.",
+    "tags": [
+      "for",
+      "range",
+      "funktionen",
+      "rechnen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "klausurvorbereitung",
+    "sourceLabel": "Klausurvorbereitung",
+    "url": "../klausurvorbereitung/?aufgabe=aufgabe-ec7b843fd9#3",
+    "order": 150
+  },
+  {
+    "id": "aufgabe-aab1af26aa",
+    "title": "Übung 6: Zählen mit while: Positive Werte",
+    "description": "Schreibe zaehle_positive(werte) . werte ist eine flache Liste ganzer Zahlen. Besuche alle Elemente mit einer while -Schleife und einem Index. Zähle, wie viele Werte größer als 0 sind, und gib die Anzahl zurück. Die Zahl 0 zählt nicht mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0.",
+    "searchText": "Selbst bearbeiten Übung 6: Zählen mit while: Positive Werte Schreibe zaehle_positive(werte) . werte ist eine flache Liste ganzer Zahlen. Besuche alle Elemente mit einer while -Schleife und einem Index. Zähle, wie viele Werte größer als 0 sind, und gib die Anzahl zurück. Die Zahl 0 zählt nicht mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0. Testaufruf Erwartete Rückgabe zaehle_positive([]) 0 zaehle_positive([-2, 0, 5, 1, -7]) 2 zaehle_positive([4, 4]) 2 Deine Funktion und Testaufrufe Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.",
+    "tags": [
+      "while",
+      "listen",
+      "funktionen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "klausurvorbereitung",
+    "sourceLabel": "Klausurvorbereitung",
+    "url": "../klausurvorbereitung/?aufgabe=aufgabe-aab1af26aa#3",
+    "order": 151
+  },
+  {
+    "id": "aufgabe-cca0d7604b",
+    "title": "Übung 7: Zählen mit for: Durch 3 teilbar",
+    "description": "Schreibe zaehle_durch_drei(werte) . werte ist eine flache Liste ganzer Zahlen. Gehe mit einer for -Schleife direkt über die Werte. Zähle die Werte, die ohne Rest durch 3 teilbar sind, und gib die Anzahl zurück. Benutze % . Auch 0 und negative Vielfache von 3 zählen mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0.",
+    "searchText": "Selbst bearbeiten Übung 7: Zählen mit for: Durch 3 teilbar Schreibe zaehle_durch_drei(werte) . werte ist eine flache Liste ganzer Zahlen. Gehe mit einer for -Schleife direkt über die Werte. Zähle die Werte, die ohne Rest durch 3 teilbar sind, und gib die Anzahl zurück. Benutze % . Auch 0 und negative Vielfache von 3 zählen mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0. Testaufruf Erwartete Rückgabe zaehle_durch_drei([]) 0 zaehle_durch_drei([3, 4, 6, 0, -3]) 4 zaehle_durch_drei([1, 2, 5]) 0 Deine Funktion und Testaufrufe Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.",
+    "tags": [
+      "for",
+      "listen",
+      "funktionen",
+      "rechnen",
+      "bedingungen"
+    ],
+    "level": "Anwendung",
+    "format": "Code schreiben",
+    "source": "klausurvorbereitung",
+    "sourceLabel": "Klausurvorbereitung",
+    "url": "../klausurvorbereitung/?aufgabe=aufgabe-cca0d7604b#3",
+    "order": 152
+  }
+]

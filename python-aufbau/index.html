@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../python/styles.css?v=3" />
     <link rel="stylesheet" href="styles.css?v=2" />
     <script src="../python/script.js?v=2" defer></script>
-  </head>
+  <script src="../assets/aufgabe-ziel.js?v=1" defer></script>
+</head>
   <body>
     <header class="topbar">
       <a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a>
@@ -79,7 +80,7 @@ print(type(angemeldet))</pre>
             <strong>Umwandlungen können scheitern.</strong> Bei <code>int("fünf")</code> weiß Python nicht, welche Zahl gemeint ist. Probiere bewusst gültige und ungültige Eingaben und lies die letzte Zeile der Fehlermeldung.
           </div>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-cbadce95e4">
             <span>Datentypen · Übung 1 von 2</span>
             <h2>Datentyp-Detektiv</h2>
             <p>Speichere das Programm als <code>datentypen.py</code>. Sage jede Ausgabe voraus, starte das Programm und ergänze anschließend drei eigene Werte.</p>
@@ -92,7 +93,7 @@ print(float("5.3"))</pre>
             <ul class="check-list"><li>Notiere Wert und Datentyp jeder Ausgabe.</li><li>Erkläre den Unterschied zwischen <code>"8"</code> und <code>8</code>.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-ca14f9748c">
             <span>Datentypen · Übung 2 von 2</span>
             <h2>Kinokasse</h2>
             <p>Frage nach der Anzahl der Tickets und dem Preis pro Ticket. Berechne den Gesamtpreis und gib einen vollständigen Satz aus.</p>
@@ -104,7 +105,7 @@ preis = float(input("Preis pro Ticket: "))
             <ul class="check-list"><li>Teste mit 3 Tickets zu 8.50 Euro.</li><li>Teste, was bei der Eingabe <code>acht</code> passiert.</li></ul>
           </article>
 
-          <article class="task-card buffer-task">
+          <article class="task-card buffer-task" id="aufgabe-00849c307f">
             <span>Für Schnelle · Offene Pufferaufgabe</span>
             <h2>Dein Rechenlabor</h2>
             <p>Baue ein Programm, das aus Eingaben nützliche Ergebnisse berechnet. Beginne mit zwei Zahlen und Summe, Differenz und Produkt. Erweitere es danach in deinem eigenen Tempo.</p>
@@ -153,21 +154,21 @@ else:
     print("Nicht bestanden")</pre></article>
           </div>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-310776799b">
             <span>elif &amp; else · Übung 1 von 2</span>
             <h2>Versandkosten berechnen</h2>
             <p>Frage nach dem Bestellwert. Unter 25 Euro kostet der Versand 5 Euro, von 25 bis unter 50 Euro kostet er 2 Euro, ab 50 Euro ist er kostenlos.</p>
             <ul class="check-list"><li>Gib Versandkosten und Gesamtsumme aus.</li><li>Teste 10, 25, 49 und 50 Euro.</li><li>Überlege, warum die Grenzwerte wichtig sind.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-f0c75410e3">
             <span>elif &amp; else · Übung 2 von 2</span>
             <h2>Punkte auswerten</h2>
             <p>Ordne eine Punktzahl ein: 0–49 „noch nicht bestanden“, 50–79 „bestanden“, 80–100 „sehr gut“. Werte unter 0 oder über 100 sollen „ungültige Punktzahl“ ergeben.</p>
             <ul class="check-list"><li>Plane zuerst die Reihenfolge der Bedingungen.</li><li>Teste mindestens −1, 0, 49, 50, 80, 100 und 101.</li></ul>
           </article>
 
-          <article class="task-card buffer-task">
+          <article class="task-card buffer-task" id="aufgabe-e83a8546e2">
             <span>Für Schnelle · Offene Pufferaufgabe</span>
             <h2>Entscheidungsatlas</h2>
             <p>Entwirf einen Berater mit mehreren abgestuften Ergebnissen, zum Beispiel für Ticketpreise, Versand, Fitness oder Wetter. Schreibe die Regeln zuerst als Tabelle und setze sie dann mit <code>if</code>, <code>elif</code> und <code>else</code> um.</p>
@@ -205,21 +206,21 @@ else:
     print("Im Bereich")</pre></article>
           </div>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-1b503b09b4">
             <span>Bedingungen · Übung 1 von 2</span>
             <h2>Serverzugang</h2>
             <p>Frage nach Rolle, Sicherheitscode und Sperrstatus. Zugang gibt es nur für die Rolle <code>admin</code> mit Code <code>4711</code>, wenn das Konto nicht gesperrt ist.</p>
             <ul class="check-list"><li>Verwende mindestens einmal <code>and</code> und einmal <code>not</code>.</li><li>Speichere den Sperrstatus zunächst als <code>False</code> oder <code>True</code>.</li><li>Teste vier unterschiedliche Kombinationen.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-66e36b6414">
             <span>Bedingungen · Übung 2 von 2</span>
             <h2>Freizeitplaner</h2>
             <p>Frage nach Wetter und Temperatur. Bei Sonne und mindestens 18 Grad wird ein Ausflug empfohlen. Bei Regen oder weniger als 8 Grad wird ein Museumsbesuch empfohlen. In allen anderen Fällen gibt es einen Spaziergang.</p>
             <ul class="check-list"><li>Verwende <code>and</code>, <code>or</code> und <code>elif</code>.</li><li>Teste jede der drei Empfehlungen.</li></ul>
           </article>
 
-          <article class="task-card buffer-task">
+          <article class="task-card buffer-task" id="aufgabe-f4274ee534">
             <span>Für Schnelle · Offene Pufferaufgabe</span>
             <h2>Regelwerk für einen Zugang</h2>
             <p>Erfinde eine Situation mit mehreren Voraussetzungen: etwa einen Werkstattraum, eine Veranstaltung oder ein Computerspiel. Das Programm fragt die Voraussetzungen ab und erklärt, warum Zugang erlaubt oder verweigert wird.</p>
@@ -271,7 +272,7 @@ while zahl <= 5:
             <strong>Erst den Ablauf vorhersagen, dann selbst verändern, danach eigene Schleifen bauen.</strong>
           </div>
 
-          <article class="task-card stepping-task">
+          <article class="task-card stepping-task" id="aufgabe-c7f3fe37a4">
             <span>while · Schritt 1 · Mit Beispiel</span>
             <h2>Was passiert bei jedem Durchlauf?</h2>
             <p>Schreibe vor dem Start auf, was der Code ausgibt. Starte ihn danach und vergleiche deine Vorhersage. Ändere anschließend <code>3</code> in der Bedingung zu <code>5</code>.</p>
@@ -285,7 +286,7 @@ print("Fertig:", zahl)</pre>
             <ul class="check-list"><li>Notiere vor jedem Durchlauf den Wert von <code>zahl</code> und das Ergebnis von <code>zahl &lt;= 3</code>.</li><li><strong>Tipp:</strong> Die Bedingung wird vor jedem Durchlauf erneut geprüft. Die letzte <code>print()</code>-Zeile steht außerhalb der Schleife.</li><li><strong>Typischer Fehler:</strong> Ohne <code>zahl = zahl + 1</code> endet die Schleife nicht. Falls du das ausprobieren möchtest, nutze zum Abbrechen <code>Strg+C</code> im Terminal.</li></ul>
           </article>
 
-          <article class="task-card stepping-task">
+          <article class="task-card stepping-task" id="aufgabe-78b4efc8a2">
             <span>while · Schritt 2 · Lücke füllen</span>
             <h2>Countdown bis zum Start</h2>
             <p>Ergänze die fehlende Zeile so, dass <code>3</code>, <code>2</code>, <code>1</code> und danach genau einmal „Start!“ ausgegeben wird.</p>
@@ -299,7 +300,7 @@ print("Start!")</pre>
             <ul class="check-list"><li>Teste erst mit <code>rest = 3</code>, danach mit <code>rest = 5</code>.</li><li><strong>Tipp:</strong> Die fehlende Zeile gehört eingerückt in die Schleife. Nutze <code>rest = rest - 1</code>.</li><li><strong>Typischer Fehler:</strong> Steht „Start!“ eingerückt, erscheint es bei jedem Durchlauf.</li></ul>
           </article>
 
-          <article class="task-card stepping-task">
+          <article class="task-card stepping-task" id="aufgabe-76e337691d">
             <span>while · Schritt 3 · Teilweise selbst bauen</span>
             <h2>Nur gültige Richtung akzeptieren</h2>
             <p>Frage nach <code>links</code> oder <code>rechts</code>. Solange die Antwort anders lautet, zeige einen Hinweis und frage erneut. Erst danach gibst du die gültige Richtung aus.</p>
@@ -313,28 +314,28 @@ print("Gewählt:", richtung)</pre>
             <ul class="check-list"><li>Teste zuerst <code>oben</code>, dann <code>links</code>. Teste auch eine sofort gültige Antwort.</li><li><strong>Hinweis:</strong> Die Schleife soll laufen, wenn die Antwort weder <code>links</code> noch <code>rechts</code> ist. Beide Vergleiche müssen dafür gleichzeitig zutreffen.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-5f56f52dd4">
             <span>while · Übung 1 von 2</span>
             <h2>PIN mit drei Versuchen</h2>
             <p>Frage nach der PIN <code>2468</code>. Die Eingabe darf höchstens dreimal versucht werden. Melde nach jedem falschen Versuch, wie viele Versuche noch übrig sind.</p>
             <ul class="check-list"><li>Verwende eine Variable für die Anzahl der Versuche.</li><li>Die Schleife läuft nur, solange die PIN falsch und noch ein Versuch vorhanden ist.</li><li>Gib am Ende „Zugang“ oder „Karte gesperrt“ aus.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-e9a95505a1">
             <span>while · Übung 2 von 2</span>
             <h2>Sparziel erreichen</h2>
             <p>Frage nach einem Sparziel. Danach werden nacheinander eingezahlte Beträge abgefragt und addiert, bis das Ziel erreicht ist.</p>
             <ul class="check-list"><li>Zeige nach jeder Einzahlung den aktuellen Gesamtbetrag.</li><li>Gib am Ende aus, um wie viel das Ziel erreicht oder überschritten wurde.</li><li>Teste auch mehrere kleine Einzahlungen.</li></ul>
           </article>
 
-          <article class="task-card stepping-task independent-task">
+          <article class="task-card stepping-task independent-task" id="aufgabe-690bc587b1">
             <span>while · Schritt 4 · Eigenständig</span>
             <h2>Menü bis zum Ende</h2>
             <p>Zeige wiederholt ein Menü mit den Befehlen <code>hallo</code>, <code>hilfe</code> und <code>ende</code>. Reagiere auf die Auswahl. Bei <code>ende</code> stoppt das Programm; unbekannte Befehle bekommen eine passende Rückmeldung. Zähle, wie oft ein gültiger Befehl gewählt wurde.</p>
             <ul class="check-list"><li>Teste einen gültigen, einen unbekannten und den beendenden Befehl.</li></ul>
           </article>
 
-          <article class="task-card buffer-task">
+          <article class="task-card buffer-task" id="aufgabe-4d7b6611a0">
             <span>Für Schnelle · Offene Pufferaufgabe</span>
             <h2>Menüwerkstatt</h2>
             <p>Baue ein eigenes Programm mit einem Menü, das bis zur Auswahl <code>ende</code> wiederkehrt. Es kann ein Spiel, ein einfacher Rechner oder ein Auskunftsschalter sein.</p>
@@ -379,7 +380,7 @@ print(werkzeuge)</pre>
             <strong>Erst Positionen lesen, dann Werte anhängen und ändern, schließlich Listen selbst einsetzen.</strong>
           </div>
 
-          <article class="task-card stepping-task">
+          <article class="task-card stepping-task" id="aufgabe-262fa3dba8">
             <span>Listen · Schritt 1 · Mit Beispiel</span>
             <h2>Welche Position ist gemeint?</h2>
             <p>Lege die Liste an und sage vor jedem Start voraus, was die drei Ausgaben zeigen. Ändere danach einen Index und überprüfe deine Vermutung.</p>
@@ -391,7 +392,7 @@ print(len(obst))</pre>
             <ul class="check-list"><li>Zeichne drei Kästchen mit den Indizes <code>0</code>, <code>1</code> und <code>2</code>.</li><li><strong>Tipp:</strong> <code>len(obst)</code> ist die Anzahl der Werte, nicht der letzte Index.</li><li><strong>Typischer Fehler:</strong> <code>obst[3]</code> liegt außerhalb dieser Liste. Probiere es aus und lies die Fehlermeldung.</li></ul>
           </article>
 
-          <article class="task-card stepping-task">
+          <article class="task-card stepping-task" id="aufgabe-080771391d">
             <span>Listen · Schritt 2 · Lücke füllen</span>
             <h2>Ein Wert kommt dazu</h2>
             <p>Ergänze die fehlende Zeile. Am Ende soll die Liste drei Tiere und die Anzahl <code>3</code> enthalten.</p>
@@ -405,28 +406,28 @@ print(len(tiere))</pre>
             <ul class="check-list"><li><strong>Tipp:</strong> Die Form lautet <code>tiere.append(neues_tier)</code>. Der eingegebene Wert steht bereits in der Variablen.</li><li><strong>Typischer Fehler:</strong> <code>print(neues_tier)</code> zeigt den Wert nur an; dadurch landet er noch nicht in der Liste.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-2f12473f56">
             <span>Listen · Übung 1 von 2</span>
             <h2>Packliste erweitern</h2>
             <p>Beginne mit <code>packliste = ["Laptop", "Ladekabel"]</code>. Frage dreimal nach einem weiteren Gegenstand und hänge jede Eingabe an die Liste an.</p>
             <ul class="check-list"><li>Gib anschließend die vollständige Liste aus.</li><li>Gib die Anzahl der Gegenstände aus.</li><li>Zeige den ersten und den letzten Gegenstand mit ihrem Index.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-3d19f7915a">
             <span>Listen · Übung 2 von 2</span>
             <h2>Schichtplan korrigieren</h2>
             <p>Gegeben ist <code>team = ["Aylin", "Ben", "Cem", "Dana"]</code>. Ben fällt aus und wird durch Eli ersetzt. Danach kommt Farah als fünfte Person hinzu.</p>
             <ul class="check-list"><li>Ändere den passenden Listeneintrag.</li><li>Füge Farah mit <code>append()</code> hinzu.</li><li>Gib die neue Teamgröße und die fertige Liste aus.</li></ul>
           </article>
 
-          <article class="task-card stepping-task independent-task">
+          <article class="task-card stepping-task independent-task" id="aufgabe-8b5f1776d6">
             <span>Listen · Schritt 3 · Eigenständig</span>
             <h2>Warteliste am Empfang</h2>
             <p>Beginne mit <code>warteliste = ["Mia", "Noah", "Omar"]</code>. Frage einen weiteren Namen ab und hänge ihn an. Danach sagt Mia ab und wird durch Lea ersetzt. Gib den ersten und letzten Namen sowie die Anzahl der Personen aus.</p>
             <ul class="check-list"><li>Probiere danach eine zweite Änderung deiner Wahl aus und beschreibe, welcher Index betroffen ist.</li></ul>
           </article>
 
-          <article class="task-card buffer-task">
+          <article class="task-card buffer-task" id="aufgabe-25b781700c">
             <span>Für Schnelle · Offene Pufferaufgabe</span>
             <h2>Dein eigenes Inventar</h2>
             <p>Entwirf eine Liste für ein Thema deiner Wahl: Werkzeuge, Reisegepäck, Spielgegenstände oder Sportgeräte. Das Programm soll Einträge anzeigen, neue Werte aufnehmen und vorhandene Werte an einer bekannten Position ändern.</p>
@@ -470,21 +471,21 @@ print("Gesamt:", gesamt)</pre>
 
           <div class="callout"><strong><code>while</code> oder <code>for</code>?</strong> Verwende <code>for</code>, wenn alle Werte einer Sammlung oder eine feste Zahlenfolge verarbeitet werden. <code>while</code> passt, wenn vorher nicht feststeht, wie oft wiederholt werden muss.</div>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-648889fec6">
             <span>for · Übung 1 von 2</span>
             <h2>Persönliche Begrüßungen</h2>
             <p>Lege eine Liste mit mindestens fünf Namen an. Gib für jede Person eine eigene Begrüßungszeile aus.</p>
             <ul class="check-list"><li>Verwende genau eine <code>for</code>-Schleife.</li><li>Gib nach der Schleife die Anzahl der begrüßten Personen aus.</li><li>Ergänze einen Namen und starte erneut.</li></ul>
           </article>
 
-          <article class="task-card direct-exercise">
+          <article class="task-card direct-exercise" id="aufgabe-57137d2463">
             <span>for · Übung 2 von 2</span>
             <h2>Wochenkosten auswerten</h2>
             <p>Speichere fünf Tagesausgaben in einer Liste. Gib jede Ausgabe aus und berechne während der Schleife die Gesamtsumme.</p>
             <ul class="check-list"><li>Gib nach der Schleife die Summe aus.</li><li>Zähle zusätzlich, wie viele Ausgaben mindestens 20 Euro betragen.</li><li>Verwende dafür <code>if</code> innerhalb der Schleife.</li></ul>
           </article>
 
-          <article class="task-card buffer-task">
+          <article class="task-card buffer-task" id="aufgabe-17c2ba385a">
             <span>Für Schnelle · Offene Pufferaufgabe</span>
             <h2>Auswertungswerkstatt</h2>
             <p>Wähle eine Liste mit Zahlen, etwa Tagesausgaben, Temperaturen oder Quizpunkten. Eine <code>for</code>-Schleife soll jeden Wert verarbeiten und am Ende eine verständliche Auswertung ausgeben.</p>
@@ -500,80 +501,80 @@ print("Gesamt:", gesamt)</pre>
 
           <div class="level-banner level-one"><span>Stufe 1</span><strong>Ein Konzept sicher anwenden</strong></div>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-d8184eb81b">
             <span>Training 01 · leicht</span><h2>Profilkarte</h2>
             <p>Frage Name, Alter und Körpergröße in Metern ab. Gib anschließend eine übersichtliche Profilkarte aus. Alter soll <code>int</code>, Körpergröße <code>float</code> sein. Zeige mit <code>type()</code>, dass die Umwandlungen funktioniert haben.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-227c2d3cbb">
             <span>Training 02 · leicht</span><h2>Ticketberater</h2>
             <p>Unter 6 Jahren ist der Eintritt kostenlos, von 6 bis 17 ermäßigt, ab 18 regulär. Ab 65 gilt wieder der ermäßigte Preis. Frage das Alter ab und gib die richtige Kategorie aus.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-a5391a47b3">
             <span>Training 03 · leicht</span><h2>Gerade Zahlen</h2>
             <p>Gib mit <code>for</code> und <code>range()</code> alle Zahlen von 1 bis 30 aus, die gerade sind. Der Operator <code>%</code> liefert den Rest einer Division: <code>zahl % 2 == 0</code>.</p>
           </article>
 
           <div class="level-banner level-two"><span>Stufe 2</span><strong>Mehrere Grundlagen verbinden</strong></div>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-7d5594bab1">
             <span>Training 04 · mittel</span><h2>Gültiges Alter erzwingen</h2>
             <p>Frage ein Alter ab. Solange es kleiner als 0 oder größer als 120 ist, wird erneut gefragt. Ordne das gültige Alter danach mit <code>if</code>, <code>elif</code> und <code>else</code> einer Altersgruppe zu.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-5fe3a861af">
             <span>Training 05 · mittel</span><h2>Dynamische Einkaufsliste</h2>
             <p>Beginne mit einer leeren Liste. Frage in einer <code>while</code>-Schleife nach Produkten. Bei <code>fertig</code> endet die Eingabe. Gib danach mit <code>for</code> jedes Produkt in einer eigenen Zeile und die Anzahl aus.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-25125a9bf4">
             <span>Training 06 · mittel</span><h2>Temperaturen untersuchen</h2>
             <p>Speichere sieben Temperaturen in einer Liste. Gib für jeden Wert „kalt“, „mild“ oder „warm“ aus. Zähle zusätzlich, an wie vielen Tagen Frost herrschte.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-daf2a79c3a">
             <span>Training 07 · mittel</span><h2>Vielfache finden</h2>
             <p>Frage zwei ganze Zahlen ab. Gib von 1 bis 100 alle Zahlen aus, die durch mindestens eine der beiden Zahlen teilbar sind. Markiere Werte, die durch beide teilbar sind, gesondert.</p>
           </article>
 
           <div class="level-banner level-three"><span>Stufe 3</span><strong>Kleine vollständige Programme</strong></div>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-e809426747">
             <span>Training 08 · anspruchsvoll</span><h2>Login mit Sperre</h2>
             <p>Speichere Benutzername und Passwort. Erlaube höchstens drei Versuche. Nur wenn beide Eingaben stimmen, erscheint „Willkommen“. Nach drei Fehlversuchen wird das Konto gesperrt. Zeige die verbleibenden Versuche an.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-d5aa332d2b">
             <span>Training 09 · anspruchsvoll</span><h2>Punkte einer Gruppe</h2>
             <p>Verarbeite eine Liste aus mindestens acht Punktzahlen. Ordne jede Punktzahl einer Leistungsstufe zu. Berechne Gesamtpunkte und Durchschnitt und zähle, wie viele Ergebnisse bestanden sind.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-a2759c4667">
             <span>Training 10 · anspruchsvoll</span><h2>Getränkeautomat</h2>
             <p>Zeige in einer <code>while</code>-Schleife ein Menü mit drei Getränken und <code>ende</code>. Frage Auswahl und eingeworfenes Geld ab. Prüfe Auswahl und Guthaben, berechne Rückgeld und zeige danach das Menü erneut.</p>
           </article>
 
-          <article class="task-card challenge-card">
+          <article class="task-card challenge-card" id="aufgabe-5aff0622f8">
             <span>Training 11 · anspruchsvoll</span><h2>Mini-Quiz</h2>
             <p>Speichere Fragen und Lösungen in zwei gleich langen Listen. Durchlaufe die Positionen mit <code>for index in range(len(fragen))</code>, stelle jede Frage und erhöhe bei richtiger Antwort den Punktestand. Werte das Ergebnis am Ende mit <code>elif</code> aus.</p>
           </article>
 
           <div class="level-banner level-four"><span>Stufe 4</span><strong>Größere eigene Programme</strong></div>
 
-          <article class="task-card challenge-card project-card">
+          <article class="task-card challenge-card project-card" id="aufgabe-5da9a39ef1">
             <span>Training 12 · Mini-Projekt</span><h2>Textabenteuer 2.0</h2>
             <p>Erweitere dein erstes Abenteuer. Die Spielfigur besitzt eine Inventarliste, kann Gegenstände aufnehmen und trifft in einer Schleife wiederholt Entscheidungen. Manche Wege dürfen nur mit einem bestimmten Gegenstand betreten werden.</p>
             <ul class="check-list"><li>Mindestens fünf Entscheidungen und vier Enden</li><li>Mindestens zwei Gegenstände in einer Liste</li><li><code>while</code>-Schleife für den Spielablauf</li><li><code>and</code>, <code>or</code> oder <code>not</code> an sinnvollen Stellen</li></ul>
           </article>
 
-          <article class="task-card challenge-card project-card">
+          <article class="task-card challenge-card project-card" id="aufgabe-08c5caa220">
             <span>Training 13 · Mini-Projekt</span><h2>Lernfortschritt-Tracker</h2>
             <p>Ein Menü erlaubt, erreichte Punkte einzutragen, alle Punkte anzuzeigen oder das Programm zu beenden. Speichere die Punkte in einer Liste. Berechne Anzahl, Summe und Durchschnitt und gib passend zum Durchschnitt eine Rückmeldung aus.</p>
             <ul class="check-list"><li>Menü in einer <code>while</code>-Schleife</li><li>Eingaben mit <code>if</code>/<code>elif</code> unterscheiden</li><li>Liste mit <code>append()</code> erweitern</li><li>Werte mit <code>for</code> ausgeben und addieren</li></ul>
           </article>
 
-          <article class="task-card challenge-card project-card">
+          <article class="task-card challenge-card project-card" id="aufgabe-869e8d3c28">
             <span>Training 14 · Freies Mini-Projekt</span><h2>Entwirf dein eigenes Programm</h2>
             <p>Wähle ein reales Problem aus Schule, Betrieb oder Freizeit. Entwirf zuerst Ein- und Ausgaben sowie mindestens drei Testfälle. Setze es danach mit den bekannten Sprachmitteln um.</p>
             <ul class="check-list"><li>Mindestens eine Liste</li><li>Mindestens eine <code>while</code>- und eine <code>for</code>-Schleife</li><li>Mindestens eine verbundene Bedingung</li><li>Verständliche Rückmeldungen für falsche Eingaben</li></ul>

@@ -1,5 +1,6 @@
 <!doctype html><html lang="de">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#15191b"><title>Klausurvorbereitung · Python-Seminar</title><link rel="stylesheet" href="../python/styles.css?v=3"><link rel="stylesheet" href="../python-aufbau/styles.css?v=2"><link rel="stylesheet" href="../python-for/styles.css?v=1"><link rel="stylesheet" href="styles.css?v=1"><script src="../python/script.js?v=2" defer></script><script src="script.js?v=1" defer></script></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#15191b"><title>Klausurvorbereitung · Python-Seminar</title><link rel="stylesheet" href="../python/styles.css?v=3"><link rel="stylesheet" href="../python-aufbau/styles.css?v=2"><link rel="stylesheet" href="../python-for/styles.css?v=1"><link rel="stylesheet" href="styles.css?v=1"><script src="../python/script.js?v=2" defer></script><script src="script.js?v=1" defer></script><script src="../assets/aufgabe-ziel.js?v=1" defer></script>
+</head>
 
 <body>
 
@@ -59,7 +60,7 @@ print(type(bestanden))</code></pre>
 <p>Python kann die Auswertung abkürzen: Bei <code>False and …</code> steht das Ergebnis schon fest, ebenso bei <code>True or …</code>. Für die Wahrheitstafel kannst du die Teilwerte trotzdem einzeln bestimmen.</p>
 </article>
 
-<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<article class="task-card read-card" id="aufgabe-602731bd4c"><span>Selbst bearbeiten</span>
 <h2>Übung 1: Die Wahrheitstafel vervollständigen</h2>
 
 <p>Ein Zugriff soll erlaubt sein, wenn <code>A</code> wahr ist und zusätzlich <code>B</code> oder <code>C</code> wahr ist. Für die Übung sind A, B und C unabhängige bool-Werte.</p>
@@ -97,7 +98,7 @@ print(type(bestanden))</code></pre>
 <p>Die folgenden Aufgaben prüfen gleiche <strong>Ausgaben</strong>. Der Wert der Laufvariable nach der Schleife muss dabei nicht gleich sein. Eine Eingabeschleife mit unbekannter Wiederholungszahl lässt sich nicht einfach durch einen festen range ersetzen.</p>
 </article>
 
-<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<article class="task-card read-card" id="aufgabe-d01e48c1bb"><span>Selbst bearbeiten</span>
 <h2>Übung 2: Von while zu for</h2>
 
 <p>Lies den Code und notiere zuerst seine vollständige Ausgabe. Schreibe anschließend einen vollständigen Code mit <code>for</code> und <code>range()</code>, der <strong>genau dieselbe Ausgabe</strong> erzeugt. Verwende kein <code>while</code>. „Ende“ soll genau einmal nach der Schleife erscheinen.</p>
@@ -125,7 +126,7 @@ print(&quot;Ende&quot;)</code></pre>
 </div></details>
 </article>
 
-<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<article class="task-card read-card" id="aufgabe-bf445a9221"><span>Selbst bearbeiten</span>
 <h2>Übung 3: Von for zu while</h2>
 
 <p>Notiere zuerst die Ausgabe. Ersetze dann die for-Schleife durch eine <code>while</code>-Schleife und schreibe den vollständigen Code. Verwende weder <code>for</code> noch <code>range()</code>. Startwert, Bedingung und Veränderung der Laufvariable müssen selbst geschrieben werden. Die Ausgabe bleibt unverändert.</p>
@@ -171,7 +172,7 @@ print(&quot;Fertig&quot;)</code></pre>
 <p>Schreibe bei den vier Aufgaben jeweils Definition und Testaufrufe. Verwende <code>def</code>, die vorgegebene Schleifenart und <code>return</code>. Nutze kein <code>sum()</code>, keine Comprehension und keine fertige Zählmethode.</p>
 </article>
 
-<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<article class="task-card read-card" id="aufgabe-26f3cda720"><span>Selbst bearbeiten</span>
 <h2>Übung 4: Rechnen mit while: Summe bis n</h2>
 
 <p>Schreibe <code>summe_bis(n)</code>. Der Parameter n ist eine ganze Zahl ab 0. Addiere mit einer <code>while</code>-Schleife alle ganzen Zahlen von 1 bis einschließlich n und gib die Summe zurück. Für n = 0 soll 0 zurückgegeben werden.</p>
@@ -202,7 +203,7 @@ print(summe_bis(5))</code></pre>
 </div></details>
 </article>
 
-<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<article class="task-card read-card" id="aufgabe-ec7b843fd9"><span>Selbst bearbeiten</span>
 <h2>Übung 5: Rechnen mit for: Quadrate addieren</h2>
 
 <p>Schreibe <code>quadratsumme(n)</code>. Der Parameter n ist eine ganze Zahl ab 0. Addiere mit <code>for</code> und <code>range()</code> die Quadrate aller ganzen Zahlen von 1 bis einschließlich n. Das Quadrat einer Zahl erhältst du mit <code>zahl * zahl</code>. Gib das Ergebnis zurück. Für n = 0 soll das Ergebnis 0 sein.</p>
@@ -231,7 +232,7 @@ print(quadratsumme(3))</code></pre>
 </div></details>
 </article>
 
-<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<article class="task-card read-card" id="aufgabe-aab1af26aa"><span>Selbst bearbeiten</span>
 <h2>Übung 6: Zählen mit while: Positive Werte</h2>
 
 <p>Schreibe <code>zaehle_positive(werte)</code>. werte ist eine flache Liste ganzer Zahlen. Besuche alle Elemente mit einer <code>while</code>-Schleife und einem Index. Zähle, wie viele Werte <strong>größer als 0</strong> sind, und gib die Anzahl zurück. Die Zahl 0 zählt nicht mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0.</p>
@@ -263,7 +264,7 @@ print(zaehle_positive([4, 4]))</code></pre>
 </div></details>
 </article>
 
-<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<article class="task-card read-card" id="aufgabe-cca0d7604b"><span>Selbst bearbeiten</span>
 <h2>Übung 7: Zählen mit for: Durch 3 teilbar</h2>
 
 <p>Schreibe <code>zaehle_durch_drei(werte)</code>. werte ist eine flache Liste ganzer Zahlen. Gehe mit einer <code>for</code>-Schleife direkt über die Werte. Zähle die Werte, die ohne Rest durch 3 teilbar sind, und gib die Anzahl zurück. Benutze <code>%</code>. Auch 0 und negative Vielfache von 3 zählen mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0.</p>
