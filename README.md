@@ -11,6 +11,7 @@ Statische Lernseite vom Computer-Grundverständnis bis zu einem aufgabenreichen 
 - `python-problemloesen/`: acht Schritte zum systematischen Problemlösen, gemeinsam gerechneter Notendurchschnitt, gezieltes Debugging und vier Übungen mit Denkprotokoll. Präsentationsansicht direkt über `python-problemloesen/#p-1`; Hinweise und Lösungen zum Aufklappen, farbiges zweiseitiges A4-Merkblatt als PDF
 - `notebooks/`: Jupyter Notebooks für Fortgeschrittene (Strings, Fehlerbehandlung, Dictionaries, Module), direkt in Colab öffenbar
 - `LEHRKRAFT.md`: Ablaufplan für die Trainingseinheit
+- `klausurvorbereitung/`: erklärte Wahrheitstafeln mit bis zu drei bool-Werten, interaktive Auswertung, zwei Schleifenumwandlungen und vier Rechen-/Zählfunktionen; Hinweise und Musterlösungen, Kapitel- und Präsentationsansicht
 - `plan.md`: inhaltliches Storyboard
 
 Die Übungen enthalten keinen gespeicherten Fortschritt. Die Browseraufgaben werden direkt ausgewertet; die PowerShell-Aufgaben führen sichere, überwiegend lesende Befehle auf dem eigenen Windows-PC aus und werden anschließend gemeinsam besprochen.

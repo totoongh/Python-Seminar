@@ -1,0 +1,306 @@
+<!doctype html><html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#15191b"><title>Klausurvorbereitung · Python-Seminar</title><link rel="stylesheet" href="../python/styles.css?v=3"><link rel="stylesheet" href="../python-aufbau/styles.css?v=2"><link rel="stylesheet" href="../python-for/styles.css?v=1"><link rel="stylesheet" href="styles.css?v=1"><script src="../python/script.js?v=2" defer></script><script src="script.js?v=1" defer></script></head>
+
+<body>
+
+<header class="topbar"><a class="brand" href="../"><span>[·]</span> PYTHON-SEMINAR</a><span class="edition">08 / KLAUSURVORBEREITUNG</span><div class="topbar-actions"><button id="view-toggle" type="button" aria-pressed="false" title="Zur Präsentationsansicht wechseln"><span>Switch View</span><small>Präsentation</small></button><a class="intro-link" href="../python-aufbau/">Aufbau ↗</a></div></header>
+<div class="page-shell">
+<nav class="chapter-nav" aria-label="Klausurvorbereitung"><a href="#1" data-nav="1"><span>01</span> Wahrheitswerte</a><a href="#2" data-nav="2"><span>02</span> Schleifen umwandeln</a><a href="#3" data-nav="3"><span>03</span> Funktionen schreiben</a></nav>
+
+<main>
+<section class="chapter-section" data-section="1">
+<p class="eyebrow">Klausurvorbereitung · Abschnitt 1</p>
+
+<h1>Wahrheitswerte verstehen</h1>
+
+<p class="lead">Aus einzelnen Vergleichen werden zusammengesetzte Bedingungen. Bestimme erst die Teilwerte, dann den Wert des gesamten Ausdrucks.</p>
+
+<article class="task-card read-card"><span>Verstehen</span>
+<h2>1. Was ist ein Wahrheitswert?</h2>
+
+<p>Eine Bedingung beantwortet eine Ja-Nein-Frage: Ist die Zahl größer als 10? Ist ein Name gleich „Ali“? In Python heißen die beiden Wahrheitswerte <code>True</code> (wahr) und <code>False</code> (falsch). Beide haben den Datentyp <code>bool</code>. Großschreibung ist wichtig.</p>
+
+
+<pre><code>punkte = 58
+bestanden = punkte &gt;= 50
+print(bestanden)
+print(type(bestanden))</code></pre>
+
+<p>Die Ausgaben sind <code>True</code> und <code>&lt;class 'bool'&gt;</code>. Der Vergleich wird zuerst <strong>ausgewertet</strong>: Python bestimmt seinen Wert. Dieser Wert wird in <code>bestanden</code> gespeichert. <code>print</code> zeigt ihn anschließend an.</p>
+
+<p>Ein gespeicherter bool-Wert und der Text <code>"True"</code> sind unterschiedliche Dinge: Der Text hat den Datentyp <code>str</code>.</p>
+</article>
+
+<article class="task-card read-card"><span>Verstehen</span>
+<h2>2. Zwei Bedingungen verbinden</h2>
+
+<p><code>and</code> ist nur wahr, wenn <strong>beide</strong> Bedingungen wahr sind. <code>or</code> ist wahr, wenn <strong>mindestens eine</strong> wahr ist, also auch, wenn beide wahr sind. <code>not</code> kehrt einen Wahrheitswert um.</p>
+
+<p>Eine <strong>Wahrheitstafel</strong> zeigt jede mögliche Kombination. Bei zwei Werten sind das vier Zeilen: Jeder Wert kann unabhängig <code>True</code> oder <code>False</code> sein.</p>
+<div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">A</th><th scope="col">B</th><th scope="col">A and B</th><th scope="col">A or B</th></tr></thead><tbody><tr><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td>False</td><td>True</td><td>False</td><td>True</td></tr><tr><td>True</td><td>False</td><td>False</td><td>True</td></tr><tr><td>True</td><td>True</td><td>True</td><td>True</td></tr></tbody></table>
+</div><div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">A</th><th scope="col">not A</th></tr></thead><tbody><tr><td>False</td><td>True</td></tr><tr><td>True</td><td>False</td></tr></tbody></table>
+</div>
+<p>Hier stehen A und B für bool-Variablen. Arbeite in diesem Kapitel nur mit bool-Werten und Vergleichen. So sind die Ergebnisse der logischen Verknüpfungen wieder bool-Werte.</p>
+</article>
+
+<article class="task-card read-card"><span>Verstehen</span>
+<h2>3. Drei Wahrheitswerte Schritt für Schritt</h2>
+
+<p>Drei Werte ergeben <strong>acht</strong> Kombinationen: 2 · 2 · 2 = 8. Für jede Tabellenzeile wertest du denselben Ausdruck mit den Werten dieser Zeile aus.</p>
+
+<p>Beispiel: <code>A = True</code>, <code>B = False</code>, <code>C = True</code>. Gesucht ist <code>(A or B) and not C</code>.</p>
+<ol><li>Klammer: <code>True or False</code> ergibt <code>True</code>.</li><li>Verneinung: <code>not True</code> ergibt <code>False</code>.</li><li>Verbindung: <code>True and False</code> ergibt <code>False</code>.</li></ol>
+<p>Das Ergebnis des <strong>gesamten Ausdrucks</strong> ist also <code>False</code>. Das Ergebnis einer Teilbedingung ist noch nicht das Gesamtergebnis.</p>
+
+<p>Reihenfolge: zuerst Klammern, bei logischen Verknüpfungen anschließend <code>not</code>, dann <code>and</code>, dann <code>or</code>. Zum Beispiel bedeutet <code>A or B and C</code> dasselbe wie <code>A or (B and C)</code>. Schreibe Klammern, wenn du deine Absicht deutlich machen möchtest.</p>
+
+<p>Python kann die Auswertung abkürzen: Bei <code>False and …</code> steht das Ergebnis schon fest, ebenso bei <code>True or …</code>. Für die Wahrheitstafel kannst du die Teilwerte trotzdem einzeln bestimmen.</p>
+</article>
+
+<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<h2>Übung 1: Die Wahrheitstafel vervollständigen</h2>
+
+<p>Ein Zugriff soll erlaubt sein, wenn <code>A</code> wahr ist und zusätzlich <code>B</code> oder <code>C</code> wahr ist. Für die Übung sind A, B und C unabhängige bool-Werte.</p>
+<ol><li>Fülle in jeder Zeile zuerst <code>B or C</code> aus.</li><li>Verbinde diesen Teilwert mit A: <code>A and (B or C)</code>.</li><li>Erkläre auf Papier, warum das Gesamtergebnis in den ersten vier Zeilen immer gleich ist.</li></ol>
+<form id="truth-exercise"><div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">Zeile</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">B or C</th><th scope="col">A and (B or C)</th></tr></thead><tbody><tr><td>1</td><td>False</td><td>False</td><td>False</td><td><select name="r1-inner" aria-label="Zeile 1: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r1-result" aria-label="Zeile 1: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr><tr><td>2</td><td>False</td><td>False</td><td>True</td><td><select name="r2-inner" aria-label="Zeile 2: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r2-result" aria-label="Zeile 2: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr><tr><td>3</td><td>False</td><td>True</td><td>False</td><td><select name="r3-inner" aria-label="Zeile 3: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r3-result" aria-label="Zeile 3: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr><tr><td>4</td><td>False</td><td>True</td><td>True</td><td><select name="r4-inner" aria-label="Zeile 4: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r4-result" aria-label="Zeile 4: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr><tr><td>5</td><td>True</td><td>False</td><td>False</td><td><select name="r5-inner" aria-label="Zeile 5: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r5-result" aria-label="Zeile 5: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr><tr><td>6</td><td>True</td><td>False</td><td>True</td><td><select name="r6-inner" aria-label="Zeile 6: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r6-result" aria-label="Zeile 6: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr><tr><td>7</td><td>True</td><td>True</td><td>False</td><td><select name="r7-inner" aria-label="Zeile 7: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r7-result" aria-label="Zeile 7: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr><tr><td>8</td><td>True</td><td>True</td><td>True</td><td><select name="r8-inner" aria-label="Zeile 8: B or C"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td><td><select name="r8-result" aria-label="Zeile 8: A and (B or C)"><option value="">Auswahl</option><option value="True">True</option><option value="False">False</option></select></td></tr></tbody></table>
+</div><div class="truth-actions"><button type="submit">Wahrheitstafel prüfen</button><button type="reset">Neu beginnen</button></div>
+<p id="truth-feedback" class="feedback" aria-live="polite"></p>
+</form>
+
+<details class="hint-box"><summary>Hinweis</summary><div>
+<p>Bei <code>or</code> genügt ein True. Bei <code>and</code> müssen beide Seiten True sein. Nimm in der letzten Spalte A und deinen Teilwert aus „B or C“.</p>
+</div></details>
+
+<details class="sol-box"><summary>Musterlösung und Erklärung</summary><div><div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">B or C</th><th scope="col">A and (B or C)</th></tr></thead><tbody><tr><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td>False</td><td>False</td><td>True</td><td>True</td><td>False</td></tr><tr><td>False</td><td>True</td><td>False</td><td>True</td><td>False</td></tr><tr><td>False</td><td>True</td><td>True</td><td>True</td><td>False</td></tr><tr><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td>True</td><td>False</td><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>True</td><td>False</td><td>True</td><td>True</td></tr><tr><td>True</td><td>True</td><td>True</td><td>True</td><td>True</td></tr></tbody></table>
+</div>
+<p>In den ersten vier Zeilen ist A False. Deshalb ist die Gesamtbedingung dort immer False, unabhängig von B und C. Bei A = True übernimmt das Gesamtergebnis den Wert von B or C.</p>
+</div></details>
+</article>
+</section>
+
+<section class="chapter-section" data-section="2">
+<p class="eyebrow">Klausurvorbereitung · Abschnitt 2</p>
+
+<h1>Schleifen umwandeln</h1>
+
+<p class="lead">Sichere die gewünschte Ausgabe, bevor du die Schleife ersetzt. Prüfe Startwert, Grenze und Schrittweite getrennt.</p>
+
+<article class="task-card read-card"><span>Verstehen</span>
+<h2>Was bleibt bei einer Umwandlung gleich?</h2>
+
+<p>Du wechselst die Schleifenart. Die ausgegebenen Werte, ihre Reihenfolge und die Anzahl der Durchläufe sollen gleich bleiben. Vergleiche auch, was <strong>nach</strong> der Schleife passiert.</p>
+<ul class="check-list"><li><code>while</code>: Startwert vor der Schleife, Bedingung im Schleifenkopf, Veränderung im Block.</li><li><code>for</code> mit <code>range(start, stopp, schritt)</code>: Die Folge liefert die Laufwerte. Der Stoppwert ist ausgeschlossen.</li><li>Doppelpunkt hinter dem Schleifenkopf, eingerückter Schleifenblock. Eine Zeile danach wird nur einmal ausgeführt.</li></ul>
+<p>Die folgenden Aufgaben prüfen gleiche <strong>Ausgaben</strong>. Der Wert der Laufvariable nach der Schleife muss dabei nicht gleich sein. Eine Eingabeschleife mit unbekannter Wiederholungszahl lässt sich nicht einfach durch einen festen range ersetzen.</p>
+</article>
+
+<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<h2>Übung 2: Von while zu for</h2>
+
+<p>Lies den Code und notiere zuerst seine vollständige Ausgabe. Schreibe anschließend einen vollständigen Code mit <code>for</code> und <code>range()</code>, der <strong>genau dieselbe Ausgabe</strong> erzeugt. Verwende kein <code>while</code>. „Ende“ soll genau einmal nach der Schleife erscheinen.</p>
+
+
+<pre><code>zahl = 10
+while zahl &gt; 0:
+    print(zahl)
+    zahl = zahl - 2
+print(&quot;Ende&quot;)</code></pre>
+<label class="answer-label">Deine for-Version<textarea rows="8" spellcheck="false" placeholder="Schreibe deinen Code mit Einrückungen …"></textarea></label>
+<p class="answer-note">Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.</p>
+
+<details class="hint-box"><summary>Hinweis</summary><div>
+<p>Der Startwert ist 10, die Schrittweite −2. Der Stoppwert 0 gehört nicht mehr zur Ausgabe.</p>
+</div></details>
+
+<details class="sol-box"><summary>Musterlösung und Erklärung</summary><div>
+
+<pre><code>for zahl in range(10, 0, -2):
+    print(zahl)
+print(&quot;Ende&quot;)</code></pre>
+
+<p>Die Ausgabe ist 10, 8, 6, 4, 2 und anschließend Ende, jeweils in einer eigenen Zeile. Die for-Schleife übernimmt das Wechseln zum nächsten Wert; <code>zahl = zahl - 2</code> entfällt.</p>
+</div></details>
+</article>
+
+<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<h2>Übung 3: Von for zu while</h2>
+
+<p>Notiere zuerst die Ausgabe. Ersetze dann die for-Schleife durch eine <code>while</code>-Schleife und schreibe den vollständigen Code. Verwende weder <code>for</code> noch <code>range()</code>. Startwert, Bedingung und Veränderung der Laufvariable müssen selbst geschrieben werden. Die Ausgabe bleibt unverändert.</p>
+
+
+<pre><code>for zahl in range(3, 13, 3):
+    print(zahl * 2)
+print(&quot;Fertig&quot;)</code></pre>
+<label class="answer-label">Deine while-Version<textarea rows="8" spellcheck="false" placeholder="Schreibe deinen Code mit Einrückungen …"></textarea></label>
+<p class="answer-note">Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.</p>
+
+<details class="hint-box"><summary>Hinweis</summary><div>
+<p>Die Laufvariable nimmt die Werte 3, 6, 9 und 12 an. Ausgegeben wird jeweils ihr Doppeltes. Achte auf den Unterschied zwischen Laufwert und Ausgabewert.</p>
+</div></details>
+
+<details class="sol-box"><summary>Musterlösung und Erklärung</summary><div>
+
+<pre><code>zahl = 3
+while zahl &lt; 13:
+    print(zahl * 2)
+    zahl = zahl + 3
+print(&quot;Fertig&quot;)</code></pre>
+
+<p>Ausgabe: 6, 12, 18, 24, Fertig. Jede Zahl steht in einer eigenen Zeile. Auch <code>zahl &lt;= 12</code> passt hier. Ohne die Veränderung um +3 würde die while-Schleife nicht enden.</p>
+</div></details>
+</article>
+</section>
+
+<section class="chapter-section" data-section="3">
+<p class="eyebrow">Klausurvorbereitung · Abschnitt 3</p>
+
+<h1>Rechnen und zählen mit Funktionen</h1>
+
+<p class="lead">Vier Schreibaufgaben: eine Rechenfunktion und eine Zählfunktion mit while sowie jeweils eine mit for. Teste auch Fälle ohne Schleifendurchlauf.</p>
+
+<article class="task-card read-card"><span>Verstehen</span>
+<h2>Funktion, Summe und Rückgabe</h2>
+
+<p>Eine Funktion bekommt Werte als Parameter, rechnet damit und liefert mit <code>return</code> ihr Ergebnis zurück. Die Testaufrufe stehen <strong>außerhalb</strong> der Funktion. Dort kann <code>print</code> die Rückgabe anzeigen.</p>
+
+<p>Eine <strong>Summe</strong> speichert ein bisheriges Rechenergebnis. Ein <strong>Zähler</strong> zählt Treffer. Beide beginnen hier bei 0, werden im Schleifenblock verändert und erst nach der Schleife zurückgegeben. Ein return im Schleifenblock würde die Funktion schon beim ersten erreichten return beenden.</p>
+
+<p>Schreibe bei den vier Aufgaben jeweils Definition und Testaufrufe. Verwende <code>def</code>, die vorgegebene Schleifenart und <code>return</code>. Nutze kein <code>sum()</code>, keine Comprehension und keine fertige Zählmethode.</p>
+</article>
+
+<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<h2>Übung 4: Rechnen mit while: Summe bis n</h2>
+
+<p>Schreibe <code>summe_bis(n)</code>. Der Parameter n ist eine ganze Zahl ab 0. Addiere mit einer <code>while</code>-Schleife alle ganzen Zahlen von 1 bis einschließlich n und gib die Summe zurück. Für n = 0 soll 0 zurückgegeben werden.</p>
+<div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">Testaufruf</th><th scope="col">Erwartete Rückgabe</th></tr></thead><tbody><tr><td>summe_bis(0)</td><td>0</td></tr><tr><td>summe_bis(1)</td><td>1</td></tr><tr><td>summe_bis(5)</td><td>15</td></tr></tbody></table>
+</div><label class="answer-label">Deine Funktion und Testaufrufe<textarea rows="8" spellcheck="false" placeholder="Schreibe deinen Code mit Einrückungen …"></textarea></label>
+<p class="answer-note">Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.</p>
+
+<details class="hint-box"><summary>Hinweis</summary><div>
+<p>Starte die Summe bei 0 und die Laufvariable bei 1. Nach jeder Addition erhöht sich die Laufvariable um 1. Liegt der Start schon über n, gibt es keinen Durchlauf.</p>
+</div></details>
+
+<details class="sol-box"><summary>Musterlösung und Erklärung</summary><div>
+
+<pre><code>def summe_bis(n):
+    summe = 0
+    zahl = 1
+    while zahl &lt;= n:
+        summe = summe + zahl
+        zahl = zahl + 1
+    return summe
+
+print(summe_bis(0))
+print(summe_bis(1))
+print(summe_bis(5))</code></pre>
+
+<p>summe ist nach jedem Durchlauf die Summe der bisher besuchten Zahlen. Bei n = 0 wird der Schleifenblock übersprungen.</p>
+</div></details>
+</article>
+
+<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<h2>Übung 5: Rechnen mit for: Quadrate addieren</h2>
+
+<p>Schreibe <code>quadratsumme(n)</code>. Der Parameter n ist eine ganze Zahl ab 0. Addiere mit <code>for</code> und <code>range()</code> die Quadrate aller ganzen Zahlen von 1 bis einschließlich n. Das Quadrat einer Zahl erhältst du mit <code>zahl * zahl</code>. Gib das Ergebnis zurück. Für n = 0 soll das Ergebnis 0 sein.</p>
+<div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">Testaufruf</th><th scope="col">Erwartete Rückgabe</th></tr></thead><tbody><tr><td>quadratsumme(0)</td><td>0</td></tr><tr><td>quadratsumme(1)</td><td>1</td></tr><tr><td>quadratsumme(3)</td><td>14</td></tr></tbody></table>
+</div><label class="answer-label">Deine Funktion und Testaufrufe<textarea rows="8" spellcheck="false" placeholder="Schreibe deinen Code mit Einrückungen …"></textarea></label>
+<p class="answer-note">Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.</p>
+
+<details class="hint-box"><summary>Hinweis</summary><div>
+<p>Damit n besucht wird, muss der ausgeschlossene Stoppwert n + 1 sein. Die Summe wächst um das Quadrat, nicht um 1.</p>
+</div></details>
+
+<details class="sol-box"><summary>Musterlösung und Erklärung</summary><div>
+
+<pre><code>def quadratsumme(n):
+    summe = 0
+    for zahl in range(1, n + 1):
+        summe = summe + zahl * zahl
+    return summe
+
+print(quadratsumme(0))
+print(quadratsumme(1))
+print(quadratsumme(3))</code></pre>
+
+<p>Für n = 3 rechnest du 1 · 1 + 2 · 2 + 3 · 3 = 14. Bei n = 0 ist range(1, 1) leer.</p>
+</div></details>
+</article>
+
+<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<h2>Übung 6: Zählen mit while: Positive Werte</h2>
+
+<p>Schreibe <code>zaehle_positive(werte)</code>. werte ist eine flache Liste ganzer Zahlen. Besuche alle Elemente mit einer <code>while</code>-Schleife und einem Index. Zähle, wie viele Werte <strong>größer als 0</strong> sind, und gib die Anzahl zurück. Die Zahl 0 zählt nicht mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0.</p>
+<div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">Testaufruf</th><th scope="col">Erwartete Rückgabe</th></tr></thead><tbody><tr><td>zaehle_positive([])</td><td>0</td></tr><tr><td>zaehle_positive([-2, 0, 5, 1, -7])</td><td>2</td></tr><tr><td>zaehle_positive([4, 4])</td><td>2</td></tr></tbody></table>
+</div><label class="answer-label">Deine Funktion und Testaufrufe<textarea rows="8" spellcheck="false" placeholder="Schreibe deinen Code mit Einrückungen …"></textarea></label>
+<p class="answer-note">Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.</p>
+
+<details class="hint-box"><summary>Hinweis</summary><div>
+<p>Du brauchst zwei Variablen: anzahl für die Treffer, index für die Position. index wächst in jedem Durchlauf, auch wenn der Wert nicht positiv ist.</p>
+</div></details>
+
+<details class="sol-box"><summary>Musterlösung und Erklärung</summary><div>
+
+<pre><code>def zaehle_positive(werte):
+    anzahl = 0
+    index = 0
+    while index &lt; len(werte):
+        if werte[index] &gt; 0:
+            anzahl = anzahl + 1
+        index = index + 1
+    return anzahl
+
+print(zaehle_positive([]))
+print(zaehle_positive([-2, 0, 5, 1, -7]))
+print(zaehle_positive([4, 4]))</code></pre>
+
+<p>Nur Treffer erhöhen anzahl. Der Index wächst unabhängig davon. index < len(werte) verhindert einen Zugriff hinter dem letzten Element.</p>
+</div></details>
+</article>
+
+<article class="task-card read-card"><span>Selbst bearbeiten</span>
+<h2>Übung 7: Zählen mit for: Durch 3 teilbar</h2>
+
+<p>Schreibe <code>zaehle_durch_drei(werte)</code>. werte ist eine flache Liste ganzer Zahlen. Gehe mit einer <code>for</code>-Schleife direkt über die Werte. Zähle die Werte, die ohne Rest durch 3 teilbar sind, und gib die Anzahl zurück. Benutze <code>%</code>. Auch 0 und negative Vielfache von 3 zählen mit. Verändere die Liste nicht; für eine leere Liste ist das Ergebnis 0.</p>
+<div class="table-scroll">
+<table class="trace"><thead><tr><th scope="col">Testaufruf</th><th scope="col">Erwartete Rückgabe</th></tr></thead><tbody><tr><td>zaehle_durch_drei([])</td><td>0</td></tr><tr><td>zaehle_durch_drei([3, 4, 6, 0, -3])</td><td>4</td></tr><tr><td>zaehle_durch_drei([1, 2, 5])</td><td>0</td></tr></tbody></table>
+</div><label class="answer-label">Deine Funktion und Testaufrufe<textarea rows="8" spellcheck="false" placeholder="Schreibe deinen Code mit Einrückungen …"></textarea></label>
+<p class="answer-note">Das Feld ist ein Schreibplatz. Der Code wird hier nicht ausgeführt und nicht gespeichert. Bearbeite die Aufgabe zuerst auf Papier oder hier; prüfe danach in Python.</p>
+
+<details class="hint-box"><summary>Hinweis</summary><div>
+<p>% liefert den Divisionsrest. Ein Rest von 0 bedeutet „ohne Rest teilbar“. Zähle die Treffer; addiere nicht die gefundenen Werte.</p>
+</div></details>
+
+<details class="sol-box"><summary>Musterlösung und Erklärung</summary><div>
+
+<pre><code>def zaehle_durch_drei(werte):
+    anzahl = 0
+    for wert in werte:
+        if wert % 3 == 0:
+            anzahl = anzahl + 1
+    return anzahl
+
+print(zaehle_durch_drei([]))
+print(zaehle_durch_drei([3, 4, 6, 0, -3]))
+print(zaehle_durch_drei([1, 2, 5]))</code></pre>
+
+<p>Die vier Treffer im zweiten Test sind 3, 6, 0 und -3. Ihre Summe wäre 6, gesucht ist aber die Anzahl 4.</p>
+</div></details>
+</article>
+
+<article class="task-card read-card"><span>Verstehen</span>
+<h2>Zum Abschluss: Erkläre deinen Code</h2>
+<ol><li>Welche Aufgabe haben Parameter, Laufvariable und Summe oder Zähler?</li><li>Warum endet jede Schleife? Warum funktioniert der Fall mit 0 bzw. der leeren Liste?</li><li>Warum steht return nach der Schleife? Was würde ein print an derselben Stelle bewirken?</li></ol>
+<p>Wenn ein Test nicht passt, mache einen Schreibtischtest: Notiere nach jedem Durchlauf Laufwert bzw. Index und den bisherigen Wert von Summe oder Anzahl.</p>
+</article>
+</section>
+
+<nav class="bottom-nav" aria-label="Zwischen Abschnitten wechseln"><button id="previous-section">← Vorheriger Abschnitt</button><a class="overview-link" href="../">Zur Kapitelübersicht</a><div class="presentation-position" hidden aria-live="polite"><span id="slide-counter">Folie 01 / 01</span><strong id="slide-chapter"></strong></div><button class="primary" id="next-section">Nächster Abschnitt →</button></nav>
+</main>
+</div><div id="announcement" class="sr-only" aria-live="polite"></div></body>
+</html>
